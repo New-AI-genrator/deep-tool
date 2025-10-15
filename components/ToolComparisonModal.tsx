@@ -115,7 +115,7 @@ export function ToolComparisonModal({ isOpen, onClose, tools }: ToolComparisonMo
                           <span>Badges</span>
                         </div>
                         <div className="flex flex-wrap gap-2">
-                          {tool.badges.map((badge) => (
+                          {tool.badges?.map((badge) => (
                             <span
                               key={badge}
                               className="px-2 py-1 bg-purple-500/20 text-purple-400 rounded text-xs font-medium"
