@@ -6,6 +6,9 @@ import { PageTransition } from '../components/PageTransition';
 import { SearchOverlay } from '../components/SearchOverlay';
 
 export const metadata = {
+  other: {
+    'google-adsense-account': 'ca-pub-2894915343289598',
+  },
 	title: 'DeepTool - World\'s Largest Tools Directory | 10,000+ Software & Services',
 	description: 'Discover 10,000+ premium tools across 264 categories and 1,056 subcategories. Compare software, read reviews, and find the perfect tools for your business. The most comprehensive directory of SaaS, AI, crypto, gaming, and productivity tools.',
 	keywords: 'tools directory, software comparison, saas tools, business software, productivity tools, ai tools, crypto tools, gaming tools, developer tools, marketing tools, design tools',
