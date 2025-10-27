@@ -4704,8 +4704,53 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tags: ['messaging', 'secure', 'cloud', 'mobile'],
       rating: 4.6,
       reviewCount: 456000
+    },
+    {
+      name: 'Blender',
+      slug: 'blender',
+      tagline: 'Free and open source 3D creation suite',
+      logoUrl: '/logos/placeholder.png',
+      website: 'https://www.blender.org/',
+      pricing: 'open-source',
+      badges: ['popular', 'featured'],
+      category: 'Creative & Design',
+      categorySlug: 'creative-design',
+      subcategory: '3D Modeling',
+      subcategorySlug: '3d-modeling',
+      description: 'Blender is a free and open source 3D creation suite. It supports the entirety of the 3D pipeline—modeling, rigging, animation, simulation, rendering, compositing and motion tracking, video editing and 2D animation pipeline.',
+      features: [
+        '3D Modeling with polygons, curves, and NURBS surfaces',
+        'Advanced sculpting tools and brushes',
+        'Real-time viewport preview with Eevee renderer',
+        'Path-traced rendering with Cycles',
+        'Full animation support with rigging and skinning',
+        'Physics simulations (smoke, fire, fluids, cloth, etc.)',
+        'Video editing and compositing',
+        'Python API for customization and add-ons'
+      ],
+      useCases: [
+        '3D modeling for games and films',
+        'Architectural visualization',
+        'Product design and prototyping',
+        'Motion graphics and animation',
+        'VFX and post-production',
+        '3D printing'
+      ],
+      tags: ['3d-modeling', 'animation', 'rendering', 'vfx', 'open-source'],
+      launchDate: '1998-01-01',
+      rating: 4.8,
+      reviewCount: 4500,
+      alternatives: ['Maya', '3ds Max', 'Cinema 4D'],
+      integrations: ['Unity', 'Unreal Engine', 'Substance Painter', 'ZBrush'],
+      pricingDetails: {
+        type: 'open-source',
+        price: 'Free',
+        url: 'https://www.blender.org/download/',
+        description: 'Completely free and open source under the GNU General Public License'
+      }
     }
   ]
+  
 };
 
 // Helper functions
