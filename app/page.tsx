@@ -7,26 +7,19 @@ import { FeaturedPantheon } from '../components/home/FeaturedPantheon';
 import { DailyIntelligence } from '../components/home/DailyIntelligence';
 import { ExpertSanctum } from '../components/home/ExpertSanctum';
 import { GlobalAIMap } from '../components/home/GlobalAIMap';
-import { WebsiteStructuredData, OrganizationStructuredData } from '../components/StructuredData';
+import { CollectionPageSchema } from '../components/StructuredData';
+import { getAllTools } from '../data/tools';
 
 export default async function HomePage() {
+	const allTools = getAllTools();
+	
 	return (
 		<main>
-			<WebsiteStructuredData 
-				name="DeepTool"
-				url="https://deeptool.com"
-				description="World's largest tools directory with 10,000+ software and services across 264 categories"
-			/>
-			<OrganizationStructuredData 
-				name="DeepTool"
-				url="https://deeptool.com"
-				logo="https://deeptool.com/logo.png"
-				description="The most comprehensive directory of software tools and services"
-				sameAs={[
-					'https://twitter.com/deeptool',
-					'https://linkedin.com/company/deeptool',
-					'https://github.com/deeptool'
-				]}
+			<CollectionPageSchema
+				name="DeepTool - World's Largest Tools Directory"
+				description="Discover 10,000+ premium tools across 264 categories. The most comprehensive directory of SaaS, AI, and productivity tools."
+				url="https://deep-tool.vercel.app"
+				numberOfItems={allTools.length}
 			/>
 			<HeroSanctuary />
 			<NexusGateway />

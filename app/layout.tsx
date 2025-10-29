@@ -4,6 +4,7 @@ import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { PageTransition } from '../components/PageTransition';
 import { SearchOverlay } from '../components/SearchOverlay';
+import { OrganizationSchema, WebSiteSchema } from '../components/StructuredData';
 
 export const metadata = {
   other: {
@@ -66,6 +67,10 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
 	return (
 		<html lang="en">
+			<head>
+				<OrganizationSchema />
+				<WebSiteSchema />
+			</head>
 			<body className="min-h-screen bg-aether-obsidian antialiased">
 				<SearchOverlay />
 				<Header />

@@ -1,136 +1,153 @@
-import { ToolEntry } from '../data/tools';
+'use client';
 
-interface ToolStructuredDataProps {
-  tool: ToolEntry;
-}
-
-export function ToolStructuredData({ tool }: ToolStructuredDataProps) {
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": tool.name,
-    "description": tool.description,
-    "applicationCategory": tool.category,
-    "operatingSystem": "Web, Windows, Mac, Linux, iOS, Android",
-    "offers": {
-      "@type": "Offer",
-      "price": tool.pricing === 'free' || tool.pricing === 'open-source' ? '0' : 'varies',
-      "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock"
+export function OrganizationSchema() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'DeepTool',
+    description: 'World\'s Largest Tools Directory with 10,000+ software and services',
+    url: 'https://deep-tool.vercel.app',
+    logo: 'https://deep-tool.vercel.app/logo.png',
+    sameAs: [
+      'https://twitter.com/deeptool',
+      'https://www.facebook.com/deeptool',
+      'https://www.linkedin.com/company/deeptool',
+    ],
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'Customer Support',
+      email: 'support@deep-tool.vercel.app',
     },
-    "aggregateRating": tool.rating && tool.reviewCount ? {
-      "@type": "AggregateRating",
-      "ratingValue": tool.rating,
-      "reviewCount": tool.reviewCount,
-      "bestRating": "5",
-      "worstRating": "1"
-    } : undefined,
-    "url": tool.website,
-    "image": tool.logoUrl,
-    "author": {
-      "@type": "Organization",
-      "name": tool.name
-    },
-    "datePublished": tool.launchDate,
-    "featureList": tool.features.join(', '),
-    "keywords": tool.tags?.join(', ')
   };
 
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />
   );
 }
 
-interface BreadcrumbStructuredDataProps {
-  items: Array<{
-    name: string;
-    url: string;
-  }>;
-}
-
-export function BreadcrumbStructuredData({ items }: BreadcrumbStructuredDataProps) {
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": items.map((item, index) => ({
-      "@type": "ListItem",
-      "position": index + 1,
-      "name": item.name,
-      "item": item.url
-    }))
-  };
-
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-    />
-  );
-}
-
-interface OrganizationStructuredDataProps {
-  name: string;
-  url: string;
-  logo: string;
-  description: string;
-  sameAs?: string[];
-}
-
-export function OrganizationStructuredData({ 
-  name, 
-  url, 
-  logo, 
-  description,
-  sameAs 
-}: OrganizationStructuredDataProps) {
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": name,
-    "url": url,
-    "logo": logo,
-    "description": description,
-    "sameAs": sameAs
-  };
-
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-    />
-  );
-}
-
-interface WebsiteStructuredDataProps {
-  name: string;
-  url: string;
-  description: string;
-}
-
-export function WebsiteStructuredData({ name, url, description }: WebsiteStructuredDataProps) {
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": name,
-    "url": url,
-    "description": description,
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": `${url}/search?q={search_term_string}`
+export function WebSiteSchema() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'DeepTool',
+    url: 'https://deep-tool.vercel.app',
+    description: 'Discover 10,000+ premium tools across 264 categories. The most comprehensive directory of SaaS, AI, crypto, gaming, and productivity tools.',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: 'https://deep-tool.vercel.app/search?q={search_term_string}',
       },
-      "query-input": "required name=search_term_string"
-    }
+      'query-input': 'required name=search_term_string',
+    },
   };
 
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+export function BreadcrumbSchema({ items }: { items: Array<{ name: string; url: string }> }) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      item: item.url,
+    })),
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+export function SoftwareApplicationSchema({
+  name,
+  description,
+  url,
+  rating,
+  reviewCount,
+  category,
+  pricing,
+}: {
+  name: string;
+  description: string;
+  url: string;
+  rating?: number;
+  reviewCount?: number;
+  category: string;
+  pricing: string;
+}) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: name,
+    description: description,
+    url: url,
+    applicationCategory: category,
+    operatingSystem: 'Web-based',
+    offers: {
+      '@type': 'Offer',
+      price: pricing === 'free' ? '0' : undefined,
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+    },
+    aggregateRating: rating && reviewCount ? {
+      '@type': 'AggregateRating',
+      ratingValue: rating,
+      reviewCount: reviewCount,
+      bestRating: 5,
+      worstRating: 1,
+    } : undefined,
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+export function CollectionPageSchema({
+  name,
+  description,
+  url,
+  numberOfItems,
+}: {
+  name: string;
+  description: string;
+  url: string;
+  numberOfItems: number;
+}) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: name,
+    description: description,
+    url: url,
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: numberOfItems,
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />
   );
 }
