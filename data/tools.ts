@@ -15569,6 +15569,176 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         description: 'Per-workload licensing'
       }
     }
+  ],
+
+  // E-commerce & Retail > Inventory Systems
+  'inventory-systems': [
+    {
+      name: 'Cin7',
+      slug: 'cin7',
+      tagline: 'Inventory management for product sellers',
+      logoUrl: '/logos/cin7.png',
+      website: 'https://www.cin7.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'E-commerce & Retail',
+      categorySlug: 'ecommerce-retail',
+      subcategory: 'Inventory Systems',
+      subcategorySlug: 'inventory-systems',
+      description: 'Cin7 is a comprehensive inventory management system connecting inventory, POS, EDI, and B2B e-commerce across multiple sales channels.',
+      features: ['Multi-channel inventory', 'Order management', 'Warehouse management', 'EDI integration', 'B2B e-commerce', 'Point of sale', 'Automated workflows', 'Real-time sync'],
+      useCases: ['Multi-channel selling', 'Wholesale distribution', 'Retail management', 'Manufacturing', 'B2B commerce'],
+      tags: ['inventory', 'ecommerce', 'cin7', 'omnichannel', 'wholesale'],
+      rating: 4.3,
+      reviewCount: 2100,
+      alternatives: ['Katana', 'Fishbowl', 'inFlow'],
+      integrations: ['Shopify', 'Amazon', 'eBay', 'WooCommerce', 'Xero', 'QuickBooks'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $349/month',
+        url: 'https://www.cin7.com/pricing',
+        description: 'Based on order volume'
+      }
+    },
+    {
+      name: 'Katana MRP',
+      slug: 'katana-mrp',
+      tagline: 'Manufacturing inventory software',
+      logoUrl: '/logos/katana.png',
+      website: 'https://katanamrp.com',
+      pricing: 'paid',
+      badges: ['trending', 'popular'],
+      category: 'E-commerce & Retail',
+      categorySlug: 'ecommerce-retail',
+      subcategory: 'Inventory Systems',
+      subcategorySlug: 'inventory-systems',
+      description: 'Katana is cloud manufacturing software providing real-time inventory management and production planning for makers and manufacturers.',
+      features: ['Real-time inventory tracking', 'Production scheduling', 'Material requirements planning', 'Shop floor control', 'Multi-location', 'Auto-booking', 'Batch tracking', 'Live inventory insights'],
+      useCases: ['Manufacturing', 'Production planning', 'Inventory control', 'Order fulfillment', 'Material planning'],
+      tags: ['inventory', 'manufacturing', 'mrp', 'katana', 'production'],
+      rating: 4.6,
+      reviewCount: 680,
+      alternatives: ['Cin7', 'MRPeasy', 'Fishbowl'],
+      integrations: ['Shopify', 'WooCommerce', 'Xero', 'QuickBooks Online'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $179/month',
+        url: 'https://katanamrp.com/pricing',
+        description: 'Based on manufacturing orders'
+      }
+    },
+    {
+      name: 'Fishbowl',
+      slug: 'fishbowl',
+      tagline: '#1 manufacturing and warehouse inventory software',
+      logoUrl: '/logos/fishbowl.png',
+      website: 'https://www.fishbowlinventory.com',
+      pricing: 'paid',
+      badges: ['popular'],
+      category: 'E-commerce & Retail',
+      categorySlug: 'ecommerce-retail',
+      subcategory: 'Inventory Systems',
+      subcategorySlug: 'inventory-systems',
+      description: 'Fishbowl is inventory management software for QuickBooks offering manufacturing, warehouse, and asset tracking capabilities.',
+      features: ['Manufacturing management', 'Warehouse management', 'Barcode scanning', 'Multi-location', 'Work orders', 'Bill of materials', 'Asset tracking', 'QuickBooks integration'],
+      useCases: ['Manufacturing inventory', 'Warehouse operations', 'Asset management', 'Order tracking', 'QuickBooks inventory'],
+      tags: ['inventory', 'manufacturing', 'fishbowl', 'warehouse', 'quickbooks'],
+      rating: 4.1,
+      reviewCount: 4500,
+      alternatives: ['Cin7', 'NetSuite', 'inFlow'],
+      integrations: ['QuickBooks', 'Shopify', 'Amazon', 'WooCommerce', 'eBay'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $4,395 one-time + annual $1,095',
+        url: 'https://www.fishbowlinventory.com/pricing',
+        description: 'Perpetual license model'
+      }
+    }
+  ],
+
+  // E-commerce & Retail > Order Management
+  'order-management': [
+    {
+      name: 'ShipStation',
+      slug: 'shipstation',
+      tagline: 'Multi-carrier shipping software',
+      logoUrl: '/logos/shipstation.png',
+      website: 'https://www.shipstation.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'E-commerce & Retail',
+      categorySlug: 'ecommerce-retail',
+      subcategory: 'Order Management',
+      subcategorySlug: 'order-management',
+      description: 'ShipStation is a web-based shipping solution that helps e-commerce retailers import, organize, and ship orders efficiently.',
+      features: ['Multi-carrier shipping', 'Batch label printing', 'Automation rules', 'Order management', 'Branded tracking', 'Returns management', 'Mobile app', 'Rate shopping'],
+      useCases: ['E-commerce shipping', 'Order fulfillment', 'Multi-channel selling', 'Shipping automation', 'Returns processing'],
+      tags: ['shipping', 'orders', 'shipstation', 'ecommerce', 'fulfillment'],
+      rating: 4.5,
+      reviewCount: 12000,
+      alternatives: ['ShipBob', 'Ordoro', 'Shippo'],
+      integrations: ['Shopify', 'Amazon', 'eBay', 'WooCommerce', 'Etsy', 'BigCommerce'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $9.99/month',
+        url: 'https://www.shipstation.com/pricing',
+        description: 'Based on monthly shipments'
+      }
+    },
+    {
+      name: 'Ordoro',
+      slug: 'ordoro',
+      tagline: 'All-in-one shipping and inventory software',
+      logoUrl: '/logos/ordoro.png',
+      website: 'https://www.ordoro.com',
+      pricing: 'freemium',
+      badges: ['popular'],
+      category: 'E-commerce & Retail',
+      categorySlug: 'ecommerce-retail',
+      subcategory: 'Order Management',
+      subcategorySlug: 'order-management',
+      description: 'Ordoro combines shipping, inventory management, and dropshipping for multi-channel e-commerce sellers.',
+      features: ['Shipping management', 'Inventory tracking', 'Dropshipping', 'Multi-channel sync', 'Barcode scanning', 'Kitting', 'Analytics', 'Mobile app'],
+      useCases: ['Order fulfillment', 'Inventory sync', 'Dropshipping', 'Multi-store management', 'Shipping optimization'],
+      tags: ['shipping', 'inventory', 'ordoro', 'ecommerce', 'dropshipping'],
+      rating: 4.4,
+      reviewCount: 890,
+      alternatives: ['ShipStation', 'Skubana', 'Cin7'],
+      integrations: ['Shopify', 'Amazon', 'eBay', 'WooCommerce', 'BigCommerce'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free plan available, Advanced from $59/month',
+        url: 'https://www.ordoro.com/pricing',
+        description: 'Free and paid tiers'
+      }
+    },
+    {
+      name: 'Brightpearl',
+      slug: 'brightpearl',
+      tagline: 'Retail operating system',
+      logoUrl: '/logos/brightpearl.png',
+      website: 'https://www.brightpearl.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'E-commerce & Retail',
+      categorySlug: 'ecommerce-retail',
+      subcategory: 'Order Management',
+      subcategorySlug: 'order-management',
+      description: 'Brightpearl is a retail operating system combining inventory, order, and financial management for omnichannel retailers.',
+      features: ['Order management', 'Inventory control', 'Warehouse management', 'Financial management', 'CRM', 'Purchasing', 'Demand planning', 'Multi-channel'],
+      useCases: ['Omnichannel retail', 'Wholesale distribution', 'Order orchestration', 'Inventory optimization', 'Financial reporting'],
+      tags: ['retail', 'orders', 'brightpearl', 'omnichannel', 'erp'],
+      rating: 4.2,
+      reviewCount: 780,
+      alternatives: ['NetSuite', 'SkuVault', 'Cin7'],
+      integrations: ['Shopify', 'Amazon', 'eBay', 'Magento', 'BigCommerce'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.brightpearl.com/pricing',
+        description: 'Enterprise pricing'
+      }
+    }
   ]
   
 };
