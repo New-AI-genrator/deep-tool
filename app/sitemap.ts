@@ -2,9 +2,9 @@ import { MetadataRoute } from 'next';
 import { categoriesWithSubcategories, getAllTools } from '../data/tools';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://deeptool.com'; // Change to your domain
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://deep-tool.vercel.app';
   
-  // Homepage
+  // Homepage and main pages
   const routes: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
@@ -19,6 +19,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/best`,
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/tools`,
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/intelligence`,
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/about`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
@@ -29,6 +47,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/pricing`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.5,
     },
   ];
 
@@ -52,11 +82,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   });
 
-  // Tool pages
+  // Tool pages - FIXED: Using correct /tools/ path
   const tools = getAllTools();
   tools.forEach((tool) => {
     routes.push({
-      url: `${baseUrl}/tool/${tool.slug}`,
+      url: `${baseUrl}/tools/${tool.slug}`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.6,

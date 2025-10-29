@@ -20,14 +20,14 @@ export const metadata = {
 		address: false,
 		telephone: false,
 	},
-	metadataBase: new URL('https://deeptool.com'),
+	metadataBase: new URL('https://deep-tool.vercel.app'),
 	alternates: {
 		canonical: '/',
 	},
 	openGraph: {
 		title: 'DeepTool - World\'s Largest Tools Directory',
 		description: 'Discover 10,000+ premium tools across 264 categories and 1,056 subcategories',
-		url: 'https://deeptool.com',
+		url: 'https://deep-tool.vercel.app',
 		siteName: 'DeepTool',
 		images: [
 			{
@@ -59,8 +59,7 @@ export const metadata = {
 		},
 	},
 	verification: {
-		google: 'your-google-verification-code',
-		yandex: 'your-yandex-verification-code',
+		google: 'google48dadb8c7f2f2d13',
 	},
 };
 
