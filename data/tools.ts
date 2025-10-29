@@ -15190,6 +15190,559 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         description: 'Monthly or annual subscription'
       }
     }
+  ],
+
+  // Legal & Compliance > Contract Management
+  'contract-management': [
+    {
+      name: 'DocuSign CLM',
+      slug: 'docusign-clm',
+      tagline: 'Contract lifecycle management',
+      logoUrl: '/logos/docusign.png',
+      website: 'https://www.docusign.com/products/clm',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Legal & Compliance',
+      categorySlug: 'legal-compliance',
+      subcategory: 'Contract Management',
+      subcategorySlug: 'contract-management',
+      description: 'DocuSign CLM provides contract lifecycle management with creation, negotiation, and analysis capabilities.',
+      features: ['Contract creation', 'Template library', 'Workflow automation', 'E-signature', 'Analytics', 'AI review', 'Repository', 'Compliance tracking'],
+      useCases: ['Contract management', 'Legal workflows', 'Compliance', 'Contract analytics', 'Risk management'],
+      tags: ['contracts', 'clm', 'legal', 'compliance', 'esignature'],
+      rating: 4.4,
+      reviewCount: 1200,
+      alternatives: ['Icertis', 'ContractWorks', 'Agiloft'],
+      integrations: ['Salesforce', 'Microsoft', 'SAP'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.docusign.com/products/clm',
+        description: 'Enterprise pricing'
+      }
+    },
+    {
+      name: 'ContractWorks',
+      slug: 'contractworks',
+      tagline: 'Simple contract management software',
+      logoUrl: '/logos/contractworks.png',
+      website: 'https://www.contractworks.com',
+      pricing: 'paid',
+      badges: ['popular'],
+      category: 'Legal & Compliance',
+      categorySlug: 'legal-compliance',
+      subcategory: 'Contract Management',
+      subcategorySlug: 'contract-management',
+      description: 'ContractWorks is user-friendly contract management software for organizing, searching, and tracking contracts.',
+      features: ['Central repository', 'OCR search', 'Alerts & reminders', 'Secure sharing', 'Reporting', 'Custom fields', 'Audit trail', 'Mobile access'],
+      useCases: ['Contract storage', 'Deadline tracking', 'Contract search', 'Team collaboration', 'Compliance'],
+      tags: ['contracts', 'management', 'legal', 'repository'],
+      rating: 4.6,
+      reviewCount: 680,
+      alternatives: ['DocuSign CLM', 'Concord', 'PandaDoc'],
+      integrations: ['Box', 'Dropbox', 'Google Drive'],
+      pricingDetails: {
+        type: 'paid',
+      price: 'From $600/month',
+        url: 'https://www.contractworks.com/pricing',
+        description: 'Flat-rate unlimited users'
+      }
+    }
+  ],
+
+  // Sales & CRM > Sales Automation
+  'sales-automation': [
+    {
+      name: 'Outreach',
+      slug: 'outreach',
+      tagline: 'Sales engagement platform',
+      logoUrl: '/logos/outreach.png',
+      website: 'https://www.outreach.io',
+      pricing: 'enterprise',
+      badges: ['popular', 'enterprise'],
+      category: 'Sales & CRM',
+      categorySlug: 'sales-crm',
+      subcategory: 'Sales Automation',
+      subcategorySlug: 'sales-automation',
+      description: 'Outreach is a sales engagement platform that helps sales teams create and track customer interactions.',
+      features: ['Email sequences', 'Call tracking', 'Task automation', 'Analytics', 'A/B testing', 'Templates', 'Integrations', 'Reporting'],
+      useCases: ['Sales outreach', 'Lead engagement', 'Pipeline management', 'Sales analytics', 'Team productivity'],
+      tags: ['sales', 'automation', 'engagement', 'outreach', 'sequences'],
+      rating: 4.3,
+      reviewCount: 2100,
+      alternatives: ['SalesLoft', 'Apollo.io', 'Groove'],
+      integrations: ['Salesforce', 'Gmail', 'Outlook', 'LinkedIn'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.outreach.io/pricing',
+        description: 'Enterprise pricing'
+      }
+    },
+    {
+      name: 'Apollo.io',
+      slug: 'apollo-io',
+      tagline: 'All-in-one sales intelligence platform',
+      logoUrl: '/logos/apollo.png',
+      website: 'https://www.apollo.io',
+      pricing: 'freemium',
+      badges: ['popular', 'trending'],
+      category: 'Sales & CRM',
+      categorySlug: 'sales-crm',
+      subcategory: 'Sales Automation',
+      subcategorySlug: 'sales-automation',
+      description: 'Apollo.io provides a sales intelligence and engagement platform with prospecting, outreach, and analytics.',
+      features: ['B2B database', 'Email sequences', 'Dialer', 'Lead scoring', 'Data enrichment', 'Analytics', 'Chrome extension', 'Integrations'],
+      useCases: ['Prospecting', 'Sales outreach', 'Lead generation', 'Data enrichment', 'Sales engagement'],
+      tags: ['sales', 'prospecting', 'automation', 'intelligence', 'leads'],
+      rating: 4.5,
+      reviewCount: 3400,
+      alternatives: ['ZoomInfo', 'Outreach', 'SalesLoft'],
+      integrations: ['Salesforce', 'HubSpot', 'Outreach'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free plan available, Paid from $49/user/month',
+        url: 'https://www.apollo.io/pricing',
+        description: 'Free and paid tiers'
+      }
+    }
+  ],
+
+  // Sales & CRM > Lead Generation
+  'lead-generation': [
+    {
+      name: 'LinkedIn Sales Navigator',
+      slug: 'linkedin-sales-navigator',
+      tagline: 'Social selling and lead generation',
+      logoUrl: '/logos/linkedin.png',
+      website: 'https://business.linkedin.com/sales-solutions/sales-navigator',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Sales & CRM',
+      categorySlug: 'sales-crm',
+      subcategory: 'Lead Generation',
+      subcategorySlug: 'lead-generation',
+      description: 'LinkedIn Sales Navigator is a social selling platform for finding, understanding, and engaging with prospects on LinkedIn.',
+      features: ['Advanced search', 'Lead recommendations', 'InMail messages', 'CRM sync', 'Sales insights', 'TeamLink', 'PointDrive', 'Real-time updates'],
+      useCases: ['Social selling', 'Prospect research', 'Lead generation', 'Relationship building', 'Sales intelligence'],
+      tags: ['linkedin', 'sales', 'lead-generation', 'social-selling', 'b2b'],
+      rating: 4.3,
+      reviewCount: 8900,
+      alternatives: ['ZoomInfo', 'Cognism', 'Lusha'],
+      integrations: ['Salesforce', 'Microsoft Dynamics', 'HubSpot'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $79.99/month',
+        url: 'https://business.linkedin.com/sales-solutions/sales-navigator/pricing',
+        description: 'Per-user monthly or annual'
+      }
+    },
+    {
+      name: 'ZoomInfo',
+      slug: 'zoominfo',
+      tagline: 'B2B contact database and sales intelligence',
+      logoUrl: '/logos/zoominfo.png',
+      website: 'https://www.zoominfo.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Sales & CRM',
+      categorySlug: 'sales-crm',
+      subcategory: 'Lead Generation',
+      subcategorySlug: 'lead-generation',
+      description: 'ZoomInfo is a leading B2B contact database and sales intelligence platform for finding and connecting with prospects.',
+      features: ['B2B database', 'Intent data', 'Technographics', 'Org charts', 'Direct dials', 'Email finder', 'Integrations', 'Analytics'],
+      useCases: ['Lead generation', 'Account research', 'Sales prospecting', 'Market intelligence', 'ABM campaigns'],
+      tags: ['b2b', 'lead-generation', 'sales-intelligence', 'database', 'contacts'],
+      rating: 4.4,
+      reviewCount: 4200,
+      alternatives: ['Apollo.io', 'Cognism', 'Clearbit'],
+      integrations: ['Salesforce', 'Outreach', 'SalesLoft', 'HubSpot'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.zoominfo.com/about/contact-sales',
+        description: 'Custom enterprise pricing'
+      }
+    }
+  ],
+
+  // Sales & CRM > Proposal Software
+  'proposal-software': [
+    {
+      name: 'PandaDoc',
+      slug: 'pandadoc',
+      tagline: 'Document automation for sales teams',
+      logoUrl: '/logos/pandadoc.png',
+      website: 'https://www.pandadoc.com',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Sales & CRM',
+      categorySlug: 'sales-crm',
+      subcategory: 'Proposal Software',
+      subcategorySlug: 'proposal-software',
+      description: 'PandaDoc is document automation software for creating, tracking, and e-signing proposals, quotes, and contracts.',
+      features: ['Document builder', 'Templates', 'E-signatures', 'Payments', 'Analytics', 'CRM integration', 'Workflows', 'Content library'],
+      useCases: ['Proposals', 'Quotes', 'Contracts', 'Sales documents', 'Agreement tracking'],
+      tags: ['proposals', 'documents', 'esignature', 'quotes', 'sales'],
+      rating: 4.5,
+      reviewCount: 6700,
+      alternatives: ['Proposify', 'Better Proposals', 'Qwilr'],
+      integrations: ['Salesforce', 'HubSpot', 'Pipedrive', 'Stripe'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free plan available, Essentials from $19/user/month',
+        url: 'https://www.pandadoc.com/pricing/',
+        description: 'Free and paid plans'
+      }
+    },
+    {
+      name: 'Proposify',
+      slug: 'proposify',
+      tagline: 'Proposal software for closing deals',
+      logoUrl: '/logos/proposify.png',
+      website: 'https://www.proposify.com',
+      pricing: 'paid',
+      badges: ['popular'],
+      category: 'Sales & CRM',
+      categorySlug: 'sales-crm',
+      subcategory: 'Proposal Software',
+      subcategorySlug: 'proposal-software',
+      description: 'Proposify is proposal software that helps sales teams create, send, and track beautiful proposals.',
+      features: ['Proposal builder', 'Templates', 'Interactive pricing', 'E-signatures', 'Analytics', 'Team collaboration', 'Content library', 'Integrations'],
+      useCases: ['Sales proposals', 'Quote creation', 'Proposal tracking', 'Team collaboration', 'Win rate analysis'],
+      tags: ['proposals', 'sales', 'quotes', 'documents', 'tracking'],
+      rating: 4.6,
+      reviewCount: 1800,
+      alternatives: ['PandaDoc', 'Better Proposals', 'Qwilr'],
+      integrations: ['Salesforce', 'HubSpot', 'Pipedrive', 'Zapier'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $49/user/month',
+        url: 'https://www.proposify.com/pricing',
+        description: 'Per-user monthly pricing'
+      }
+    }
+  ],
+
+  // Cloud & Infrastructure > Database Services
+  'database-services': [
+    {
+      name: 'MongoDB Atlas',
+      slug: 'mongodb-atlas',
+      tagline: 'Cloud database service',
+      logoUrl: '/logos/mongodb.png',
+      website: 'https://www.mongodb.com/atlas',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Cloud & Infrastructure',
+      categorySlug: 'cloud-infrastructure',
+      subcategory: 'Database Services',
+      subcategorySlug: 'database-services',
+      description: 'MongoDB Atlas is a fully-managed cloud database service with automated backups, scaling, and security.',
+      features: ['Managed MongoDB', 'Auto-scaling', 'Backups', 'Security', 'Global clusters', 'Search', 'Analytics', 'Serverless'],
+      useCases: ['Application databases', 'Real-time analytics', 'Mobile backends', 'IoT data', 'Content management'],
+      tags: ['database', 'mongodb', 'nosql', 'cloud', 'managed'],
+      rating: 4.6,
+      reviewCount: 4500,
+      alternatives: ['AWS DocumentDB', 'Azure Cosmos DB', 'Firebase'],
+      integrations: ['AWS', 'Azure', 'GCP', 'Various SDKs'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free tier available, Pay-as-you-go',
+        url: 'https://www.mongodb.com/pricing',
+        description: 'Free tier + usage-based'
+      }
+    },
+    {
+      name: 'Amazon RDS',
+      slug: 'amazon-rds',
+      tagline: 'Managed relational database service',
+      logoUrl: '/logos/aws-rds.png',
+      website: 'https://aws.amazon.com/rds/',
+      pricing: 'paid',
+      badges: ['enterprise', 'featured'],
+      category: 'Cloud & Infrastructure',
+      categorySlug: 'cloud-infrastructure',
+      subcategory: 'Database Services',
+      subcategorySlug: 'database-services',
+      description: 'Amazon RDS makes it easy to set up, operate, and scale relational databases in the cloud.',
+      features: ['Multiple DB engines', 'Automated backups', 'High availability', 'Scaling', 'Security', 'Monitoring', 'Read replicas', 'Multi-AZ'],
+      useCases: ['Web applications', 'E-commerce', 'Enterprise apps', 'Mobile backends', 'Analytics'],
+      tags: ['database', 'rds', 'aws', 'sql', 'managed'],
+      rating: 4.5,
+      reviewCount: 8900,
+      alternatives: ['Google Cloud SQL', 'Azure SQL Database', 'PlanetScale'],
+      integrations: ['AWS ecosystem', 'Various tools'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'Pay per instance hour',
+        url: 'https://aws.amazon.com/rds/pricing/',
+        description: 'Usage-based pricing'
+      }
+    }
+  ],
+
+  // Cloud & Infrastructure > Monitoring
+  'monitoring': [
+    {
+      name: 'Datadog',
+      slug: 'datadog',
+      tagline: 'Monitoring and analytics platform',
+      logoUrl: '/logos/datadog.png',
+      website: 'https://www.datadoghq.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured', 'enterprise'],
+      category: 'Cloud & Infrastructure',
+      categorySlug: 'cloud-infrastructure',
+      subcategory: 'Monitoring',
+      subcategorySlug: 'monitoring',
+      description: 'Datadog is a monitoring and analytics platform for infrastructure, applications, and logs.',
+      features: ['Infrastructure monitoring', 'APM', 'Log management', 'Synthetics', 'RUM', 'Security', 'Dashboards', 'Alerts'],
+      useCases: ['Infrastructure monitoring', 'Application performance', 'Log analytics', 'Security monitoring', 'Cloud monitoring'],
+      tags: ['monitoring', 'apm', 'infrastructure', 'logs', 'observability'],
+      rating: 4.5,
+      reviewCount: 3200,
+      alternatives: ['New Relic', 'Splunk', 'Dynatrace'],
+      integrations: ['500+ integrations'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $15/host/month',
+        url: 'https://www.datadoghq.com/pricing/',
+        description: 'Per-host and usage-based'
+      }
+    },
+    {
+      name: 'New Relic',
+      slug: 'new-relic',
+      tagline: 'Observability platform',
+      logoUrl: '/logos/newrelic.png',
+      website: 'https://newrelic.com',
+      pricing: 'freemium',
+      badges: ['popular', 'enterprise'],
+      category: 'Cloud & Infrastructure',
+      categorySlug: 'cloud-infrastructure',
+      subcategory: 'Monitoring',
+      subcategorySlug: 'monitoring',
+      description: 'New Relic is an observability platform for monitoring applications, infrastructure, and customer experience.',
+      features: ['APM', 'Infrastructure monitoring', 'Logs', 'Browser monitoring', 'Synthetics', 'Mobile monitoring', 'AI ops', 'Dashboards'],
+      useCases: ['Application monitoring', 'Performance optimization', 'Error tracking', 'Infrastructure visibility', 'User experience'],
+      tags: ['monitoring', 'apm', 'observability', 'performance', 'infrastructure'],
+      rating: 4.4,
+      reviewCount: 2800,
+      alternatives: ['Datadog', 'Dynatrace', 'AppDynamics'],
+      integrations: ['Cloud providers', 'Various platforms'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free tier available, Standard from $99/month',
+        url: 'https://newrelic.com/pricing',
+        description: 'Free tier + usage-based'
+      }
+    }
+  ],
+
+  // Cloud & Infrastructure > Backup & Recovery
+  'backup-recovery': [
+    {
+      name: 'Veeam',
+      slug: 'veeam',
+      tagline: 'Backup and disaster recovery',
+      logoUrl: '/logos/veeam.png',
+      website: 'https://www.veeam.com',
+      pricing: 'paid',
+      badges: ['enterprise', 'featured'],
+      category: 'Cloud & Infrastructure',
+      categorySlug: 'cloud-infrastructure',
+      subcategory: 'Backup & Recovery',
+      subcategorySlug: 'backup-recovery',
+      description: 'Veeam provides backup, recovery, and data management solutions for virtual, physical, and cloud environments.',
+      features: ['VM backup', 'Cloud backup', 'Instant recovery', 'Replication', 'Monitoring', 'Ransomware protection', 'Multi-cloud', 'Disaster recovery'],
+      useCases: ['Data backup', 'Disaster recovery', 'VM protection', 'Cloud backup', 'Business continuity'],
+      tags: ['backup', 'recovery', 'disaster-recovery', 'enterprise', 'veeam'],
+      rating: 4.6,
+      reviewCount: 2100,
+      alternatives: ['Acronis', 'Commvault', 'Rubrik'],
+      integrations: ['VMware', 'Hyper-V', 'AWS', 'Azure'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'Contact for pricing',
+        url: 'https://www.veeam.com/pricing',
+        description: 'Per-workload licensing'
+      }
+    }
+  ],
+
+  // Collaboration & Remote Work > Team Chat
+  'team-chat': [
+    {
+      name: 'Slack',
+      slug: 'slack',
+      tagline: 'Where work happens',
+      logoUrl: '/logos/slack.png',
+      website: 'https://slack.com',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Collaboration & Remote Work',
+      categorySlug: 'collaboration-remote-work',
+      subcategory: 'Team Chat',
+      subcategorySlug: 'team-chat',
+      description: 'Slack is a collaboration hub that brings teams together through channels, messaging, and integrations.',
+      features: ['Channels', 'Direct messaging', 'File sharing', 'Search', 'Integrations', 'Video calls', 'Workflows', 'Mobile apps'],
+      useCases: ['Team communication', 'Project collaboration', 'Remote work', 'File sharing', 'Integration hub'],
+      tags: ['chat', 'collaboration', 'messaging', 'team', 'slack'],
+      rating: 4.5,
+      reviewCount: 123000,
+      alternatives: ['Microsoft Teams', 'Discord', 'Mattermost'],
+      integrations: ['2,400+ apps'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free plan available, Pro from $7.25/user/month',
+        url: 'https://slack.com/pricing',
+        description: 'Free and paid tiers'
+      }
+    },
+    {
+      name: 'Discord',
+      slug: 'discord',
+      tagline: 'Chat for communities and friends',
+      logoUrl: '/logos/discord.png',
+      website: 'https://discord.com',
+      pricing: 'freemium',
+      badges: ['popular', 'trending'],
+      category: 'Collaboration & Remote Work',
+      categorySlug: 'collaboration-remote-work',
+      subcategory: 'Team Chat',
+      subcategorySlug: 'team-chat',
+      description: 'Discord is a voice, video, and text communication platform for communities, gaming, and collaboration.',
+      features: ['Voice channels', 'Text channels', 'Video calls', 'Screen sharing', 'Bots', 'Server roles', 'Mobile apps', 'Community features'],
+      useCases: ['Community building', 'Team communication', 'Gaming', 'Study groups', 'Creator communities'],
+      tags: ['chat', 'voice', 'community', 'gaming', 'discord'],
+      rating: 4.7,
+      reviewCount: 456000,
+      alternatives: ['Slack', 'Telegram', 'Guilded'],
+      integrations: ['Bots and webhooks'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free, Nitro from $9.99/month',
+        url: 'https://discord.com/nitro',
+        description: 'Free with optional premium'
+      }
+    }
+  ],
+
+  // Collaboration & Remote Work > File Sharing
+  'file-sharing': [
+    {
+      name: 'Dropbox',
+      slug: 'dropbox',
+      tagline: 'Keep life organized and work moving',
+      logoUrl: '/logos/dropbox.png',
+      website: 'https://www.dropbox.com',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Collaboration & Remote Work',
+      categorySlug: 'collaboration-remote-work',
+      subcategory: 'File Sharing',
+      subcategorySlug: 'file-sharing',
+      description: 'Dropbox is a cloud storage and file sharing service for personal and business use.',
+      features: ['Cloud storage', 'File sync', 'File sharing', 'Collaboration', 'Version history', 'Mobile access', 'Paper docs', 'Integrations'],
+      useCases: ['File storage', 'Team collaboration', 'File sharing', 'Backup', 'Remote access'],
+      tags: ['cloud-storage', 'file-sharing', 'sync', 'collaboration', 'dropbox'],
+      rating: 4.4,
+      reviewCount: 234000,
+      alternatives: ['Google Drive', 'OneDrive', 'Box'],
+      integrations: ['Microsoft Office', 'Slack', 'Zoom'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free 2GB, Plus from $11.99/month',
+        url: 'https://www.dropbox.com/plans',
+        description: 'Free and paid plans'
+      }
+    },
+    {
+      name: 'Google Drive',
+      slug: 'google-drive',
+      tagline: 'Cloud storage and file backup',
+      logoUrl: '/logos/googledrive.png',
+      website: 'https://www.google.com/drive/',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Collaboration & Remote Work',
+      categorySlug: 'collaboration-remote-work',
+      subcategory: 'File Sharing',
+      subcategorySlug: 'file-sharing',
+      description: 'Google Drive is a cloud storage service integrated with Google Workspace for file storage and collaboration.',
+      features: ['15GB free storage', 'File sharing', 'Google Docs integration', 'Search', 'Mobile apps', 'Offline access', 'Version history', 'Collaboration'],
+      useCases: ['File storage', 'Document collaboration', 'Photo backup', 'Team sharing', 'Mobile access'],
+      tags: ['cloud-storage', 'google', 'file-sharing', 'collaboration', 'docs'],
+      rating: 4.6,
+      reviewCount: 567000,
+      alternatives: ['Dropbox', 'OneDrive', 'iCloud'],
+      integrations: ['Google Workspace', 'Third-party apps'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free 15GB, One from $1.99/month',
+        url: 'https://one.google.com/about/plans',
+        description: 'Free tier + Google One plans'
+      }
+    }
+  ],
+
+  // Collaboration & Remote Work > Virtual Whiteboard
+  'virtual-whiteboard': [
+    {
+      name: 'Miro',
+      slug: 'miro',
+      tagline: 'Online collaborative whiteboard platform',
+      logoUrl: '/logos/miro.png',
+      website: 'https://miro.com',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Collaboration & Remote Work',
+      categorySlug: 'collaboration-remote-work',
+      subcategory: 'Virtual Whiteboard',
+      subcategorySlug: 'virtual-whiteboard',
+      description: 'Miro is an online collaborative whiteboard platform for distributed teams to brainstorm, plan, and collaborate.',
+      features: ['Infinite canvas', 'Templates', 'Real-time collaboration', 'Sticky notes', 'Diagrams', 'Frameworks', 'Video chat', 'Integrations'],
+      useCases: ['Brainstorming', 'Workshops', 'Agile planning', 'Mind mapping', 'Design thinking', 'Remote collaboration'],
+      tags: ['whiteboard', 'collaboration', 'brainstorming', 'visual', 'miro'],
+      rating: 4.7,
+      reviewCount: 12300,
+      alternatives: ['Mural', 'FigJam', 'Microsoft Whiteboard'],
+      integrations: ['Slack', 'Microsoft Teams', 'Jira', 'Zoom'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free plan available, Team from $8/member/month',
+        url: 'https://miro.com/pricing/',
+        description: 'Free and paid tiers'
+      }
+    },
+    {
+      name: 'Mural',
+      slug: 'mural',
+      tagline: 'Visual collaboration workspace',
+      logoUrl: '/logos/mural.png',
+      website: 'https://www.mural.co',
+      pricing: 'paid',
+      badges: ['featured'],
+      category: 'Collaboration & Remote Work',
+      categorySlug: 'collaboration-remote-work',
+      subcategory: 'Virtual Whiteboard',
+      subcategorySlug: 'virtual-whiteboard',
+      description: 'Mural is a digital workspace for visual collaboration, brainstorming, and design thinking.',
+      features: ['Visual canvas', 'Templates', 'Facilitation tools', 'Voting', 'Timer', 'Private mode', 'Integrations', 'Enterprise security'],
+      useCases: ['Design thinking', 'Workshops', 'Agile ceremonies', 'Strategic planning', 'Team alignment'],
+      tags: ['whiteboard', 'collaboration', 'visual', 'workshops', 'mural'],
+      rating: 4.6,
+      reviewCount: 4500,
+      alternatives: ['Miro', 'FigJam', 'Lucidspark'],
+      integrations: ['Microsoft Teams', 'Slack', 'Jira', 'Azure'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $9.99/member/month',
+        url: 'https://www.mural.co/pricing',
+        description: 'Team and enterprise plans'
+      }
+    }
   ]
   
 };
