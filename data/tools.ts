@@ -14714,6 +14714,482 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         description: 'Per-vessel enterprise pricing'
       }
     }
+  ],
+
+  // Aviation & Aerospace > Flight Operations
+  'flight-operations': [
+    {
+      name: 'ForeFlight',
+      slug: 'foreflight',
+      tagline: 'Flight planning and aviation weather app',
+      logoUrl: '/logos/foreflight.png',
+      website: 'https://www.foreflight.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Aviation & Aerospace',
+      categorySlug: 'aviation-aerospace',
+      subcategory: 'Flight Operations',
+      subcategorySlug: 'flight-operations',
+      description: 'ForeFlight is a comprehensive flight planning and aviation weather app for pilots, providing charts, weather, and flight planning tools.',
+      features: ['Flight planning', 'Weather briefing', 'Electronic charts', 'Airport info', 'Weight & balance', 'Logbook', 'Hazard advisor', 'Synthetic vision'],
+      useCases: ['Flight planning', 'Weather analysis', 'Navigation', 'Preflight briefing', 'Flight logging'],
+      tags: ['aviation', 'flight-planning', 'weather', 'charts', 'pilots'],
+      rating: 4.8,
+      reviewCount: 12300,
+      alternatives: ['Garmin Pilot', 'FltPlan Go', 'WingX'],
+      integrations: ['Garmin', 'ADS-B', 'Various avionics'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $99.99/year',
+        url: 'https://www.foreflight.com/products/',
+        description: 'Annual subscription plans'
+      }
+    },
+    {
+      name: 'RocketRoute',
+      slug: 'rocketroute',
+      tagline: 'Flight planning for business aviation',
+      logoUrl: '/logos/rocketroute.png',
+      website: 'https://www.rocketroute.com',
+      pricing: 'paid',
+      badges: ['enterprise'],
+      category: 'Aviation & Aerospace',
+      categorySlug: 'aviation-aerospace',
+      subcategory: 'Flight Operations',
+      subcategorySlug: 'flight-operations',
+      description: 'RocketRoute provides flight planning and flight ops software for business aviation with worldwide coverage.',
+      features: ['Flight planning', 'EUROCONTROL filing', 'Weather', 'NOTAMs', 'Airport database', 'Performance calculations', 'Fuel planning', 'Crew scheduling'],
+      useCases: ['Business aviation', 'International flight planning', 'Crew management', 'Flight operations'],
+      tags: ['aviation', 'business-aviation', 'flight-planning', 'international'],
+      rating: 4.5,
+      reviewCount: 1800,
+      alternatives: ['Universal Weather', 'ARINC Direct', 'FlightAware'],
+      integrations: ['EUROCONTROL', 'FAA', 'Various authorities'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From €99/month',
+        url: 'https://www.rocketroute.com/pricing',
+        description: 'Subscription based on features'
+      }
+    }
+  ],
+
+  // Mining & Resources > Mine Planning
+  'mine-planning': [
+    {
+      name: 'Deswik',
+      slug: 'deswik',
+      tagline: 'Mining software solutions',
+      logoUrl: '/logos/deswik.png',
+      website: 'https://www.deswik.com',
+      pricing: 'enterprise',
+      badges: ['enterprise'],
+      category: 'Mining & Resources',
+      categorySlug: 'mining-resources',
+      subcategory: 'Mine Planning',
+      subcategorySlug: 'mine-planning',
+      description: 'Deswik provides comprehensive mine planning software for strategic planning, scheduling, and optimization.',
+      features: ['Strategic planning', 'Tactical scheduling', 'Operational planning', 'Modeling', 'Optimization', 'Reporting', 'Drill & blast', 'Surveying'],
+      useCases: ['Mine planning', 'Production scheduling', 'Resource modeling', 'Mine design', 'Optimization'],
+      tags: ['mining', 'planning', 'scheduling', 'optimization', 'enterprise'],
+      rating: 4.4,
+      reviewCount: 280,
+      alternatives: ['Surpac', 'MineSched', 'GEOVIA'],
+      integrations: ['Various mining systems'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.deswik.com/contact',
+        description: 'Enterprise licensing'
+      }
+    }
+  ],
+
+  // Forestry & Timber > Forest Management
+  'forest-management': [
+    {
+      name: 'ForestMetrix',
+      slug: 'forestmetrix',
+      tagline: 'Forest inventory and cruising software',
+      logoUrl: '/logos/forestmetrix.png',
+      website: 'https://www.forestrysoftware.com',
+      pricing: 'paid',
+      badges: ['featured'],
+      category: 'Forestry & Timber',
+      categorySlug: 'forestry-timber',
+      subcategory: 'Forest Management',
+      subcategorySlug: 'forest-management',
+      description: 'ForestMetrix provides forest inventory and cruising software for foresters and timber companies.',
+      features: ['Timber cruising', 'Inventory management', 'GPS integration', 'Species tracking', 'Volume calculations', 'Reporting', 'Mobile data collection', 'Mapping'],
+      useCases: ['Forest inventory', 'Timber cruising', 'Stand assessment', 'Volume estimation', 'Forest planning'],
+      tags: ['forestry', 'timber', 'inventory', 'cruising', 'gps'],
+      rating: 4.3,
+      reviewCount: 180,
+      alternatives: ['CruiseManager', 'Forest Metrix', 'Timbeter'],
+      integrations: ['GPS devices', 'GIS systems'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'Contact for pricing',
+        url: 'https://www.forestrysoftware.com/contact',
+        description: 'License fees'
+      }
+    }
+  ],
+
+  // Fishing & Aquaculture > Fishing Fleet
+  'fishing-fleet': [
+    {
+      name: 'FishTalk',
+      slug: 'fishtalk',
+      tagline: 'Fleet management for commercial fishing',
+      logoUrl: '/logos/fishtalk.png',
+      website: 'https://www.fishtalk.com',
+      pricing: 'paid',
+      badges: ['featured'],
+      category: 'Fishing & Aquaculture',
+      categorySlug: 'fishing-aquaculture',
+      subcategory: 'Fleet Management',
+      subcategorySlug: 'fishing-fleet',
+      description: 'FishTalk provides fleet management and fish tracking software for commercial fishing operations.',
+      features: ['Vessel tracking', 'Catch reporting', 'Quota management', 'Trip planning', 'Weather data', 'E-logbook', 'Compliance', 'Analytics'],
+      useCases: ['Fleet tracking', 'Catch documentation', 'Quota compliance', 'Trip management', 'Fishing operations'],
+      tags: ['fishing', 'fleet', 'catch-tracking', 'compliance', 'commercial'],
+      rating: 4.2,
+      reviewCount: 220,
+      alternatives: ['OceanManager', 'FishOnline', 'CatchLog'],
+      integrations: ['VMS systems', 'Regulatory reporting'],
+      pricingDetails: {
+        type: 'paid',
+      price: 'Contact for pricing',
+        url: 'https://www.fishtalk.com/contact',
+        description: 'Per-vessel pricing'
+      }
+    }
+  ],
+
+  // Manufacturing & Supply Chain > ERP Systems
+  'erp-systems': [
+    {
+      name: 'SAP S/4HANA',
+      slug: 'sap-s4hana',
+      tagline: 'Next-generation ERP suite',
+      logoUrl: '/logos/sap.png',
+      website: 'https://www.sap.com/products/s4hana-erp.html',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Manufacturing & Supply Chain',
+      categorySlug: 'manufacturing-supply-chain',
+      subcategory: 'ERP Systems',
+      subcategorySlug: 'erp-systems',
+      description: 'SAP S/4HANA is an intelligent ERP system with built-in AI and machine learning for enterprise resource planning.',
+      features: ['Financial management', 'Supply chain', 'Manufacturing', 'Sales & service', 'Asset management', 'Analytics', 'AI capabilities', 'Cloud & on-premise'],
+      useCases: ['Enterprise ERP', 'Supply chain management', 'Financial planning', 'Manufacturing operations', 'Business analytics'],
+      tags: ['erp', 'enterprise', 'sap', 'manufacturing', 'finance'],
+      rating: 4.3,
+      reviewCount: 2400,
+      alternatives: ['Oracle ERP Cloud', 'Microsoft Dynamics 365', 'NetSuite'],
+      integrations: ['Comprehensive SAP ecosystem'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Custom enterprise pricing',
+        url: 'https://www.sap.com/products/s4hana-erp.html',
+        description: 'Contact SAP for pricing'
+      }
+    },
+    {
+      name: 'NetSuite',
+      slug: 'netsuite',
+      tagline: 'Cloud ERP for growing businesses',
+      logoUrl: '/logos/netsuite.png',
+      website: 'https://www.netsuite.com',
+      pricing: 'enterprise',
+      badges: ['popular', 'enterprise'],
+      category: 'Manufacturing & Supply Chain',
+      categorySlug: 'manufacturing-supply-chain',
+      subcategory: 'ERP Systems',
+      subcategorySlug: 'erp-systems',
+      description: 'NetSuite is a cloud-based ERP system that manages accounting, financials, CRM, and e-commerce in one platform.',
+      features: ['Financial management', 'CRM', 'E-commerce', 'Inventory', 'Order management', 'Reporting', 'Multi-subsidiary', 'Global business'],
+      useCases: ['Business management', 'Financial planning', 'Order processing', 'Inventory management', 'Multi-entity management'],
+      tags: ['erp', 'cloud', 'financials', 'crm', 'netsuite'],
+      rating: 4.1,
+      reviewCount: 3200,
+      alternatives: ['SAP', 'Microsoft Dynamics', 'Sage Intacct'],
+      integrations: ['SuiteApps marketplace'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'From $999/month base fee',
+        url: 'https://www.netsuite.com/portal/products/netsuite/pricing.shtml',
+        description: 'Base fee + per-user pricing'
+      }
+    }
+  ],
+
+  // IoT & Smart Devices > Smart Home
+  'smart-home': [
+    {
+      name: 'SmartThings',
+      slug: 'smartthings',
+      tagline: 'Smart home automation platform',
+      logoUrl: '/logos/smartthings.png',
+      website: 'https://www.smartthings.com',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'IoT & Smart Devices',
+      categorySlug: 'iot-smart-devices',
+      subcategory: 'Smart Home',
+      subcategorySlug: 'smart-home',
+      description: 'SmartThings is Samsung\'s smart home platform that connects and controls compatible devices through one app.',
+      features: ['Device control', 'Automation', 'Scenes', 'Voice control', 'Security monitoring', 'Energy management', 'Multi-device support', 'Routines'],
+      useCases: ['Home automation', 'Device control', 'Security monitoring', 'Energy management', 'Scene creation'],
+      tags: ['smart-home', 'iot', 'automation', 'samsung', 'hub'],
+      rating: 4.3,
+      reviewCount: 45600,
+      alternatives: ['Home Assistant', 'Hubitat', 'Apple HomeKit'],
+      integrations: ['1000+ compatible devices'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free app, hub hardware varies',
+        url: 'https://www.smartthings.com',
+        description: 'Free software, optional hardware'
+      }
+    },
+    {
+      name: 'Home Assistant',
+      slug: 'home-assistant',
+      tagline: 'Open source home automation',
+      logoUrl: '/logos/homeassistant.png',
+      website: 'https://www.home-assistant.io',
+      pricing: 'open-source',
+      badges: ['community-favorite', 'trending'],
+      category: 'IoT & Smart Devices',
+      categorySlug: 'iot-smart-devices',
+      subcategory: 'Smart Home',
+      subcategorySlug: 'smart-home',
+      description: 'Home Assistant is an open source home automation platform focused on privacy and local control.',
+      features: ['Local control', 'Privacy-focused', '2000+ integrations', 'Automation', 'Dashboard', 'Voice control', 'Energy monitoring', 'Add-ons'],
+      useCases: ['Home automation', 'Privacy-focused control', 'Advanced automation', 'Energy monitoring', 'Custom dashboards'],
+      tags: ['smart-home', 'open-source', 'automation', 'privacy', 'local'],
+      rating: 4.8,
+      reviewCount: 12300,
+      alternatives: ['SmartThings', 'Hubitat', 'openHAB'],
+      integrations: ['2000+ devices and services'],
+      pricingDetails: {
+        type: 'open-source',
+        price: 'Free open source',
+        url: 'https://www.home-assistant.io',
+        description: 'Completely free, optional cloud subscription'
+      }
+    }
+  ],
+
+  // Publishing Platforms > Publishing Platforms
+  'publishing-platforms': [
+    {
+      name: 'WordPress',
+      slug: 'wordpress',
+      tagline: 'The world\'s most popular website builder',
+      logoUrl: '/logos/wordpress.png',
+      website: 'https://wordpress.org',
+      pricing: 'open-source',
+      badges: ['popular', 'featured'],
+      category: 'Media & Publishing',
+      categorySlug: 'media-publishing',
+      subcategory: 'Publishing Platforms',
+      subcategorySlug: 'publishing-platforms',
+      description: 'WordPress is an open-source content management system powering over 40% of all websites.',
+      features: ['Content management', 'Themes', 'Plugins', 'Gutenberg editor', 'SEO-friendly', 'Multi-user', 'Media library', 'Customizable'],
+      useCases: ['Blogging', 'Business websites', 'E-commerce', 'Portfolio', 'News sites', 'Membership sites'],
+      tags: ['cms', 'publishing', 'blogging', 'open-source', 'websites'],
+      rating: 4.5,
+      reviewCount: 234000,
+      alternatives: ['Wix', 'Squarespace', 'Ghost'],
+      integrations: ['60,000+ plugins'],
+      pricingDetails: {
+        type: 'open-source',
+        price: 'Free software, hosting costs vary',
+        url: 'https://wordpress.org',
+        description: 'Free open source, self-hosted'
+      }
+    },
+    {
+      name: 'Medium',
+      slug: 'medium',
+      tagline: 'Platform for writers and readers',
+      logoUrl: '/logos/medium.png',
+      website: 'https://medium.com',
+      pricing: 'freemium',
+      badges: ['popular'],
+      category: 'Media & Publishing',
+      categorySlug: 'media-publishing',
+      subcategory: 'Publishing Platforms',
+      subcategorySlug: 'publishing-platforms',
+      description: 'Medium is an online publishing platform for writers to share stories and ideas with readers.',
+      features: ['Story editor', 'Publications', 'Member-only content', 'Partner program', 'Stats', 'Highlighting', 'Comments', 'Mobile apps'],
+      useCases: ['Blogging', 'Thought leadership', 'Content monetization', 'Building audience', 'Writing portfolio'],
+      tags: ['publishing', 'blogging', 'writing', 'content', 'medium'],
+      rating: 4.2,
+      reviewCount: 89000,
+      alternatives: ['Substack', 'Ghost', 'WordPress'],
+      integrations: ['Social media', 'Twitter', 'Various embed options'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free to publish, $5/month to read',
+        url: 'https://medium.com/membership',
+        description: 'Free publishing, optional membership'
+      }
+    }
+  ],
+
+  // Sports & Fitness > Team Management
+  'team-management': [
+    {
+      name: 'TeamSnap',
+      slug: 'teamsnap',
+      tagline: 'Sports team management app',
+      logoUrl: '/logos/teamsnap.png',
+      website: 'https://www.teamsnap.com',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Sports & Fitness',
+      categorySlug: 'sports-fitness',
+      subcategory: 'Team Management',
+      subcategorySlug: 'team-management',
+      description: 'TeamSnap is a sports team management app for scheduling, communication, and organization for youth and adult sports.',
+      features: ['Scheduling', 'Messaging', 'Roster management', 'Availability tracking', 'Payment collection', 'Live scores', 'Photo sharing', 'Mobile app'],
+      useCases: ['Youth sports', 'Team scheduling', 'Parent communication', 'Payment collection', 'Roster management'],
+      tags: ['sports', 'team-management', 'scheduling', 'youth-sports', 'communication'],
+      rating: 4.6,
+      reviewCount: 23400,
+      alternatives: ['SportsEngine', 'LeagueApps', 'TeamLinkt'],
+      integrations: ['Payment processors', 'Various sports apps'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free plan available, Premium from $9.99/month',
+        url: 'https://www.teamsnap.com/pricing',
+        description: 'Free and paid team plans'
+      }
+    },
+    {
+      name: 'SportsEngine',
+      slug: 'sportsengine',
+      tagline: 'Complete sports management platform',
+      logoUrl: '/logos/sportsengine.png',
+      website: 'https://www.sportsengine.com',
+      pricing: 'paid',
+      badges: ['featured'],
+      category: 'Sports & Fitness',
+      categorySlug: 'sports-fitness',
+      subcategory: 'Team Management',
+      subcategorySlug: 'team-management',
+      description: 'SportsEngine provides comprehensive sports management software for leagues, clubs, and teams.',
+      features: ['Registration', 'Scheduling', 'Websites', 'Communication', 'Payments', 'Team management', 'Mobile app', 'Volunteer management'],
+      useCases: ['League management', 'Registration', 'Team coordination', 'Communication', 'Website building'],
+      tags: ['sports', 'league-management', 'registration', 'teams'],
+      rating: 4.3,
+      reviewCount: 8900,
+      alternatives: ['TeamSnap', 'LeagueApps', 'Blue Sombrero'],
+      integrations: ['Payment processing', 'Background checks'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'Contact for pricing',
+        url: 'https://www.sportsengine.com/contact',
+        description: 'Custom pricing for organizations'
+      }
+    }
+  ],
+
+  // Automotive > Dealership Management
+  'dealership-management': [
+    {
+      name: 'DealerSocket',
+      slug: 'dealersocket',
+      tagline: 'Automotive dealership management system',
+      logoUrl: '/logos/dealersocket.png',
+      website: 'https://www.dealersocket.com',
+      pricing: 'enterprise',
+      badges: ['enterprise'],
+      category: 'Automotive',
+      categorySlug: 'automotive',
+      subcategory: 'Dealership Management',
+      subcategorySlug: 'dealership-management',
+      description: 'DealerSocket provides a complete dealership management system (DMS) for automotive dealers.',
+      features: ['DMS', 'CRM', 'Inventory management', 'Finance & insurance', 'Service scheduling', 'Marketing automation', 'Reporting', 'Integration hub'],
+      useCases: ['Dealership operations', 'Sales management', 'Service scheduling', 'Customer management', 'Inventory tracking'],
+      tags: ['automotive', 'dms', 'dealership', 'crm', 'inventory'],
+      rating: 4.2,
+      reviewCount: 890,
+      alternatives: ['CDK Global', 'Reynolds & Reynolds', 'Dealertrack'],
+      integrations: ['OEM systems', 'Third-party tools'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.dealersocket.com/contact',
+        description: 'Enterprise pricing for dealerships'
+      }
+    }
+  ],
+
+  // Telecommunications > Network Management
+  'network-management': [
+    {
+      name: 'SolarWinds Network Performance Monitor',
+      slug: 'solarwinds-npm',
+      tagline: 'Network monitoring and management',
+      logoUrl: '/logos/solarwinds.png',
+      website: 'https://www.solarwinds.com/network-performance-monitor',
+      pricing: 'paid',
+      badges: ['popular', 'enterprise'],
+      category: 'Telecommunications',
+      categorySlug: 'telecommunications',
+      subcategory: 'Network Management',
+      subcategorySlug: 'network-management',
+      description: 'SolarWinds NPM provides comprehensive network monitoring with fault, availability, and performance management.',
+      features: ['Network discovery', 'Performance monitoring', 'Fault detection', 'Traffic analysis', 'Alerts', 'Custom dashboards', 'Network topology', 'Reporting'],
+      useCases: ['Network monitoring', 'Performance management', 'Troubleshooting', 'Capacity planning', 'Network visibility'],
+      tags: ['network', 'monitoring', 'infrastructure', 'performance', 'enterprise'],
+      rating: 4.4,
+      reviewCount: 2300,
+      alternatives: ['PRTG', 'Nagios', 'Zabbix'],
+      integrations: ['SNMP', 'WMI', 'Various protocols'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $2,995 perpetual license',
+        url: 'https://www.solarwinds.com/network-performance-monitor/pricing',
+        description: 'Perpetual or subscription licensing'
+      }
+    }
+  ],
+
+  // Fashion & Apparel > Fashion Design
+  'fashion-design': [
+    {
+      name: 'CLO 3D',
+      slug: 'clo-3d',
+      tagline: '3D fashion design software',
+      logoUrl: '/logos/clo3d.png',
+      website: 'https://www.clo3d.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Fashion & Apparel',
+      categorySlug: 'fashion-apparel',
+      subcategory: 'Fashion Design',
+      subcategorySlug: 'fashion-design',
+      description: 'CLO is professional 3D fashion design software for creating virtual garments and realistic fabric simulations.',
+      features: ['3D garment design', 'Pattern making', 'Fabric simulation', 'Rendering', 'Animation', 'Tech packs', 'Collaboration', 'AR viewing'],
+      useCases: ['Fashion design', 'Pattern making', 'Virtual sampling', 'Product visualization', 'Tech pack creation'],
+      tags: ['fashion', '3d-design', 'apparel', 'patterns', 'cad'],
+      rating: 4.5,
+      reviewCount: 1200,
+      alternatives: ['Browzwear', 'Optitex', 'Marvelous Designer'],
+      integrations: ['Adobe', 'Various CAD tools'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $50/month',
+        url: 'https://www.clo3d.com/pricing',
+        description: 'Monthly or annual subscription'
+      }
+    }
   ]
   
 };
