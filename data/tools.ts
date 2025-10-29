@@ -13360,6 +13360,528 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         description: 'Free plan for up to 100 items, paid for more'
       }
     }
+  ],
+
+  // Human Resources > Recruitment
+  'recruitment': [
+    {
+      name: 'Greenhouse',
+      slug: 'greenhouse',
+      tagline: 'Hiring software to help you find better candidates',
+      logoUrl: '/logos/greenhouse.png',
+      website: 'https://www.greenhouse.io',
+      pricing: 'enterprise',
+      badges: ['popular', 'featured', 'enterprise'],
+      category: 'Human Resources',
+      categorySlug: 'human-resources',
+      subcategory: 'Recruitment',
+      subcategorySlug: 'recruitment',
+      description: 'Greenhouse is an applicant tracking system and recruiting software designed to optimize your entire recruiting process.',
+      features: ['Applicant tracking', 'Interview scheduling', 'Candidate scoring', 'Analytics & reporting', 'Job board posting', 'Email templates', 'Mobile app', 'Integrations'],
+      useCases: ['Talent acquisition', 'Candidate management', 'Interview coordination', 'Recruiting analytics', 'Hiring workflow', 'Team collaboration'],
+      tags: ['recruiting', 'ats', 'hiring', 'hr', 'talent-acquisition'],
+      rating: 4.4,
+      reviewCount: 3400,
+      alternatives: ['Lever', 'Workable', 'BambooHR'],
+      integrations: ['LinkedIn', 'Indeed', 'Slack', 'Google Calendar'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Custom enterprise pricing',
+        url: 'https://www.greenhouse.io/pricing',
+        description: 'Enterprise pricing based on company size'
+      }
+    },
+    {
+      name: 'Lever',
+      slug: 'lever',
+      tagline: 'ATS and CRM for modern recruiting teams',
+      logoUrl: '/logos/lever.png',
+      website: 'https://www.lever.co',
+      pricing: 'enterprise',
+      badges: ['featured', 'enterprise'],
+      category: 'Human Resources',
+      categorySlug: 'human-resources',
+      subcategory: 'Recruitment',
+      subcategorySlug: 'recruitment',
+      description: 'Lever combines ATS and CRM to help recruiting teams source, nurture, and hire top talent.',
+      features: ['Talent CRM', 'Pipeline management', 'Interview kits', 'Analytics', 'Diversity insights', 'Candidate nurturing', 'Automation', 'Collaboration tools'],
+      useCases: ['Recruiting', 'Talent sourcing', 'Pipeline building', 'Candidate engagement', 'Hiring analytics'],
+      tags: ['ats', 'recruiting', 'crm', 'hiring', 'talent'],
+      rating: 4.3,
+      reviewCount: 2100,
+      alternatives: ['Greenhouse', 'Workable', 'Ashby'],
+      integrations: ['LinkedIn', 'Gmail', 'Slack', 'Zoom'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Custom pricing',
+        url: 'https://www.lever.co/pricing',
+        description: 'Contact for pricing'
+      }
+    }
+  ],
+
+  // Customer Support > Help Desk
+  'help-desk': [
+    {
+      name: 'Zendesk',
+      slug: 'zendesk',
+      tagline: 'Customer service software and support ticket system',
+      logoUrl: '/logos/zendesk.png',
+      website: 'https://www.zendesk.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured', 'enterprise'],
+      category: 'Customer Support',
+      categorySlug: 'customer-support',
+      subcategory: 'Help Desk',
+      subcategorySlug: 'help-desk',
+      description: 'Zendesk is a customer service platform that brings organizations and customers closer together.',
+      features: ['Ticketing system', 'Multi-channel support', 'Help center', 'Live chat', 'Analytics', 'Automation', 'Mobile app', 'Integrations'],
+      useCases: ['Customer support', 'Ticket management', 'Help center', 'Support analytics', 'Team collaboration', 'SLA management'],
+      tags: ['helpdesk', 'customer-support', 'ticketing', 'support', 'zendesk'],
+      rating: 4.3,
+      reviewCount: 15600,
+      alternatives: ['Freshdesk', 'Intercom', 'Help Scout'],
+      integrations: ['Slack', 'Salesforce', 'Jira', 'Shopify'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $19/agent/month',
+        url: 'https://www.zendesk.com/pricing/',
+        description: 'Tiered pricing based on features'
+      }
+    },
+    {
+      name: 'Freshdesk',
+      slug: 'freshdesk',
+      tagline: 'Modern and easy customer support software',
+      logoUrl: '/logos/freshdesk.png',
+      website: 'https://freshdesk.com',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Customer Support',
+      categorySlug: 'customer-support',
+      subcategory: 'Help Desk',
+      subcategorySlug: 'help-desk',
+      description: 'Freshdesk is cloud-based helpdesk software that makes it easy to deliver exceptional customer service.',
+      features: ['Email ticketing', 'Team collaboration', 'Automation', 'Knowledge base', 'Reporting', 'SLA management', 'Mobile apps', 'Gamification'],
+      useCases: ['Customer support', 'Ticket tracking', 'Team productivity', 'Self-service', 'Support reporting'],
+      tags: ['helpdesk', 'support', 'ticketing', 'freshworks'],
+      rating: 4.5,
+      reviewCount: 8900,
+      alternatives: ['Zendesk', 'Help Scout', 'Zoho Desk'],
+      integrations: ['Slack', 'Microsoft Teams', 'Salesforce', 'Shopify'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free plan available, Growth from $15/agent/month',
+        url: 'https://freshdesk.com/pricing',
+        description: 'Free for unlimited agents with basic features'
+      }
+    }
+  ],
+
+  // Sales & CRM > CRM Platforms
+  'crm-platforms': [
+    {
+      name: 'Salesforce',
+      slug: 'salesforce-crm',
+      tagline: 'World\'s #1 CRM platform',
+      logoUrl: '/logos/salesforce.png',
+      website: 'https://www.salesforce.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured', 'enterprise'],
+      category: 'Sales & CRM',
+      categorySlug: 'sales-crm',
+      subcategory: 'CRM Platforms',
+      subcategorySlug: 'crm-platforms',
+      description: 'Salesforce is the world\'s #1 CRM platform that helps businesses connect with customers in a whole new way.',
+      features: ['Contact management', 'Opportunity tracking', 'Sales forecasting', 'Workflow automation', 'Analytics', 'Mobile app', 'AppExchange', 'AI insights'],
+      useCases: ['Sales management', 'Customer relationships', 'Pipeline tracking', 'Marketing automation', 'Customer service', 'Analytics'],
+      tags: ['crm', 'sales', 'enterprise', 'salesforce', 'cloud'],
+      rating: 4.4,
+      reviewCount: 45600,
+      alternatives: ['HubSpot CRM', 'Microsoft Dynamics', 'Zoho CRM'],
+      integrations: ['Outlook', 'Gmail', 'Slack', 'Mailchimp'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $25/user/month',
+        url: 'https://www.salesforce.com/pricing/',
+        description: 'Multiple editions available'
+      }
+    },
+    {
+      name: 'Microsoft Dynamics 365',
+      slug: 'dynamics-365',
+      tagline: 'Intelligent business applications',
+      logoUrl: '/logos/dynamics365.png',
+      website: 'https://dynamics.microsoft.com',
+      pricing: 'paid',
+      badges: ['enterprise', 'featured'],
+      category: 'Sales & CRM',
+      categorySlug: 'sales-crm',
+      subcategory: 'CRM Platforms',
+      subcategorySlug: 'crm-platforms',
+      description: 'Microsoft Dynamics 365 is a portfolio of intelligent business applications for CRM and ERP.',
+      features: ['Sales automation', 'Customer service', 'Field service', 'Marketing automation', 'AI insights', 'LinkedIn integration', 'Power BI analytics', 'Office 365 integration'],
+      useCases: ['Enterprise CRM', 'Sales management', 'Customer service', 'Marketing', 'Business intelligence'],
+      tags: ['crm', 'microsoft', 'enterprise', 'erp', 'business-apps'],
+      rating: 4.2,
+      reviewCount: 12300,
+      alternatives: ['Salesforce', 'SAP', 'Oracle CRM'],
+      integrations: ['Office 365', 'Teams', 'Power Platform', 'LinkedIn'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $65/user/month',
+        url: 'https://dynamics.microsoft.com/pricing/',
+        description: 'Module-based pricing'
+      }
+    }
+  ],
+
+  // Collaboration & Remote Work > Video Conferencing
+  'video-conferencing': [
+    {
+      name: 'Zoom',
+      slug: 'zoom',
+      tagline: 'Video meetings and collaboration',
+      logoUrl: '/logos/zoom.png',
+      website: 'https://zoom.us',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Collaboration & Remote Work',
+      categorySlug: 'collaboration-remote-work',
+      subcategory: 'Video Conferencing',
+      subcategorySlug: 'video-conferencing',
+      description: 'Zoom is a video-first communications platform that delivers happiness through frictionless collaboration.',
+      features: ['HD video meetings', 'Screen sharing', 'Recording', 'Breakout rooms', 'Virtual backgrounds', 'Webinars', 'Chat', 'Integrations'],
+      useCases: ['Video meetings', 'Webinars', 'Remote work', 'Online classes', 'Virtual events', 'Team collaboration'],
+      tags: ['video-conferencing', 'meetings', 'remote-work', 'webinars', 'zoom'],
+      rating: 4.5,
+      reviewCount: 234000,
+      alternatives: ['Microsoft Teams', 'Google Meet', 'Webex'],
+      integrations: ['Slack', 'Calendar', 'Salesforce', 'Dropbox'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free plan available, Pro from $149.90/year/user',
+        url: 'https://zoom.us/pricing',
+        description: 'Free 40-minute meetings, paid for longer'
+      }
+    },
+    {
+      name: 'Microsoft Teams',
+      slug: 'microsoft-teams',
+      tagline: 'Chat, meetings, and collaboration in one app',
+      logoUrl: '/logos/teams.png',
+      website: 'https://www.microsoft.com/microsoft-teams',
+      pricing: 'freemium',
+      badges: ['popular', 'enterprise'],
+      category: 'Collaboration & Remote Work',
+      categorySlug: 'collaboration-remote-work',
+      subcategory: 'Video Conferencing',
+      subcategorySlug: 'video-conferencing',
+      description: 'Microsoft Teams combines workplace chat, video meetings, file storage, and application integration.',
+      features: ['Video meetings', 'Team chat', 'File sharing', 'Office integration', 'Screen sharing', 'Apps', 'Recording', 'Live events'],
+      useCases: ['Team collaboration', 'Video meetings', 'Remote work', 'Project management', 'File collaboration'],
+      tags: ['video-conferencing', 'collaboration', 'microsoft', 'chat', 'meetings'],
+      rating: 4.4,
+      reviewCount: 156000,
+      alternatives: ['Zoom', 'Slack', 'Google Meet'],
+      integrations: ['Office 365', 'SharePoint', 'OneDrive', 'Power Platform'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free plan available, included with Microsoft 365',
+        url: 'https://www.microsoft.com/microsoft-teams/compare-microsoft-teams-options',
+        description: 'Free version and Microsoft 365 plans'
+      }
+    }
+  ],
+
+  // Cloud & Infrastructure > Cloud Hosting
+  'cloud-hosting': [
+    {
+      name: 'Amazon Web Services (AWS)',
+      slug: 'aws',
+      tagline: 'Cloud computing services',
+      logoUrl: '/logos/aws.png',
+      website: 'https://aws.amazon.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured', 'enterprise'],
+      category: 'Cloud & Infrastructure',
+      categorySlug: 'cloud-infrastructure',
+      subcategory: 'Cloud Hosting',
+      subcategorySlug: 'cloud-hosting',
+      description: 'Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services.',
+      features: ['Compute services', 'Storage', 'Databases', 'Networking', 'Machine learning', 'Analytics', 'Security', 'Global infrastructure'],
+      useCases: ['Web hosting', 'Data storage', 'Machine learning', 'Enterprise applications', 'Disaster recovery', 'Big data'],
+      tags: ['cloud', 'hosting', 'aws', 'infrastructure', 'saas'],
+      rating: 4.5,
+      reviewCount: 67800,
+      alternatives: ['Google Cloud', 'Microsoft Azure', 'DigitalOcean'],
+      integrations: ['Extensive API ecosystem'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'Pay-as-you-go pricing',
+        url: 'https://aws.amazon.com/pricing/',
+        description: 'Usage-based pricing for all services'
+      }
+    },
+    {
+      name: 'Google Cloud Platform',
+      slug: 'google-cloud',
+      tagline: 'Cloud services for building and scaling',
+      logoUrl: '/logos/gcp.png',
+      website: 'https://cloud.google.com',
+      pricing: 'paid',
+      badges: ['popular', 'enterprise'],
+      category: 'Cloud & Infrastructure',
+      categorySlug: 'cloud-infrastructure',
+      subcategory: 'Cloud Hosting',
+      subcategorySlug: 'cloud-hosting',
+      description: 'Google Cloud Platform provides cloud computing services that run on the same infrastructure that Google uses.',
+      features: ['Compute Engine', 'Cloud Storage', 'BigQuery', 'Kubernetes Engine', 'AI/ML services', 'Serverless', 'Networking', 'Security'],
+      useCases: ['App hosting', 'Data analytics', 'Machine learning', 'Container orchestration', 'Big data', 'Enterprise workloads'],
+      tags: ['cloud', 'gcp', 'google', 'hosting', 'infrastructure'],
+      rating: 4.6,
+      reviewCount: 45600,
+      alternatives: ['AWS', 'Azure', 'IBM Cloud'],
+      integrations: ['Google Workspace', 'Firebase', 'Anthos'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'Pay-as-you-go',
+        url: 'https://cloud.google.com/pricing',
+        description: 'Free tier + usage-based pricing'
+      }
+    }
+  ],
+
+  // Construction & Architecture > CAD Software
+  'cad-software': [
+    {
+      name: 'AutoCAD',
+      slug: 'autocad',
+      tagline: 'Professional CAD and drafting software',
+      logoUrl: '/logos/autocad.png',
+      website: 'https://www.autodesk.com/products/autocad',
+      pricing: 'paid',
+      badges: ['popular', 'featured', 'enterprise'],
+      category: 'Construction & Architecture',
+      categorySlug: 'construction-architecture',
+      subcategory: 'CAD Software',
+      subcategorySlug: 'cad-software',
+      description: 'AutoCAD is professional computer-aided design software for 2D and 3D drafting, drawing, and modeling.',
+      features: ['2D drafting', '3D modeling', 'Collaboration tools', 'Cloud storage', 'Mobile app', 'Automation', 'Industry toolsets', 'PDF import/export'],
+      useCases: ['Architectural design', 'Engineering drawings', 'Construction plans', 'Manufacturing design', 'MEP design'],
+      tags: ['cad', 'design', 'drafting', 'autodesk', '3d-modeling'],
+      rating: 4.5,
+      reviewCount: 34500,
+      alternatives: ['SketchUp', 'Revit', 'SolidWorks'],
+      integrations: ['Revit', 'BIM 360', 'Navisworks', 'AutoCAD mobile'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $1,865/year',
+        url: 'https://www.autodesk.com/products/autocad/overview',
+        description: 'Annual subscription'
+      }
+    },
+    {
+      name: 'SketchUp',
+      slug: 'sketchup',
+      tagline: '3D design software for everyone',
+      logoUrl: '/logos/sketchup.png',
+      website: 'https://www.sketchup.com',
+      pricing: 'freemium',
+      badges: ['popular'],
+      category: 'Construction & Architecture',
+      categorySlug: 'construction-architecture',
+      subcategory: 'CAD Software',
+      subcategorySlug: 'cad-software',
+      description: 'SketchUp is an easy-to-use 3D modeling software for architecture, interior design, landscape architecture, and engineering.',
+      features: ['3D modeling', 'Extensions', '3D Warehouse', 'LayOut', 'AR/VR viewing', 'Cloud storage', 'Collaboration', 'Mobile viewing'],
+      useCases: ['Architectural design', '3D visualization', 'Interior design', 'Woodworking', 'Game design'],
+      tags: ['cad', '3d-modeling', 'architecture', 'design', 'sketchup'],
+      rating: 4.4,
+      reviewCount: 18900,
+      alternatives: ['AutoCAD', 'Revit', 'Rhino'],
+      integrations: ['V-Ray', 'Enscape', 'Lumion', 'Extensions marketplace'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free web version, Pro from $299/year',
+        url: 'https://www.sketchup.com/plans-and-pricing',
+        description: 'Free for personal use, paid for professionals'
+      }
+    }
+  ],
+
+  // Event Management > Ticketing
+  'ticketing': [
+    {
+      name: 'Eventbrite',
+      slug: 'eventbrite',
+      tagline: 'Event ticketing and registration platform',
+      logoUrl: '/logos/eventbrite.png',
+      website: 'https://www.eventbrite.com',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Event Management',
+      categorySlug: 'event-management',
+      subcategory: 'Ticketing',
+      subcategorySlug: 'ticketing',
+      description: 'Eventbrite is a global platform for live experiences that allows anyone to create, share, find and attend events.',
+      features: ['Online ticketing', 'Registration', 'Marketing tools', 'Mobile app', 'Analytics', 'Integrations', 'Check-in app', 'Seating charts'],
+      useCases: ['Event ticketing', 'Registration management', 'Event marketing', 'Attendee management', 'Virtual events'],
+      tags: ['events', 'ticketing', 'registration', 'eventbrite'],
+      rating: 4.4,
+      reviewCount: 12300,
+      alternatives: ['Ticket Tailor', 'Ticketmaster', 'Universe'],
+      integrations: ['Mailchimp', 'Salesforce', 'PayPal', 'Zoom'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free events available, 3.5% + $1.59 per ticket',
+        url: 'https://www.eventbrite.com/l/sell-tickets/',
+        description: 'Free for free events, fees on paid tickets'
+      }
+    },
+    {
+      name: 'Ticket Tailor',
+      slug: 'ticket-tailor',
+      tagline: 'Low-cost event ticketing with no booking fees',
+      logoUrl: '/logos/tickettailor.png',
+      website: 'https://www.tickettailor.com',
+      pricing: 'paid',
+      badges: ['trending'],
+      category: 'Event Management',
+      categorySlug: 'event-management',
+      subcategory: 'Ticketing',
+      subcategorySlug: 'ticketing',
+      description: 'Ticket Tailor is a DIY ticketing platform with low fixed fees and no booking fees passed on to customers.',
+      features: ['No booking fees', 'Customizable pages', 'Seating plans', 'Check-in app', 'Box office', 'Analytics', 'Email marketing', 'Widgets'],
+      useCases: ['Event ticketing', 'Box office sales', 'Reserved seating', 'Free events', 'Recurring events'],
+      tags: ['ticketing', 'events', 'low-cost', 'no-fees'],
+      rating: 4.7,
+      reviewCount: 3400,
+      alternatives: ['Eventbrite', 'TicketSource', 'Humanitix'],
+      integrations: ['Mailchimp', 'Zoom', 'Zapier', 'WordPress'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From £29/month or 1.25% per ticket',
+        url: 'https://www.tickettailor.com/pricing/',
+        description: 'Fixed monthly fee or per-ticket pricing'
+      }
+    }
+  ],
+
+  // Food & Beverage > POS Systems
+  'pos-systems': [
+    {
+      name: 'Square POS',
+      slug: 'square-pos',
+      tagline: 'Complete point of sale system for businesses',
+      logoUrl: '/logos/square.png',
+      website: 'https://squareup.com/us/en/point-of-sale',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Food & Beverage',
+      categorySlug: 'food-beverage',
+      subcategory: 'POS Systems',
+      subcategorySlug: 'pos-systems',
+      description: 'Square POS is a complete point of sale system for restaurants, retail, and service businesses.',
+      features: ['Payment processing', 'Inventory management', 'Employee management', 'Analytics', 'Customer directory', 'Invoicing', 'Online store', 'Hardware integration'],
+      useCases: ['Restaurant POS', 'Retail sales', 'Payment processing', 'Inventory tracking', 'Customer management'],
+      tags: ['pos', 'payments', 'retail', 'restaurant', 'square'],
+      rating: 4.5,
+      reviewCount: 45600,
+      alternatives: ['Toast', 'Clover', 'Lightspeed'],
+      integrations: ['QuickBooks', 'WooCommerce', 'BigCommerce', 'Mailchimp'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free software, 2.6% + 10¢ per transaction',
+        url: 'https://squareup.com/us/en/pricing',
+        description: 'Free POS software, payment processing fees apply'
+      }
+    },
+    {
+      name: 'Toast POS',
+      slug: 'toast-pos',
+      tagline: 'Restaurant POS and management system',
+      logoUrl: '/logos/toast.png',
+      website: 'https://pos.toasttab.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Food & Beverage',
+      categorySlug: 'food-beverage',
+      subcategory: 'POS Systems',
+      subcategorySlug: 'pos-systems',
+      description: 'Toast is an all-in-one point-of-sale and restaurant management platform built specifically for restaurants.',
+      features: ['Order management', 'Menu management', 'Kitchen display', 'Online ordering', 'Delivery integration', 'Reporting', 'Employee management', 'Inventory'],
+      useCases: ['Restaurant operations', 'Order taking', 'Kitchen management', 'Online orders', 'Delivery management'],
+      tags: ['pos', 'restaurant', 'food-service', 'toast', 'hospitality'],
+      rating: 4.3,
+      reviewCount: 8900,
+      alternatives: ['Square', 'Clover', 'Lightspeed Restaurant'],
+      integrations: ['DoorDash', 'Uber Eats', 'Grubhub', 'QuickBooks'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $69/month + processing fees',
+        url: 'https://pos.toasttab.com/pricing',
+        description: 'Subscription + payment processing'
+      }
+    }
+  ],
+
+  // Beauty & Cosmetics > Salon Management
+  'salon-management': [
+    {
+      name: 'Vagaro',
+      slug: 'vagaro',
+      tagline: 'Salon and spa software for booking and payments',
+      logoUrl: '/logos/vagaro.png',
+      website: 'https://www.vagaro.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Beauty & Cosmetics',
+      categorySlug: 'beauty-cosmetics',
+      subcategory: 'Salon Management',
+      subcategorySlug: 'salon-management',
+      description: 'Vagaro is salon and spa software for online booking, POS, marketing, and customer management.',
+      features: ['Online booking', 'POS system', 'Calendar management', 'Marketing tools', 'Inventory', 'Payroll', 'Mobile app', 'Client profiles'],
+      useCases: ['Salon booking', 'Appointment scheduling', 'Payment processing', 'Client management', 'Marketing automation'],
+      tags: ['salon', 'spa', 'booking', 'beauty', 'appointments'],
+      rating: 4.5,
+      reviewCount: 15600,
+      alternatives: ['Mindbody', 'Booker', 'Fresha'],
+      integrations: ['QuickBooks', 'Mailchimp', 'Google Calendar'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $25/month',
+        url: 'https://www.vagaro.com/pricing',
+        description: 'Flat monthly fee per location'
+      }
+    },
+    {
+      name: 'Fresha',
+      slug: 'fresha',
+      tagline: 'Free salon booking and management software',
+      logoUrl: '/logos/fresha.png',
+      website: 'https://www.fresha.com',
+      pricing: 'free',
+      badges: ['popular', 'trending'],
+      category: 'Beauty & Cosmetics',
+      categorySlug: 'beauty-cosmetics',
+      subcategory: 'Salon Management',
+      subcategorySlug: 'salon-management',
+      description: 'Fresha is the world\'s largest booking platform for salons and spas, completely free for businesses.',
+      features: ['Free booking software', 'Online booking', 'POS system', 'Client management', 'Marketing', 'Inventory', 'Team management', 'Mobile app'],
+      useCases: ['Salon management', 'Online bookings', 'Client retention', 'Payment processing', 'Marketing'],
+      tags: ['salon', 'free', 'booking', 'spa', 'beauty'],
+      rating: 4.7,
+      reviewCount: 23400,
+      alternatives: ['Vagaro', 'Square Appointments', 'Booksy'],
+      integrations: ['Google', 'Instagram', 'Facebook'],
+      pricingDetails: {
+        type: 'free',
+        price: 'Free for businesses',
+        url: 'https://www.fresha.com/business',
+        description: 'No monthly fees, payment processing fees only'
+      }
+    }
   ]
   
 };
