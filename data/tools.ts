@@ -15909,6 +15909,180 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         description: 'Tiered pricing plans'
       }
     }
+  ],
+
+  // Real Estate & Property > Property Listing
+  'property-listing': [
+    {
+      name: 'Zillow Premier Agent',
+      slug: 'zillow-premier-agent',
+      tagline: 'Connect with home buyers and sellers',
+      logoUrl: '/logos/zillow.png',
+      website: 'https://www.zillow.com/agent-resources/premier-agent',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Real Estate & Property',
+      categorySlug: 'real-estate-property',
+      subcategory: 'Property Listing',
+      subcategorySlug: 'property-listing',
+      description: 'Zillow Premier Agent helps real estate professionals connect with buyers and sellers through the leading real estate marketplace.',
+      features: ['Lead generation', 'Mobile app', 'Market reports', 'Agent branding', 'Performance dashboard', 'Customer reviews', 'Featured listings', 'Local expertise'],
+      useCases: ['Real estate marketing', 'Lead generation', 'Property listings', 'Agent branding', 'Client acquisition'],
+      tags: ['real-estate', 'zillow', 'property', 'listings', 'agents'],
+      rating: 4.2,
+      reviewCount: 15000,
+      alternatives: ['Realtor.com', 'Redfin', 'Homes.com'],
+      integrations: ['CRM systems', 'MLS platforms', 'Marketing tools'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'Custom pricing based on location',
+        url: 'https://www.zillow.com/agent-resources/premier-agent',
+        description: 'Pay-per-lead pricing'
+      }
+    },
+    {
+      name: 'Realtor.com',
+      slug: 'realtor-com',
+      tagline: 'Find your way home',
+      logoUrl: '/logos/realtor.png',
+      website: 'https://www.realtor.com',
+      pricing: 'freemium',
+      badges: ['popular'],
+      category: 'Real Estate & Property',
+      categorySlug: 'real-estate-property',
+      subcategory: 'Property Listing',
+      subcategorySlug: 'property-listing',
+      description: 'Realtor.com is a leading real estate marketplace with MLS listings and tools for agents to market properties and connect with clients.',
+      features: ['MLS integration', 'Property search', 'Agent profiles', 'Market trends', 'Listing syndication', 'Lead routing', 'Mobile apps', 'Virtual tours'],
+      useCases: ['Property search', 'Agent marketing', 'Listing management', 'Market analysis', 'Lead generation'],
+      tags: ['real-estate', 'realtor', 'mls', 'property', 'listings'],
+      rating: 4.3,
+      reviewCount: 23000,
+      alternatives: ['Zillow', 'Redfin', 'Trulia'],
+      integrations: ['MLS systems', 'CRM platforms', 'Marketing automation'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free listing, premium features from $50/month',
+        url: 'https://www.realtor.com/advertising',
+        description: 'Free and paid options'
+      }
+    }
+  ],
+
+  // Real Estate & Property > Tenant Screening
+  'tenant-screening': [
+    {
+      name: 'TransUnion SmartMove',
+      slug: 'transunion-smartmove',
+      tagline: 'Tenant screening made simple',
+      logoUrl: '/logos/smartmove.png',
+      website: 'https://www.mysmartmove.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Real Estate & Property',
+      categorySlug: 'real-estate-property',
+      subcategory: 'Tenant Screening',
+      subcategorySlug: 'tenant-screening',
+      description: 'TransUnion SmartMove provides comprehensive tenant screening with credit reports, criminal background checks, and eviction history.',
+      features: ['Credit reports', 'Criminal background', 'Eviction history', 'Income verification', 'ID verification', 'Customizable screening', 'Fast results', 'Landlord protection'],
+      useCases: ['Tenant screening', 'Credit checks', 'Background verification', 'Rental applications', 'Risk assessment'],
+      tags: ['tenant-screening', 'credit-check', 'background', 'landlord', 'rental'],
+      rating: 4.5,
+      reviewCount: 8900,
+      alternatives: ['RentPrep', 'MyRental', 'Cozy'],
+      integrations: ['Property management software', 'Online applications'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $25 per report',
+        url: 'https://www.mysmartmove.com/SmartMove/pricing.page',
+        description: 'Pay-per-report pricing'
+      }
+    },
+    {
+      name: 'RentPrep',
+      slug: 'rentprep',
+      tagline: 'Tenant screening for landlords',
+      logoUrl: '/logos/rentprep.png',
+      website: 'https://www.rentprep.com',
+      pricing: 'paid',
+      badges: ['popular'],
+      category: 'Real Estate & Property',
+      categorySlug: 'real-estate-property',
+      subcategory: 'Tenant Screening',
+      subcategorySlug: 'tenant-screening',
+      description: 'RentPrep offers professional tenant screening services with credit reports, criminal checks, and eviction searches for landlords.',
+      features: ['Full credit reports', 'National criminal search', 'Eviction records', 'Sex offender search', 'Employment verification', 'Reference checks', '24/7 support', 'Fast turnaround'],
+      useCases: ['Landlord screening', 'Tenant verification', 'Risk mitigation', 'Rental decisions', 'Background checks'],
+      tags: ['tenant-screening', 'landlord', 'credit', 'criminal-check', 'eviction'],
+      rating: 4.7,
+      reviewCount: 5600,
+      alternatives: ['SmartMove', 'MyRental', 'TurboTenant'],
+      integrations: ['Property management platforms'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $21 per screening',
+        url: 'https://www.rentprep.com/pricing',
+        description: 'Per-screening pricing'
+      }
+    }
+  ],
+
+  // Healthcare & Medical > Appointment Scheduling  
+  'appointment-scheduling': [
+    {
+      name: 'Zocdoc',
+      slug: 'zocdoc',
+      tagline: 'Find and book doctors online',
+      logoUrl: '/logos/zocdoc.png',
+      website: 'https://www.zocdoc.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Healthcare & Medical',
+      categorySlug: 'healthcare-medical',
+      subcategory: 'Appointment Scheduling',
+      subcategorySlug: 'appointment-scheduling',
+      description: 'Zocdoc helps patients find and book appointments with healthcare providers, and helps practices fill their schedules.',
+      features: ['Online booking', 'Patient reviews', 'Insurance verification', 'Automated reminders', 'Waitlist management', 'Telehealth', 'Patient portal', 'Analytics'],
+      useCases: ['Medical appointments', 'Patient acquisition', 'Schedule management', 'Reducing no-shows', 'Healthcare marketing'],
+      tags: ['healthcare', 'appointments', 'medical', 'doctors', 'booking'],
+      rating: 4.4,
+      reviewCount: 18000,
+      alternatives: ['Healthgrades', 'Vitals', 'WebMD'],
+      integrations: ['EHR systems', 'Practice management', 'Billing software'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'Custom pricing per provider',
+        url: 'https://www.zocdoc.com/about/providers',
+        description: 'Subscription based'
+      }
+    },
+    {
+      name: 'SimplePractice',
+      slug: 'simplepractice',
+      tagline: 'Practice management for health & wellness',
+      logoUrl: '/logos/simplepractice.png',
+      website: 'https://www.simplepractice.com',
+      pricing: 'paid',
+      badges: ['popular', 'trending'],
+      category: 'Healthcare & Medical',
+      categorySlug: 'healthcare-medical',
+      subcategory: 'Appointment Scheduling',
+      subcategorySlug: 'appointment-scheduling',
+      description: 'SimplePractice is practice management software for health and wellness professionals with scheduling, billing, and telehealth.',
+      features: ['Online scheduling', 'Client portal', 'Telehealth', 'Billing & invoicing', 'Insurance claims', 'Notes & documentation', 'Client messaging', 'Credit card processing'],
+      useCases: ['Therapy practice', 'Mental health', 'Wellness services', 'Patient management', 'Telehealth sessions'],
+      tags: ['healthcare', 'therapy', 'appointments', 'practice-management', 'telehealth'],
+      rating: 4.6,
+      reviewCount: 9800,
+      alternatives: ['TherapyNotes', 'Practice Fusion', 'Kareo'],
+      integrations: ['Google Calendar', 'QuickBooks', 'Stripe', 'Insurance clearinghouses'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $29/month',
+        url: 'https://www.simplepractice.com/pricing',
+        description: 'Tiered pricing'
+      }
+    }
   ]
   
 };
