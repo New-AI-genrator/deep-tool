@@ -14292,6 +14292,428 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         description: 'One-time license fee'
       }
     }
+  ],
+
+  // Funeral & Memorial Services > Funeral Management
+  'funeral-management': [
+    {
+      name: 'Passare',
+      slug: 'passare',
+      tagline: 'Funeral home software and cremation software',
+      logoUrl: '/logos/passare.png',
+      website: 'https://www.passare.com',
+      pricing: 'paid',
+      badges: ['featured'],
+      category: 'Funeral & Memorial Services',
+      categorySlug: 'funeral-memorial',
+      subcategory: 'Funeral Home Management',
+      subcategorySlug: 'funeral-management',
+      description: 'Passare is funeral home management software that streamlines operations with case management, cremation tracking, and online arrangements.',
+      features: ['Case management', 'Cremation tracking', 'Online arrangements', 'Document management', 'Accounting', 'Reporting', 'Cremation software', 'Mobile app'],
+      useCases: ['Funeral home operations', 'Case tracking', 'Family communication', 'Cremation management', 'Document handling'],
+      tags: ['funeral', 'cremation', 'case-management', 'memorial'],
+      rating: 4.6,
+      reviewCount: 420,
+      alternatives: ['FrontRunner', 'Mortware', 'CFS'],
+      integrations: ['Accounting software', 'Various services'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'Contact for pricing',
+        url: 'https://www.passare.com/contact',
+        description: 'Custom pricing for funeral homes'
+      }
+    }
+  ],
+
+  // Wedding & Events > Wedding Planning
+  'wedding-planning': [
+    {
+      name: 'The Knot',
+      slug: 'the-knot',
+      tagline: 'Wedding planning tools and vendor marketplace',
+      logoUrl: '/logos/theknot.png',
+      website: 'https://www.theknot.com',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Wedding & Events',
+      categorySlug: 'wedding-events',
+      subcategory: 'Wedding Planning',
+      subcategorySlug: 'wedding-planning',
+      description: 'The Knot provides wedding planning tools including checklists, budget trackers, vendor search, and wedding websites.',
+      features: ['Planning checklist', 'Budget tool', 'Vendor marketplace', 'Wedding website', 'Guest list manager', 'Registry', 'Inspiration gallery', 'Mobile app'],
+      useCases: ['Wedding planning', 'Vendor search', 'Budget management', 'Guest management', 'Wedding website creation'],
+      tags: ['wedding', 'planning', 'vendors', 'registry', 'events'],
+      rating: 4.5,
+      reviewCount: 45600,
+      alternatives: ['WeddingWire', 'Zola', 'Minted'],
+      integrations: ['Various registries', 'Vendor partners'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free planning tools, vendor listings vary',
+        url: 'https://www.theknot.com',
+        description: 'Free for couples, vendors pay for listings'
+      }
+    },
+    {
+      name: 'Zola',
+      slug: 'zola',
+      tagline: 'All-in-one wedding planning platform',
+      logoUrl: '/logos/zola.png',
+      website: 'https://www.zola.com',
+      pricing: 'free',
+      badges: ['popular', 'trending'],
+      category: 'Wedding & Events',
+      categorySlug: 'wedding-events',
+      subcategory: 'Wedding Planning',
+      subcategorySlug: 'wedding-planning',
+      description: 'Zola is a free all-in-one wedding platform with planning tools, registry, wedding website, and guest management.',
+      features: ['Free wedding website', 'Universal registry', 'Guest list', 'Planning tools', 'Paper & invites', 'RSVP tracking', 'Seating chart', 'Mobile app'],
+      useCases: ['Wedding planning', 'Gift registry', 'Guest management', 'Invitation sending', 'Website creation'],
+      tags: ['wedding', 'registry', 'planning', 'free', 'invitations'],
+      rating: 4.7,
+      reviewCount: 23400,
+      alternatives: ['The Knot', 'WeddingWire', 'Minted'],
+      integrations: ['Major retailers', 'Cash fund'],
+      pricingDetails: {
+        type: 'free',
+        price: 'Free for all planning tools',
+        url: 'https://www.zola.com',
+        description: 'Completely free, revenue from registry purchases'
+      }
+    }
+  ],
+
+  // Waste & Recycling > Waste Routing
+  'waste-routing': [
+    {
+      name: 'Routeware',
+      slug: 'routeware',
+      tagline: 'Waste and recycling route optimization',
+      logoUrl: '/logos/routeware.png',
+      website: 'https://www.routeware.com',
+      pricing: 'enterprise',
+      badges: ['enterprise'],
+      category: 'Waste & Recycling',
+      categorySlug: 'waste-recycling',
+      subcategory: 'Route Management',
+      subcategorySlug: 'waste-routing',
+      description: 'Routeware provides waste and recycling collection software with route optimization, fleet management, and customer service tools.',
+      features: ['Route optimization', 'Fleet tracking', 'Customer portal', 'Mobile app', 'RFID integration', 'Analytics', 'Billing integration', 'Service verification'],
+      useCases: ['Waste collection routing', 'Fleet management', 'Customer service', 'Service verification', 'Route optimization'],
+      tags: ['waste', 'recycling', 'routing', 'fleet', 'optimization'],
+      rating: 4.3,
+      reviewCount: 280,
+      alternatives: ['Waste Logics', 'Routific', 'Fleet management systems'],
+      integrations: ['Billing systems', 'Fleet tracking', 'RFID readers'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Custom enterprise pricing',
+        url: 'https://www.routeware.com/contact',
+        description: 'Contact for pricing'
+      }
+    }
+  ],
+
+  // Security & Surveillance > Video Surveillance
+  'video-surveillance': [
+    {
+      name: 'Verkada',
+      slug: 'verkada',
+      tagline: 'Cloud-based security camera system',
+      logoUrl: '/logos/verkada.png',
+      website: 'https://www.verkada.com',
+      pricing: 'enterprise',
+      badges: ['trending', 'featured'],
+      category: 'Security & Surveillance',
+      categorySlug: 'security-surveillance',
+      subcategory: 'Video Surveillance',
+      subcategorySlug: 'video-surveillance',
+      description: 'Verkada provides enterprise cloud-based security cameras with built-in storage, AI analytics, and simple management.',
+      features: ['Cloud-based', 'Built-in storage', 'AI analytics', 'People & vehicle detection', 'Easy setup', 'Mobile access', 'Multi-site management', 'No NVR required'],
+      useCases: ['Enterprise security', 'Multi-location monitoring', 'Incident investigation', 'People counting', 'License plate recognition'],
+      tags: ['security', 'surveillance', 'cameras', 'cloud', 'ai'],
+      rating: 4.6,
+      reviewCount: 890,
+      alternatives: ['Avigilon', 'Milestone', 'Genetec'],
+      integrations: ['Access control', 'Alarm systems', 'APIs'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Custom pricing per camera',
+        url: 'https://www.verkada.com/contact',
+        description: 'Hardware + software subscription'
+      }
+    },
+    {
+      name: 'Milestone Systems',
+      slug: 'milestone',
+      tagline: 'Open platform video management software',
+      logoUrl: '/logos/milestone.png',
+      website: 'https://www.milestonesys.com',
+      pricing: 'paid',
+      badges: ['enterprise'],
+      category: 'Security & Surveillance',
+      categorySlug: 'security-surveillance',
+      subcategory: 'Video Surveillance',
+      subcategorySlug: 'video-surveillance',
+      description: 'Milestone XProtect is an open platform video management software that supports thousands of camera types.',
+      features: ['Open platform', 'Unlimited cameras', 'Multi-site', 'Video analytics', 'Mobile viewing', 'Integrations', 'Scalable', 'Evidence management'],
+      useCases: ['Enterprise surveillance', 'City surveillance', 'Retail security', 'Campus security', 'Critical infrastructure'],
+      tags: ['vms', 'surveillance', 'enterprise', 'security', 'cameras'],
+      rating: 4.4,
+      reviewCount: 1200,
+      alternatives: ['Genetec', 'Avigilon', 'Verkada'],
+      integrations: ['10,000+ camera models', 'Access control', 'Analytics'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'Per camera licensing',
+        url: 'https://www.milestonesys.com/solutions',
+        description: 'Perpetual or subscription licensing'
+      }
+    }
+  ],
+
+  // Printing & Publishing > Print Management
+  'print-management': [
+    {
+      name: 'Printavo',
+      slug: 'printavo',
+      tagline: 'Shop management software for screen printers',
+      logoUrl: '/logos/printavo.png',
+      website: 'https://www.printavo.com',
+      pricing: 'paid',
+      badges: ['popular'],
+      category: 'Printing & Publishing',
+      categorySlug: 'printing-publishing',
+      subcategory: 'Print Management',
+      subcategorySlug: 'print-management',
+      description: 'Printavo is shop management software designed specifically for custom screen printers and embroiderers.',
+      features: ['Order management', 'Production scheduling', 'Invoicing', 'Customer CRM', 'Inventory', 'Team management', 'Mockup designer', 'Reports'],
+      useCases: ['Screen printing', 'Order tracking', 'Production scheduling', 'Customer management', 'Invoicing'],
+      tags: ['printing', 'screen-printing', 'production', 'orders', 'apparel'],
+      rating: 4.7,
+      reviewCount: 1200,
+      alternatives: ['ShopWorks', 'InkSoft', 'DecoNetwork'],
+      integrations: ['QuickBooks', 'Payment processors', 'Various apps'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $165/month',
+        url: 'https://www.printavo.com/pricing',
+        description: 'Tiered pricing based on features'
+      }
+    }
+  ],
+
+  // Signage & Display > Digital Signage
+  'digital-signage': [
+    {
+      name: 'ScreenCloud',
+      slug: 'screencloud',
+      tagline: 'Digital signage made simple',
+      logoUrl: '/logos/screencloud.png',
+      website: 'https://screencloud.com',
+      pricing: 'paid',
+      badges: ['popular', 'trending'],
+      category: 'Signage & Display',
+      categorySlug: 'signage-display',
+      subcategory: 'Digital Signage',
+      subcategorySlug: 'digital-signage',
+      description: 'ScreenCloud is digital signage software that makes it easy to display content on screens throughout your business.',
+      features: ['Content management', 'Templates', 'Scheduling', 'Multi-screen', 'Apps library', 'Remote management', 'Playlists', 'Analytics'],
+      useCases: ['Office communication', 'Retail displays', 'Restaurant menus', 'Corporate communications', 'Wayfinding'],
+      tags: ['digital-signage', 'displays', 'content', 'screens', 'cloud'],
+      rating: 4.5,
+      reviewCount: 1800,
+      alternatives: ['Rise Vision', 'NoviSign', 'Yodeck'],
+      integrations: ['Google Slides', 'Canva', 'Social media', '100+ apps'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $20/screen/month',
+        url: 'https://screencloud.com/pricing',
+        description: 'Per-screen monthly pricing'
+      }
+    },
+    {
+      name: 'Yodeck',
+      slug: 'yodeck',
+      tagline: 'Affordable digital signage for everyone',
+      logoUrl: '/logos/yodeck.png',
+      website: 'https://www.yodeck.com',
+      pricing: 'freemium',
+      badges: ['trending'],
+      category: 'Signage & Display',
+      categorySlug: 'signage-display',
+      subcategory: 'Digital Signage',
+      subcategorySlug: 'digital-signage',
+      description: 'Yodeck is affordable cloud-based digital signage software with a free plan for single screens.',
+      features: ['Drag-and-drop editor', 'Scheduling', 'Widgets', 'Templates', 'Multi-zone layouts', 'Raspberry Pi support', 'Remote management', 'Analytics'],
+      useCases: ['Small business signage', 'Restaurant menus', 'Office displays', 'Retail advertising', 'Information screens'],
+      tags: ['digital-signage', 'affordable', 'cloud', 'raspberry-pi'],
+      rating: 4.6,
+      reviewCount: 920,
+      alternatives: ['ScreenCloud', 'Rise Vision', 'OptiSigns'],
+      integrations: ['Various media sources', 'Apps'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free for 1 screen, Plus from $7.99/screen/month',
+        url: 'https://www.yodeck.com/pricing/',
+        description: 'Free single screen, paid for more'
+      }
+    }
+  ],
+
+  // Laundry & Dry Cleaning > Laundry POS
+  'laundry-pos': [
+    {
+      name: 'Geelus',
+      slug: 'geelus',
+      tagline: 'Laundry and dry cleaning POS software',
+      logoUrl: '/logos/geelus.png',
+      website: 'https://www.geelus.com',
+      pricing: 'paid',
+      badges: ['featured'],
+      category: 'Laundry & Dry Cleaning',
+      categorySlug: 'laundry-dry-cleaning',
+      subcategory: 'POS Systems',
+      subcategorySlug: 'laundry-pos',
+      description: 'Geelus is comprehensive POS software for laundry and dry cleaning businesses with customer tracking and route management.',
+      features: ['POS system', 'Customer tracking', 'Route management', 'Barcode tagging', 'Inventory', 'Reporting', 'Text notifications', 'Mobile app'],
+      useCases: ['Dry cleaning POS', 'Customer management', 'Route tracking', 'Garment tracking', 'Pickup & delivery'],
+      tags: ['laundry', 'dry-cleaning', 'pos', 'barcode', 'routing'],
+      rating: 4.4,
+      reviewCount: 480,
+      alternatives: ['SPOT', 'Enlite POS', 'CleanCloud'],
+      integrations: ['Payment processors', 'SMS services'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $99/month',
+        url: 'https://www.geelus.com/pricing',
+        description: 'Monthly subscription'
+      }
+    }
+  ],
+
+  // Parking & Transportation > Parking Management
+  'parking-management': [
+    {
+      name: 'ParkHub',
+      slug: 'parkhub',
+      tagline: 'Parking and mobility management platform',
+      logoUrl: '/logos/parkhub.png',
+      website: 'https://www.parkhub.com',
+      pricing: 'enterprise',
+      badges: ['featured'],
+      category: 'Parking & Transportation',
+      categorySlug: 'parking-transportation',
+      subcategory: 'Parking Management',
+      subcategorySlug: 'parking-management',
+      description: 'ParkHub provides parking management software for venues, universities, and municipalities with reservations and payments.',
+      features: ['Online reservations', 'Mobile payments', 'Access control', 'Analytics', 'Dynamic pricing', 'Multi-location', 'Permit management', 'Enforcement'],
+      useCases: ['Venue parking', 'University parking', 'Event parking', 'Permit management', 'Revenue optimization'],
+      tags: ['parking', 'reservations', 'payments', 'access-control', 'events'],
+      rating: 4.5,
+      reviewCount: 680,
+      alternatives: ['ParkMobile', 'TIBA', 'Passport'],
+      integrations: ['Payment gateways', 'Access systems'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Custom pricing',
+        url: 'https://www.parkhub.com/contact',
+        description: 'Contact for enterprise pricing'
+      }
+    }
+  ],
+
+  // Vending & Kiosks > Vending Management
+  'vending-management': [
+    {
+      name: 'Parlevel',
+      slug: 'parlevel',
+      tagline: 'Vending management system',
+      logoUrl: '/logos/parlevel.png',
+      website: 'https://www.parlevel.com',
+      pricing: 'paid',
+      badges: ['popular'],
+      category: 'Vending & Kiosks',
+      categorySlug: 'vending-kiosks',
+      subcategory: 'Vending Management',
+      subcategorySlug: 'vending-management',
+      description: 'Parlevel provides vending management software with real-time inventory monitoring, route optimization, and cashless payments.',
+      features: ['Real-time inventory', 'Remote monitoring', 'Route optimization', 'Cashless payments', 'Pre-kitting', 'Analytics', 'Mobile app', 'Dynamic pricing'],
+      useCases: ['Vending operations', 'Inventory management', 'Route planning', 'Sales tracking', 'Cashless vending'],
+      tags: ['vending', 'inventory', 'telemetry', 'routing', 'cashless'],
+      rating: 4.3,
+      reviewCount: 520,
+      alternatives: ['Cantaloupe', 'Nayax', 'VendSoft'],
+      integrations: ['Payment systems', 'Telemetry devices'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'Contact for pricing',
+        url: 'https://www.parlevel.com/contact',
+        description: 'Per-machine pricing'
+      }
+    }
+  ],
+
+  // Lottery & Gaming > Lottery Management
+  'lottery-management': [
+    {
+      name: 'IGT',
+      slug: 'igt-lottery',
+      tagline: 'Lottery and gaming technology solutions',
+      logoUrl: '/logos/igt.png',
+      website: 'https://www.igt.com',
+      pricing: 'enterprise',
+      badges: ['enterprise'],
+      category: 'Lottery & Gaming',
+      categorySlug: 'lottery-gaming',
+      subcategory: 'Lottery Management',
+      subcategorySlug: 'lottery-management',
+      description: 'IGT provides comprehensive lottery management systems including draw systems, terminals, and central gaming systems.',
+      features: ['Draw systems', 'Retail terminals', 'Central system', 'Player account management', 'Security', 'Instant tickets', 'Analytics', 'Multi-channel'],
+      useCases: ['State lotteries', 'Draw games', 'Instant tickets', 'Sports betting', 'Player management'],
+      tags: ['lottery', 'gaming', 'enterprise', 'draws', 'terminals'],
+      rating: 4.2,
+      reviewCount: 180,
+      alternatives: ['Scientific Games', 'Intralot', 'Pollard Banknote'],
+      integrations: ['Retail systems', 'Banking', 'Regulators'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Enterprise contracts',
+        url: 'https://www.igt.com/contact',
+        description: 'Government and enterprise contracts'
+      }
+    }
+  ],
+
+  // Marine & Maritime > Marine Fleet
+  'marine-fleet': [
+    {
+      name: 'Helm CONNECT',
+      slug: 'helm-connect',
+      tagline: 'Maritime management software',
+      logoUrl: '/logos/helm.png',
+      website: 'https://www.helmoperations.com',
+      pricing: 'enterprise',
+      badges: ['enterprise'],
+      category: 'Marine & Maritime',
+      categorySlug: 'marine-maritime',
+      subcategory: 'Fleet Management',
+      subcategorySlug: 'marine-fleet',
+      description: 'Helm CONNECT provides vessel and fleet management software for maritime operations with maintenance, compliance, and crew management.',
+      features: ['Vessel maintenance', 'Compliance tracking', 'Crew management', 'Inventory', 'Work orders', 'Safety management', 'Document control', 'Mobile offline'],
+      useCases: ['Vessel operations', 'Maintenance management', 'Compliance tracking', 'Crew scheduling', 'Safety management'],
+      tags: ['marine', 'fleet', 'vessels', 'compliance', 'maritime'],
+      rating: 4.5,
+      reviewCount: 240,
+      alternatives: ['Danaos', 'ShipNet', 'Marine Software'],
+      integrations: ['Various maritime systems'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.helmoperations.com/contact',
+        description: 'Per-vessel enterprise pricing'
+      }
+    }
   ]
   
 };
