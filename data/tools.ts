@@ -15739,6 +15739,176 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         description: 'Enterprise pricing'
       }
     }
+  ],
+
+  // Productivity & Collaboration > Task Management
+  'task-management': [
+    {
+      name: 'Asana',
+      slug: 'asana',
+      tagline: 'Manage your team\'s work, projects, and tasks',
+      logoUrl: '/logos/asana.png',
+      website: 'https://asana.com',
+      pricing: 'freemium',
+      badges: ['popular', 'featured', 'trending'],
+      category: 'Productivity & Collaboration',
+      categorySlug: 'productivity-collaboration',
+      subcategory: 'Task Management',
+      subcategorySlug: 'task-management',
+      description: 'Asana is a comprehensive work management platform that helps teams organize, track, and manage their work and projects.',
+      features: ['Task management', 'Project tracking', 'Timeline views', 'Kanban boards', 'Workload management', 'Automation', 'Goals tracking', 'Reporting'],
+      useCases: ['Project management', 'Team collaboration', 'Workflow automation', 'Sprint planning', 'Campaign management'],
+      tags: ['productivity', 'tasks', 'asana', 'project-management', 'collaboration'],
+      rating: 4.5,
+      reviewCount: 89000,
+      alternatives: ['Monday.com', 'Trello', 'ClickUp'],
+      integrations: ['Slack', 'Google Workspace', 'Microsoft Teams', '200+ apps'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free plan available, Premium from $10.99/user/month',
+        url: 'https://asana.com/pricing',
+        description: 'Free and paid plans'
+      }
+    },
+    {
+      name: 'Monday.com',
+      slug: 'monday-com',
+      tagline: 'A platform built for a new way of working',
+      logoUrl: '/logos/monday.png',
+      website: 'https://monday.com',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Productivity & Collaboration',
+      categorySlug: 'productivity-collaboration',
+      subcategory: 'Task Management',
+      subcategorySlug: 'task-management',
+      description: 'Monday.com is a Work OS that powers teams to run processes, projects, and workflows with customizable boards and automation.',
+      features: ['Customizable workflows', 'Automation', 'Multiple views', 'Time tracking', 'Dashboards', 'Integrations', 'Templates', 'Mobile apps'],
+      useCases: ['Project tracking', 'CRM', 'Software development', 'Marketing campaigns', 'Resource planning'],
+      tags: ['productivity', 'work-os', 'monday', 'project-management', 'automation'],
+      rating: 4.6,
+      reviewCount: 67000,
+      alternatives: ['Asana', 'ClickUp', 'Smartsheet'],
+      integrations: ['Slack', 'Zoom', 'Google Drive', 'Microsoft Teams', '200+ apps'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free plan available, Basic from $8/seat/month',
+        url: 'https://monday.com/pricing',
+        description: 'Free and tiered pricing'
+      }
+    },
+    {
+      name: 'ClickUp',
+      slug: 'clickup',
+      tagline: 'One app to replace them all',
+      logoUrl: '/logos/clickup.png',
+      website: 'https://clickup.com',
+      pricing: 'freemium',
+      badges: ['trending', 'popular'],
+      category: 'Productivity & Collaboration',
+      categorySlug: 'productivity-collaboration',
+      subcategory: 'Task Management',
+      subcategorySlug: 'task-management',
+      description: 'ClickUp is an all-in-one productivity platform with tasks, docs, goals, and project management in one customizable workspace.',
+      features: ['Multiple views', 'Docs & wikis', 'Goals & OKRs', 'Time tracking', 'Automation', 'Whiteboards', 'Dashboards', 'Custom fields'],
+      useCases: ['Project management', 'Product roadmaps', 'Sprint planning', 'Knowledge management', 'Team collaboration'],
+      tags: ['productivity', 'clickup', 'all-in-one', 'project-management', 'tasks'],
+      rating: 4.7,
+      reviewCount: 45000,
+      alternatives: ['Asana', 'Monday.com', 'Notion'],
+      integrations: ['Slack', 'GitHub', 'Google Workspace', '1000+ apps'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free Forever plan, Unlimited from $7/user/month',
+        url: 'https://clickup.com/pricing',
+        description: 'Generous free tier + paid plans'
+      }
+    }
+  ],
+
+  // Productivity & Collaboration > Calendaring
+  'calendaring': [
+    {
+      name: 'Calendly',
+      slug: 'calendly',
+      tagline: 'Easy scheduling ahead',
+      logoUrl: '/logos/calendly.png',
+      website: 'https://calendly.com',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Productivity & Collaboration',
+      categorySlug: 'productivity-collaboration',
+      subcategory: 'Calendaring',
+      subcategorySlug: 'calendaring',
+      description: 'Calendly is a scheduling automation platform that eliminates the back-and-forth of finding meeting times.',
+      features: ['Automated scheduling', 'Calendar sync', 'Team scheduling', 'Custom branding', 'Reminders', 'Time zone detection', 'Integrations', 'Analytics'],
+      useCases: ['Meeting scheduling', 'Sales demos', 'Recruiting interviews', 'Customer success', 'Client consultations'],
+      tags: ['scheduling', 'calendaring', 'calendly', 'meetings', 'appointments'],
+      rating: 4.7,
+      reviewCount: 34000,
+      alternatives: ['Cal.com', 'Acuity Scheduling', 'YouCanBookMe'],
+      integrations: ['Google Calendar', 'Office 365', 'Salesforce', 'HubSpot', 'Zoom'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free plan available, Essentials from $8/seat/month',
+        url: 'https://calendly.com/pricing',
+        description: 'Free and paid tiers'
+      }
+    },
+    {
+      name: 'Cal.com',
+      slug: 'cal-com',
+      tagline: 'Open source scheduling infrastructure',
+      logoUrl: '/logos/calcom.png',
+      website: 'https://cal.com',
+      pricing: 'freemium',
+      badges: ['trending', 'popular'],
+      category: 'Productivity & Collaboration',
+      categorySlug: 'productivity-collaboration',
+      subcategory: 'Calendaring',
+      subcategorySlug: 'calendaring',
+      description: 'Cal.com is an open-source scheduling platform that gives you full control over your calendar with powerful features.',
+      features: ['Open source', 'Unlimited events', 'Team scheduling', 'Workflows', 'Routing forms', 'Custom branding', 'Video integrations', 'API access'],
+      useCases: ['Meeting booking', 'Team scheduling', 'Event registration', 'Availability management', 'Self-hosted scheduling'],
+      tags: ['scheduling', 'calendar', 'calcom', 'open-source', 'meetings'],
+      rating: 4.8,
+      reviewCount: 12000,
+      alternatives: ['Calendly', 'Acuity', 'SavvyCal'],
+      integrations: ['Google Calendar', 'Zoom', 'Stripe', 'Zapier', 'Cal.ai'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free plan available, Pro from $12/month',
+        url: 'https://cal.com/pricing',
+        description: 'Free and paid options'
+      }
+    },
+    {
+      name: 'Acuity Scheduling',
+      slug: 'acuity-scheduling',
+      tagline: 'Online appointment scheduling software',
+      logoUrl: '/logos/acuity.png',
+      website: 'https://acuityscheduling.com',
+      pricing: 'paid',
+      badges: ['popular'],
+      category: 'Productivity & Collaboration',
+      categorySlug: 'productivity-collaboration',
+      subcategory: 'Calendaring',
+      subcategorySlug: 'calendaring',
+      description: 'Acuity Scheduling (by Squarespace) is powerful appointment scheduling software for service-based businesses.',
+      features: ['24/7 booking', 'Payment processing', 'Calendar sync', 'Client management', 'Intake forms', 'Group classes', 'Gift certificates', 'Custom branding'],
+      useCases: ['Service appointments', 'Classes & workshops', 'Healthcare scheduling', 'Consultations', 'Beauty & wellness'],
+      tags: ['scheduling', 'appointments', 'acuity', 'bookings', 'services'],
+      rating: 4.6,
+      reviewCount: 8900,
+      alternatives: ['Calendly', 'SimplyBook.me', 'Setmore'],
+      integrations: ['Squarespace', 'Zoom', 'Google Calendar', 'Stripe', 'Mailchimp'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $16/month',
+        url: 'https://acuityscheduling.com/pricing.php',
+        description: 'Tiered pricing plans'
+      }
+    }
   ]
   
 };
