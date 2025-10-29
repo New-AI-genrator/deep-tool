@@ -3796,6 +3796,185 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
     }
   ],
 
+  // Creative & Design > Video Production & Editing
+  'video-production-editing': [
+    {
+      name: 'Adobe Premiere Pro',
+      slug: 'adobe-premiere-pro',
+      tagline: 'Industry-leading video editing software',
+      logoUrl: '/logos/premiere-pro.png',
+      website: 'https://www.adobe.com/products/premiere.html',
+      pricing: 'paid',
+      badges: ['popular', 'enterprise'],
+      category: 'Creative & Design',
+      categorySlug: 'creative-design',
+      subcategory: 'Video Production & Editing',
+      subcategorySlug: 'video-production-editing',
+      description: 'Adobe Premiere Pro is the industry-leading video editing software for professional video production. With powerful editing tools, seamless integration with other Adobe apps, and support for a wide range of formats, it\'s the go-to choice for filmmakers, broadcasters, and content creators.',
+      features: [
+        'Professional video editing',
+        'Multi-cam editing',
+        'Color grading tools',
+        'Audio editing capabilities',
+        'Integration with Adobe Creative Cloud',
+        'Real-time collaboration',
+        'Advanced effects and transitions',
+        'Export to multiple formats'
+      ],
+      useCases: [
+        'Film and television post-production',
+        'YouTube content creation',
+        'Corporate video production',
+        'Event videography',
+        'Social media videos',
+        'Documentary editing'
+      ],
+      tags: ['video-editing', 'professional', 'adobe', 'post-production'],
+      rating: 4.8,
+      reviewCount: 28700
+    },
+    {
+      name: 'DaVinci Resolve',
+      slug: 'davinci-resolve',
+      tagline: 'Professional video editing and color correction',
+      logoUrl: '/logos/davinci-resolve.png',
+      website: 'https://www.blackmagicdesign.com/products/davinciresolve',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Creative & Design',
+      categorySlug: 'creative-design',
+      subcategory: 'Video Production & Editing',
+      subcategorySlug: 'video-production-editing',
+      description: 'DaVinci Resolve is a professional video editing and color correction software used in Hollywood feature films, television shows, and commercials. It combines professional 8K editing, color correction, visual effects, and audio post production in a single application.',
+      features: [
+        'Professional color grading',
+        '8K editing support',
+        'Visual effects tools',
+        'Audio post production',
+        'Real-time collaboration',
+        'Advanced noise reduction',
+        'HDR tools',
+        'Free version available'
+      ],
+      useCases: [
+        'Feature film post-production',
+        'Television editing',
+        'Commercial production',
+        'Color grading',
+        'YouTube content creation',
+        'Short film editing'
+      ],
+      tags: ['video-editing', 'color-grading', 'professional', 'free'],
+      rating: 4.7,
+      reviewCount: 15600
+    },
+    {
+      name: 'Final Cut Pro',
+      slug: 'final-cut-pro',
+      tagline: 'Professional video editing for Mac',
+      logoUrl: '/logos/final-cut-pro.png',
+      website: 'https://www.apple.com/final-cut-pro',
+      pricing: 'paid',
+      badges: ['popular', 'trending'],
+      category: 'Creative & Design',
+      categorySlug: 'creative-design',
+      subcategory: 'Video Production & Editing',
+      subcategorySlug: 'video-production-editing',
+      description: 'Final Cut Pro is Apple\'s professional video editing software designed for Mac users. With a streamlined interface and powerful features, it enables editors to work faster and more efficiently than ever before.',
+      features: [
+        'Magnetic timeline',
+        'Background rendering',
+        '360-degree video editing',
+        'HDR editing',
+        'Multi-cam editing',
+        'Advanced color grading',
+        'Motion graphics tools',
+        'Optimized for Mac'
+      ],
+      useCases: [
+        'Mac-based video editing',
+        'Event videography',
+        'Corporate videos',
+        'YouTube content creation',
+        'Documentary editing',
+        'Short film production'
+      ],
+      tags: ['video-editing', 'mac', 'apple', 'professional'],
+      rating: 4.6,
+      reviewCount: 9800
+    },
+    {
+      name: 'CapCut',
+      slug: 'capcut',
+      tagline: 'Free video editor for social media',
+      logoUrl: '/logos/capcut.png',
+      website: 'https://www.capcut.com',
+      pricing: 'free',
+      badges: ['popular', 'trending'],
+      category: 'Creative & Design',
+      categorySlug: 'creative-design',
+      subcategory: 'Video Production & Editing',
+      subcategorySlug: 'video-production-editing',
+      description: 'CapCut is a free video editing app that makes it easy to create professional-quality videos for social media. With a wide range of effects, transitions, and editing tools, it\'s perfect for content creators who want to produce engaging videos quickly.',
+      features: [
+        'Easy-to-use interface',
+        'Social media templates',
+        'Auto captions',
+        'AI-powered effects',
+        'Music library',
+        'Green screen effects',
+        'Slow motion and speed ramping',
+        'Completely free'
+      ],
+      useCases: [
+        'TikTok videos',
+        'Instagram Reels',
+        'YouTube Shorts',
+        'Social media content',
+        'Personal videos',
+        'Quick edits'
+      ],
+      tags: ['video-editing', 'social-media', 'free', 'mobile'],
+      rating: 4.5,
+      reviewCount: 42500
+    },
+    {
+      name: 'Descript',
+      slug: 'descript',
+      tagline: 'Video editing powered by text',
+      logoUrl: '/logos/descript.png',
+      website: 'https://www.descript.com',
+      pricing: 'freemium',
+      badges: ['popular', 'trending'],
+      category: 'Creative & Design',
+      categorySlug: 'creative-design',
+      subcategory: 'Video Production & Editing',
+      subcategorySlug: 'video-production-editing',
+      description: 'Descript is a revolutionary video editing tool that allows you to edit video by editing text. With its unique approach to video editing, you can simply type to edit your video, making it incredibly easy to remove filler words, rearrange scenes, and more.',
+      features: [
+        'Text-based video editing',
+        'Screen recording',
+        'Podcast editing',
+        'AI-powered transcription',
+        'Collaboration tools',
+        'Overdub for voice cloning',
+        'Cloud-based workflow',
+        'Built-in publishing'
+      ],
+      useCases: [
+        'Podcast editing',
+        'Interview editing',
+        'Content creation',
+        'Educational videos',
+        'Marketing videos',
+        'Social media content'
+      ],
+      tags: ['video-editing', 'ai', 'text-based', 'podcast'],
+      rating: 4.7,
+      reviewCount: 8900
+    }
+  ],
+
   // Productivity & Business > Communication
   'communication': [
     {
