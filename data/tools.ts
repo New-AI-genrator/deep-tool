@@ -13882,6 +13882,416 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         description: 'No monthly fees, payment processing fees only'
       }
     }
+  ],
+
+  // Transportation & Logistics > Fleet Management
+  'fleet-management': [
+    {
+      name: 'Samsara',
+      slug: 'samsara',
+      tagline: 'Complete fleet operations platform',
+      logoUrl: '/logos/samsara.png',
+      website: 'https://www.samsara.com',
+      pricing: 'enterprise',
+      badges: ['popular', 'featured', 'enterprise'],
+      category: 'Transportation & Logistics',
+      categorySlug: 'transportation-logistics',
+      subcategory: 'Fleet Management',
+      subcategorySlug: 'fleet-management',
+      description: 'Samsara is a complete fleet operations platform with GPS tracking, ELD compliance, dashcams, and routing.',
+      features: ['GPS tracking', 'ELD compliance', 'AI dashcams', 'Route optimization', 'Fuel management', 'Maintenance tracking', 'Driver safety', 'Real-time alerts'],
+      useCases: ['Fleet tracking', 'Compliance management', 'Driver safety', 'Route optimization', 'Asset tracking', 'Fuel monitoring'],
+      tags: ['fleet', 'gps', 'telematics', 'eld', 'tracking'],
+      rating: 4.5,
+      reviewCount: 2300,
+      alternatives: ['Verizon Connect', 'Geotab', 'Fleet Complete'],
+      integrations: ['Quickbooks', 'Motive', 'Various ERP systems'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Custom pricing',
+        url: 'https://www.samsara.com/pricing',
+        description: 'Contact for enterprise pricing'
+      }
+    },
+    {
+      name: 'Geotab',
+      slug: 'geotab',
+      tagline: 'Fleet management and vehicle tracking',
+      logoUrl: '/logos/geotab.png',
+      website: 'https://www.geotab.com',
+      pricing: 'paid',
+      badges: ['popular', 'enterprise'],
+      category: 'Transportation & Logistics',
+      categorySlug: 'transportation-logistics',
+      subcategory: 'Fleet Management',
+      subcategorySlug: 'fleet-management',
+      description: 'Geotab is a global leader in IoT and connected transportation, providing fleet management solutions.',
+      features: ['Vehicle tracking', 'Driver behavior', 'Fuel monitoring', 'Maintenance scheduling', 'Route planning', 'Compliance', 'Electric vehicle support', 'Open platform'],
+      useCases: ['Fleet optimization', 'Safety management', 'Compliance tracking', 'Cost reduction', 'EV fleet management'],
+      tags: ['fleet', 'telematics', 'gps', 'iot', 'tracking'],
+      rating: 4.4,
+      reviewCount: 1800,
+      alternatives: ['Samsara', 'Verizon Connect', 'GPS Insight'],
+      integrations: ['Marketplace with 500+ integrations'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'Custom pricing per vehicle',
+        url: 'https://www.geotab.com/contact/',
+        description: 'Volume-based pricing'
+      }
+    }
+  ],
+
+  // Energy & Utilities > Energy Monitoring
+  'energy-monitoring': [
+    {
+      name: 'Sense',
+      slug: 'sense',
+      tagline: 'Home energy monitor',
+      logoUrl: '/logos/sense.png',
+      website: 'https://sense.com',
+      pricing: 'paid',
+      badges: ['trending'],
+      category: 'Energy & Utilities',
+      categorySlug: 'energy-utilities',
+      subcategory: 'Energy Monitoring',
+      subcategorySlug: 'energy-monitoring',
+      description: 'Sense is a home energy monitor that tracks your electricity use in real-time to help you save money and reduce consumption.',
+      features: ['Real-time monitoring', 'Device detection', 'Solar tracking', 'Cost tracking', 'Alerts', 'Mobile app', 'Home automation integration', 'Historical data'],
+      useCases: ['Energy tracking', 'Cost savings', 'Solar monitoring', 'Device identification', 'Usage patterns', 'Smart home integration'],
+      tags: ['energy', 'monitoring', 'smart-home', 'electricity', 'sustainability'],
+      rating: 4.3,
+      reviewCount: 4500,
+      alternatives: ['Emporia', 'Neurio', 'Curb'],
+      integrations: ['Alexa', 'Google Home', 'IFTTT', 'SmartThings'],
+      pricingDetails: {
+        type: 'paid',
+        price: '$299 one-time hardware cost',
+        url: 'https://sense.com/buy',
+        description: 'Hardware purchase, no subscription'
+      }
+    },
+    {
+      name: 'EnergyCAP',
+      slug: 'energycap',
+      tagline: 'Energy and sustainability management software',
+      logoUrl: '/logos/energycap.png',
+      website: 'https://www.energycap.com',
+      pricing: 'enterprise',
+      badges: ['enterprise'],
+      category: 'Energy & Utilities',
+      categorySlug: 'energy-utilities',
+      subcategory: 'Energy Monitoring',
+      subcategorySlug: 'energy-monitoring',
+      description: 'EnergyCAP is energy and sustainability management software for tracking, analyzing, and reporting utility data.',
+      features: ['Utility bill tracking', 'Energy analytics', 'Sustainability reporting', 'Budget management', 'Benchmarking', 'Carbon tracking', 'Automated reporting', 'Multi-site management'],
+      useCases: ['Enterprise energy management', 'Utility bill processing', 'Sustainability reporting', 'Cost allocation', 'Energy audits'],
+      tags: ['energy', 'utilities', 'enterprise', 'sustainability', 'analytics'],
+      rating: 4.6,
+      reviewCount: 680,
+      alternatives: ['Energy Star Portfolio Manager', 'Utility Billing Software'],
+      integrations: ['Various accounting and ERP systems'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Custom enterprise pricing',
+        url: 'https://www.energycap.com/contact',
+        description: 'Based on number of facilities'
+      }
+    }
+  ],
+
+  // Pet Care & Veterinary > Veterinary Software
+  'veterinary-software': [
+    {
+      name: 'ezyVet',
+      slug: 'ezyvet',
+      tagline: 'Cloud-based veterinary practice management',
+      logoUrl: '/logos/ezyvet.png',
+      website: 'https://www.ezyvet.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Pet Care & Veterinary',
+      categorySlug: 'pet-care-veterinary',
+      subcategory: 'Veterinary Software',
+      subcategorySlug: 'veterinary-software',
+      description: 'ezyVet is cloud-based veterinary practice management software with integrated POS, inventory, and client communication.',
+      features: ['Appointments', 'Medical records', 'Inventory management', 'Billing & invoicing', 'Client portal', 'Lab integration', 'Reporting', 'Mobile app'],
+      useCases: ['Vet practice management', 'Client records', 'Appointment scheduling', 'Inventory tracking', 'Billing', 'Reporting'],
+      tags: ['veterinary', 'practice-management', 'medical-records', 'cloud'],
+      rating: 4.4,
+      reviewCount: 1200,
+      alternatives: ['Avimark', 'Cornerstone', 'IDEXX'],
+      integrations: ['IDEXX', 'Antech', 'VetSource', 'Payment processors'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $299/month',
+        url: 'https://www.ezyvet.com/pricing',
+        description: 'Subscription based on practice size'
+      }
+    },
+    {
+      name: 'Veterinary Cloud',
+      slug: 'veterinary-cloud',
+      tagline: 'Modern cloud veterinary software',
+      logoUrl: '/logos/vetcloud.png',
+      website: 'https://www.vetcloud.com',
+      pricing: 'paid',
+      badges: ['trending'],
+      category: 'Pet Care & Veterinary',
+      categorySlug: 'pet-care-veterinary',
+      subcategory: 'Veterinary Software',
+      subcategorySlug: 'veterinary-software',
+      description: 'Veterinary Cloud is modern practice management software designed specifically for veterinary clinics.',
+      features: ['Cloud-based', 'Scheduling', 'Medical records', 'Invoicing', 'Inventory', 'Client communication', 'Reporting', 'Multi-location support'],
+      useCases: ['Practice management', 'Patient records', 'Client engagement', 'Revenue tracking', 'Multi-clinic management'],
+      tags: ['veterinary', 'cloud', 'practice-management', 'medical'],
+      rating: 4.5,
+      reviewCount: 850,
+      alternatives: ['ezyVet', 'Impromed', 'VetPort'],
+      integrations: ['Various lab and pharmacy partners'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'Contact for pricing',
+        url: 'https://www.vetcloud.com/contact',
+        description: 'Custom pricing per clinic'
+      }
+    }
+  ],
+
+  // Environmental & Sustainability > Carbon Tracking
+  'carbon-tracking': [
+    {
+      name: 'Watershed',
+      slug: 'watershed',
+      tagline: 'Enterprise climate platform',
+      logoUrl: '/logos/watershed.png',
+      website: 'https://watershed.com',
+      pricing: 'enterprise',
+      badges: ['trending', 'featured'],
+      category: 'Environmental & Sustainability',
+      categorySlug: 'environmental-sustainability',
+      subcategory: 'Carbon Tracking',
+      subcategorySlug: 'carbon-tracking',
+      description: 'Watershed is an enterprise sustainability platform that helps companies measure, reduce, and report their carbon footprint.',
+      features: ['Carbon accounting', 'Emissions tracking', 'Climate reporting', 'Reduction planning', 'Supplier engagement', 'Data integration', 'Compliance', 'Analytics'],
+      useCases: ['Carbon footprint measurement', 'ESG reporting', 'Climate strategy', 'Supply chain emissions', 'Net zero planning'],
+      tags: ['carbon', 'sustainability', 'esg', 'climate', 'emissions'],
+      rating: 4.7,
+      reviewCount: 450,
+      alternatives: ['Persefoni', 'Plan A', 'Sweep'],
+      integrations: ['ERP systems', 'Cloud providers', 'Data sources'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Custom enterprise pricing',
+        url: 'https://watershed.com/contact',
+        description: 'Contact for pricing'
+      }
+    },
+    {
+      name: 'Greenly',
+      slug: 'greenly',
+      tagline: 'Carbon accounting for businesses',
+      logoUrl: '/logos/greenly.png',
+      website: 'https://www.greenly.earth',
+      pricing: 'paid',
+      badges: ['trending'],
+      category: 'Environmental & Sustainability',
+      categorySlug: 'environmental-sustainability',
+      subcategory: 'Carbon Tracking',
+      subcategorySlug: 'carbon-tracking',
+      description: 'Greenly helps businesses measure their carbon footprint and implement reduction strategies.',
+      features: ['Carbon measurement', 'Activity tracking', 'Reduction recommendations', 'Reporting', 'Employee engagement', 'API integration', 'Dashboards', 'Certifications'],
+      useCases: ['Carbon footprint tracking', 'Sustainability reporting', 'Employee awareness', 'Reduction planning', 'ESG compliance'],
+      tags: ['carbon', 'sustainability', 'emissions', 'tracking', 'esg'],
+      rating: 4.5,
+      reviewCount: 320,
+      alternatives: ['Watershed', 'Normative', 'Carbon Analytics'],
+      integrations: ['Accounting software', 'Cloud platforms', 'Banking APIs'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From €500/month',
+        url: 'https://www.greenly.earth/en-us/pricing',
+        description: 'Tiered pricing for businesses'
+      }
+    }
+  ],
+
+  // Dental & Orthodontics > Dental Practice
+  'dental-practice': [
+    {
+      name: 'Dentrix',
+      slug: 'dentrix',
+      tagline: 'Dental practice management software',
+      logoUrl: '/logos/dentrix.png',
+      website: 'https://www.dentrix.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Dental & Orthodontics',
+      categorySlug: 'dental-orthodontics',
+      subcategory: 'Practice Management',
+      subcategorySlug: 'dental-practice',
+      description: 'Dentrix is the leading dental practice management software used by dental professionals to manage patient records, scheduling, and billing.',
+      features: ['Patient scheduling', 'Clinical charting', 'Billing & insurance', 'Imaging integration', 'Patient communication', 'Reporting', 'Treatment planning', 'Mobile access'],
+      useCases: ['Dental practice management', 'Patient records', 'Appointment scheduling', 'Insurance claims', 'Treatment planning'],
+      tags: ['dental', 'practice-management', 'medical-records', 'scheduling'],
+      rating: 4.3,
+      reviewCount: 3400,
+      alternatives: ['Eaglesoft', 'Open Dental', 'Curve'],
+      integrations: ['Imaging systems', 'Payment processors', 'Insurance clearinghouses'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'Contact for pricing',
+        url: 'https://www.dentrix.com/contact',
+        description: 'One-time license + support fees'
+      }
+    },
+    {
+      name: 'Open Dental',
+      slug: 'open-dental',
+      tagline: 'Practice management software for dentists',
+      logoUrl: '/logos/opendental.png',
+      website: 'https://www.opendental.com',
+      pricing: 'paid',
+      badges: ['popular'],
+      category: 'Dental & Orthodontics',
+      categorySlug: 'dental-orthodontics',
+      subcategory: 'Practice Management',
+      subcategorySlug: 'dental-practice',
+      description: 'Open Dental is comprehensive practice management software with scheduling, charting, imaging, and billing.',
+      features: ['Appointment scheduling', 'Clinical charts', 'Digital imaging', 'eClaims', 'Patient portal', 'Reporting', 'ePrescriptions', 'Mobile app'],
+      useCases: ['Dental office management', 'Patient scheduling', 'Insurance billing', 'Clinical documentation', 'Patient communication'],
+      tags: ['dental', 'practice-management', 'ehr', 'scheduling'],
+      rating: 4.5,
+      reviewCount: 2100,
+      alternatives: ['Dentrix', 'Eaglesoft', 'Dental Intelligence'],
+      integrations: ['Imaging software', 'Labs', 'Clearinghouses'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $349 one-time per workstation',
+        url: 'https://www.opendental.com/pricing.html',
+        description: 'One-time license fee'
+      }
+    }
+  ],
+
+  // Childcare & Education > Daycare Management
+  'daycare-management': [
+    {
+      name: 'Procare',
+      slug: 'procare',
+      tagline: 'Childcare management software',
+      logoUrl: '/logos/procare.png',
+      website: 'https://www.procaresoftware.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Childcare & Education',
+      categorySlug: 'childcare-education',
+      subcategory: 'Daycare Management',
+      subcategorySlug: 'daycare-management',
+      description: 'Procare is the #1 childcare management software trusted by thousands of childcare centers for attendance, billing, and parent engagement.',
+      features: ['Attendance tracking', 'Billing & payments', 'Parent app', 'Staff management', 'Reporting', 'Meal tracking', 'Learning activities', 'Check-in/out'],
+      useCases: ['Daycare management', 'Attendance tracking', 'Parent communication', 'Billing automation', 'Staff scheduling'],
+      tags: ['childcare', 'daycare', 'management', 'billing', 'parents'],
+      rating: 4.4,
+      reviewCount: 1800,
+      alternatives: ['Brightwheel', 'Kangarootime', 'Sandbox'],
+      integrations: ['QuickBooks', 'Payment processors', 'Various apps'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $69/month',
+        url: 'https://www.procaresoftware.com/pricing',
+        description: 'Tiered pricing based on enrollment'
+      }
+    },
+    {
+      name: 'Brightwheel',
+      slug: 'brightwheel',
+      tagline: 'Complete childcare management platform',
+      logoUrl: '/logos/brightwheel.png',
+      website: 'https://mybrightwheel.com',
+      pricing: 'freemium',
+      badges: ['popular', 'trending'],
+      category: 'Childcare & Education',
+      categorySlug: 'childcare-education',
+      subcategory: 'Daycare Management',
+      subcategorySlug: 'daycare-management',
+      description: 'Brightwheel is an all-in-one platform for preschools, childcare centers, and schools to manage operations and engage with parents.',
+      features: ['Digital check-in', 'Parent communication', 'Billing & invoicing', 'Learning portfolio', 'Staff tools', 'Assessments', 'Mobile app', 'Contactless payments'],
+      useCases: ['Childcare operations', 'Parent engagement', 'Billing management', 'Development tracking', 'Staff coordination'],
+      tags: ['childcare', 'preschool', 'management', 'parents', 'mobile'],
+      rating: 4.6,
+      reviewCount: 5600,
+      alternatives: ['Procare', 'Kinderlime', 'HiMama'],
+      integrations: ['Stripe', 'QuickBooks', 'Various payment methods'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free basic plan, Premium from $5/child/month',
+        url: 'https://mybrightwheel.com/pricing',
+        description: 'Free and paid tiers available'
+      }
+    }
+  ],
+
+  // Libraries & Archives > Library Management
+  'library-management': [
+    {
+      name: 'Koha',
+      slug: 'koha',
+      tagline: 'Open source integrated library system',
+      logoUrl: '/logos/koha.png',
+      website: 'https://koha-community.org',
+      pricing: 'open-source',
+      badges: ['featured', 'community-favorite'],
+      category: 'Libraries & Archives',
+      categorySlug: 'libraries-archives',
+      subcategory: 'Library Management',
+      subcategorySlug: 'library-management',
+      description: 'Koha is the first free and open source software library automation package (ILS) used worldwide by public, school and special libraries.',
+      features: ['Cataloging', 'Circulation', 'OPAC', 'Acquisitions', 'Serials', 'Reports', 'Self-checkout', 'Multilingual'],
+      useCases: ['Library cataloging', 'Circulation management', 'Public catalog', 'Acquisitions', 'Member management'],
+      tags: ['library', 'open-source', 'ils', 'cataloging', 'circulation'],
+      rating: 4.5,
+      reviewCount: 890,
+      alternatives: ['Evergreen', 'Sierra', 'Alma'],
+      integrations: ['Z39.50', 'SIP2', 'MARC', 'Various standards'],
+      pricingDetails: {
+        type: 'open-source',
+        price: 'Free open source, hosting/support available',
+        url: 'https://koha-community.org',
+        description: 'Free software, optional paid support'
+      }
+    }
+  ],
+
+  // Museums & Galleries > Collection Management
+  'collection-management': [
+    {
+      name: 'PastPerfect',
+      slug: 'pastperfect',
+      tagline: 'Museum collection management software',
+      logoUrl: '/logos/pastperfect.png',
+      website: 'https://www.pastperfect-online.com',
+      pricing: 'paid',
+      badges: ['popular'],
+      category: 'Museums & Galleries',
+      categorySlug: 'museums-galleries',
+      subcategory: 'Collection Management',
+      subcategorySlug: 'collection-management',
+      description: 'PastPerfect is museum software for collection management, used by over 10,000 museums worldwide.',
+      features: ['Collection cataloging', 'Photo management', 'Research library', 'Multimedia', 'Reports', 'Membership tracking', 'Web publishing', 'Search'],
+      useCases: ['Museum collections', 'Artifact cataloging', 'Archives management', 'Exhibit planning', 'Research'],
+      tags: ['museum', 'collections', 'cataloging', 'archives', 'cultural'],
+      rating: 4.3,
+      reviewCount: 670,
+      alternatives: ['TMS', 'Argus', 'CollectionSpace'],
+      integrations: ['Online publishing', 'Various export formats'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $595 one-time',
+        url: 'https://www.pastperfect-online.com/pricing',
+        description: 'One-time license fee'
+      }
+    }
   ]
   
 };
