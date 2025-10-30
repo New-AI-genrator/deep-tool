@@ -3796,185 +3796,6 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
     }
   ],
 
-  // Creative & Design > Video Production & Editing
-  'video-production-editing': [
-    {
-      name: 'Adobe Premiere Pro',
-      slug: 'adobe-premiere-pro',
-      tagline: 'Industry-leading video editing software',
-      logoUrl: '/logos/premiere-pro.png',
-      website: 'https://www.adobe.com/products/premiere.html',
-      pricing: 'paid',
-      badges: ['popular', 'enterprise'],
-      category: 'Creative & Design',
-      categorySlug: 'creative-design',
-      subcategory: 'Video Production & Editing',
-      subcategorySlug: 'video-production-editing',
-      description: 'Adobe Premiere Pro is the industry-leading video editing software for professional video production. With powerful editing tools, seamless integration with other Adobe apps, and support for a wide range of formats, it\'s the go-to choice for filmmakers, broadcasters, and content creators.',
-      features: [
-        'Professional video editing',
-        'Multi-cam editing',
-        'Color grading tools',
-        'Audio editing capabilities',
-        'Integration with Adobe Creative Cloud',
-        'Real-time collaboration',
-        'Advanced effects and transitions',
-        'Export to multiple formats'
-      ],
-      useCases: [
-        'Film and television post-production',
-        'YouTube content creation',
-        'Corporate video production',
-        'Event videography',
-        'Social media videos',
-        'Documentary editing'
-      ],
-      tags: ['video-editing', 'professional', 'adobe', 'post-production'],
-      rating: 4.8,
-      reviewCount: 28700
-    },
-    {
-      name: 'DaVinci Resolve',
-      slug: 'davinci-resolve',
-      tagline: 'Professional video editing and color correction',
-      logoUrl: '/logos/davinci-resolve.png',
-      website: 'https://www.blackmagicdesign.com/products/davinciresolve',
-      pricing: 'freemium',
-      badges: ['popular', 'featured'],
-      category: 'Creative & Design',
-      categorySlug: 'creative-design',
-      subcategory: 'Video Production & Editing',
-      subcategorySlug: 'video-production-editing',
-      description: 'DaVinci Resolve is a professional video editing and color correction software used in Hollywood feature films, television shows, and commercials. It combines professional 8K editing, color correction, visual effects, and audio post production in a single application.',
-      features: [
-        'Professional color grading',
-        '8K editing support',
-        'Visual effects tools',
-        'Audio post production',
-        'Real-time collaboration',
-        'Advanced noise reduction',
-        'HDR tools',
-        'Free version available'
-      ],
-      useCases: [
-        'Feature film post-production',
-        'Television editing',
-        'Commercial production',
-        'Color grading',
-        'YouTube content creation',
-        'Short film editing'
-      ],
-      tags: ['video-editing', 'color-grading', 'professional', 'free'],
-      rating: 4.7,
-      reviewCount: 15600
-    },
-    {
-      name: 'Final Cut Pro',
-      slug: 'final-cut-pro',
-      tagline: 'Professional video editing for Mac',
-      logoUrl: '/logos/final-cut-pro.png',
-      website: 'https://www.apple.com/final-cut-pro',
-      pricing: 'paid',
-      badges: ['popular', 'trending'],
-      category: 'Creative & Design',
-      categorySlug: 'creative-design',
-      subcategory: 'Video Production & Editing',
-      subcategorySlug: 'video-production-editing',
-      description: 'Final Cut Pro is Apple\'s professional video editing software designed for Mac users. With a streamlined interface and powerful features, it enables editors to work faster and more efficiently than ever before.',
-      features: [
-        'Magnetic timeline',
-        'Background rendering',
-        '360-degree video editing',
-        'HDR editing',
-        'Multi-cam editing',
-        'Advanced color grading',
-        'Motion graphics tools',
-        'Optimized for Mac'
-      ],
-      useCases: [
-        'Mac-based video editing',
-        'Event videography',
-        'Corporate videos',
-        'YouTube content creation',
-        'Documentary editing',
-        'Short film production'
-      ],
-      tags: ['video-editing', 'mac', 'apple', 'professional'],
-      rating: 4.6,
-      reviewCount: 9800
-    },
-    {
-      name: 'CapCut',
-      slug: 'capcut',
-      tagline: 'Free video editor for social media',
-      logoUrl: '/logos/capcut.png',
-      website: 'https://www.capcut.com',
-      pricing: 'free',
-      badges: ['popular', 'trending'],
-      category: 'Creative & Design',
-      categorySlug: 'creative-design',
-      subcategory: 'Video Production & Editing',
-      subcategorySlug: 'video-production-editing',
-      description: 'CapCut is a free video editing app that makes it easy to create professional-quality videos for social media. With a wide range of effects, transitions, and editing tools, it\'s perfect for content creators who want to produce engaging videos quickly.',
-      features: [
-        'Easy-to-use interface',
-        'Social media templates',
-        'Auto captions',
-        'AI-powered effects',
-        'Music library',
-        'Green screen effects',
-        'Slow motion and speed ramping',
-        'Completely free'
-      ],
-      useCases: [
-        'TikTok videos',
-        'Instagram Reels',
-        'YouTube Shorts',
-        'Social media content',
-        'Personal videos',
-        'Quick edits'
-      ],
-      tags: ['video-editing', 'social-media', 'free', 'mobile'],
-      rating: 4.5,
-      reviewCount: 42500
-    },
-    {
-      name: 'Descript',
-      slug: 'descript',
-      tagline: 'Video editing powered by text',
-      logoUrl: '/logos/descript.png',
-      website: 'https://www.descript.com',
-      pricing: 'freemium',
-      badges: ['popular', 'trending'],
-      category: 'Creative & Design',
-      categorySlug: 'creative-design',
-      subcategory: 'Video Production & Editing',
-      subcategorySlug: 'video-production-editing',
-      description: 'Descript is a revolutionary video editing tool that allows you to edit video by editing text. With its unique approach to video editing, you can simply type to edit your video, making it incredibly easy to remove filler words, rearrange scenes, and more.',
-      features: [
-        'Text-based video editing',
-        'Screen recording',
-        'Podcast editing',
-        'AI-powered transcription',
-        'Collaboration tools',
-        'Overdub for voice cloning',
-        'Cloud-based workflow',
-        'Built-in publishing'
-      ],
-      useCases: [
-        'Podcast editing',
-        'Interview editing',
-        'Content creation',
-        'Educational videos',
-        'Marketing videos',
-        'Social media content'
-      ],
-      tags: ['video-editing', 'ai', 'text-based', 'podcast'],
-      rating: 4.7,
-      reviewCount: 8900
-    }
-  ],
-
   // Productivity & Business > Communication
   'communication': [
     {
@@ -4186,360 +4007,6 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tags: ['communication', 'messaging', 'secure', 'cloud', 'free'],
       rating: 4.6,
       reviewCount: 456000
-    }
-  ],
-
-  // Creative & Design > Music & Audio Synthesis
-  'music-audio-synthesis': [
-    {
-      name: 'AIVA',
-      slug: 'aiva',
-      tagline: 'AI music composition assistant',
-      logoUrl: '/logos/aiva.png',
-      website: 'https://www.aiva.ai',
-      pricing: 'freemium',
-      badges: ['popular', 'trending'],
-      category: 'Creative & Design',
-      categorySlug: 'creative-design',
-      subcategory: 'Music & Audio Synthesis',
-      subcategorySlug: 'music-audio-synthesis',
-      description: 'AIVA (Artificial Intelligence Virtual Artist) is an AI-powered music composition tool that helps musicians, game developers, and content creators generate original musical compositions. It can create music in various styles and genres, from classical to contemporary.',
-      features: [
-        'AI-powered composition',
-        'Multiple music genres',
-        'Customizable parameters',
-        'Export to various formats',
-        'Royalty-free music',
-        'Emotional music generation',
-        'Collaboration tools',
-        'API access'
-      ],
-      useCases: [
-        'Video game soundtracks',
-        'Film and TV scoring',
-        'Commercial music',
-        'Content creation',
-        'Educational projects',
-        'Personal compositions'
-      ],
-      tags: ['ai-music', 'composition', 'soundtrack', 'royalty-free'],
-      rating: 4.6,
-      reviewCount: 5400
-    },
-    {
-      name: 'Amper Music',
-      slug: 'amper-music',
-      tagline: 'AI-powered music composition platform',
-      logoUrl: '/logos/amper-music.png',
-      website: 'https://www.ampermusic.com',
-      pricing: 'paid',
-      badges: ['popular', 'enterprise'],
-      category: 'Creative & Design',
-      categorySlug: 'creative-design',
-      subcategory: 'Music & Audio Synthesis',
-      subcategorySlug: 'music-audio-synthesis',
-      description: 'Amper Music is an AI-powered music composition platform that enables users to create original, royalty-free music in seconds. It\'s designed for content creators, brands, and media companies who need high-quality music for their projects.',
-      features: [
-        'Instant music creation',
-        'Royalty-free licensing',
-        'Customizable mood and tempo',
-        'Multiple instruments',
-        'Professional quality',
-        'Brand customization',
-        'Collaboration tools',
-        'API integration'
-      ],
-      useCases: [
-        'YouTube videos',
-        'Social media content',
-        'Corporate presentations',
-        'Ad campaigns',
-        'Podcasts',
-        'Video games'
-      ],
-      tags: ['ai-music', 'royalty-free', 'content-creation', 'brand-music'],
-      rating: 4.5,
-      reviewCount: 7800
-    },
-    {
-      name: 'LANDR',
-      slug: 'landr',
-      tagline: 'AI-powered music mastering and distribution',
-      logoUrl: '/logos/landr.png',
-      website: 'https://www.landr.com',
-      pricing: 'freemium',
-      badges: ['popular', 'trending'],
-      category: 'Creative & Design',
-      categorySlug: 'creative-design',
-      subcategory: 'Music & Audio Synthesis',
-      subcategorySlug: 'music-audio-synthesis',
-      description: 'LANDR is an AI-powered music mastering platform that provides professional-quality audio mastering services. It also offers distribution services to help artists get their music on streaming platforms like Spotify, Apple Music, and more.',
-      features: [
-        'AI-powered mastering',
-        'Music distribution',
-        'Audio editing tools',
-        'Royalty-free samples',
-        'Collaboration features',
-        'Analytics dashboard',
-        'Mobile app',
-        'Unlimited revisions'
-      ],
-      useCases: [
-        'Music mastering',
-        'Audio distribution',
-        'Independent artists',
-        'Podcast editing',
-        'Content creation',
-        'Home studio production'
-      ],
-      tags: ['audio-mastering', 'music-distribution', 'ai-audio', 'independent-artists'],
-      rating: 4.7,
-      reviewCount: 12500
-    },
-    {
-      name: 'Soundraw',
-      slug: 'soundraw',
-      tagline: 'AI music generator for content creators',
-      logoUrl: '/logos/soundraw.png',
-      website: 'https://soundraw.io',
-      pricing: 'freemium',
-      badges: ['popular', 'trending'],
-      category: 'Creative & Design',
-      categorySlug: 'creative-design',
-      subcategory: 'Music & Audio Synthesis',
-      subcategorySlug: 'music-audio-synthesis',
-      description: 'Soundraw is an AI music generator that creates original, copyright-free music for content creators. It allows users to generate music based on mood, genre, and duration, making it perfect for videos, podcasts, and other digital content.',
-      features: [
-        'Copyright-free music',
-        'Mood-based generation',
-        'Custom duration',
-        'Multiple genres',
-        'Easy search and filter',
-        'Instant download',
-        'Commercial use',
-        'API access'
-      ],
-      useCases: [
-        'YouTube videos',
-        'TikTok content',
-        'Podcast intros',
-        'Commercial projects',
-        'Social media posts',
-        'Video games'
-      ],
-      tags: ['ai-music', 'copyright-free', 'content-creation', 'royalty-free'],
-      rating: 4.4,
-      reviewCount: 6900
-    },
-    {
-      name: 'LALAL.AI',
-      slug: 'lalal-ai',
-      tagline: 'AI-powered vocal and instrumental audio separator',
-      logoUrl: '/logos/lalal-ai.png',
-      website: 'https://www.lalal.ai',
-      pricing: 'freemium',
-      badges: ['popular', 'trending'],
-      category: 'Creative & Design',
-      categorySlug: 'creative-design',
-      subcategory: 'Music & Audio Synthesis',
-      subcategorySlug: 'music-audio-synthesis',
-      description: 'LALAL.AI is an AI-powered audio processing tool that can separate vocals from instrumental tracks with exceptional quality. It\'s perfect for remixing, karaoke, sample creation, and audio restoration.',
-      features: [
-        'Vocal separation',
-        'Instrumental extraction',
-        'High-quality processing',
-        'Multiple audio formats',
-        'Batch processing',
-        'Noise reduction',
-        'Audio restoration',
-        'API access'
-      ],
-      useCases: [
-        'Music remixing',
-        'Karaoke tracks',
-        'Sample creation',
-        'Audio restoration',
-        'Podcast editing',
-        'Music production'
-      ],
-      tags: ['audio-separation', 'vocal-removal', 'music-production', 'ai-audio'],
-      rating: 4.8,
-      reviewCount: 8700
-    },
-    {
-      name: 'iZotope RX',
-      slug: 'izotope-rx',
-      tagline: 'Professional audio repair and editing software',
-      logoUrl: '/logos/izotope-rx.png',
-      website: 'https://www.izotope.com/en/products/rx.html',
-      pricing: 'paid',
-      badges: ['popular', 'featured'],
-      category: 'Creative & Design',
-      categorySlug: 'creative-design',
-      subcategory: 'Music & Audio Synthesis',
-      subcategorySlug: 'music-audio-synthesis',
-      description: 'iZotope RX is the industry standard for audio repair and editing software. It provides powerful tools for removing noise, eliminating clicks and pops, and restoring damaged audio recordings.',
-      features: [
-        'Audio repair tools',
-        'Noise reduction',
-        'Dialogue intelligibility',
-        'Spectral editing',
-        'Batch processing',
-        'Plugin support',
-        'Advanced algorithms',
-        'Industry standard'
-      ],
-      useCases: [
-        'Audio restoration',
-        'Podcast editing',
-        'Film post-production',
-        'Music production',
-        'Forensic audio',
-        'Broadcast production'
-      ],
-      tags: ['audio-repair', 'noise-reduction', 'professional', 'post-production'],
-      rating: 4.9,
-      reviewCount: 15600
-    },
-    {
-      name: 'Moises.ai',
-      slug: 'moises-ai',
-      tagline: 'AI-powered music separation and practice tool',
-      logoUrl: '/logos/moises-ai.png',
-      website: 'https://moises.ai',
-      pricing: 'freemium',
-      badges: ['popular', 'trending'],
-      category: 'Creative & Design',
-      categorySlug: 'creative-design',
-      subcategory: 'Music & Audio Synthesis',
-      subcategorySlug: 'music-audio-synthesis',
-      description: 'Moises.ai is an AI-powered music separation tool that allows musicians to isolate vocals, instruments, and drums from any song. It\'s perfect for practice, remixing, and music education.',
-      features: [
-        'Music separation',
-        'Tempo adjustment',
-        'Key detection',
-        'Chord recognition',
-        'Practice tools',
-        'Mobile app',
-        'High-quality processing',
-        'Educational features'
-      ],
-      useCases: [
-        'Music practice',
-        'Instrument learning',
-        'Music remixing',
-        'Karaoke creation',
-        'Music education',
-        'Song analysis'
-      ],
-      tags: ['music-separation', 'practice-tool', 'music-education', 'ai-audio'],
-      rating: 4.7,
-      reviewCount: 9200
-    },
-    {
-      name: 'BandLab',
-      slug: 'bandlab',
-      tagline: 'Cloud-based music creation and collaboration platform',
-      logoUrl: '/logos/bandlab.png',
-      website: 'https://www.bandlab.com',
-      pricing: 'free',
-      badges: ['popular', 'trending'],
-      category: 'Creative & Design',
-      categorySlug: 'creative-design',
-      subcategory: 'Music & Audio Synthesis',
-      subcategorySlug: 'music-audio-synthesis',
-      description: 'BandLab is a free, cloud-based music creation and collaboration platform that enables musicians to create, collaborate, and share their music from anywhere. It offers a complete digital audio workstation with AI-powered tools.',
-      features: [
-        'Cloud-based DAW',
-        'AI-powered tools',
-        'Real-time collaboration',
-        'Social features',
-        'Mobile app',
-        'Free to use',
-        'Cross-platform',
-        'Community sharing'
-      ],
-      useCases: [
-        'Music creation',
-        'Remote collaboration',
-        'Music education',
-        'Content creation',
-        'Home recording',
-        'Social music sharing'
-      ],
-      tags: ['music-creation', 'collaboration', 'cloud-based', 'free'],
-      rating: 4.6,
-      reviewCount: 23400
-    },
-    {
-      name: 'Suno AI',
-      slug: 'suno-ai',
-      tagline: 'AI music generation with lyrics and vocals',
-      logoUrl: '/logos/suno-ai.png',
-      website: 'https://www.suno.ai',
-      pricing: 'freemium',
-      badges: ['popular', 'trending'],
-      category: 'Creative & Design',
-      categorySlug: 'creative-design',
-      subcategory: 'Music & Audio Synthesis',
-      subcategorySlug: 'music-audio-synthesis',
-      description: 'Suno AI is an advanced AI music generation platform that can create full songs with lyrics and vocals based on text prompts. It\'s capable of generating music in various styles and genres with professional-quality results.',
-      features: [
-        'Full song generation',
-        'Lyrics and vocals',
-        'Multiple genres',
-        'Custom style control',
-        'High-quality output',
-        'Fast generation',
-        'Text-to-music',
-        'Commercial use'
-      ],
-      useCases: [
-        'Original music creation',
-        'Content for videos',
-        'Commercial jingles',
-        'Personal songs',
-        'Educational projects',
-        'Creative experiments'
-      ],
-      tags: ['ai-music', 'song-generation', 'lyrics', 'vocals'],
-      rating: 4.8,
-      reviewCount: 7600
-    },
-    {
-      name: 'Udio',
-      slug: 'udio',
-      tagline: 'AI music generator for creators and artists',
-      logoUrl: '/logos/udio.png',
-      website: 'https://www.udio.com',
-      pricing: 'freemium',
-      badges: ['popular', 'trending'],
-      category: 'Creative & Design',
-      categorySlug: 'creative-design',
-      subcategory: 'Music & Audio Synthesis',
-      subcategorySlug: 'music-audio-synthesis',
-      description: 'Udio is an AI music generation platform that allows users to create original songs with lyrics and vocals. It offers intuitive controls for customizing the style, mood, and genre of generated music.',
-      features: [
-        'AI song generation',
-        'Customizable parameters',
-        'Lyrics and vocals',
-        'Multiple genres',
-        'Style transfer',
-        'Fast creation',
-        'High-quality audio',
-        'Commercial licensing'
-      ],
-      useCases: [
-        'Content creation',
-        'Commercial music',
-        'Personal projects',
-        'Educational use',
-        'Creative experiments',
-        'Video soundtracks'
-      ],
-      tags: ['ai-music', 'song-generator', 'content-creation', 'royalty-free'],
-      rating: 4.7,
-      reviewCount: 8900
     }
   ],
 
@@ -6903,6 +6370,45 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
     }
   ],
 
+  // Creative & Design > Video Production & Editing
+  'video-production-editing': [
+    {
+      name: 'Adobe Premiere Pro',
+      slug: 'adobe-premiere-pro',
+      tagline: 'Industry-leading video editing software',
+      logoUrl: '/logos/premiere-pro.png',
+      website: 'https://www.adobe.com/products/premiere.html',
+      pricing: 'paid',
+      badges: ['popular', 'enterprise'],
+      category: 'Creative & Design',
+      categorySlug: 'creative-design',
+      subcategory: 'Video Production & Editing',
+      subcategorySlug: 'video-production-editing',
+      description: 'Adobe Premiere Pro is the industry-leading video editing software for professional video production. With powerful editing tools, seamless integration with other Adobe apps, and support for a wide range of formats, it\'s the go-to choice for filmmakers, broadcasters, and content creators.',
+      features: [
+        'Professional video editing',
+        'Multi-cam editing',
+        'Color grading tools',
+        'Audio editing capabilities',
+        'Integration with Adobe Creative Cloud',
+        'Real-time collaboration',
+        'Advanced effects and transitions',
+        'Export to multiple formats'
+      ],
+      useCases: [
+        'Film and television post-production',
+        'YouTube content creation',
+        'Corporate video production',
+        'Event videography',
+        'Social media videos',
+        'Documentary editing'
+      ],
+      tags: ['video-editing', 'professional', 'adobe', 'post-production'],
+      rating: 4.8,
+      reviewCount: 28700
+    }
+  ],
+  
   // Content Creation > Video Editing
   'video-editing': [
     {
@@ -17276,6 +16782,265 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         price: 'Free plan available, Pro from $24/month',
         url: 'https://longshot.ai/pricing',
         description: 'Focuses on long-form content with fact-checking'
+      }
+    }
+  ],
+
+  // Real Estate & PropTech > Discovery & Research
+  'real-estate-proptech-discovery-research': [
+    {
+      name: 'Zillow',
+      slug: 'zillow',
+      tagline: 'Leading real estate marketplace for buying, selling, and renting homes',
+      logoUrl: '/logos/zillow.png',
+      website: 'https://www.zillow.com',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Real Estate & PropTech',
+      categorySlug: 'real-estate-proptech',
+      subcategory: 'Discovery & Research',
+      subcategorySlug: 'discovery-research',
+      description: 'Zillow is the leading real estate and rental marketplace dedicated to empowering consumers with data, inspiration and knowledge around the place they call home, and connecting them with the best local professionals who can help.',
+      features: ['Comprehensive property listings database', 'Zestimate home valuations', 'Virtual 3D home tours', 'Market insights and trends', 'Agent finder', 'Mortgage calculator', 'Rental search', 'Home improvement resources'],
+      useCases: ['Home buying research', 'Property value estimation', 'Market analysis', 'Agent selection', 'Rental property search', 'Home improvement planning'],
+      tags: ['real-estate', 'property-listings', 'home-valuations', 'market-data', 'zillow'],
+      rating: 4.6,
+      reviewCount: 28500,
+      alternatives: ['Realtor.com', 'Redfin', 'Trulia'],
+      integrations: ['Zillow Premier Agent', 'Mortech', 'DocuSign', 'HouseCanary API'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free for consumers, paid plans for agents from $249/month',
+        url: 'https://www.zillow.com/premier-agent/',
+        description: 'Free consumer platform, paid agent tools'
+      }
+    },
+    {
+      name: 'Realtor.com',
+      slug: 'realtor-com',
+      tagline: 'Official real estate listings from MLS with accurate, up-to-date information',
+      logoUrl: '/logos/realtor.png',
+      website: 'https://www.realtor.com',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Real Estate & PropTech',
+      categorySlug: 'real-estate-proptech',
+      subcategory: 'Discovery & Research',
+      subcategorySlug: 'discovery-research',
+      description: 'Realtor.com is the official site of the National Association of Realtors and is the most accurate source for homes, with listings updated every 15 minutes from over 580 MLS feeds.',
+      features: ['Real-time MLS listings', 'Advanced search filters', 'School district information', 'Commute time calculator', 'Local market insights', 'Open house schedules', 'Virtual tours and videos', 'Agent directory and ratings'],
+      useCases: ['Home search and discovery', 'Real-time property updates', 'School district research', 'Commute planning', 'Market trend analysis', 'Agent selection'],
+      tags: ['real-estate', 'mls', 'property-search', 'market-data', 'realtor'],
+      rating: 4.5,
+      reviewCount: 19800,
+      alternatives: ['Zillow', 'Redfin', 'Trulia'],
+      integrations: ['Bright MLS', 'Realogy', 'HomeAdvisor', 'Move.com'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free for buyers/renters, paid plans for agents starting at $60/month',
+        url: 'https://www.realtor.com/agent-resources/',
+        description: 'Free platform for home searchers, subscription plans for real estate professionals'
+      }
+    },
+    {
+      name: 'Redfin',
+      slug: 'redfin',
+      tagline: 'Technology-powered real estate brokerage with data-driven insights',
+      logoUrl: '/logos/redfin.png',
+      website: 'https://www.redfin.com',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Real Estate & PropTech',
+      categorySlug: 'real-estate-proptech',
+      subcategory: 'Discovery & Research',
+      subcategorySlug: 'discovery-research',
+      description: 'Redfin is a technology-powered real estate brokerage that offers data-driven insights, competitive pricing, and a full-service agent experience with online tools.',
+      features: ['Real-time listings', 'Redfin Estimate home values', 'Agent commission savings', 'Online offer tools', '3D home tours', 'Market data analytics', 'School search', 'Neighborhood insights'],
+      useCases: ['Home buying with agent', 'Property value estimation', 'Market analysis', 'Online offer submission', 'Agent commission savings', 'Neighborhood research'],
+      tags: ['real-estate', 'brokerage', 'home-valuations', 'commission-savings', 'redfin'],
+      rating: 4.7,
+      reviewCount: 12400,
+      alternatives: ['Zillow', 'Realtor.com', 'Compass'],
+      integrations: ['MLS systems', 'DocuSign', 'Title companies', 'Home inspection services'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free for consumers, agents earn 1.5% commission (vs 2.5% industry avg)',
+        url: 'https://www.redfin.com/buy-a-home/buying-guide',
+        description: 'Free consumer platform, agents offer commission savings'
+      }
+    }
+  ],
+
+  // Real Estate & PropTech > Automation & Orchestration
+  'real-estate-proptech-automation-orchestration': [
+    {
+      name: 'AppFolio',
+      slug: 'appfolio',
+      tagline: 'Property management software for residential and commercial properties',
+      logoUrl: '/logos/appfolio.png',
+      website: 'https://www.appfolio.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Real Estate & PropTech',
+      categorySlug: 'real-estate-proptech',
+      subcategory: 'Automation & Orchestration',
+      subcategorySlug: 'automation-orchestration',
+      description: 'AppFolio is a cloud-based property management software that helps residential and commercial property managers streamline operations, improve resident satisfaction, and grow their business.',
+      features: ['Property management', 'Accounting and billing', 'Maintenance management', 'Resident screening', 'Online rent collection', 'Work order management', 'Reporting and analytics', 'Mobile apps'],
+      useCases: ['Residential property management', 'Commercial property management', 'Accounting automation', 'Maintenance coordination', 'Tenant screening', 'Rent collection'],
+      tags: ['property-management', 'accounting', 'maintenance', 'rent-collection', 'appfolio'],
+      rating: 4.4,
+      reviewCount: 3200,
+      alternatives: ['Buildium', 'Rent Manager', 'Propertyware'],
+      integrations: ['QuickBooks', 'Yardi', 'RealPage', 'CoStar', 'Zillow Rental Manager'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $0.35/unit/month for property management, $15/user/month for accounting',
+        url: 'https://www.appfolio.com/pricing',
+        description: 'Tiered pricing based on features and property count'
+      }
+    },
+    {
+      name: 'Yardi',
+      slug: 'yardi',
+      tagline: 'Integrated property management and accounting software for multifamily properties',
+      logoUrl: '/logos/yardi.png',
+      website: 'https://www.yardi.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Real Estate & PropTech',
+      categorySlug: 'real-estate-proptech',
+      subcategory: 'Automation & Orchestration',
+      subcategorySlug: 'automation-orchestration',
+      description: 'Yardi is a comprehensive property management software solution that provides integrated property management, accounting, procurement, human resources, and more for multifamily, commercial, and student housing properties.',
+      features: ['Property management', 'Accounting and financials', 'Procurement management', 'Human resources', 'Maintenance management', 'Resident services', 'Business intelligence', 'Mobile applications'],
+      useCases: ['Multifamily property management', 'Commercial property management', 'Student housing operations', 'Accounting automation', 'Procurement management', 'HR management'],
+      tags: ['property-management', 'accounting', 'multifamily', 'enterprise', 'yardi'],
+      rating: 4.3,
+      reviewCount: 8900,
+      alternatives: ['RealPage', 'AppFolio', 'Buildium'],
+      integrations: ['QuickBooks', 'MRI Software', 'CoStar', 'RentCafe', 'ResMan'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Custom pricing based on property portfolio size',
+        url: 'https://www.yardi.com/contact/',
+        description: 'Enterprise pricing customized for each client'
+      }
+    }
+  ],
+
+  // Media & Entertainment > Discovery & Research
+  'media-entertainment-discovery-research': [
+    {
+      name: 'Netflix',
+      slug: 'netflix',
+      tagline: "World's leading streaming entertainment service",
+      logoUrl: '/logos/netflix.png',
+      website: 'https://www.netflix.com',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Media & Entertainment',
+      categorySlug: 'media-entertainment',
+      subcategory: 'Discovery & Research',
+      subcategorySlug: 'discovery-research',
+      description: "Netflix is the world's leading streaming entertainment service with over 230 million paid memberships in over 190 countries enjoying TV series, documentaries, and feature films across a wide variety of genres and languages.",
+      features: ['Unlimited streaming', 'Personalized recommendations', 'Multiple user profiles', 'Download for offline viewing', 'Parental controls', '4K Ultra HD content', 'Original content', 'Global content library'],
+      useCases: ['Movie and TV show streaming', 'Content discovery', 'Family entertainment', 'Offline viewing', 'International content access', 'Binge watching'],
+      tags: ['streaming', 'entertainment', 'tv-shows', 'movies', 'netflix'],
+      rating: 4.6,
+      reviewCount: 125000,
+      alternatives: ['Amazon Prime Video', 'Disney+', 'HBO Max'],
+      integrations: ['Smart TVs', 'Mobile devices', 'Gaming consoles', 'Streaming devices'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Plans from $6.99/month for Basic to $22.99/month for Premium',
+        url: 'https://www.netflix.com/signup/planform',
+        description: 'Multiple subscription tiers with different features'
+      }
+    },
+    {
+      name: 'Spotify',
+      slug: 'spotify',
+      tagline: 'Digital music service with millions of songs and podcasts',
+      logoUrl: '/logos/spotify.png',
+      website: 'https://www.spotify.com',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Media & Entertainment',
+      categorySlug: 'media-entertainment',
+      subcategory: 'Discovery & Research',
+      subcategorySlug: 'discovery-research',
+      description: 'Spotify is a digital music service that gives you access to millions of songs and other content from creators all over the world. With Spotify, you can play any song, any time on any device.',
+      features: ['Music streaming', 'Podcast hosting', 'Personalized playlists', 'Algorithmic recommendations', 'Offline listening', 'Social sharing', 'Cross-device sync', 'Artist discovery'],
+      useCases: ['Music streaming', 'Podcast listening', 'Playlist creation', 'Artist discovery', 'Offline listening', 'Social music sharing'],
+      tags: ['music', 'streaming', 'podcasts', 'playlists', 'spotify'],
+      rating: 4.7,
+      reviewCount: 210000,
+      alternatives: ['Apple Music', 'Amazon Music', 'YouTube Music'],
+      integrations: ['Smart speakers', 'Mobile devices', 'Cars', 'Smart TVs', 'Wearables'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free with ads, Premium from $9.99/month',
+        url: 'https://www.spotify.com/premium/',
+        description: 'Free tier with ads, Premium for uninterrupted listening'
+      }
+    }
+  ],
+
+  // Media & Entertainment > Analytics & Benchmarking
+  'media-entertainment-analytics-benchmarking': [
+    {
+      name: 'TikTok Analytics',
+      slug: 'tiktok-analytics',
+      tagline: 'Insights and analytics for TikTok creators and businesses',
+      logoUrl: '/logos/tiktok.png',
+      website: 'https://www.tiktok.com/business-center',
+      pricing: 'freemium',
+      badges: ['popular', 'trending'],
+      category: 'Media & Entertainment',
+      categorySlug: 'media-entertainment',
+      subcategory: 'Analytics & Benchmarking',
+      subcategorySlug: 'analytics-benchmarking',
+      description: 'TikTok Analytics provides insights and data for creators and businesses to understand their audience, track content performance, and optimize their TikTok strategy.',
+      features: ['Profile analytics', 'Content performance metrics', 'Audience demographics', 'Follower growth tracking', 'Video view statistics', 'Engagement rate analysis', 'Trending sounds insights', 'Competitor benchmarking'],
+      useCases: ['Content performance analysis', 'Audience understanding', 'Follower growth tracking', 'Engagement optimization', 'Content strategy planning', 'ROI measurement'],
+      tags: ['social-media', 'analytics', 'tiktok', 'content-performance', 'audience-insights'],
+      rating: 4.3,
+      reviewCount: 45000,
+      alternatives: ['Hootsuite Analytics', 'Sprout Social', 'Iconosquare'],
+      integrations: ['TikTok Ads Manager', 'Google Analytics', 'Facebook Business Suite', 'Instagram Insights'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free for basic analytics, Pro features with TikTok Business Suite',
+        url: 'https://ads.tiktok.com/business-center/',
+        description: 'Basic analytics free, advanced features with business account'
+      }
+    },
+    {
+      name: 'YouTube Analytics',
+      slug: 'youtube-analytics',
+      tagline: 'Comprehensive analytics for YouTube creators and brands',
+      logoUrl: '/logos/youtube.png',
+      website: 'https://www.youtube.com/analytics',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Media & Entertainment',
+      categorySlug: 'media-entertainment',
+      subcategory: 'Analytics & Benchmarking',
+      subcategorySlug: 'analytics-benchmarking',
+      description: 'YouTube Analytics provides detailed insights into channel performance, audience demographics, traffic sources, and revenue metrics for creators and brands on YouTube.',
+      features: ['Channel performance overview', 'Audience retention reports', 'Traffic source analysis', 'Revenue tracking', 'Subscriber analytics', 'Content engagement metrics', 'Device and geography data', 'Comparative reporting'],
+      useCases: ['Channel performance tracking', 'Content optimization', 'Audience understanding', 'Revenue analysis', 'Subscriber growth monitoring', 'Content strategy refinement'],
+      tags: ['video', 'analytics', 'youtube', 'content-performance', 'audience-insights'],
+      rating: 4.5,
+      reviewCount: 180000,
+      alternatives: ['Tubular Labs', 'Social Blade', 'Hootsuite Analytics'],
+      integrations: ['Google Analytics', 'AdSense', 'YouTube Studio', 'Google Ads'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free with YouTube account, advanced features with YouTube Premium',
+        url: 'https://www.youtube.com/analytics',
+        description: 'Free analytics for all YouTube creators, premium features with YouTube Premium'
       }
     }
   ]
