@@ -1,5 +1,5 @@
 // Types
-export type ToolPricing = 'free' | 'freemium' | 'paid' | 'enterprise' | 'community-favorite';
+export type ToolPricing = 'free' | 'freemium' | 'paid' | 'enterprise' | 'open-source';
 export type ToolBadge = 'nexus-verified' | 'trending' | 'enterprise' | 'new' | 'popular' | 'featured' | 'community-favorite';
 
 export interface ToolEntry {
@@ -3038,7 +3038,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         'Architecture visualization',
         'Educational content'
       ],
-      tags: ['AI', 'image-generation', 'community-favorite', 'art'],
+      tags: ['AI', 'image-generation', 'open-source', 'art'],
       rating: 4.6,
       reviewCount: 8750
     },
@@ -3695,7 +3695,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tagline: 'A privacy-first, open-source knowledge base',
       logoUrl: '/logos/logseq.png',
       website: 'https://logseq.com',
-      pricing: 'community-favorite',
+      pricing: 'open-source',
       badges: ['trending', 'featured'],
       category: 'Productivity & Business',
       categorySlug: 'productivity-business',
@@ -3720,7 +3720,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         'Learning and studying',
         'Team collaboration'
       ],
-      tags: ['note-taking', 'community-favorite', 'knowledge-management', 'privacy'],
+      tags: ['note-taking', 'open-source', 'knowledge-management', 'privacy'],
       rating: 4.6,
       reviewCount: 7800
     },
@@ -4302,7 +4302,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tagline: 'Open-source web application for data science',
       logoUrl: '/logos/jupyter.png',
       website: 'https://jupyter.org',
-      pricing: 'community-favorite',
+      pricing: 'open-source',
       badges: ['popular', 'featured'],
       category: 'Research & Science',
       categorySlug: 'research-science',
@@ -4327,7 +4327,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         'Research documentation',
         'Data exploration'
       ],
-      tags: ['data-analysis', 'python', 'data-science', 'community-favorite', 'notebooks'],
+      tags: ['data-analysis', 'python', 'data-science', 'open-source', 'notebooks'],
       rating: 4.8,
       reviewCount: 89000
     },
@@ -4407,7 +4407,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tagline: 'Unified analytics engine for big data',
       logoUrl: '/logos/spark.png',
       website: 'https://spark.apache.org',
-      pricing: 'community-favorite',
+      pricing: 'open-source',
       badges: ['featured', 'enterprise'],
       category: 'Research & Science',
       categorySlug: 'research-science',
@@ -4432,7 +4432,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         'Log processing',
         'Data warehousing'
       ],
-      tags: ['data-analysis', 'big-data', 'distributed', 'community-favorite', 'spark'],
+      tags: ['data-analysis', 'big-data', 'distributed', 'open-source', 'spark'],
       rating: 4.6,
       reviewCount: 23400
     }
@@ -4506,7 +4506,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         'Collaboration',
         'Citation formatting'
       ],
-      tags: ['research', 'citations', 'references', 'community-favorite', 'academic'],
+      tags: ['research', 'citations', 'references', 'open-source', 'academic'],
       rating: 4.6,
       reviewCount: 28900
     },
@@ -4660,7 +4660,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tagline: 'End-to-end open source machine learning platform',
       logoUrl: '/logos/tensorflow.png',
       website: 'https://www.tensorflow.org',
-      pricing: 'community-favorite',
+      pricing: 'open-source',
       badges: ['popular', 'featured', 'enterprise'],
       category: 'Research & Science',
       categorySlug: 'research-science',
@@ -4685,7 +4685,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         'Recommendation systems',
         'Reinforcement learning'
       ],
-      tags: ['ai', 'machine-learning', 'deep-learning', 'tensorflow', 'community-favorite'],
+      tags: ['ai', 'machine-learning', 'deep-learning', 'tensorflow', 'open-source'],
       rating: 4.7,
       reviewCount: 123000
     },
@@ -4695,7 +4695,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tagline: 'Open source machine learning framework',
       logoUrl: '/logos/pytorch.png',
       website: 'https://pytorch.org',
-      pricing: 'community-favorite',
+      pricing: 'open-source',
       badges: ['popular', 'featured'],
       category: 'Research & Science',
       categorySlug: 'research-science',
@@ -4720,7 +4720,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         'Generative models',
         'Production ML'
       ],
-      tags: ['ai', 'machine-learning', 'deep-learning', 'pytorch', 'community-favorite'],
+      tags: ['ai', 'machine-learning', 'deep-learning', 'pytorch', 'open-source'],
       rating: 4.8,
       reviewCount: 89000
     },
@@ -4765,7 +4765,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tagline: 'Machine learning in Python',
       logoUrl: '/logos/sklearn.png',
       website: 'https://scikit-learn.org',
-      pricing: 'community-favorite',
+      pricing: 'open-source',
       badges: ['popular', 'featured'],
       category: 'Research & Science',
       categorySlug: 'research-science',
@@ -4790,7 +4790,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         'Model evaluation',
         'Data preprocessing'
       ],
-      tags: ['ai', 'machine-learning', 'python', 'scikit-learn', 'community-favorite'],
+      tags: ['ai', 'machine-learning', 'python', 'scikit-learn', 'open-source'],
       rating: 4.7,
       reviewCount: 45600
     },
@@ -4800,7 +4800,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tagline: 'Deep learning API for humans',
       logoUrl: '/logos/keras.png',
       website: 'https://keras.io',
-      pricing: 'community-favorite',
+      pricing: 'open-source',
       badges: ['popular', 'featured'],
       category: 'Research & Science',
       categorySlug: 'research-science',
@@ -5996,7 +5996,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tagline: 'Open-source learning platform',
       logoUrl: '/logos/moodle.png',
       website: 'https://moodle.org',
-      pricing: 'community-favorite',
+      pricing: 'open-source',
       badges: ['popular', 'featured'],
       category: 'Education & Learning',
       categorySlug: 'education-learning',
@@ -6005,279 +6005,9 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       description: 'Moodle is a free, open-source learning management system used by millions worldwide.',
       features: ['Open source', 'Customizable', 'Course creation', 'Quizzes & assignments', 'Gradebook', 'Plugins', 'Mobile app', 'Multilingual'],
       useCases: ['School LMS', 'University courses', 'Corporate training', 'Online education', 'Blended learning', 'Custom learning'],
-      tags: ['lms', 'community-favorite', 'education', 'courses', 'free'],
+      tags: ['lms', 'open-source', 'education', 'courses', 'free'],
       rating: 4.4,
       reviewCount: 45600
-    }
-  ],
-
-  // Education & Learning > LMS
-  'education-learning-lms': [
-    {
-      name: 'Canvas',
-      slug: 'canvas',
-      tagline: 'Learning management system for educational institutions',
-      logoUrl: '/logos/canvas.png',
-      website: 'https://www.instructure.com/canvas',
-      pricing: 'paid',
-      badges: ['enterprise', 'featured'],
-      category: 'Education & Learning',
-      categorySlug: 'education-learning',
-      subcategory: 'LMS',
-      subcategorySlug: 'lms',
-      description: 'Canvas is a powerful learning management system that helps educational institutions create, manage, and deliver online courses with intuitive tools for instructors and engaging experiences for students.',
-      features: [
-        'Course creation tools',
-        'Assignment management',
-        'Gradebook and analytics',
-        'Communication tools',
-        'Mobile apps',
-        'Integration capabilities',
-        'Customizable interface',
-        'Accessibility features'
-      ],
-      useCases: [
-        'Online course delivery',
-        'Hybrid learning',
-        'Student assessment',
-        'Instructor collaboration',
-        'Academic analytics',
-        'Mobile learning'
-      ],
-      tags: ['lms', 'education', 'online-learning', 'course-management'],
-      rating: 4.6,
-      reviewCount: 15000,
-      alternatives: ['Moodle', 'Blackboard', 'Google Classroom'],
-      integrations: ['Google Workspace', 'Microsoft 365', 'Zoom', 'Turnitin'],
-      pricingDetails: {
-        type: 'paid',
-        price: 'Custom pricing based on institution size',
-        url: 'https://www.instructure.com/canvas/pricing',
-        description: 'Enterprise pricing for educational institutions'
-      }
-    },
-    {
-      name: 'Moodle',
-      slug: 'moodle',
-      tagline: 'Open-source learning platform for educators',
-      logoUrl: '/logos/moodle.png',
-      website: 'https://moodle.org',
-      pricing: 'community-favorite',
-      badges: ['community-favorite', 'community-favorite'],
-      category: 'Education & Learning',
-      categorySlug: 'education-learning',
-      subcategory: 'LMS',
-      subcategorySlug: 'lms',
-      description: 'Moodle is a free and open-source learning management system that empowers educators to create online learning communities with customizable courses, interactive activities, and comprehensive assessment tools.',
-      features: [
-        'Course management',
-        'Activity modules',
-        'Assessment tools',
-        'Grade tracking',
-        'Communication tools',
-        'Customization options',
-        'Mobile access',
-        'Multi-language support'
-      ],
-      useCases: [
-        'Academic courses',
-        'Corporate training',
-        'Certification programs',
-        'Blended learning',
-        'Distance education',
-        'Skill development'
-      ],
-      tags: ['lms', 'community-favorite', 'education', 'elearning'],
-      rating: 4.5,
-      reviewCount: 12000,
-      alternatives: ['Canvas', 'Blackboard', 'Sakai'],
-      integrations: ['Google Workspace', 'Microsoft 365', 'Zoom', 'Turnitin'],
-      pricingDetails: {
-        type: 'community-favorite',
-        price: 'Free open-source, hosting from $50/month',
-        url: 'https://moodle.com',
-        description: 'Free to download and use, paid hosting and support available'
-      }
-    }
-  ],
-
-  // Education & Learning > Student Information
-  'education-learning-student-information': [
-    {
-      name: 'PowerSchool',
-      slug: 'powerschool',
-      tagline: 'Student information system for K-12 schools',
-      logoUrl: '/logos/powerschool.png',
-      website: 'https://www.powerschool.com',
-      pricing: 'enterprise',
-      badges: ['enterprise', 'featured'],
-      category: 'Education & Learning',
-      categorySlug: 'education-learning',
-      subcategory: 'Student Information',
-      subcategorySlug: 'student-information',
-      description: 'PowerSchool is a comprehensive student information system that helps K-12 schools manage student data, attendance, grades, scheduling, and communication with parents and guardians.',
-      features: [
-        'Student records management',
-        'Attendance tracking',
-        'Gradebook functionality',
-        'Class scheduling',
-        'Parent portal',
-        'Reporting dashboard',
-        'Mobile apps',
-        'Data analytics'
-      ],
-      useCases: [
-        'Student data management',
-        'Attendance tracking',
-        'Grade management',
-        'Class scheduling',
-        'Parent communication',
-        'Administrative reporting'
-      ],
-      tags: ['sis', 'student-information', 'k12', 'education'],
-      rating: 4.4,
-      reviewCount: 8500,
-      alternatives: ['Infinite Campus', 'Skyward', 'Aeries'],
-      integrations: ['Google Workspace', 'Microsoft 365', 'Canvas', 'Schoology'],
-      pricingDetails: {
-        type: 'enterprise',
-        price: 'Custom enterprise pricing',
-        url: 'https://www.powerschool.com/contact',
-        description: 'Custom pricing based on district size and requirements'
-      }
-    },
-    {
-      name: 'Infinite Campus',
-      slug: 'infinite-campus',
-      tagline: 'Unified K-12 student information system',
-      logoUrl: '/logos/infinite-campus.png',
-      website: 'https://www.infinitecampus.com',
-      pricing: 'enterprise',
-      badges: ['enterprise', 'featured'],
-      category: 'Education & Learning',
-      categorySlug: 'education-learning',
-      subcategory: 'Student Information',
-      subcategorySlug: 'student-information',
-      description: 'Infinite Campus is a unified student information system that provides K-12 districts with a single platform for student data management, learning management, and family engagement.',
-      features: [
-        'Student information management',
-        'Learning management',
-        'Family engagement tools',
-        'Assessment tools',
-        'Analytics and reporting',
-        'Mobile applications',
-        'Customizable workflows',
-        'Data security'
-      ],
-      useCases: [
-        'Student data management',
-        'Academic records',
-        'Family communication',
-        'Assessment tracking',
-        'District analytics',
-        'Compliance reporting'
-      ],
-      tags: ['sis', 'student-information', 'k12', 'education'],
-      rating: 4.3,
-      reviewCount: 6200,
-      alternatives: ['PowerSchool', 'Skyward', 'Aeries'],
-      integrations: ['Google Workspace', 'Microsoft 365', 'Canvas', 'Schoology'],
-      pricingDetails: {
-        type: 'enterprise',
-        price: 'Custom enterprise pricing',
-        url: 'https://www.infinitecampus.com/contact',
-        description: 'Custom pricing based on district size and needs'
-      }
-    }
-  ],
-
-  // Education & Learning > Course Creation
-  'education-learning-course-creation': [
-    {
-      name: 'Teachable',
-      slug: 'teachable',
-      tagline: 'Online course platform for creators and educators',
-      logoUrl: '/logos/teachable.png',
-      website: 'https://teachable.com',
-      pricing: 'freemium',
-      badges: ['popular', 'featured'],
-      category: 'Education & Learning',
-      categorySlug: 'education-learning',
-      subcategory: 'Course Creation',
-      subcategorySlug: 'course-creation',
-      description: 'Teachable is an online course platform that enables creators, educators, and businesses to create, market, and sell online courses with customizable websites, payment processing, and student management tools.',
-      features: [
-        'Course builder',
-        'Website customization',
-        'Payment processing',
-        'Student management',
-        'Marketing tools',
-        'Analytics dashboard',
-        'Mobile optimization',
-        'Affiliate program'
-      ],
-      useCases: [
-        'Online course creation',
-        'Digital product sales',
-        'Membership sites',
-        'Corporate training',
-        'Skill-based education',
-        'Revenue generation'
-      ],
-      tags: ['course-creation', 'online-learning', 'education', 'elearning'],
-      rating: 4.7,
-      reviewCount: 9800,
-      alternatives: ['Thinkific', 'Kajabi', 'Udemy'],
-      integrations: ['Stripe', 'PayPal', 'Mailchimp', 'Zoom'],
-      pricingDetails: {
-        type: 'freemium',
-        price: 'Free plan available, paid plans from $39/month',
-        url: 'https://teachable.com/pricing',
-        description: 'Free plan with 5% transaction fee, paid plans with reduced fees'
-      }
-    },
-    {
-      name: 'Thinkific',
-      slug: 'thinkific',
-      tagline: 'All-in-one platform for online courses and digital products',
-      logoUrl: '/logos/thinkific.png',
-      website: 'https://www.thinkific.com',
-      pricing: 'freemium',
-      badges: ['popular', 'trending'],
-      category: 'Education & Learning',
-      categorySlug: 'education-learning',
-      subcategory: 'Course Creation',
-      subcategorySlug: 'course-creation',
-      description: 'Thinkific is an all-in-one platform that helps entrepreneurs, educators, and businesses create, market, and sell online courses and digital products with drag-and-drop course building tools.',
-      features: [
-        'Drag-and-drop course builder',
-        'Custom website design',
-        'Payment processing',
-        'Student progress tracking',
-        'Marketing automation',
-        'Email marketing integration',
-        'Certificates and badges',
-        'Mobile-responsive design'
-      ],
-      useCases: [
-        'Online course creation',
-        'Digital product sales',
-        'Membership websites',
-        'Corporate training',
-        'Coaching programs',
-        'Educational content'
-      ],
-      tags: ['course-creation', 'online-learning', 'education', 'elearning'],
-      rating: 4.6,
-      reviewCount: 7600,
-      alternatives: ['Teachable', 'Kajabi', 'Udemy'],
-      integrations: ['Stripe', 'PayPal', 'Mailchimp', 'ActiveCampaign'],
-      pricingDetails: {
-        type: 'freemium',
-        price: 'Free plan available, paid plans from $36/month',
-        url: 'https://www.thinkific.com/pricing',
-        description: 'Free plan with basic features, paid plans with advanced features'
-      }
     }
   ],
 
@@ -6480,7 +6210,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tagline: 'The most customizable eCommerce platform',
       logoUrl: '/logos/woocommerce.png',
       website: 'https://woocommerce.com',
-      pricing: 'community-favorite',
+      pricing: 'open-source',
       badges: ['popular', 'featured'],
       category: 'E-commerce & Retail',
       categorySlug: 'ecommerce-retail',
@@ -6489,7 +6219,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       description: 'WooCommerce is a customizable, open-source eCommerce platform built on WordPress.',
       features: ['WordPress integration', 'Customizable', 'Extensions', 'Payment gateways', 'Shipping options', 'Product management', 'Analytics', 'Mobile responsive'],
       useCases: ['WordPress stores', 'Custom e-commerce', 'Online selling', 'Product stores', 'Digital downloads', 'Subscriptions'],
-      tags: ['ecommerce', 'wordpress', 'community-favorite', 'customizable', 'online-store'],
+      tags: ['ecommerce', 'wordpress', 'open-source', 'customizable', 'online-store'],
       rating: 4.5,
       reviewCount: 189000
     },
@@ -6879,7 +6609,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       description: 'Bitwarden is an open-source password manager that stores sensitive information securely.',
       features: ['Open source', 'End-to-end encryption', 'Password generator', 'Secure sharing', 'Self-hosting option', 'Two-factor auth', 'Browser extensions', 'Biometric unlock'],
       useCases: ['Password management', 'Team collaboration', 'Self-hosted security', 'Open-source solution', 'Cross-platform', 'Enterprise security'],
-      tags: ['security', 'passwords', 'community-favorite', 'encryption', 'privacy'],
+      tags: ['security', 'passwords', 'open-source', 'encryption', 'privacy'],
       rating: 4.8,
       reviewCount: 67800
     }
@@ -6977,7 +6707,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tagline: 'Free open source disk encryption',
       logoUrl: '/logos/veracrypt.png',
       website: 'https://www.veracrypt.fr',
-      pricing: 'community-favorite',
+      pricing: 'open-source',
       badges: ['featured'],
       category: 'Security & Privacy',
       categorySlug: 'security-privacy',
@@ -6986,7 +6716,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       description: 'VeraCrypt is free open-source disk encryption software for Windows, Mac, and Linux.',
       features: ['Full disk encryption', 'File encryption', 'Hidden volumes', 'Plausible deniability', 'AES encryption', 'Cross-platform', 'Open source', 'Portable mode'],
       useCases: ['Disk encryption', 'File security', 'Privacy protection', 'Secure storage', 'Data protection', 'Confidential files'],
-      tags: ['encryption', 'security', 'privacy', 'community-favorite', 'disk-encryption'],
+      tags: ['encryption', 'security', 'privacy', 'open-source', 'disk-encryption'],
       rating: 4.7,
       reviewCount: 34500
     }
@@ -8000,7 +7730,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tagline: 'Free and open source game engine',
       logoUrl: '/logos/godot.png',
       website: 'https://godotengine.org',
-      pricing: 'community-favorite',
+      pricing: 'open-source',
       badges: ['popular'],
       category: 'Gaming & Esports',
       categorySlug: 'gaming-esports',
@@ -8009,7 +7739,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       description: 'Godot is a feature-packed, cross-platform game engine to create 2D and 3D games.',
       features: ['Open source', 'Visual editor', 'GDScript', '2D & 3D', 'Lightweight'],
       useCases: ['Indie games', '2D games', 'Mobile games', 'Learning'],
-      tags: ['game-engine', 'community-favorite', '2d', '3d'],
+      tags: ['game-engine', 'open-source', '2d', '3d'],
       rating: 4.6,
       reviewCount: 8700
     }
@@ -8799,7 +8529,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         'Cookieless tracking',
         'Open-source analytics'
       ],
-      tags: ['analytics', 'privacy', 'gdpr', 'community-favorite', 'simple'],
+      tags: ['analytics', 'privacy', 'gdpr', 'open-source', 'simple'],
       rating: 4.8,
       reviewCount: 8900
     },
@@ -8834,7 +8564,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         'Data ownership',
         'Full control'
       ],
-      tags: ['analytics', 'privacy', 'self-hosted', 'community-favorite', 'gdpr'],
+      tags: ['analytics', 'privacy', 'self-hosted', 'open-source', 'gdpr'],
       rating: 4.5,
       reviewCount: 18900
     },
@@ -8982,7 +8712,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tagline: 'Code editing. Redefined.',
       logoUrl: '/logos/vscode.png',
       website: 'https://code.visualstudio.com',
-      pricing: 'community-favorite',
+      pricing: 'open-source',
       badges: ['popular', 'featured'],
       category: 'Development & Code',
       categorySlug: 'development-code',
@@ -8991,7 +8721,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       description: 'Visual Studio Code is a lightweight but powerful source code editor with built-in support for JavaScript, TypeScript and Node.js.',
       features: ['IntelliSense', 'Debugging', 'Git integration', 'Extensions', 'Customizable'],
       useCases: ['Web development', 'Software development', 'Data science', 'DevOps'],
-      tags: ['code-editor', 'ide', 'development', 'community-favorite'],
+      tags: ['code-editor', 'ide', 'development', 'open-source'],
       rating: 4.9,
       reviewCount: 123000
     },
@@ -9039,7 +8769,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tagline: 'A hackable text editor for the 21st Century',
       logoUrl: '/logos/atom.png',
       website: 'https://atom.io',
-      pricing: 'community-favorite',
+      pricing: 'open-source',
       badges: ['popular'],
       category: 'Development & Code',
       categorySlug: 'development-code',
@@ -9048,7 +8778,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       description: 'Atom is a free and open-source text and source code editor for macOS, Linux, and Windows.',
       features: ['Packages', 'Themes', 'Git integration', 'Cross-platform', 'Teletype'],
       useCases: ['Code editing', 'Web development', 'Collaboration', 'Customization'],
-      tags: ['code-editor', 'community-favorite', 'hackable', 'github'],
+      tags: ['code-editor', 'open-source', 'hackable', 'github'],
       rating: 4.4,
       reviewCount: 34500
     }
@@ -9087,7 +8817,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         'Code review',
         'Documentation hosting'
       ],
-      tags: ['version-control', 'git', 'collaboration', 'community-favorite', 'devops'],
+      tags: ['version-control', 'git', 'collaboration', 'open-source', 'devops'],
       rating: 4.8,
       reviewCount: 234000
     },
@@ -9416,7 +9146,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tagline: 'Open-source API development ecosystem',
       logoUrl: '/logos/hoppscotch.png',
       website: 'https://hoppscotch.io',
-      pricing: 'community-favorite',
+      pricing: 'open-source',
       badges: ['trending', 'featured'],
       category: 'Development & Engineering',
       categorySlug: 'development-engineering',
@@ -9441,7 +9171,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         'Team collaboration',
         'Lightweight alternative'
       ],
-      tags: ['api', 'testing', 'community-favorite', 'rest', 'graphql'],
+      tags: ['api', 'testing', 'open-source', 'rest', 'graphql'],
       rating: 4.7,
       reviewCount: 12300
     },
@@ -9525,7 +9255,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tagline: 'Production-grade container orchestration',
       logoUrl: '/logos/kubernetes.png',
       website: 'https://kubernetes.io',
-      pricing: 'community-favorite',
+      pricing: 'open-source',
       badges: ['popular', 'featured', 'enterprise'],
       category: 'Development & Engineering',
       categorySlug: 'development-engineering',
@@ -9560,7 +9290,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tagline: 'The leading open source automation server',
       logoUrl: '/logos/jenkins.png',
       website: 'https://www.jenkins.io',
-      pricing: 'community-favorite',
+      pricing: 'open-source',
       badges: ['popular', 'featured'],
       category: 'Development & Engineering',
       categorySlug: 'development-engineering',
@@ -9585,7 +9315,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         'Code quality checks',
         'Release management'
       ],
-      tags: ['devops', 'ci-cd', 'automation', 'jenkins', 'community-favorite'],
+      tags: ['devops', 'ci-cd', 'automation', 'jenkins', 'open-source'],
       rating: 4.4,
       reviewCount: 67800
     },
@@ -9595,7 +9325,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tagline: 'Infrastructure as Code',
       logoUrl: '/logos/terraform.png',
       website: 'https://www.terraform.io',
-      pricing: 'community-favorite',
+      pricing: 'open-source',
       badges: ['popular', 'featured', 'enterprise'],
       category: 'Development & Engineering',
       categorySlug: 'development-engineering',
@@ -9630,7 +9360,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tagline: 'Simple, agentless IT automation',
       logoUrl: '/logos/ansible.png',
       website: 'https://www.ansible.com',
-      pricing: 'community-favorite',
+      pricing: 'open-source',
       badges: ['popular', 'featured'],
       category: 'Development & Engineering',
       categorySlug: 'development-engineering',
@@ -9735,7 +9465,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tagline: 'Monitoring system and time series database',
       logoUrl: '/logos/prometheus.png',
       website: 'https://prometheus.io',
-      pricing: 'community-favorite',
+      pricing: 'open-source',
       badges: ['popular', 'featured'],
       category: 'Development & Engineering',
       categorySlug: 'development-engineering',
@@ -9934,7 +9664,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tagline: 'Free and open source 3D creation suite',
       logoUrl: '/logos/blender.png',
       website: 'https://www.blender.org/',
-      pricing: 'community-favorite',
+      pricing: 'open-source',
       badges: ['popular', 'featured'],
       category: 'Creative & Design',
       categorySlug: 'creative-design',
@@ -9959,14 +9689,14 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         'VFX and post-production',
         '3D printing'
       ],
-      tags: ['3d-modeling', 'animation', 'rendering', 'vfx', 'community-favorite'],
+      tags: ['3d-modeling', 'animation', 'rendering', 'vfx', 'open-source'],
       launchDate: '1998-01-01',
       rating: 4.8,
       reviewCount: 4500,
       alternatives: ['Maya', '3ds Max', 'Cinema 4D'],
       integrations: ['Unity', 'Unreal Engine', 'Substance Painter', 'ZBrush'],
       pricingDetails: {
-        type: 'community-favorite',
+        type: 'open-source',
         price: 'Free',
         url: 'https://www.blender.org/download/',
         description: 'Completely free and open source under the GNU General Public License'
@@ -12496,12 +12226,6 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
     }
   ],
 
-
-
-
-
-
-
   // Non-Profit & Social Impact > Impact Measurement
   'impact-measurement': [
     {
@@ -12729,7 +12453,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tagline: 'Workflow automation for technical people',
       logoUrl: '/logos/n8n.png',
       website: 'https://n8n.io',
-      pricing: 'community-favorite',
+      pricing: 'open-source',
       badges: ['trending', 'community-favorite'],
       category: 'Automation & Integration',
       categorySlug: 'automation-integration',
@@ -12754,13 +12478,13 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         'Developer workflows',
         'Enterprise automation'
       ],
-      tags: ['community-favorite', 'automation', 'self-hosted', 'workflow', 'developer'],
+      tags: ['open-source', 'automation', 'self-hosted', 'workflow', 'developer'],
       rating: 4.9,
       reviewCount: 2800,
       alternatives: ['Zapier', 'Make', 'Activepieces'],
       integrations: ['350+ nodes including databases, APIs, and apps'],
       pricingDetails: {
-        type: 'community-favorite',
+        type: 'open-source',
         price: 'Free self-hosted, Cloud from $20/month',
         url: 'https://n8n.io/pricing',
         description: 'Open-source with optional managed cloud hosting'
@@ -14835,7 +14559,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tagline: 'Open source integrated library system',
       logoUrl: '/logos/koha.png',
       website: 'https://koha-community.org',
-      pricing: 'community-favorite',
+      pricing: 'open-source',
       badges: ['featured', 'community-favorite'],
       category: 'Libraries & Archives',
       categorySlug: 'libraries-archives',
@@ -14844,13 +14568,13 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       description: 'Koha is the first free and open source software library automation package (ILS) used worldwide by public, school and special libraries.',
       features: ['Cataloging', 'Circulation', 'OPAC', 'Acquisitions', 'Serials', 'Reports', 'Self-checkout', 'Multilingual'],
       useCases: ['Library cataloging', 'Circulation management', 'Public catalog', 'Acquisitions', 'Member management'],
-      tags: ['library', 'community-favorite', 'ils', 'cataloging', 'circulation'],
+      tags: ['library', 'open-source', 'ils', 'cataloging', 'circulation'],
       rating: 4.5,
       reviewCount: 890,
       alternatives: ['Evergreen', 'Sierra', 'Alma'],
       integrations: ['Z39.50', 'SIP2', 'MARC', 'Various standards'],
       pricingDetails: {
-        type: 'community-favorite',
+        type: 'open-source',
         price: 'Free open source, hosting/support available',
         url: 'https://koha-community.org',
         description: 'Free software, optional paid support'
@@ -15555,7 +15279,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tagline: 'Open source home automation',
       logoUrl: '/logos/homeassistant.png',
       website: 'https://www.home-assistant.io',
-      pricing: 'community-favorite',
+      pricing: 'open-source',
       badges: ['community-favorite', 'trending'],
       category: 'IoT & Smart Devices',
       categorySlug: 'iot-smart-devices',
@@ -15564,13 +15288,13 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       description: 'Home Assistant is an open source home automation platform focused on privacy and local control.',
       features: ['Local control', 'Privacy-focused', '2000+ integrations', 'Automation', 'Dashboard', 'Voice control', 'Energy monitoring', 'Add-ons'],
       useCases: ['Home automation', 'Privacy-focused control', 'Advanced automation', 'Energy monitoring', 'Custom dashboards'],
-      tags: ['smart-home', 'community-favorite', 'automation', 'privacy', 'local'],
+      tags: ['smart-home', 'open-source', 'automation', 'privacy', 'local'],
       rating: 4.8,
       reviewCount: 12300,
       alternatives: ['SmartThings', 'Hubitat', 'openHAB'],
       integrations: ['2000+ devices and services'],
       pricingDetails: {
-        type: 'community-favorite',
+        type: 'open-source',
         price: 'Free open source',
         url: 'https://www.home-assistant.io',
         description: 'Completely free, optional cloud subscription'
@@ -15586,7 +15310,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tagline: 'The world\'s most popular website builder',
       logoUrl: '/logos/wordpress.png',
       website: 'https://wordpress.org',
-      pricing: 'community-favorite',
+      pricing: 'open-source',
       badges: ['popular', 'featured'],
       category: 'Media & Publishing',
       categorySlug: 'media-publishing',
@@ -15595,13 +15319,13 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       description: 'WordPress is an open-source content management system powering over 40% of all websites.',
       features: ['Content management', 'Themes', 'Plugins', 'Gutenberg editor', 'SEO-friendly', 'Multi-user', 'Media library', 'Customizable'],
       useCases: ['Blogging', 'Business websites', 'E-commerce', 'Portfolio', 'News sites', 'Membership sites'],
-      tags: ['cms', 'publishing', 'blogging', 'community-favorite', 'websites'],
+      tags: ['cms', 'publishing', 'blogging', 'open-source', 'websites'],
       rating: 4.5,
       reviewCount: 234000,
       alternatives: ['Wix', 'Squarespace', 'Ghost'],
       integrations: ['60,000+ plugins'],
       pricingDetails: {
-        type: 'community-favorite',
+        type: 'open-source',
         price: 'Free software, hosting costs vary',
         url: 'https://wordpress.org',
         description: 'Free open source, self-hosted'
@@ -16465,7 +16189,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       description: 'Cal.com is an open-source scheduling platform that gives you full control over your calendar with powerful features.',
       features: ['Open source', 'Unlimited events', 'Team scheduling', 'Workflows', 'Routing forms', 'Custom branding', 'Video integrations', 'API access'],
       useCases: ['Meeting booking', 'Team scheduling', 'Event registration', 'Availability management', 'Self-hosted scheduling'],
-      tags: ['scheduling', 'calendar', 'calcom', 'community-favorite', 'meetings'],
+      tags: ['scheduling', 'calendar', 'calcom', 'open-source', 'meetings'],
       rating: 4.8,
       reviewCount: 12000,
       alternatives: ['Calendly', 'Acuity', 'SavvyCal'],
@@ -17060,643 +16784,9 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         description: 'Focuses on long-form content with fact-checking'
       }
     }
-  ],
-  
-  // Add new tools for Media & Entertainment > Discovery & Research
-  'media-entertainment-discovery-research': [
-    {
-      name: 'Netflix',
-      slug: 'netflix',
-      tagline: 'Leading streaming service for movies and TV shows',
-      logoUrl: '/logos/netflix.png',
-      website: 'https://www.netflix.com',
-      pricing: 'freemium',
-      badges: ['popular', 'featured'],
-      category: 'Media & Entertainment',
-      categorySlug: 'media-entertainment',
-      subcategory: 'Discovery & Research',
-      subcategorySlug: 'discovery-research',
-      description: 'Netflix is the world\'s leading streaming entertainment service with over 230 million paid memberships in over 190 countries enjoying TV series, documentaries, and feature films across a wide variety of genres and languages.',
-      features: ['Extensive content library', 'Personalized recommendations', 'Multiple user profiles', 'Offline downloads', 'Parental controls', '4K streaming', 'Original content', 'Global availability'],
-      useCases: ['Movie streaming', 'TV show watching', 'Content discovery', 'Family entertainment', 'Binge watching', 'Original content viewing', 'International content access', 'Offline viewing'],
-      tags: ['streaming', 'movies', 'tv-shows', 'entertainment', 'netflix'],
-      rating: 4.6,
-      reviewCount: 230000,
-      alternatives: ['Disney+', 'Amazon Prime Video', 'HBO Max'],
-      integrations: ['Smart TVs', 'Mobile devices', 'Gaming consoles', 'Streaming devices'],
-      pricingDetails: {
-        type: 'freemium',
-        price: 'Free trial, Basic from $6.99/month, Standard from $15.49/month, Premium from $22.99/month',
-        url: 'https://www.netflix.com/signup',
-        description: 'Multiple subscription tiers with different video quality and simultaneous streaming options'
-      }
-    },
-    {
-      name: 'Spotify',
-      slug: 'spotify',
-      tagline: 'Digital music service with millions of songs',
-      logoUrl: '/logos/spotify.png',
-      website: 'https://www.spotify.com',
-      pricing: 'freemium',
-      badges: ['popular', 'featured'],
-      category: 'Media & Entertainment',
-      categorySlug: 'media-entertainment',
-      subcategory: 'Discovery & Research',
-      subcategorySlug: 'discovery-research',
-      description: 'Spotify is a digital music service that gives you access to millions of songs and other content from creators all over the world. With Spotify, you can play any song, any time on any device.',
-      features: ['Music streaming', 'Podcast access', 'Personalized playlists', 'Artist radio', 'Offline listening', 'Cross-platform sync', 'Social sharing', 'Audio quality options'],
-      useCases: ['Music discovery', 'Playlist creation', 'Podcast listening', 'Background music', 'Workout music', 'Focus music', 'Social music sharing', 'Offline listening'],
-      tags: ['music', 'streaming', 'podcasts', 'spotify', 'entertainment'],
-      rating: 4.7,
-      reviewCount: 350000,
-      alternatives: ['Apple Music', 'Amazon Music', 'YouTube Music'],
-      integrations: ['Mobile devices', 'Smart speakers', 'Smart TVs', 'Cars', 'Wearables'],
-      pricingDetails: {
-        type: 'freemium',
-        price: 'Free with ads, Premium from $10.99/month',
-        url: 'https://www.spotify.com/premium',
-        description: 'Free tier with ads, Premium tier without ads and with additional features'
-      }
-    },
-    {
-      name: 'YouTube',
-      slug: 'youtube',
-      tagline: 'Video sharing platform with billions of users',
-      logoUrl: '/logos/youtube.png',
-      website: 'https://www.youtube.com',
-      pricing: 'freemium',
-      badges: ['popular', 'featured'],
-      category: 'Media & Entertainment',
-      categorySlug: 'media-entertainment',
-      subcategory: 'Discovery & Research',
-      subcategorySlug: 'discovery-research',
-      description: 'YouTube is a global online video sharing and social media platform that allows users to watch, like, comment, and share videos. It also enables users to upload their own videos and earn money through advertising revenue.',
-      features: ['Video streaming', 'User-generated content', 'Live streaming', 'Video creation tools', 'Community features', 'Monetization options', 'YouTube Shorts', 'YouTube Premium'],
-      useCases: ['Video watching', 'Content creation', 'Education', 'Entertainment', 'Music videos', 'Live streaming', 'Video marketing', 'Brand building'],
-      tags: ['video', 'streaming', 'content-creation', 'youtube', 'entertainment'],
-      rating: 4.8,
-      reviewCount: 500000,
-      alternatives: ['TikTok', 'Instagram', 'Facebook Watch'],
-      integrations: ['Mobile devices', 'Smart TVs', 'Gaming consoles', 'Streaming devices', 'Social media'],
-      pricingDetails: {
-        type: 'freemium',
-        price: 'Free with ads, Premium from $11.99/month',
-        url: 'https://www.youtube.com/premium',
-        description: 'Free tier with ads, Premium tier without ads and with additional features'
-      }
-    }
-  ],
-
-  // Add new tools for Media & Entertainment > Analytics & Benchmarking
-  'media-entertainment-analytics-benchmarking': [
-    {
-      name: 'TikTok Analytics',
-      slug: 'tiktok-analytics',
-      tagline: 'Official analytics platform for TikTok creators and businesses',
-      logoUrl: '/logos/tiktok.png',
-      website: 'https://www.tiktok.com/business-center',
-      pricing: 'freemium',
-      badges: ['popular', 'featured'],
-      category: 'Media & Entertainment',
-      categorySlug: 'media-entertainment',
-      subcategory: 'Analytics & Benchmarking',
-      subcategorySlug: 'analytics-benchmarking',
-      description: 'TikTok Analytics is the official analytics platform that provides insights into your TikTok account performance, audience demographics, and content engagement. It helps creators and businesses understand their audience and optimize their content strategy.',
-      features: ['Profile analytics', 'Content performance', 'Audience insights', 'Follower demographics', 'Video metrics', 'Trending sounds', 'Hashtag performance', 'Competitor analysis'],
-      useCases: ['Content optimization', 'Audience understanding', 'Performance tracking', 'Campaign analysis', 'Influencer marketing', 'Brand awareness', 'Engagement improvement', 'Content strategy'],
-      tags: ['social-media', 'analytics', 'tiktok', 'content-performance', 'audience-insights'],
-      rating: 4.5,
-      reviewCount: 180000,
-      alternatives: ['Hootsuite Analytics', 'Sprout Social', 'Iconosquare'],
-      integrations: ['TikTok Business Account', 'Marketing platforms', 'CRM systems', 'Data export'],
-      pricingDetails: {
-        type: 'freemium',
-        price: 'Free with TikTok Business Account',
-        url: 'https://www.tiktok.com/business-center',
-        description: 'Free with TikTok Business Account, additional features with TikTok for Business'
-      }
-    },
-    {
-      name: 'YouTube Analytics',
-      slug: 'youtube-analytics',
-      tagline: 'Comprehensive analytics for YouTube channel performance',
-      logoUrl: '/logos/youtube-analytics.png',
-      website: 'https://www.youtube.com/analytics',
-      pricing: 'freemium',
-      badges: ['popular', 'featured'],
-      category: 'Media & Entertainment',
-      categorySlug: 'media-entertainment',
-      subcategory: 'Analytics & Benchmarking',
-      subcategorySlug: 'analytics-benchmarking',
-      description: 'YouTube Analytics provides detailed insights into channel performance, audience demographics, traffic sources, and revenue metrics for creators and brands on YouTube.',
-      features: ['Channel performance overview', 'Audience retention reports', 'Traffic source analysis', 'Revenue tracking', 'Subscriber analytics', 'Content engagement metrics', 'Device and geography data', 'Comparative reporting'],
-      useCases: ['Channel performance tracking', 'Content optimization', 'Audience understanding', 'Revenue analysis', 'Subscriber growth monitoring', 'Content strategy refinement'],
-      tags: ['video', 'analytics', 'youtube', 'content-performance', 'audience-insights'],
-      rating: 4.5,
-      reviewCount: 180000,
-      alternatives: ['Tubular Labs', 'Social Blade', 'Hootsuite Analytics'],
-      integrations: ['Google Analytics', 'AdSense', 'YouTube Studio', 'Google Ads'],
-      pricingDetails: {
-        type: 'freemium',
-        price: 'Free with YouTube account, advanced features with YouTube Premium',
-        url: 'https://www.youtube.com/analytics',
-        description: 'Free analytics for all YouTube creators, premium features with YouTube Premium'
-      }
-    }
-  ],
-
-  // Add new tools for Real Estate & PropTech > Discovery & Research
-  'real-estate-proptech-discovery-research': [
-    {
-      name: 'Zillow',
-      slug: 'zillow',
-      tagline: 'Leading real estate marketplace for buying, selling, and renting homes',
-      logoUrl: '/logos/zillow.png',
-      website: 'https://www.zillow.com',
-      pricing: 'freemium',
-      badges: ['popular', 'featured'],
-      category: 'Real Estate & PropTech',
-      categorySlug: 'real-estate-proptech',
-      subcategory: 'Discovery & Research',
-      subcategorySlug: 'discovery-research',
-      description: 'Zillow is the leading real estate and rental marketplace dedicated to empowering consumers with data, inspiration and knowledge around the place they call home, and connecting them with the best local professionals who can help.',
-      features: ['Comprehensive property listings database', 'Zestimate home valuations', '3D home tours', 'Mortgage calculator', 'Agent finder', 'Market trends', 'Neighborhood insights', 'Mobile apps'],
-      useCases: ['Home buying research', 'Property value estimation', 'Rental property search', 'Market analysis', 'Agent selection', 'Neighborhood comparison', 'Investment property research', 'Home selling preparation'],
-      tags: ['real-estate', 'property-listings', 'home-valuations', 'market-data', 'zillow'],
-      rating: 4.6,
-      reviewCount: 28500,
-      alternatives: ['Realtor.com', 'Redfin', 'Trulia'],
-      integrations: ['Zillow Premier Agent', 'Mortech', 'DocuSign', 'HouseCanary API'],
-      pricingDetails: {
-        type: 'freemium',
-        price: 'Free for consumers, paid plans for agents from $249/month',
-        url: 'https://www.zillow.com/premier-agent/',
-        description: 'Free consumer platform, paid agent tools'
-      }
-    },
-    {
-      name: 'Realtor.com',
-      slug: 'realtor-com',
-      tagline: 'Official website of the National Association of Realtors for real estate listings',
-      logoUrl: '/logos/realtor.png',
-      website: 'https://www.realtor.com',
-      pricing: 'freemium',
-      badges: ['featured', 'enterprise'],
-      category: 'Real Estate & PropTech',
-      categorySlug: 'real-estate-proptech',
-      subcategory: 'Discovery & Research',
-      subcategorySlug: 'discovery-research',
-      description: 'Realtor.com is the official website of the National Association of Realtors, offering the most comprehensive real estate listings and tools for buyers, sellers, and renters, sourced directly from multiple listing services.',
-      features: ['MLS listings', 'Property search', 'Home values', 'Market trends', 'Agent directory', 'Mortgage tools', 'Neighborhood data', 'Mobile apps'],
-      useCases: ['Property search', 'Home value estimation', 'Market research', 'Agent selection', 'Mortgage planning', 'Neighborhood research', 'Investment analysis', 'Rental property search'],
-      tags: ['real-estate', 'mls-listings', 'property-search', 'market-data', 'realtor'],
-      rating: 4.5,
-      reviewCount: 24300,
-      alternatives: ['Zillow', 'Redfin', 'Homes.com'],
-      integrations: ['MLS systems', 'Agent tools', 'Mortgage lenders', 'Home services'],
-      pricingDetails: {
-        type: 'freemium',
-        price: 'Free for consumers, agent subscriptions from $249/month',
-        url: 'https://www.realtor.com/realestateagents',
-        description: 'Free consumer access, paid agent subscriptions'
-      }
-    },
-    {
-      name: 'Redfin',
-      slug: 'redfin',
-      tagline: 'Technology-powered real estate brokerage with online tools and agent services',
-      logoUrl: '/logos/redfin.png',
-      website: 'https://www.redfin.com',
-      pricing: 'freemium',
-      badges: ['popular', 'featured'],
-      category: 'Real Estate & PropTech',
-      categorySlug: 'real-estate-proptech',
-      subcategory: 'Discovery & Research',
-      subcategorySlug: 'discovery-research',
-      description: 'Redfin is a technology-powered real estate brokerage that combines online tools with local agent services to help consumers buy, sell, and rent homes more efficiently and cost-effectively.',
-      features: ['Property search', 'Home values', 'Market data', 'Agent services', 'Online escrow', '3D tours', 'Instant offers', 'Cost savings'],
-      useCases: ['Home buying', 'Home selling', 'Market analysis', 'Agent services', 'Home value estimation', 'Investment property research', 'Rental property search', 'Cost comparison'],
-      tags: ['real-estate', 'tech-brokerage', 'property-search', 'cost-savings', 'redfin'],
-      rating: 4.7,
-      reviewCount: 19800,
-      alternatives: ['Zillow', 'Realtor.com', 'Compass'],
-      integrations: ['MLS systems', 'Agent tools', 'Title services', 'Home services'],
-      pricingDetails: {
-        type: 'freemium',
-        price: 'Free for consumers, agent commissions 1.5% below market average',
-        url: 'https://www.redfin.com/buy-a-home/agents',
-        description: 'Free consumer platform with cost-saving agent services'
-      }
-    }
-  ],
-
-  // Add new tools for Real Estate & PropTech > Automation & Orchestration
-  'real-estate-proptech-automation-orchestration': [
-    {
-      name: 'AppFolio',
-      slug: 'appfolio',
-      tagline: 'Cloud-based property management software for residential and commercial properties',
-      logoUrl: '/logos/appfolio.png',
-      website: 'https://www.appfolio.com',
-      pricing: 'paid',
-      badges: ['enterprise', 'featured'],
-      category: 'Real Estate & PropTech',
-      categorySlug: 'real-estate-proptech',
-      subcategory: 'Automation & Orchestration',
-      subcategorySlug: 'automation-orchestration',
-      description: 'AppFolio is a cloud-based property management software that helps residential and commercial property managers automate operations, improve resident satisfaction, and grow their business with integrated solutions.',
-      features: ['Property management', 'Accounting', 'Maintenance management', 'Resident services', 'Marketing tools', 'Reporting dashboard', 'Mobile apps', 'Payment processing'],
-      useCases: ['Property management', 'Accounting automation', 'Maintenance tracking', 'Resident communication', 'Financial reporting', 'Marketing optimization', 'Portfolio management', 'Compliance tracking'],
-      tags: ['property-management', 'accounting', 'maintenance', 'resident-services', 'appfolio'],
-      rating: 4.6,
-      reviewCount: 12400,
-      alternatives: ['Yardi', 'Buildium', 'Rent Manager'],
-      integrations: ['Accounting software', 'Payment processors', 'Maintenance vendors', 'Marketing platforms'],
-      pricingDetails: {
-        type: 'paid',
-        price: 'Starting at $10/unit/month, custom pricing for larger portfolios',
-        url: 'https://www.appfolio.com/pricing',
-        description: 'Tiered pricing based on property count and features'
-      }
-    },
-    {
-      name: 'Yardi',
-      slug: 'yardi',
-      tagline: 'Comprehensive property management software for multifamily and commercial real estate',
-      logoUrl: '/logos/yardi.png',
-      website: 'https://www.yardi.com',
-      pricing: 'enterprise',
-      badges: ['enterprise', 'featured'],
-      category: 'Real Estate & PropTech',
-      categorySlug: 'real-estate-proptech',
-      subcategory: 'Automation & Orchestration',
-      subcategorySlug: 'automation-orchestration',
-      description: 'Yardi is a leading provider of enterprise software for the real estate industry, offering comprehensive solutions for property management, investment management, and development across residential and commercial sectors.',
-      features: ['Property management', 'Accounting', 'CRM', 'Procurement', 'Construction management', 'Investment management', 'Business intelligence', 'Mobile applications'],
-      useCases: ['Multifamily management', 'Commercial property management', 'Investment tracking', 'Construction project management', 'Financial reporting', 'Tenant screening', 'Maintenance operations', 'Portfolio analysis'],
-      tags: ['property-management', 'multifamily', 'commercial-real-estate', 'investment-management', 'yardi'],
-      rating: 4.5,
-      reviewCount: 8900,
-      alternatives: ['AppFolio', 'RealPage', 'MRI Software'],
-      integrations: ['Accounting systems', 'Payment processors', 'CRM platforms', 'Construction management tools'],
-      pricingDetails: {
-        type: 'enterprise',
-        price: 'Custom enterprise pricing',
-        url: 'https://www.yardi.com/contact',
-        description: 'Custom pricing based on organization size and requirements'
-      }
-    }
-  ],
-
-  // Manufacturing & Industry 4.0 > Discovery & Research
-  'manufacturing-industry-4-0-discovery-research': [
-    {
-      name: 'Siemens Xcelerator',
-      slug: 'siemens-xcelerator',
-      tagline: 'Open digital business platform for industry transformation',
-      logoUrl: '/logos/siemens-xcelerator.png',
-      website: 'https://xcelerator.siemens.com',
-      pricing: 'enterprise',
-      badges: ['enterprise', 'featured'],
-      category: 'Manufacturing & Industry 4.0',
-      categorySlug: 'manufacturing-industry-4-0',
-      subcategory: 'Discovery & Research',
-      subcategorySlug: 'discovery-research',
-      description: 'Siemens Xcelerator is an open digital business platform that brings together a curated portfolio of software, hardware, and services to help businesses transform and innovate in the industrial digitalization era.',
-      features: ['Digital twin technology', 'IoT connectivity', 'AI and analytics', 'Cloud and edge computing', 'Industry-specific applications', 'Collaboration tools', 'Data management', 'Cybersecurity'],
-      useCases: ['Digital transformation', 'Product innovation', 'Process optimization', 'Supply chain visibility', 'Sustainability initiatives', 'Predictive maintenance', 'Quality improvement', 'Operational efficiency'],
-      tags: ['industry-4-0', 'digital-twin', 'iot', 'manufacturing', 'siemens'],
-      rating: 4.6,
-      reviewCount: 2800,
-      alternatives: ['Dassault Systèmes 3DEXPERIENCE', 'PTC ThingWorx', 'Rockwell Automation'],
-      integrations: ['ERP systems', 'MES platforms', 'PLM software', 'SCADA systems', 'Cloud platforms'],
-      pricingDetails: {
-        type: 'enterprise',
-        price: 'Custom enterprise pricing',
-        url: 'https://xcelerator.siemens.com/contact',
-        description: 'Enterprise licensing based on modules and deployment scope'
-      }
-    },
-    {
-      name: 'Dassault Systèmes 3DEXPERIENCE',
-      slug: 'dassault-3dexperience',
-      tagline: '3D design and collaborative business experience platform',
-      logoUrl: '/logos/dassault-3dexperience.png',
-      website: 'https://www.3ds.com',
-      pricing: 'enterprise',
-      badges: ['enterprise', 'featured'],
-      category: 'Manufacturing & Industry 4.0',
-      categorySlug: 'manufacturing-industry-4-0',
-      subcategory: 'Discovery & Research',
-      subcategorySlug: 'discovery-research',
-      description: '3DEXPERIENCE is Dassault Systèmes platform that integrates 3D design, simulation, and collaboration tools to help manufacturers innovate and optimize their products and processes in a virtual environment.',
-      features: ['3D modeling and simulation', 'Virtual prototyping', 'Collaborative design', 'Product lifecycle management', 'Data analytics', 'AI-powered insights', 'Cloud deployment', 'Industry solutions'],
-      useCases: ['Product design and development', 'Virtual testing and validation', 'Collaborative engineering', 'Digital thread implementation', 'Innovation management', 'Sustainability assessment', 'Supply chain collaboration', 'Customer experience design'],
-      tags: ['3d-design', 'simulation', 'plm', 'collaboration', 'manufacturing'],
-      rating: 4.5,
-      reviewCount: 3200,
-      alternatives: ['Siemens Xcelerator', 'Autodesk Fusion 360', 'PTC Creo'],
-      integrations: ['CAD software', 'ERP systems', 'MES platforms', 'IoT platforms', 'Cloud services'],
-      pricingDetails: {
-        type: 'enterprise',
-        price: 'Custom enterprise pricing',
-        url: 'https://www.3ds.com/contact',
-        description: 'Subscription-based licensing with tiered plans'
-      }
-    }
-  ],
-
-  // Manufacturing & Industry 4.0 > Automation & Orchestration
-  'manufacturing-industry-4-0-automation-orchestration': [
-    {
-      name: 'Rockwell Automation FactoryTalk',
-      slug: 'rockwell-factorytalk',
-      tagline: 'Integrated control and information software suite',
-      logoUrl: '/logos/rockwell-factorytalk.png',
-      website: 'https://www.rockwellautomation.com',
-      pricing: 'enterprise',
-      badges: ['enterprise', 'featured'],
-      category: 'Manufacturing & Industry 4.0',
-      categorySlug: 'manufacturing-industry-4-0',
-      subcategory: 'Automation & Orchestration',
-      subcategorySlug: 'automation-orchestration',
-      description: 'FactoryTalk is Rockwell Automation integrated software suite that provides manufacturing intelligence, production management, and automation capabilities to optimize industrial operations.',
-      features: ['Production monitoring', 'OEE tracking', 'Real-time analytics', 'MES integration', 'HMI/SCADA', 'Mobile applications', 'Alarm management', 'Historical data'],
-      useCases: ['Production optimization', 'Quality control', 'Maintenance management', 'Energy management', 'Safety monitoring', 'Compliance reporting', 'Supply chain integration', 'Decision support'],
-      tags: ['industrial-automation', 'mes', 'scada', 'manufacturing', 'rockwell'],
-      rating: 4.4,
-      reviewCount: 2100,
-      alternatives: ['Siemens SIMATIC', 'ABB Ability', 'Schneider Electric EcoStruxure'],
-      integrations: ['ControlLogix', 'CompactLogix', 'PowerFlex', 'Kinetix', 'FactoryTalk Historian'],
-      pricingDetails: {
-        type: 'enterprise',
-        price: 'Custom enterprise pricing',
-        url: 'https://www.rockwellautomation.com/en-ie/contact/index.page',
-        description: 'Modular licensing based on applications and users'
-      }
-    },
-    {
-      name: 'Schneider Electric EcoStruxure',
-      slug: 'schneider-electric-ecostruxure',
-      tagline: 'Open, interoperable, IoT-enabled architecture',
-      logoUrl: '/logos/schneider-electric-ecostruxure.png',
-      website: 'https://www.se.com',
-      pricing: 'enterprise',
-      badges: ['enterprise', 'featured'],
-      category: 'Manufacturing & Industry 4.0',
-      categorySlug: 'manufacturing-industry-4-0',
-      subcategory: 'Automation & Orchestration',
-      subcategorySlug: 'automation-orchestration',
-      description: 'EcoStruxure is Schneider Electric open architecture that connects products, edge control, and applications to enable automation and digital transformation in industrial operations.',
-      features: ['Connected products', 'Edge control', 'Apps analytics services', 'Cybersecurity', 'Energy management', 'Asset performance', 'Process optimization', 'Remote monitoring'],
-      useCases: ['Energy efficiency', 'Asset management', 'Process optimization', 'Predictive maintenance', 'Remote operations', 'Sustainability tracking', 'Compliance management', 'Operational excellence'],
-      tags: ['industrial-iot', 'automation', 'energy-management', 'schneider-electric', 'industry-4-0'],
-      rating: 4.5,
-      reviewCount: 1900,
-      alternatives: ['Siemens Xcelerator', 'Rockwell Automation', 'ABB Ability'],
-      integrations: ['Modicon PLCs', 'PowerLogic', 'Altivar drives', 'TeSys', 'Cloud platforms'],
-      pricingDetails: {
-        type: 'enterprise',
-        price: 'Custom enterprise pricing',
-        url: 'https://www.se.com/us/en/faqs/contact-us.page',
-        description: 'Solution-based pricing with modular components'
-      }
-    }
-  ],
-
-  // Manufacturing & Industry 4.0 > Analytics & Benchmarking
-  'manufacturing-industry-4-0-analytics-benchmarking': [
-    {
-      name: 'SAS for Manufacturing',
-      slug: 'sas-manufacturing',
-      tagline: 'Advanced analytics for manufacturing optimization',
-      logoUrl: '/logos/sas.png',
-      website: 'https://www.sas.com',
-      pricing: 'enterprise',
-      badges: ['enterprise', 'featured'],
-      category: 'Manufacturing & Industry 4.0',
-      categorySlug: 'manufacturing-industry-4-0',
-      subcategory: 'Analytics & Benchmarking',
-      subcategorySlug: 'analytics-benchmarking',
-      description: 'SAS for Manufacturing provides advanced analytics capabilities to help manufacturers optimize operations, improve quality, and reduce costs through predictive and prescriptive analytics.',
-      features: ['Predictive analytics', 'Quality analytics', 'Supply chain optimization', 'Demand forecasting', 'Risk management', 'Real-time monitoring', 'Visualization dashboards', 'Machine learning'],
-      useCases: ['Predictive maintenance', 'Quality defect reduction', 'Supply chain optimization', 'Demand planning', 'Risk assessment', 'Process optimization', 'Energy management', 'Compliance reporting'],
-      tags: ['analytics', 'predictive-maintenance', 'quality', 'supply-chain', 'sas'],
-      rating: 4.6,
-      reviewCount: 1700,
-      alternatives: ['IBM Watson Manufacturing', 'Microsoft Azure Manufacturing', 'Google Cloud Manufacturing'],
-      integrations: ['ERP systems', 'MES platforms', 'IoT sensors', 'Database systems', 'Cloud platforms'],
-      pricingDetails: {
-        type: 'enterprise',
-        price: 'Custom enterprise pricing',
-        url: 'https://www.sas.com/en_us/contact/preferences.html',
-        description: 'Enterprise licensing with usage-based pricing'
-      }
-    },
-    {
-      name: 'Uptake',
-      slug: 'uptake',
-      tagline: 'Industrial AI and analytics platform',
-      logoUrl: '/logos/uptake.png',
-      website: 'https://www.uptake.com',
-      pricing: 'enterprise',
-      badges: ['trending', 'enterprise'],
-      category: 'Manufacturing & Industry 4.0',
-      categorySlug: 'manufacturing-industry-4-0',
-      subcategory: 'Analytics & Benchmarking',
-      subcategorySlug: 'analytics-benchmarking',
-      description: 'Uptake is an industrial AI platform that helps manufacturers and industrial companies optimize operations, reduce downtime, and improve asset performance through predictive analytics and machine learning.',
-      features: ['Predictive maintenance', 'Asset performance management', 'Production optimization', 'Quality analytics', 'Energy optimization', 'Safety monitoring', 'Mobile applications', 'Real-time alerts'],
-      useCases: ['Asset reliability', 'Production efficiency', 'Quality improvement', 'Energy reduction', 'Safety enhancement', 'Maintenance optimization', 'Supply chain visibility', 'Operational excellence'],
-      tags: ['industrial-ai', 'predictive-analytics', 'asset-performance', 'manufacturing', 'iot'],
-      rating: 4.7,
-      reviewCount: 1400,
-      alternatives: ['C3.ai', 'Palantir Foundry', 'SAS for Manufacturing'],
-      integrations: ['IoT sensors', 'SCADA systems', 'ERP platforms', 'MES systems', 'Cloud services'],
-      pricingDetails: {
-        type: 'enterprise',
-        price: 'Custom enterprise pricing',
-        url: 'https://www.uptake.com/contact',
-        description: 'Subscription-based pricing with enterprise plans'
-      }
-    }
-  ],
-
-  // Robotics & Automation > Discovery & Research
-  'robotics-automation-discovery-research': [
-    {
-      name: 'ROS 2 (Robot Operating System)',
-      slug: 'ros2',
-      tagline: 'Open-source robotics middleware and development framework',
-      logoUrl: '/logos/ros2.png',
-      website: 'https://www.ros.org',
-      pricing: 'community-favorite',
-      badges: ['community-favorite', 'popular'],
-      category: 'Robotics & Automation',
-      categorySlug: 'robotics-automation',
-      subcategory: 'Discovery & Research',
-      subcategorySlug: 'discovery-research',
-      description: 'ROS 2 is the next generation of the Robot Operating System, providing a flexible framework for writing robotics software with enhanced real-time capabilities, security, and multi-platform support.',
-      features: ['Distributed computing', 'Real-time support', 'Security features', 'Multi-platform compatibility', 'Extensive libraries', 'Simulation tools', 'Hardware abstraction', 'Community support'],
-      useCases: ['Robotics research', 'Autonomous vehicles', 'Industrial automation', 'Service robots', 'Drone development', 'Manipulator control', 'Sensor integration', 'Algorithm development'],
-      tags: ['robotics', 'middleware', 'open-source', 'autonomous-systems', 'ros'],
-      rating: 4.8,
-      reviewCount: 8500,
-      alternatives: ['YARP', 'Orocos', 'Microsoft Robotics Developer Studio'],
-      integrations: ['Gazebo', 'RViz', 'MoveIt', 'OpenCV', 'PCL'],
-      pricingDetails: {
-        type: 'community-favorite',
-        price: 'Free open-source',
-        url: 'https://docs.ros.org/en/humble/',
-        description: 'Free to use with community support'
-      }
-    },
-    {
-      name: 'NVIDIA Isaac',
-      slug: 'nvidia-isaac',
-      tagline: 'AI-powered robotics platform for autonomous machines',
-      logoUrl: '/logos/nvidia-isaac.png',
-      website: 'https://www.nvidia.com/en-us/autonomous-machines/isaac/',
-      pricing: 'enterprise',
-      badges: ['enterprise', 'trending'],
-      category: 'Robotics & Automation',
-      categorySlug: 'robotics-automation',
-      subcategory: 'Discovery & Research',
-      subcategorySlug: 'discovery-research',
-      description: 'NVIDIA Isaac is a comprehensive robotics platform that provides hardware acceleration, AI frameworks, and development tools to build and deploy autonomous robots with advanced perception and navigation capabilities.',
-      features: ['AI perception', 'Navigation stack', 'Simulation environment', 'Hardware acceleration', 'Sensor fusion', 'Path planning', 'Object detection', 'Cloud integration'],
-      useCases: ['Warehouse automation', 'Autonomous mobile robots', 'Drone navigation', 'Industrial inspection', 'Service robotics', 'Autonomous vehicles', 'Research and development', 'Manufacturing automation'],
-      tags: ['ai-robotics', 'autonomous-systems', 'nvidia', 'perception', 'navigation'],
-      rating: 4.6,
-      reviewCount: 2300,
-      alternatives: ['Intel RealSense', 'Google Robotics', 'Amazon Robotics'],
-      integrations: ['NVIDIA Jetson', 'CUDA', 'TensorRT', 'ROS 2', 'Gazebo'],
-      pricingDetails: {
-        type: 'enterprise',
-        price: 'Hardware and software licensing',
-        url: 'https://www.nvidia.com/en-us/autonomous-machines/isaac/contact/',
-        description: 'Platform licensing with hardware requirements'
-      }
-    }
-  ],
-
-  // Robotics & Automation > Automation & Orchestration
-  'robotics-automation-automation-orchestration': [
-    {
-      name: 'ABB RobotStudio',
-      slug: 'abb-robotstudio',
-      tagline: 'Robot simulation and offline programming software',
-      logoUrl: '/logos/abb-robotstudio.png',
-      website: 'https://new.abb.com/products/robotics/robotstudio',
-      pricing: 'enterprise',
-      badges: ['enterprise', 'featured'],
-      category: 'Robotics & Automation',
-      categorySlug: 'robotics-automation',
-      subcategory: 'Automation & Orchestration',
-      subcategorySlug: 'automation-orchestration',
-      description: 'RobotStudio is ABB simulation and offline programming software that allows users to create, simulate, and optimize robot programs without interrupting production, reducing commissioning time and risk.',
-      features: ['3D simulation', 'Offline programming', 'Path optimization', 'Collision detection', 'Virtual commissioning', 'Robot calibration', 'Multi-robot coordination', 'Code generation'],
-      useCases: ['Robot programming', 'Production planning', 'Process optimization', 'Safety validation', 'Training and education', 'Layout design', 'Cycle time optimization', 'Troubleshooting'],
-      tags: ['robot-programming', 'simulation', 'offline-programming', 'abb', 'industrial-automation'],
-      rating: 4.5,
-      reviewCount: 1800,
-      alternatives: ['KUKA.Sim', 'Fanuc ROBOSHOT', 'Yaskawa MotoSim'],
-      integrations: ['ABB robots', 'CAD software', 'PLC systems', 'ERP platforms'],
-      pricingDetails: {
-        type: 'enterprise',
-        price: 'Custom enterprise pricing',
-        url: 'https://new.abb.com/products/robotics/robotstudio/contact',
-        description: 'Licensing based on robot models and features'
-      }
-    },
-    {
-      name: 'Universal Robots Polyscope',
-      slug: 'ur-polyscope',
-      tagline: 'Intuitive robot programming interface',
-      logoUrl: '/logos/ur-polyscope.png',
-      website: 'https://www.universal-robots.com',
-      pricing: 'paid',
-      badges: ['popular', 'trending'],
-      category: 'Robotics & Automation',
-      categorySlug: 'robotics-automation',
-      subcategory: 'Automation & Orchestration',
-      subcategorySlug: 'automation-orchestration',
-      description: 'Polyscope is Universal Robots intuitive programming interface that enables non-programmers to quickly deploy collaborative robots through a simple, graphical user interface with drag-and-drop functionality.',
-      features: ['Graphical programming', 'Drag-and-drop interface', 'Real-time monitoring', 'Safety features', 'Force control', 'Remote access', 'Dashboard integration', 'Scripting capabilities'],
-      useCases: ['Collaborative robotics', 'Small-batch production', 'Machine tending', 'Quality inspection', 'Packaging automation', 'Assembly operations', 'Material handling', 'Process automation'],
-      tags: ['cobots', 'collaborative-robots', 'programming', 'automation', 'ur'],
-      rating: 4.7,
-      reviewCount: 2100,
-      alternatives: ['ABB Wizard', 'KUKA KCP', 'Fanuc iRProgrammer'],
-      integrations: ['UR robots', 'Grippers', 'Sensors', 'Vision systems', 'PLC controllers'],
-      pricingDetails: {
-        type: 'paid',
-        price: 'Included with UR robot purchase',
-        url: 'https://www.universal-robots.com/contact',
-        description: 'Included with robot hardware purchase'
-      }
-    }
-  ],
-
-  // Robotics & Automation > Analytics & Benchmarking
-  'robotics-automation-analytics-benchmarking': [
-    {
-      name: 'Cognite Data Fusion',
-      slug: 'cognite-data-fusion',
-      tagline: 'Industrial data operations platform for robotics and automation',
-      logoUrl: '/logos/cognite.png',
-      website: 'https://www.cognite.com',
-      pricing: 'enterprise',
-      badges: ['enterprise', 'trending'],
-      category: 'Robotics & Automation',
-      categorySlug: 'robotics-automation',
-      subcategory: 'Analytics & Benchmarking',
-      subcategorySlug: 'analytics-benchmarking',
-      description: 'Cognite Data Fusion is an industrial data operations platform that contextualizes robotics and automation data to provide actionable insights for optimization and predictive maintenance.',
-      features: ['Data contextualization', 'Predictive analytics', 'Asset performance', 'Digital twins', 'Real-time monitoring', 'Collaboration tools', 'API access', 'Visualization'],
-      useCases: ['Predictive maintenance', 'Performance optimization', 'Asset reliability', 'Energy efficiency', 'Safety monitoring', 'Production planning', 'Quality assurance', 'Compliance reporting'],
-      tags: ['industrial-iot', 'predictive-analytics', 'asset-performance', 'digital-twins', 'cognite'],
-      rating: 4.6,
-      reviewCount: 1200,
-      alternatives: ['OSIsoft PI System', 'AVEVA PI System', 'AspenTech'],
-      integrations: ['Industrial sensors', 'SCADA systems', 'ERP platforms', 'MES systems', 'Cloud services'],
-      pricingDetails: {
-        type: 'enterprise',
-        price: 'Custom enterprise pricing',
-        url: 'https://www.cognite.com/contact',
-        description: 'Subscription-based enterprise pricing'
-      }
-    },
-    {
-      name: 'Augury',
-      slug: 'augury',
-      tagline: 'AI-powered machine health and performance monitoring',
-      logoUrl: '/logos/augury.png',
-      website: 'https://www.augury.com',
-      pricing: 'enterprise',
-      badges: ['enterprise', 'trending'],
-      category: 'Robotics & Automation',
-      categorySlug: 'robotics-automation',
-      subcategory: 'Analytics & Benchmarking',
-      subcategorySlug: 'analytics-benchmarking',
-      description: 'Augury is an AI-powered platform that uses sound and vibration analysis to monitor machine health and performance, providing early detection of equipment issues and optimization recommendations.',
-      features: ['Sound analysis', 'Vibration monitoring', 'Predictive maintenance', 'Performance optimization', 'Mobile alerts', 'Dashboard analytics', 'Integration capabilities', 'Benchmarking'],
-      useCases: ['Equipment monitoring', 'Predictive maintenance', 'Performance optimization', 'Energy reduction', 'Safety enhancement', 'Compliance management', 'Cost reduction', 'Operational efficiency'],
-      tags: ['predictive-maintenance', 'machine-health', 'ai-analytics', 'industrial-iot', 'augury'],
-      rating: 4.7,
-      reviewCount: 900,
-      alternatives: ['Uptake', 'SAS for Manufacturing', 'IBM Maximo'],
-      integrations: ['Industrial equipment', 'Sensors', 'SCADA systems', 'ERP platforms', 'CMMS software'],
-      pricingDetails: {
-        type: 'enterprise',
-        price: 'Custom enterprise pricing',
-        url: 'https://www.augury.com/contact',
-        description: 'Enterprise subscription with hardware components'
-      }
-    }
   ]
+  
 };
-
 
 // Helper functions
 export function getAllTools(): ToolEntry[] {
