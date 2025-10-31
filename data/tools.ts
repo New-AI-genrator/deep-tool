@@ -15273,6 +15273,291 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         description: 'Tiered pricing based on features'
       }
     }
+  ,
+    {
+      name: 'EzCater',
+      slug: 'ezcater',
+      tagline: 'Catering management software for print shops',
+      logoUrl: '/logos/ezcater.png',
+      website: 'https://www.ezcater.com',
+      pricing: 'paid',
+      badges: ['popular', 'trending'],
+      category: 'Printing & Publishing',
+      categorySlug: 'printing-publishing',
+      subcategory: 'Print Management',
+      subcategorySlug: 'print-management',
+      description: 'EzCater is catering management software that helps print shops manage catering orders, track deliveries, and optimize operations.',
+      features: [
+        'Order management',
+        'Delivery tracking',
+        'Customer CRM',
+        'Inventory management',
+        'Reporting and analytics',
+        'Mobile app',
+        'Payment processing',
+        'Route optimization'
+      ],
+      useCases: [
+        'Print shop catering',
+        'Order tracking',
+        'Customer management',
+        'Delivery optimization',
+        'Revenue tracking'
+      ],
+      tags: ['printing', 'catering', 'order-management', 'delivery', 'crm'],
+      rating: 4.6,
+      reviewCount: 2400
+    },
+    {
+      name: 'PrintOS',
+      slug: 'printos',
+      tagline: 'HP\'s cloud-based print management platform',
+      logoUrl: '/logos/printos.png',
+      website: 'https://www.printos.hp.com',
+      pricing: 'freemium',
+      badges: ['enterprise', 'popular'],
+      category: 'Printing & Publishing',
+      categorySlug: 'printing-publishing',
+      subcategory: 'Print Management',
+      subcategorySlug: 'print-management',
+      description: 'PrintOS is HP\'s cloud-based platform that connects, manages, and secures printing devices while providing analytics and workflow automation.',
+      features: [
+        'Device management',
+        'Print analytics',
+        'Security monitoring',
+        'Workflow automation',
+        'Cloud connectivity',
+        'Remote diagnostics',
+        'Usage tracking',
+        'Cost management'
+      ],
+      useCases: [
+        'Printer fleet management',
+        'Print analytics',
+        'Security monitoring',
+        'Workflow automation',
+        'Cost optimization'
+      ],
+      tags: ['printing', 'hp', 'device-management', 'analytics', 'security'],
+      rating: 4.5,
+      reviewCount: 1800
+    }
+  ],
+
+  // Printing & Publishing > Prepress Software
+  'prepress-software': [
+    {
+      name: 'Enfocus PitStop Pro',
+      slug: 'enfocus-pitstop-pro',
+      tagline: 'Professional PDF preflight and editing software',
+      logoUrl: '/logos/enfocus-pitstop-pro.png',
+      website: 'https://www.enfocus.com',
+      pricing: 'paid',
+      badges: ['enterprise', 'popular'],
+      category: 'Printing & Publishing',
+      categorySlug: 'printing-publishing',
+      subcategory: 'Prepress Software',
+      subcategorySlug: 'prepress-software',
+      description: 'Enfocus PitStop Pro is professional PDF preflight and editing software that automates quality control and correction of PDF files for print production.',
+      features: [
+        'PDF preflight',
+        'Automated correction',
+        'Color management',
+        'Preflight profiles',
+        'Action lists',
+        'Variable data printing',
+        'PDF editing',
+        'Compliance checking'
+      ],
+      useCases: [
+        'PDF preflight',
+        'Print production',
+        'Quality control',
+        'Color management',
+        'File correction'
+      ],
+      tags: ['prepress', 'pdf', 'preflight', 'printing', 'automation'],
+      rating: 4.7,
+      reviewCount: 3200
+    },
+    {
+      name: 'Callas pdfToolbox',
+      slug: 'callas-pdftoolbox',
+      tagline: 'PDF quality assurance and automation software',
+      logoUrl: '/logos/callas-pdftoolbox.png',
+      website: 'https://www.callassoftware.com',
+      pricing: 'paid',
+      badges: ['enterprise'],
+      category: 'Printing & Publishing',
+      categorySlug: 'printing-publishing',
+      subcategory: 'Prepress Software',
+      subcategorySlug: 'prepress-software',
+      description: 'Callas pdfToolbox is PDF quality assurance software that automates PDF preflight, correction, and optimization for print and digital publishing.',
+      features: [
+        'PDF preflight',
+        'Automated correction',
+        'Color conversion',
+        'PDF optimization',
+        'Variable data',
+        'Compliance checking',
+        'Batch processing',
+        'Preflight reports'
+      ],
+      useCases: [
+        'PDF quality control',
+        'Print production',
+        'Digital publishing',
+        'File automation',
+        'Color management'
+      ],
+      tags: ['prepress', 'pdf', 'quality-assurance', 'automation', 'printing'],
+      rating: 4.6,
+      reviewCount: 1500
+    }
+  ],
+
+  // Printing & Publishing > Workflow Automation
+  'print-workflow': [
+    {
+      name: 'Esko Automation Engine',
+      slug: 'esko-automation-engine',
+      tagline: 'Automate prepress and packaging workflows',
+      logoUrl: '/logos/esko.png',
+      website: 'https://www.esko.com',
+      pricing: 'enterprise',
+      badges: ['enterprise'],
+      category: 'Printing & Publishing',
+      categorySlug: 'printing-publishing',
+      subcategory: 'Workflow Automation',
+      subcategorySlug: 'print-workflow',
+      description: 'Esko Automation Engine automates prepress and packaging workflows, reducing manual tasks and improving production efficiency.',
+      features: [
+        'Workflow automation',
+        'File processing',
+        'RIP automation',
+        'Color management',
+        'Integration capabilities',
+        'Reporting',
+        'Error handling',
+        'Scalability'
+      ],
+      useCases: [
+        'Prepress automation',
+        'Packaging workflows',
+        'File processing',
+        'Production efficiency',
+        'Error reduction'
+      ],
+      tags: ['workflow', 'automation', 'prepress', 'packaging', 'printing'],
+      rating: 4.4,
+      reviewCount: 900
+    },
+    {
+      name: 'ColorGATE Productionserver',
+      slug: 'colorgate-productionserver',
+      tagline: 'RIP and workflow automation software',
+      logoUrl: '/logos/colorgate.png',
+      website: 'https://www.colorgate.com',
+      pricing: 'enterprise',
+      badges: ['enterprise'],
+      category: 'Printing & Publishing',
+      categorySlug: 'printing-publishing',
+      subcategory: 'Workflow Automation',
+      subcategorySlug: 'print-workflow',
+      description: 'ColorGATE Productionserver is RIP and workflow automation software for wide-format, textile, and industrial printing applications.',
+      features: [
+        'RIP processing',
+        'Workflow automation',
+        'Color management',
+        'Device calibration',
+        'Integration',
+        'Scalability',
+        'Remote management',
+        'Production monitoring'
+      ],
+      useCases: [
+        'Wide-format printing',
+        'Textile printing',
+        'Industrial printing',
+        'RIP automation',
+        'Color management'
+      ],
+      tags: ['workflow', 'rip', 'automation', 'color-management', 'printing'],
+      rating: 4.5,
+      reviewCount: 750
+    }
+  ],
+
+  // Printing & Publishing > Estimating & Quoting
+  'print-estimating': [
+    {
+      name: 'PrintCostCalculators',
+      slug: 'printcostcalculators',
+      tagline: 'Online print cost calculation tools',
+      logoUrl: '/logos/printcostcalculators.png',
+      website: 'https://www.printcostcalculators.com',
+      pricing: 'freemium',
+      badges: ['popular'],
+      category: 'Printing & Publishing',
+      categorySlug: 'printing-publishing',
+      subcategory: 'Estimating & Quoting',
+      subcategorySlug: 'print-estimating',
+      description: 'PrintCostCalculators provides online tools for calculating print job costs, pricing, and profitability for print service providers.',
+      features: [
+        'Cost calculation',
+        'Pricing tools',
+        'Profitability analysis',
+        'Template library',
+        'Customizable formulas',
+        'Reporting',
+        'Export options',
+        'Mobile access'
+      ],
+      useCases: [
+        'Print job costing',
+        'Pricing estimation',
+        'Profitability analysis',
+        'Client quoting',
+        'Cost optimization'
+      ],
+      tags: ['estimating', 'pricing', 'costing', 'printing', 'quoting'],
+      rating: 4.3,
+      reviewCount: 1200
+    },
+    {
+      name: 'Tharstern',
+      slug: 'tharstern',
+      tagline: 'Print MIS and estimating software',
+      logoUrl: '/logos/tharstern.png',
+      website: 'https://www.tharstern.com',
+      pricing: 'enterprise',
+      badges: ['enterprise'],
+      category: 'Printing & Publishing',
+      categorySlug: 'printing-publishing',
+      subcategory: 'Estimating & Quoting',
+      subcategorySlug: 'print-estimating',
+      description: 'Tharstern is comprehensive print MIS software that includes estimating, job tracking, and financial management for commercial print businesses.',
+      features: [
+        'Job estimating',
+        'Production tracking',
+        'Financial management',
+        'CRM integration',
+        'Reporting',
+        'Workflow management',
+        'Inventory control',
+        'Analytics'
+      ],
+      useCases: [
+        'Print estimating',
+        'Job management',
+        'Financial tracking',
+        'Production planning',
+        'Client management'
+      ],
+      tags: ['estimating', 'mis', 'printing', 'job-tracking', 'financial'],
+      rating: 4.4,
+      reviewCount: 650
+    }
   ],
 
   // Signage & Display > Digital Signage
