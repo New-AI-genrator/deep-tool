@@ -15155,6 +15155,222 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
     }
   ],
 
+  // Wedding & Events > Vendor Management
+  'vendor-management': [
+    {
+      name: 'WeddingWire',
+      slug: 'weddingwire',
+      tagline: 'Wedding vendor marketplace and planning tools',
+      logoUrl: '/logos/weddingwire.png',
+      website: 'https://www.weddingwire.com',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Wedding & Events',
+      categorySlug: 'wedding-events',
+      subcategory: 'Vendor Management',
+      subcategorySlug: 'vendor-management',
+      description: 'WeddingWire is a leading wedding vendor marketplace with reviews, pricing tools, and vendor management features for couples planning their wedding.',
+      features: [
+        'Vendor marketplace',
+        'Reviews and ratings',
+        'Pricing comparison',
+        'Messaging system',
+        'Booking tools',
+        'Contract management',
+        'Inspiration gallery',
+        'Mobile app'
+      ],
+      useCases: [
+        'Vendor research',
+        'Price comparison',
+        'Booking management',
+        'Review checking',
+        'Contract handling'
+      ],
+      tags: ['wedding', 'vendors', 'marketplace', 'planning', 'reviews'],
+      rating: 4.6,
+      reviewCount: 38700
+    },
+    {
+      name: 'Joy',
+      slug: 'joy',
+      tagline: 'Wedding website and vendor coordination platform',
+      logoUrl: '/logos/joy.png',
+      website: 'https://www.withjoy.com',
+      pricing: 'freemium',
+      badges: ['popular', 'trending'],
+      category: 'Wedding & Events',
+      categorySlug: 'wedding-events',
+      subcategory: 'Vendor Management',
+      subcategorySlug: 'vendor-management',
+      description: 'Joy provides wedding websites with built-in vendor coordination tools, guest management, and registry features in one integrated platform.',
+      features: [
+        'Wedding website builder',
+        'Vendor coordination',
+        'Guest list management',
+        'Registry integration',
+        'RSVP tracking',
+        'Mobile app',
+        'Custom domains',
+        'Design templates'
+      ],
+      useCases: [
+        'Wedding website creation',
+        'Vendor communication',
+        'Guest management',
+        'Registry setup',
+        'Event coordination'
+      ],
+      tags: ['wedding', 'website', 'vendors', 'planning', 'registry'],
+      rating: 4.7,
+      reviewCount: 15600
+    }
+  ],
+
+  // Wedding & Events > Guest Management
+  'guest-management': [
+    {
+      name: 'AllSeated',
+      slug: 'allseated',
+      tagline: 'Wedding guest list and seating chart software',
+      logoUrl: '/logos/allseated.png',
+      website: 'https://www.allseated.com',
+      pricing: 'paid',
+      badges: ['popular'],
+      category: 'Wedding & Events',
+      categorySlug: 'wedding-events',
+      subcategory: 'Guest Management',
+      subcategorySlug: 'guest-management',
+      description: 'AllSeated provides professional wedding guest list management, seating chart design, and floor plan tools for event planners and couples.',
+      features: [
+        'Guest list management',
+        'Seating chart design',
+        'Floor plan creator',
+        'Table assignment',
+        'Guest filtering',
+        'Export options',
+        'Mobile access',
+        'Collaboration tools'
+      ],
+      useCases: [
+        'Guest list organization',
+        'Seating arrangement',
+        'Venue planning',
+        'Table assignments',
+        'Event coordination'
+      ],
+      tags: ['wedding', 'guests', 'seating', 'planning', 'events'],
+      rating: 4.5,
+      reviewCount: 2300
+    },
+    {
+      name: 'Coaster',
+      slug: 'coaster',
+      tagline: 'Wedding guest list and RSVP management',
+      logoUrl: '/logos/coaster.png',
+      website: 'https://www.coaster.events',
+      pricing: 'freemium',
+      badges: ['trending'],
+      category: 'Wedding & Events',
+      categorySlug: 'wedding-events',
+      subcategory: 'Guest Management',
+      subcategorySlug: 'guest-management',
+      description: 'Coaster offers modern wedding guest list management with elegant RSVP tools, guest communication, and wedding website integration.',
+      features: [
+        'Guest list management',
+        'Digital RSVPs',
+        'Guest communication',
+        'Meal selection',
+        'Plus-one tracking',
+        'Mobile app',
+        'Analytics',
+        'Import/export'
+      ],
+      useCases: [
+        'Guest list tracking',
+        'RSVP collection',
+        'Guest communication',
+        'Meal planning',
+        'Attendance tracking'
+      ],
+      tags: ['wedding', 'guests', 'rsvp', 'communication', 'planning'],
+      rating: 4.4,
+      reviewCount: 1800
+    }
+  ],
+
+  // Wedding & Events > Registry Services
+  'registry-services': [
+    {
+      name: 'Honeyfund',
+      slug: 'honeyfund',
+      tagline: 'Cash wedding registry and honeymoon fund',
+      logoUrl: '/logos/honeyfund.png',
+      website: 'https://www.honeyfund.com',
+      pricing: 'freemium',
+      badges: ['popular', 'trending'],
+      category: 'Wedding & Events',
+      categorySlug: 'wedding-events',
+      subcategory: 'Registry Services',
+      subcategorySlug: 'registry-services',
+      description: 'Honeyfund is a cash wedding registry that allows couples to receive monetary gifts for their wedding or honeymoon experiences.',
+      features: [
+        'Cash registry',
+        'Honeymoon fund',
+        'Gift tracking',
+        'Fund goals',
+        'Mobile app',
+        'Experience gifts',
+        'Thank you notes',
+        'Social sharing'
+      ],
+      useCases: [
+        'Cash registry setup',
+        'Honeymoon funding',
+        'Gift tracking',
+        'Fund management',
+        'Experience planning'
+      ],
+      tags: ['wedding', 'registry', 'cash', 'honeymoon', 'gifts'],
+      rating: 4.6,
+      reviewCount: 12400
+    },
+    {
+      name: 'Bed Bath & Beyond Registry',
+      slug: 'bedbathbeyond-registry',
+      tagline: 'Traditional wedding registry with household goods',
+      logoUrl: '/logos/bedbathbeyond.png',
+      website: 'https://www.bedbathandbeyond.com/store/gift-registry',
+      pricing: 'free',
+      badges: ['popular'],
+      category: 'Wedding & Events',
+      categorySlug: 'wedding-events',
+      subcategory: 'Registry Services',
+      subcategorySlug: 'registry-services',
+      description: 'Bed Bath & Beyond offers traditional wedding registry services with a vast selection of household goods, kitchen items, and home decor.',
+      features: [
+        'Household goods registry',
+        'Kitchen items',
+        'Home decor',
+        'Gift tracking',
+        'Completion discount',
+        'Group gifts',
+        'Mobile app',
+        'Store pickup'
+      ],
+      useCases: [
+        'Household registry',
+        'Kitchen planning',
+        'Home setup',
+        'Gift selection',
+        'Store integration'
+      ],
+      tags: ['wedding', 'registry', 'household', 'kitchen', 'home'],
+      rating: 4.3,
+      reviewCount: 28700
+    }
+  ],
+
   // Waste & Recycling > Waste Routing
   'waste-routing': [
     {
