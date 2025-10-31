@@ -81,6 +81,8 @@ export function SoftwareApplicationSchema({
   reviewCount,
   category,
   pricing,
+  features,
+  tags,
 }: {
   name: string;
   description: string;
@@ -89,6 +91,8 @@ export function SoftwareApplicationSchema({
   reviewCount?: number;
   category: string;
   pricing: string;
+  features?: string[];
+  tags?: string[];
 }) {
   const schema = {
     '@context': 'https://schema.org',
@@ -98,6 +102,8 @@ export function SoftwareApplicationSchema({
     url: url,
     applicationCategory: category,
     operatingSystem: 'Web-based',
+    keywords: tags ? tags.join(', ') : undefined,
+    featureList: features,
     offers: {
       '@type': 'Offer',
       price: pricing === 'free' ? '0' : undefined,
@@ -142,6 +148,78 @@ export function CollectionPageSchema({
       '@type': 'ItemList',
       numberOfItems: numberOfItems,
     },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// New Review Schema
+export function ReviewSchema({
+  name,
+  reviewBody,
+  rating,
+  author,
+  datePublished,
+  itemReviewed,
+}: {
+  name: string;
+  reviewBody: string;
+  rating: number;
+  author: string;
+  datePublished: string;
+  itemReviewed: {
+    name: string;
+    type: string;
+  };
+}) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Review',
+    name: name,
+    reviewBody: reviewBody,
+    reviewRating: {
+      '@type': 'Rating',
+      ratingValue: rating,
+      bestRating: 5,
+      worstRating: 1,
+    },
+    author: {
+      '@type': 'Person',
+      name: author,
+    },
+    datePublished: datePublished,
+    itemReviewed: {
+      '@type': itemReviewed.type,
+      name: itemReviewed.name,
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// New FAQ Schema
+export function FAQSchema({ faqs }: { faqs: Array<{ question: string; answer: string }> }) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map(faq => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
   };
 
   return (

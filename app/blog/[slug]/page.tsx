@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getBlogPostBySlug, getAllBlogPosts, getTrendingPosts } from '../../../data/blog-posts';
 import { SoftwareApplicationSchema, BreadcrumbSchema } from '../../../components/StructuredData';
+import { generateBlogMetadata } from '../../../lib/seo';
 import { ClockIcon, UserIcon, CalendarIcon, TagIcon, HeartIcon, EyeIcon, ShareIcon } from '@heroicons/react/24/outline';
 
 interface Props {
@@ -27,35 +28,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
-  return {
-    title: `${post.title} | DeepTool Blog`,
+  return generateBlogMetadata({
+    title: post.title,
     description: post.excerpt,
-    keywords: post.tags.join(', '),
-    authors: [{ name: post.author.name }],
-    openGraph: {
-      title: post.title,
-      description: post.excerpt,
-      type: 'article',
-      publishedTime: post.publishedAt,
-      modifiedTime: post.updatedAt || post.publishedAt,
-      authors: [post.author.name],
-      tags: post.tags,
-      images: [
-        {
-          url: `https://deep-tool.vercel.app/og-blog/${params.slug}.png`,
-          width: 1200,
-          height: 630,
-          alt: post.title,
-        },
-      ],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: post.title,
-      description: post.excerpt,
-      images: [`https://deep-tool.vercel.app/og-blog/${params.slug}.png`],
-    },
-  };
+    slug: post.slug,
+    publishedAt: post.publishedAt,
+    tags: post.tags,
+  });
 }
 
 export default function BlogPostPage({ params }: Props) {

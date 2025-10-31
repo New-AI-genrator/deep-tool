@@ -10,6 +10,8 @@ export function generateToolMetadata({
   slug,
   rating,
   reviewCount,
+  features,
+  tags,
 }: {
   name: string;
   description: string;
@@ -18,8 +20,10 @@ export function generateToolMetadata({
   slug: string;
   rating?: number;
   reviewCount?: number;
+  features?: string[];
+  tags?: string[];
 }): Metadata {
-  const title = `${name} - ${subcategory} Tool | DeepTool`;
+  const title = `${name} 2025 Review & Comparison | Best ${subcategory} Tool | DeepTool`;
   const metaDescription = description.length > 160 
     ? description.substring(0, 157) + '...' 
     : description;
@@ -27,10 +31,23 @@ export function generateToolMetadata({
   const url = `${baseUrl}/tools/${slug}`;
   const imageUrl = `${baseUrl}/og-images/${slug}.png`;
 
+  // Generate keywords from various sources
+  const keywords = [
+    name,
+    subcategory,
+    category,
+    'software tool',
+    `${name} review`,
+    `${name} alternative`,
+    `best ${subcategory} tool`,
+    ...(tags || []),
+    ...(features || []).slice(0, 5)
+  ].join(', ');
+
   return {
     title,
     description: metaDescription,
-    keywords: `${name}, ${subcategory}, ${category}, software tool, ${name} review, ${name} alternative, best ${subcategory} tool`,
+    keywords,
     authors: [{ name: 'DeepTool' }],
     creator: 'DeepTool',
     publisher: 'DeepTool',
@@ -76,7 +93,7 @@ export function generateToolMetadata({
       'article:published_time': new Date().toISOString(),
       'article:modified_time': new Date().toISOString(),
       'article:section': category,
-      'article:tag': `${subcategory}, ${category}, software tools`,
+      'article:tag': `${subcategory}, ${category}, software tools, ${name}`,
     },
   };
 }
@@ -98,11 +115,12 @@ export function generateCategoryMetadata({
   const metaDescription = `Discover ${toolCount}+ ${name} tools across ${subcategoryCount} subcategories. Compare features, pricing, and reviews. Find the best ${name} software for your needs.`;
   
   const url = `${baseUrl}/categories/${slug}`;
+  const keywords = `${name}, ${name} tools, ${name} software, best ${name} tools, ${name} comparison, ${name} reviews, top ${name} software, ${name} 2025`;
 
   return {
     title,
     description: metaDescription,
-    keywords: `${name}, ${name} tools, ${name} software, best ${name} tools, ${name} comparison, ${name} reviews`,
+    keywords,
     authors: [{ name: 'DeepTool' }],
     creator: 'DeepTool',
     publisher: 'DeepTool',
@@ -166,11 +184,12 @@ export function generateSubcategoryMetadata({
   const metaDescription = `Compare ${toolCount}+ ${name} tools. Read reviews, check pricing, and find the perfect ${name} solution. Part of our ${categoryName} directory.`;
   
   const url = `${baseUrl}/categories/${categorySlug}/${subcategorySlug}`;
+  const keywords = `${name}, ${name} tools, ${name} software, best ${name}, ${categoryName}, ${name} comparison, ${name} reviews, top ${name} tools, ${name} 2025`;
 
   return {
     title,
     description: metaDescription,
-    keywords: `${name}, ${name} tools, ${name} software, best ${name}, ${categoryName}, ${name} comparison, ${name} reviews, top ${name} tools`,
+    keywords,
     authors: [{ name: 'DeepTool' }],
     creator: 'DeepTool',
     publisher: 'DeepTool',
@@ -199,6 +218,73 @@ export function generateSubcategoryMetadata({
       title,
       description: metaDescription,
       images: [`${baseUrl}/og-images/subcategories/${subcategorySlug}.png`],
+      creator: '@deeptool',
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
+  };
+}
+
+// New function for blog posts
+export function generateBlogMetadata({
+  title,
+  description,
+  slug,
+  publishedAt,
+  tags,
+}: {
+  title: string;
+  description: string;
+  slug: string;
+  publishedAt: string;
+  tags?: string[];
+}): Metadata {
+  const url = `${baseUrl}/blog/${slug}`;
+  const imageUrl = `${baseUrl}/og-images/blog/${slug}.png`;
+  const keywords = tags ? [...tags, 'AI tools', 'software', 'technology'].join(', ') : 'AI tools, software, technology';
+
+  return {
+    title: `${title} | DeepTool Blog`,
+    description,
+    keywords,
+    authors: [{ name: 'DeepTool' }],
+    creator: 'DeepTool',
+    publisher: 'DeepTool',
+    metadataBase: new URL(baseUrl),
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title,
+      description,
+      url,
+      siteName: 'DeepTool Blog',
+      images: [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
+      locale: 'en_US',
+      type: 'article',
+      publishedTime: publishedAt,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [imageUrl],
       creator: '@deeptool',
     },
     robots: {

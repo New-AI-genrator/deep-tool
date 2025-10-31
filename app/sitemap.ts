@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 import { categoriesWithSubcategories, getAllTools } from '../data/tools';
+import { blogPosts } from '../data/blog-posts';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://deep-tool.vercel.app';
@@ -60,6 +61,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.5,
     },
+    {
+      url: `${baseUrl}/seo-audit`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.6,
+    },
   ];
 
   // Category pages
@@ -90,6 +97,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.6,
+    });
+  });
+
+  // Blog posts
+  blogPosts.forEach((post) => {
+    routes.push({
+      url: `${baseUrl}/blog/${post.slug}`,
+      lastModified: new Date(post.date),
+      changeFrequency: 'monthly',
+      priority: 0.7,
     });
   });
 
