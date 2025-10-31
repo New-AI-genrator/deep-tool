@@ -16047,34 +16047,219 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
     }
   ],
 
-  // Mining & Resources > Mine Planning
-  'mine-planning': [
+  // Mining & Resources > Fleet Management
+  'mining-fleet': [
     {
-      name: 'Deswik',
-      slug: 'deswik',
-      tagline: 'Mining software solutions',
-      logoUrl: '/logos/deswik.png',
-      website: 'https://www.deswik.com',
+      name: 'MineWare',
+      slug: 'mineware',
+      tagline: 'Fleet management and optimization for mining operations',
+      logoUrl: '/logos/mineware.png',
+      website: 'https://www.mineware.com',
       pricing: 'enterprise',
       badges: ['enterprise'],
       category: 'Mining & Resources',
       categorySlug: 'mining-resources',
-      subcategory: 'Mine Planning',
-      subcategorySlug: 'mine-planning',
-      description: 'Deswik provides comprehensive mine planning software for strategic planning, scheduling, and optimization.',
-      features: ['Strategic planning', 'Tactical scheduling', 'Operational planning', 'Modeling', 'Optimization', 'Reporting', 'Drill & blast', 'Surveying'],
-      useCases: ['Mine planning', 'Production scheduling', 'Resource modeling', 'Mine design', 'Optimization'],
-      tags: ['mining', 'planning', 'scheduling', 'optimization', 'enterprise'],
+      subcategory: 'Fleet Management',
+      subcategorySlug: 'mining-fleet',
+      description: 'MineWare provides fleet management solutions for mining operations with real-time tracking, optimization, and analytics.',
+      features: [
+        'Real-time fleet tracking',
+        'Equipment optimization',
+        'Fuel management',
+        'Maintenance scheduling',
+        'Operator performance',
+        'Geofencing',
+        'Reporting and analytics',
+        'Mobile integration'
+      ],
+      useCases: [
+        'Fleet tracking',
+        'Equipment optimization',
+        'Fuel efficiency',
+        'Maintenance planning',
+        'Performance monitoring'
+      ],
+      tags: ['mining', 'fleet', 'tracking', 'optimization', 'equipment'],
+      rating: 4.3,
+      reviewCount: 180
+    },
+    {
+      name: 'Modular Mining',
+      slug: 'modular-mining',
+      tagline: 'Advanced fleet management and dispatch systems',
+      logoUrl: '/logos/modularmining.png',
+      website: 'https://www.modularmining.com',
+      pricing: 'enterprise',
+      badges: ['enterprise'],
+      category: 'Mining & Resources',
+      categorySlug: 'mining-resources',
+      subcategory: 'Fleet Management',
+      subcategorySlug: 'mining-fleet',
+      description: 'Modular Mining provides advanced fleet management and dispatch systems for surface and underground mining operations.',
+      features: [
+        'Fleet dispatch',
+        'Real-time optimization',
+        'Equipment tracking',
+        'Load and haul management',
+        'Fuel monitoring',
+        'Maintenance alerts',
+        'Performance analytics',
+        'Integration capabilities'
+      ],
+      useCases: [
+        'Fleet dispatch',
+        'Load optimization',
+        'Equipment tracking',
+        'Fuel management',
+        'Performance analysis'
+      ],
+      tags: ['mining', 'fleet', 'dispatch', 'optimization', 'surface'],
+      rating: 4.5,
+      reviewCount: 220
+    }
+  ],
+
+  // Mining & Resources > Safety Management
+  'mining-safety': [
+    {
+      name: 'Intelex',
+      slug: 'intelex',
+      tagline: 'Environmental, health and safety management software',
+      logoUrl: '/logos/intelex.png',
+      website: 'https://www.intelex.com',
+      pricing: 'enterprise',
+      badges: ['enterprise'],
+      category: 'Mining & Resources',
+      categorySlug: 'mining-resources',
+      subcategory: 'Safety Management',
+      subcategorySlug: 'mining-safety',
+      description: 'Intelex provides comprehensive environmental, health and safety management software for mining operations.',
+      features: [
+        'Incident management',
+        'Risk assessment',
+        'Audit management',
+        'Training tracking',
+        'Compliance monitoring',
+        'Corrective actions',
+        'Reporting',
+        'Mobile access'
+      ],
+      useCases: [
+        'Safety compliance',
+        'Incident reporting',
+        'Risk management',
+        'Audit tracking',
+        'Training management'
+      ],
+      tags: ['mining', 'safety', 'compliance', 'ehs', 'incident'],
       rating: 4.4,
-      reviewCount: 280,
-      alternatives: ['Surpac', 'MineSched', 'GEOVIA'],
-      integrations: ['Various mining systems'],
-      pricingDetails: {
-        type: 'enterprise',
-        price: 'Contact for pricing',
-        url: 'https://www.deswik.com/contact',
-        description: 'Enterprise licensing'
-      }
+      reviewCount: 350
+    },
+    {
+      name: 'SafeSite',
+      slug: 'safesite',
+      tagline: 'Digital safety management for mining operations',
+      logoUrl: '/logos/safesite.png',
+      website: 'https://www.safesite.com',
+      pricing: 'paid',
+      badges: ['trending'],
+      category: 'Mining & Resources',
+      categorySlug: 'mining-resources',
+      subcategory: 'Safety Management',
+      subcategorySlug: 'mining-safety',
+      description: 'SafeSite offers digital safety management solutions specifically designed for mining and resource operations.',
+      features: [
+        'Digital inspections',
+        'Incident reporting',
+        'Safety observations',
+        'Risk assessments',
+        'Training records',
+        'Compliance tracking',
+        'Analytics',
+        'Mobile app'
+      ],
+      useCases: [
+        'Safety inspections',
+        'Incident reporting',
+        'Risk assessment',
+        'Compliance tracking',
+        'Worker safety'
+      ],
+      tags: ['mining', 'safety', 'digital', 'inspections', 'compliance'],
+      rating: 4.2,
+      reviewCount: 150
+    }
+  ],
+
+  // Mining & Resources > Resource Tracking
+  'resource-tracking': [
+    {
+      name: 'MineSense',
+      slug: 'minesense',
+      tagline: 'Real-time ore tracking and grade control',
+      logoUrl: '/logos/minesense.png',
+      website: 'https://www.minesense.com',
+      pricing: 'enterprise',
+      badges: ['enterprise'],
+      category: 'Mining & Resources',
+      categorySlug: 'mining-resources',
+      subcategory: 'Resource Tracking',
+      subcategorySlug: 'resource-tracking',
+      description: 'MineSense provides real-time ore tracking and grade control solutions for mining operations.',
+      features: [
+        'Real-time ore analysis',
+        'Grade control',
+        'Material tracking',
+        'Blending optimization',
+        'Data analytics',
+        'Integration with equipment',
+        'Reporting',
+        'Mobile monitoring'
+      ],
+      useCases: [
+        'Ore tracking',
+        'Grade control',
+        'Material blending',
+        'Resource optimization',
+        'Quality control'
+      ],
+      tags: ['mining', 'ore', 'tracking', 'grade-control', 'analytics'],
+      rating: 4.3,
+      reviewCount: 95
+    },
+    {
+      name: 'Trimble Mine Management',
+      slug: 'trimble-mine-management',
+      tagline: 'Comprehensive mine management and resource tracking',
+      logoUrl: '/logos/trimble.png',
+      website: 'https://www.trimble.com',
+      pricing: 'enterprise',
+      badges: ['enterprise'],
+      category: 'Mining & Resources',
+      categorySlug: 'mining-resources',
+      subcategory: 'Resource Tracking',
+      subcategorySlug: 'resource-tracking',
+      description: 'Trimble Mine Management offers comprehensive solutions for mine management and resource tracking using advanced positioning technology.',
+      features: [
+        'Resource tracking',
+        'Equipment positioning',
+        'Volume calculations',
+        'Surveying',
+        'Drone integration',
+        '3D modeling',
+        'Reporting',
+        'Integration capabilities'
+      ],
+      useCases: [
+        'Resource tracking',
+        'Equipment positioning',
+        'Volume measurement',
+        'Surveying',
+        '3D modeling'
+      ],
+      tags: ['mining', 'resource', 'tracking', 'positioning', 'surveying'],
+      rating: 4.4,
+      reviewCount: 280
     }
   ],
 
