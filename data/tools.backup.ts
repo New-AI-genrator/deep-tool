@@ -455,10 +455,8 @@ export const categoriesWithSubcategories: CategoryWithSubcategories[] = [
       { name: 'Claims Processing', slug: 'claims-processing', description: 'Claims management systems', icon: '📝' },
       { name: 'Underwriting', slug: 'underwriting', description: 'Risk assessment and underwriting', icon: '📊' },
       { name: 'Insurance CRM', slug: 'insurance-crm', description: 'Customer relationship management', icon: '👥' },
-    ],
+    ]
   },
-
-  // Media & Publishing > Publishing Platforms
   {
     name: 'Media & Publishing',
     slug: 'media-publishing',
