@@ -5,6 +5,7 @@ import { Footer } from '../components/Footer';
 import { PageTransition } from '../components/PageTransition';
 import { SearchOverlay } from '../components/SearchOverlay';
 import { OrganizationSchema, WebSiteSchema } from '../components/StructuredData';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
   other: {
@@ -80,6 +81,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 					</PageTransition>
 				</div>
 				<Footer />
+				<Analytics />
 			</body>
 		</html>
 	);
