@@ -6,6 +6,7 @@ import { PageTransition } from '../components/PageTransition';
 import { SearchOverlay } from '../components/SearchOverlay';
 import { OrganizationSchema, WebSiteSchema } from '../components/StructuredData';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata = {
   other: {
@@ -82,6 +83,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 				</div>
 				<Footer />
 				<Analytics />
+				<SpeedInsights />
 			</body>
 		</html>
 	);
