@@ -14192,6 +14192,261 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
     }
   ],
 
+  // Human Resources > Payroll
+  'payroll': [
+    {
+      name: 'Gusto',
+      slug: 'gusto',
+      tagline: 'Modern payroll, benefits, and HR platform',
+      logoUrl: '/logos/gusto.png',
+      website: 'https://gusto.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Human Resources',
+      categorySlug: 'human-resources',
+      subcategory: 'Payroll',
+      subcategorySlug: 'payroll',
+      description: 'Gusto is a complete payroll, benefits, and HR platform that helps businesses take care of their teams. From paying employees and filing taxes to offering benefits and managing HR, Gusto makes the complex simple.',
+      features: ['Payroll processing', 'Automatic tax filing', 'Employee benefits', 'Time tracking', 'HR tools', 'Compliance management', 'Mobile app', 'Integrations'],
+      useCases: ['Payroll management', 'Tax compliance', 'Employee benefits', 'HR administration', 'Contractor payments'],
+      tags: ['payroll', 'hr', 'benefits', 'taxes', 'gusto'],
+      rating: 4.7,
+      reviewCount: 12500,
+      alternatives: ['QuickBooks Payroll', 'ADP', 'Paychex'],
+      integrations: ['QuickBooks', 'Xero', 'Slack', 'Google Workspace'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $39/month + $6/employee',
+        url: 'https://gusto.com/pricing',
+        description: 'Core plan starts at $39/month plus $6 per employee per month'
+      }
+    },
+    {
+      name: 'ADP',
+      slug: 'adp',
+      tagline: 'Comprehensive HR and payroll solutions',
+      logoUrl: '/logos/adp.png',
+      website: 'https://www.adp.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Human Resources',
+      categorySlug: 'human-resources',
+      subcategory: 'Payroll',
+      subcategorySlug: 'payroll',
+      description: 'ADP provides comprehensive human capital management solutions including payroll, benefits, talent management, and workforce analytics to help businesses manage their most important asset - their people.',
+      features: ['Payroll processing', 'Tax compliance', 'Benefits administration', 'Time and attendance', 'HR management', 'Analytics and reporting', 'Mobile app', 'Global payroll'],
+      useCases: ['Enterprise payroll', 'Global payroll management', 'Benefits administration', 'HR compliance', 'Workforce analytics'],
+      tags: ['payroll', 'enterprise', 'hr', 'benefits', 'adp'],
+      rating: 4.2,
+      reviewCount: 28900,
+      alternatives: ['Paychex', 'Gusto', 'QuickBooks Payroll'],
+      integrations: ['Microsoft 365', 'Salesforce', 'Workday', 'SAP'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Custom enterprise pricing',
+        url: 'https://www.adp.com/solutions/pricing.aspx',
+        description: 'Pricing based on company size and required features'
+      }
+    },
+    {
+      name: 'QuickBooks Payroll',
+      slug: 'quickbooks-payroll',
+      tagline: 'Integrated payroll and accounting solution',
+      logoUrl: '/logos/quickbooks.png',
+      website: 'https://quickbooks.intuit.com/payroll',
+      pricing: 'paid',
+      badges: ['popular'],
+      category: 'Human Resources',
+      categorySlug: 'human-resources',
+      subcategory: 'Payroll',
+      subcategorySlug: 'payroll',
+      description: 'QuickBooks Payroll seamlessly integrates with QuickBooks accounting software to make payroll processing simple and accurate. It handles payroll taxes, direct deposit, and employee benefits all in one place.',
+      features: ['Payroll processing', 'Automatic tax filing', 'Direct deposit', 'Employee self-service', 'Time tracking', 'Benefits administration', 'Mobile app', 'Accounting integration'],
+      useCases: ['Small business payroll', 'Accounting integration', 'Tax compliance', 'Employee self-service', 'Direct deposit'],
+      tags: ['payroll', 'accounting', 'small-business', 'taxes', 'quickbooks'],
+      rating: 4.5,
+      reviewCount: 15600,
+      alternatives: ['Gusto', 'Wave Payroll', 'Xero Payroll'],
+      integrations: ['QuickBooks', 'TSheets', 'Expensify', 'Shopify'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $45/month + $4/employee',
+        url: 'https://quickbooks.intuit.com/payroll/pricing/',
+        description: 'Core plan starts at $45/month plus $4 per employee per month'
+      }
+    }
+  ],
+
+  // Human Resources > Employee Management
+  'employee-management': [
+    {
+      name: 'BambooHR',
+      slug: 'bamboohr',
+      tagline: 'Beautiful HR software for small and medium businesses',
+      logoUrl: '/logos/bamboohr.png',
+      website: 'https://www.bamboohr.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Human Resources',
+      categorySlug: 'human-resources',
+      subcategory: 'Employee Management',
+      subcategorySlug: 'employee-management',
+      description: 'BambooHR is the #1 rated human resources software that helps HR professionals manage employee information, track time off, post jobs, and more - all in one beautiful, easy-to-use platform.',
+      features: ['Employee database', 'Time off tracking', 'Performance management', 'Applicant tracking', 'Onboarding', 'Reporting', 'Employee self-service', 'Mobile app'],
+      useCases: ['Employee data management', 'HR administration', 'Performance reviews', 'Onboarding', 'Time off management'],
+      tags: ['hr', 'employee-management', 'bamboo', 'small-business', 'hris'],
+      rating: 4.6,
+      reviewCount: 11200,
+      alternatives: ['Workday', 'SAP SuccessFactors', 'Oracle HCM'],
+      integrations: ['Slack', 'Google Workspace', 'Microsoft 365', 'Zenefits'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $6/employee/month',
+        url: 'https://www.bamboohr.com/pricing/',
+        description: 'Pricing based on number of employees, starting at $6 per employee per month'
+      }
+    },
+    {
+      name: 'Workday',
+      slug: 'workday',
+      tagline: 'Enterprise cloud applications for finance and HR',
+      logoUrl: '/logos/workday.png',
+      website: 'https://www.workday.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Human Resources',
+      categorySlug: 'human-resources',
+      subcategory: 'Employee Management',
+      subcategorySlug: 'employee-management',
+      description: 'Workday is a leading provider of enterprise cloud applications for finance and human resources. Workday helps organizations manage their entire employee lifecycle from hire to retire.',
+      features: ['Human capital management', 'Talent management', 'Payroll', 'Time tracking', 'Analytics', 'Mobile platform', 'Integration cloud', 'AI insights'],
+      useCases: ['Enterprise HR management', 'Talent development', 'Workforce planning', 'Analytics and reporting', 'Global HR'],
+      tags: ['hr', 'enterprise', 'hcm', 'workday', 'cloud'],
+      rating: 4.3,
+      reviewCount: 8900,
+      alternatives: ['SAP SuccessFactors', 'Oracle HCM', 'BambooHR'],
+      integrations: ['Microsoft 365', 'Salesforce', 'ServiceNow', 'Tableau'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Custom enterprise pricing',
+        url: 'https://www.workday.com/en-us/pricing.html',
+        description: 'Contact for custom enterprise pricing'
+      }
+    },
+    {
+      name: '15Five',
+      slug: '15five',
+      tagline: 'Continuous performance management platform',
+      logoUrl: '/logos/15five.png',
+      website: 'https://www.15five.com',
+      pricing: 'paid',
+      badges: ['popular'],
+      category: 'Human Resources',
+      categorySlug: 'human-resources',
+      subcategory: 'Employee Management',
+      subcategorySlug: 'employee-management',
+      description: '15Five combines weekly check-ins, continuous feedback, OKRs, and employee engagement surveys into one integrated platform that helps managers understand, develop, and retain their team members.',
+      features: ['Weekly check-ins', 'Continuous feedback', 'OKR tracking', 'Employee engagement surveys', 'One-on-ones', 'Performance reviews', 'Pulse surveys', 'Analytics'],
+      useCases: ['Performance management', 'Employee engagement', 'Goal tracking', 'Feedback culture', 'Manager effectiveness'],
+      tags: ['performance-management', 'employee-engagement', 'feedback', 'okr', '15five'],
+      rating: 4.6,
+      reviewCount: 4500,
+      alternatives: ['Lattice', 'Betterworks', 'Culture Amp'],
+      integrations: ['Slack', 'Microsoft Teams', 'Google Workspace', 'Zoom'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $7/employee/month',
+        url: 'https://www.15five.com/pricing/',
+        description: 'Habit Building plan starts at $7 per employee per month'
+      }
+    }
+  ],
+
+  // Human Resources > Time Tracking
+  'time-tracking': [
+    {
+      name: 'TSheets',
+      slug: 'tsheets',
+      tagline: 'Time tracking and workforce management',
+      logoUrl: '/logos/tsheets.png',
+      website: 'https://www.tsheets.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Human Resources',
+      categorySlug: 'human-resources',
+      subcategory: 'Time Tracking',
+      subcategorySlug: 'time-tracking',
+      description: 'TSheets by QuickBooks is an easy-to-use time tracking and scheduling software that helps businesses track employee time, manage scheduling, and streamline payroll processing.',
+      features: ['Time tracking', 'Scheduling', 'Timesheet approval', 'GPS tracking', 'Mobile app', 'Reporting', 'Integrations', 'Overtime tracking'],
+      useCases: ['Employee time tracking', 'Payroll processing', 'Scheduling', 'Project management', 'Compliance'],
+      tags: ['time-tracking', 'scheduling', 'payroll', 'timesheets', 'tsheets'],
+      rating: 4.4,
+      reviewCount: 7800,
+      alternatives: ['Clockify', 'Harvest', 'Time Doctor'],
+      integrations: ['QuickBooks', 'Xero', 'Gusto', 'Slack'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $20/month + $8/employee',
+        url: 'https://www.tsheets.com/pricing',
+        description: 'Starter plan at $20/month plus $8 per employee per month'
+      }
+    },
+    {
+      name: 'Clockify',
+      slug: 'clockify',
+      tagline: 'Free time tracking for teams',
+      logoUrl: '/logos/clockify.png',
+      website: 'https://clockify.me',
+      pricing: 'freemium',
+      badges: ['popular', 'community-favorite'],
+      category: 'Human Resources',
+      categorySlug: 'human-resources',
+      subcategory: 'Time Tracking',
+      subcategorySlug: 'time-tracking',
+      description: 'Clockify is the most popular free time tracking software for teams. It helps you track work hours across projects and analyze productivity.',
+      features: ['Time tracking', 'Timesheet reporting', 'Project tracking', 'Team management', 'Integrations', 'Mobile app', 'Screenshots', 'Calendar integration'],
+      useCases: ['Project time tracking', 'Freelancer time tracking', 'Team productivity', 'Client billing', 'Task management'],
+      tags: ['time-tracking', 'freelance', 'productivity', 'projects', 'clockify'],
+      rating: 4.7,
+      reviewCount: 23400,
+      alternatives: ['Toggl', 'RescueTime', 'Time Doctor'],
+      integrations: ['Trello', 'Asana', 'Slack', 'Google Calendar'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free plan available, Paid from $4.99/user/month',
+        url: 'https://clockify.me/pricing',
+        description: 'Free forever plan with unlimited users and basic features'
+      }
+    },
+    {
+      name: 'Hubstaff',
+      slug: 'hubstaff',
+      tagline: 'Time tracking with screenshots and activity monitoring',
+      logoUrl: '/logos/hubstaff.png',
+      website: 'https://hubstaff.com',
+      pricing: 'freemium',
+      badges: ['popular'],
+      category: 'Human Resources',
+      categorySlug: 'human-resources',
+      subcategory: 'Time Tracking',
+      subcategorySlug: 'time-tracking',
+      description: 'Hubstaff automatically tracks time, takes screenshots, and monitors activity levels to help you see where time is spent and keep remote teams productive.',
+      features: ['Automatic time tracking', 'Screenshots', 'Activity monitoring', 'GPS tracking', 'Timesheet reporting', 'Project management', 'Payroll integration', 'Invoicing'],
+      useCases: ['Remote team management', 'Freelancer tracking', 'Productivity monitoring', 'Payroll processing', 'Client billing'],
+      tags: ['time-tracking', 'screenshots', 'remote-work', 'activity-monitoring', 'hubstaff'],
+      rating: 4.5,
+      reviewCount: 6700,
+      alternatives: ['Time Doctor', 'RescueTime', 'TSheets'],
+      integrations: ['QuickBooks', 'Gusto', 'Trello', 'Asana'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free plan available, Paid from $7/user/month',
+        url: 'https://hubstaff.com/pricing',
+        description: 'Free plan with basic features for up to 5 users'
+      }
+    }
+  ],
+
   // Customer Support > Help Desk
   'help-desk': [
     {
@@ -18588,5 +18843,5 @@ export function getSubcategoryBySlug(categorySlug: string, subcategorySlug: stri
 }
 
 // Count total tools
-const totalTools = getAllTools().length;
+const totalTools = Object.values(toolsBySubcategory).flat().length;
 console.log(`Total tools in directory: ${totalTools}`);
