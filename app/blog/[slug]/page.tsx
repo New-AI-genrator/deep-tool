@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getBlogPostBySlug, getAllBlogPosts, getTrendingPosts } from '../../../data/blog-posts';
-import { SoftwareApplicationSchema, BreadcrumbSchema } from '../../../components/StructuredData';
+import { SoftwareApplicationSchema, BreadcrumbSchema, FAQSchema } from '../../../components/StructuredData';
 import { generateBlogMetadata } from '../../../lib/seo';
 import { ClockIcon, UserIcon, CalendarIcon, TagIcon, HeartIcon, EyeIcon, ShareIcon } from '@heroicons/react/24/outline';
 
@@ -46,6 +46,9 @@ export default function BlogPostPage({ params }: Props) {
 
   const relatedPosts = getTrendingPosts().filter(p => p.slug !== post.slug).slice(0, 3);
 
+  // Extract FAQ data from content (simple approach)
+  const faqs = extractFAQsFromContent(post.content);
+
   const breadcrumbItems = [
     { name: 'Home', url: 'https://deep-tool.vercel.app' },
     { name: 'Blog', url: 'https://deep-tool.vercel.app/blog' },
@@ -55,6 +58,9 @@ export default function BlogPostPage({ params }: Props) {
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900/20 to-purple-900/20">
       <BreadcrumbSchema items={breadcrumbItems} />
+      
+      {/* Add FAQ Schema if FAQs exist */}
+      {faqs.length > 0 && <FAQSchema faqs={faqs} />}
 
       {/* Article Header */}
       <div className="relative bg-gradient-to-r from-blue-600/10 to-purple-600/10 border-b border-white/10">
@@ -240,4 +246,79 @@ function formatMarkdown(content: string): string {
   html = html.replace(/(<li.*<\/li>)/s, '<ul class="list-disc space-y-2 my-4">$1</ul>');
 
   return html;
+}
+
+// Extract FAQ data from content
+function extractFAQsFromContent(content: string): Array<{ question: string; answer: string }> {
+  const faqs: Array<{ question: string; answer: string }> = [];
+  
+  // Split content into lines and look for FAQ patterns
+  const lines = content.split('\n');
+  let inFAQSection = false;
+  let currentQuestion = '';
+  let currentAnswer = '';
+  
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i].trim();
+    
+    // Check if this is a potential question (h3 header that looks like a question)
+    if (line.startsWith('### ')) {
+      const potentialQuestion = line.substring(4).trim();
+      
+      // Check if it looks like a question
+      if (potentialQuestion && 
+          (potentialQuestion.toLowerCase().includes('what') || 
+           potentialQuestion.toLowerCase().includes('how') || 
+           potentialQuestion.toLowerCase().includes('why') || 
+           potentialQuestion.toLowerCase().includes('when') || 
+           potentialQuestion.toLowerCase().includes('where') || 
+           potentialQuestion.toLowerCase().includes('which') || 
+           potentialQuestion.toLowerCase().includes('can') ||
+           potentialQuestion.toLowerCase().includes('should') ||
+           potentialQuestion.toLowerCase().includes('do'))) {
+        
+        // Save previous FAQ if we have one
+        if (currentQuestion && currentAnswer) {
+          faqs.push({
+            question: currentQuestion,
+            answer: currentAnswer.trim().replace(/\s+/g, ' ')
+          });
+        }
+        
+        // Start new FAQ
+        currentQuestion = potentialQuestion;
+        currentAnswer = '';
+        inFAQSection = true;
+        continue;
+      }
+    }
+    
+    // Collect answer content
+    if (inFAQSection && line && !line.startsWith('#')) {
+      currentAnswer += line + ' ';
+    }
+    
+    // End FAQ section when we hit another header
+    if (inFAQSection && line.startsWith('#')) {
+      if (currentQuestion && currentAnswer) {
+        faqs.push({
+          question: currentQuestion,
+          answer: currentAnswer.trim().replace(/\s+/g, ' ')
+        });
+      }
+      inFAQSection = false;
+      currentQuestion = '';
+      currentAnswer = '';
+    }
+  }
+  
+  // Don't forget the last FAQ
+  if (currentQuestion && currentAnswer) {
+    faqs.push({
+      question: currentQuestion,
+      answer: currentAnswer.trim().replace(/\s+/g, ' ')
+    });
+  }
+  
+  return faqs;
 }
