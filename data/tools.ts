@@ -6937,31 +6937,134 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       categorySlug: 'content-creation',
       subcategory: 'Writing Tools',
       subcategorySlug: 'writing-tools',
-      description: 'Grammarly is an AI-powered writing assistant that helps you write clearly and mistake-free.',
-      features: ['Grammar checking', 'Spell check', 'Tone detection', 'Plagiarism checker', 'Style suggestions', 'Browser extension', 'Mobile keyboard', 'Integrations'],
-      useCases: ['Professional writing', 'Email writing', 'Content creation', 'Academic writing', 'Business communication', 'Blogging'],
-      tags: ['writing', 'grammar', 'ai', 'editing', 'proofreading'],
-      rating: 4.6,
+      description: 'Grammarly is an AI-powered writing assistant that helps users improve their writing by checking grammar, spelling, punctuation, and style.',
+      features: ['Grammar checking', 'Spelling correction', 'Punctuation fixes', 'Style suggestions', 'Tone detection', 'Plagiarism checker', 'Vocabulary enhancement', 'Writing goals'],
+      useCases: ['Email writing', 'Document editing', 'Content creation', 'Academic writing', 'Professional communication', 'Social media posts'],
+      tags: ['writing', 'grammar', 'editing', 'productivity', 'ai'],
+      rating: 4.7,
       reviewCount: 234000
     },
     {
-      name: 'Hemingway Editor',
-      slug: 'hemingway-editor',
-      tagline: 'Make your writing bold and clear',
-      logoUrl: '/logos/hemingway.png',
-      website: 'https://hemingwayapp.com',
-      pricing: 'freemium',
-      badges: ['featured'],
+      name: 'Jasper',
+      slug: 'jasper',
+      tagline: 'AI content generator for marketing teams',
+      logoUrl: '/logos/jasper.png',
+      website: 'https://www.jasper.ai',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
       category: 'Content Creation',
       categorySlug: 'content-creation',
       subcategory: 'Writing Tools',
       subcategorySlug: 'writing-tools',
-      description: 'Hemingway Editor makes your writing bold and clear by highlighting complex sentences and errors.',
-      features: ['Readability scoring', 'Sentence complexity', 'Passive voice detection', 'Adverb highlighting', 'Word count', 'Desktop app', 'Publish to WordPress', 'Simple interface'],
-      useCases: ['Content writing', 'Blogging', 'Copywriting', 'Academic writing', 'Business writing', 'Editing'],
-      tags: ['writing', 'editing', 'readability', 'content', 'blogging'],
+      description: 'Jasper is an AI content creation tool that helps teams create high-quality content 10x faster. It\'s designed for marketers, copywriters, and content creators who want to scale their content production.',
+      features: ['Over 50 templates', 'Brand voice customization', 'Long-form content assistant', 'Grammarly integration', 'Team collaboration', 'Content history', 'Plagiarism checker', 'Chrome extension'],
+      useCases: ['Blog post writing', 'Social media content', 'Email marketing copy', 'Product descriptions', 'Website copy', 'Ad copywriting'],
+      tags: ['content-generation', 'marketing', 'copywriting', 'ai', 'team-collaboration'],
+      rating: 4.6,
+      reviewCount: 12500
+    },
+    {
+      name: 'Notion',
+      slug: 'notion',
+      tagline: 'All-in-one workspace for notes, docs, and tasks',
+      logoUrl: '/logos/notion.png',
+      website: 'https://www.notion.so',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Content Creation',
+      categorySlug: 'content-creation',
+      subcategory: 'Writing Tools',
+      subcategorySlug: 'writing-tools',
+      description: 'Notion is an all-in-one workspace that combines notes, docs, tasks, wikis, and databases in one place. It helps teams write, plan, and collaborate on any project.',
+      features: ['Notes and docs', 'Task management', 'Wikis and knowledge bases', 'Databases', 'Templates', 'Collaboration', 'Web clipper', 'Mobile apps'],
+      useCases: ['Content planning', 'Team collaboration', 'Knowledge management', 'Project documentation', 'Content calendars', 'Writing workflows'],
+      tags: ['productivity', 'notes', 'collaboration', 'workspace', 'documentation'],
+      rating: 4.7,
+      reviewCount: 156000
+    }
+  ],
+
+  // Content Creation > Podcasting
+  'podcasting': [
+    {
+      name: 'Anchor',
+      slug: 'anchor',
+      tagline: 'Free podcast hosting by Spotify',
+      logoUrl: '/logos/anchor.png',
+      website: 'https://anchor.fm',
+      pricing: 'free',
+      badges: ['popular', 'featured'],
+      category: 'Content Creation',
+      categorySlug: 'content-creation',
+      subcategory: 'Podcasting',
+      subcategorySlug: 'podcasting',
+      description: 'Anchor is the easiest way to make a podcast, brought to you by Spotify. It provides everything you need to create, distribute, and monetize your show.',
+      features: ['Free hosting', 'Distribution to Spotify', 'Recording tools', 'Monetization options', 'Analytics', 'Website builder', 'Social sharing', 'Mobile recording'],
+      useCases: ['Podcast creation', 'Audio content distribution', 'Audience growth', 'Revenue generation', 'Content marketing', 'Brand building'],
+      tags: ['podcast', 'audio', 'hosting', 'spotify', 'content-creation'],
       rating: 4.5,
-      reviewCount: 45600
+      reviewCount: 12800
+    },
+    {
+      name: 'Descript',
+      slug: 'descript',
+      tagline: 'Audio and video editing, supercharged',
+      logoUrl: '/logos/descript.png',
+      website: 'https://www.descript.com',
+      pricing: 'freemium',
+      badges: ['popular', 'trending'],
+      category: 'Content Creation',
+      categorySlug: 'content-creation',
+      subcategory: 'Podcasting',
+      subcategorySlug: 'podcasting',
+      description: 'Descript is an all-in-one audio and video editing tool that works like a doc. It allows you to edit media by editing text, making it incredibly easy to create professional content.',
+      features: ['Text-based editing', 'Overdub AI voice cloning', 'Screen recording', 'Collaboration tools', 'Publishing options', 'Transcription', 'Stock assets', 'Cloud storage'],
+      useCases: ['Podcast editing', 'Video content creation', 'Transcription services', 'Content repurposing', 'Team collaboration', 'Audio post-production'],
+      tags: ['audio-editing', 'video-editing', 'transcription', 'ai', 'podcast'],
+      rating: 4.7,
+      reviewCount: 8900
+    }
+  ],
+
+  // Content Creation > Content Management
+  'content-management': [
+    {
+      name: 'WordPress',
+      slug: 'wordpress',
+      tagline: 'Create and manage websites',
+      logoUrl: '/logos/wordpress.png',
+      website: 'https://wordpress.org',
+      pricing: 'freemium',
+      badges: ['popular', 'community-favorite'],
+      category: 'Content Creation',
+      categorySlug: 'content-creation',
+      subcategory: 'Content Management',
+      subcategorySlug: 'content-management',
+      description: 'WordPress is the world\'s most popular content management system, powering over 40% of all websites. It\'s an open-source platform for building and managing websites of all sizes.',
+      features: ['Thousands of themes', 'Extensive plugin ecosystem', 'SEO-friendly', 'Mobile-responsive', 'User management', 'Media library', 'Custom post types', 'Multilingual support'],
+      useCases: ['Blog creation', 'Business websites', 'E-commerce sites', 'Portfolio sites', 'News websites', 'Community sites'],
+      tags: ['cms', 'website-builder', 'blog', 'open-source', 'community-favorite'],
+      rating: 4.6,
+      reviewCount: 567000
+    },
+    {
+      name: 'Ghost',
+      slug: 'ghost',
+      tagline: 'Professional publishing platform',
+      logoUrl: '/logos/ghost.png',
+      website: 'https://ghost.org',
+      pricing: 'freemium',
+      badges: ['popular', 'trending'],
+      category: 'Content Creation',
+      categorySlug: 'content-creation',
+      subcategory: 'Content Management',
+      subcategorySlug: 'content-management',
+      description: 'Ghost is a professional publishing platform designed for bloggers, journalists, and content creators who want to focus on writing and growing their audience.',
+      features: ['Distraction-free writing', 'Built-in SEO tools', 'Newsletter integration', 'Membership subscriptions', 'Analytics dashboard', 'Responsive themes', 'Markdown support', 'Team collaboration'],
+      useCases: ['Blogging', 'Newsletter publishing', 'Content marketing', 'Journalism', 'Membership sites', 'Audience building'],
+      tags: ['blogging', 'publishing', 'newsletter', 'content-marketing', 'journalism'],
+      rating: 4.7,
+      reviewCount: 12300
     }
   ],
 
@@ -9406,7 +9509,8 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tags: ['version-control', 'git', 'gui', 'visualization', 'collaboration'],
       rating: 4.7,
       reviewCount: 18900
-    },
+    }
+,
     {
       name: 'Gitea',
       slug: 'gitea',
@@ -10164,7 +10268,8 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tags: ['devops', 'monitoring', 'metrics', 'alerting', 'observability'],
       rating: 4.6,
       reviewCount: 45600
-    },
+    }
+,
     {
       name: 'Datadog',
       slug: 'datadog',
