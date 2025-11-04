@@ -8,7 +8,7 @@ import { OrganizationSchema, WebSiteSchema } from '../components/StructuredData'
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import Script from 'next/script';
-import GoogleAnalytics from '../components/GoogleAnalytics';
+import ClientGoogleAnalytics from '../components/ClientGoogleAnalytics';
 
 export const metadata = {
   other: {
@@ -105,7 +105,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 			<body className="min-h-screen bg-aether-obsidian antialiased">
 				<SearchOverlay />
 				<Header />
-				{gaId && <GoogleAnalytics />}
+				{gaId && <ClientGoogleAnalytics />}
 				<div className="mx-auto max-w-7xl px-4 py-6 md:px-6">
 					<PageTransition>
 						{children}
