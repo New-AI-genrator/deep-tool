@@ -16773,13 +16773,7 @@ AI coding assistants provide significant benefits to developers:
 
 ### 1. Master Prompt Comments
 
-Effective prompt comments improve suggestions:
-\`\`\`python
-# Create a function to calculate compound interest
-# Include error handling for negative values
-# Return result rounded to 2 decimal places
-def compound_interest(principal, rate, time, compounds):
-\`\`\`
+Effective prompt comments improve suggestions by providing clear context to the AI. For example, when asking for a function to calculate compound interest, include details about error handling and formatting requirements.
 
 ### 2. Use Chat Features Effectively
 

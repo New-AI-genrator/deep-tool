@@ -23,7 +23,8 @@ export function Header() {
 		{ name: 'Tools', href: '/tools' },
 		{ name: 'Best', href: '/best' },
 		{ name: 'Intelligence', href: '/intelligence' },
-		{ name: 'Pricing', href: '/pricing' }
+		{ name: 'Pricing', href: '/pricing' },
+		{ name: 'Ads', href: '/ad-example' } // Added Ad Example link
 	];
 
 	return (

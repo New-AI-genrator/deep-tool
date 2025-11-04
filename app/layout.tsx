@@ -7,6 +7,8 @@ import { SearchOverlay } from '../components/SearchOverlay';
 import { OrganizationSchema, WebSiteSchema } from '../components/StructuredData';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import Script from 'next/script';
+import GoogleAnalytics from '../components/GoogleAnalytics';
 
 export const metadata = {
   other: {
@@ -67,15 +69,43 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
+	const gaId = process.env.NEXT_PUBLIC_GA_ID;
+	const adsenseId = 'ca-pub-2894915343289598';
+	
 	return (
 		<html lang="en">
 			<head>
 				<OrganizationSchema />
 				<WebSiteSchema />
+				{gaId && (
+					<>
+						<Script
+							src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+							strategy="afterInteractive"
+						/>
+						<Script id="gtag-init" strategy="afterInteractive">
+							{`
+								window.dataLayer = window.dataLayer || [];
+								function gtag(){dataLayer.push(arguments);}
+								gtag('js', new Date());
+								gtag('config', '${gaId}', {
+									page_path: window.location.pathname,
+								});
+							`}
+						</Script>
+					</>
+				)}
+				<Script
+					async
+					src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseId}`}
+					crossOrigin="anonymous"
+					strategy="afterInteractive"
+				/>
 			</head>
 			<body className="min-h-screen bg-aether-obsidian antialiased">
 				<SearchOverlay />
 				<Header />
+				{gaId && <GoogleAnalytics />}
 				<div className="mx-auto max-w-7xl px-4 py-6 md:px-6">
 					<PageTransition>
 						{children}

@@ -97,7 +97,10 @@ export default function PrivacyPolicy() {
 						<p>Our website may contain links to third-party websites and services. We are not responsible for the privacy practices of these external sites. We encourage you to review their privacy policies.</p>
 						
 						<h3 className="text-xl font-semibold text-white mt-6">Google AdSense</h3>
-						<p>We use Google AdSense to display advertisements. Google may use cookies to serve ads based on your visits to our site and other sites on the Internet. You can opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" className="text-blue-400 hover:text-blue-300">Google Ad Settings</a>.</p>
+						<p>We use Google AdSense to display advertisements. Google may use cookies to serve ads based on your visits to our site and other sites on the Internet. Third parties may place cookies on your browser when you visit our site to collect information about your online activity across websites. You can opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" className="text-blue-400 hover:text-blue-300">Google Ad Settings</a>.</p>
+						
+						<h3 className="text-xl font-semibold text-white mt-6">Google Analytics</h3>
+						<p>We use Google Analytics to understand how visitors use our website. Google Analytics collects information anonymously and reports website trends without identifying individual visitors. You can opt out of Google Analytics by installing the <a href="https://tools.google.com/dlpage/gaoptout" className="text-blue-400 hover:text-blue-300">Google Analytics Opt-out Browser Add-on</a>.</p>
 					</section>
 
 					<section className="rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 p-8">
