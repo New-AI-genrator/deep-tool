@@ -1,20 +1,31 @@
 'use client';
 
-import { usePathname, useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
 import { pageview } from '../lib/gtag';
 
 export default function ClientGoogleAnalytics() {
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
-
   useEffect(() => {
     // Only run on client side
-    if (typeof window !== 'undefined' && pathname) {
-      const url = pathname + (searchParams?.toString() ? '?' + searchParams.toString() : '');
+    if (typeof window !== 'undefined') {
+      // Use window.location for pathname and search params
+      const url = window.location.pathname + window.location.search;
       pageview(url);
+      
+      // Also track subsequent navigation changes
+      const handleRouteChange = () => {
+        const newUrl = window.location.pathname + window.location.search;
+        pageview(newUrl);
+      };
+
+      // Listen for route changes
+      window.addEventListener('popstate', handleRouteChange);
+      
+      // Clean up event listener
+      return () => {
+        window.removeEventListener('popstate', handleRouteChange);
+      };
     }
-  }, [pathname, searchParams]);
+  }, []);
 
   // Return null to render nothing
   return null;
