@@ -6937,134 +6937,31 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       categorySlug: 'content-creation',
       subcategory: 'Writing Tools',
       subcategorySlug: 'writing-tools',
-      description: 'Grammarly is an AI-powered writing assistant that helps users improve their writing by checking grammar, spelling, punctuation, and style.',
-      features: ['Grammar checking', 'Spelling correction', 'Punctuation fixes', 'Style suggestions', 'Tone detection', 'Plagiarism checker', 'Vocabulary enhancement', 'Writing goals'],
-      useCases: ['Email writing', 'Document editing', 'Content creation', 'Academic writing', 'Professional communication', 'Social media posts'],
-      tags: ['writing', 'grammar', 'editing', 'productivity', 'ai'],
-      rating: 4.7,
+      description: 'Grammarly is an AI-powered writing assistant that helps you write clearly and mistake-free.',
+      features: ['Grammar checking', 'Spell check', 'Tone detection', 'Plagiarism checker', 'Style suggestions', 'Browser extension', 'Mobile keyboard', 'Integrations'],
+      useCases: ['Professional writing', 'Email writing', 'Content creation', 'Academic writing', 'Business communication', 'Blogging'],
+      tags: ['writing', 'grammar', 'ai', 'editing', 'proofreading'],
+      rating: 4.6,
       reviewCount: 234000
     },
     {
-      name: 'Jasper',
-      slug: 'jasper',
-      tagline: 'AI content generator for marketing teams',
-      logoUrl: '/logos/jasper.png',
-      website: 'https://www.jasper.ai',
-      pricing: 'paid',
-      badges: ['popular', 'featured'],
-      category: 'Content Creation',
-      categorySlug: 'content-creation',
-      subcategory: 'Writing Tools',
-      subcategorySlug: 'writing-tools',
-      description: 'Jasper is an AI content creation tool that helps teams create high-quality content 10x faster. It\'s designed for marketers, copywriters, and content creators who want to scale their content production.',
-      features: ['Over 50 templates', 'Brand voice customization', 'Long-form content assistant', 'Grammarly integration', 'Team collaboration', 'Content history', 'Plagiarism checker', 'Chrome extension'],
-      useCases: ['Blog post writing', 'Social media content', 'Email marketing copy', 'Product descriptions', 'Website copy', 'Ad copywriting'],
-      tags: ['content-generation', 'marketing', 'copywriting', 'ai', 'team-collaboration'],
-      rating: 4.6,
-      reviewCount: 12500
-    },
-    {
-      name: 'Notion',
-      slug: 'notion',
-      tagline: 'All-in-one workspace for notes, docs, and tasks',
-      logoUrl: '/logos/notion.png',
-      website: 'https://www.notion.so',
+      name: 'Hemingway Editor',
+      slug: 'hemingway-editor',
+      tagline: 'Make your writing bold and clear',
+      logoUrl: '/logos/hemingway.png',
+      website: 'https://hemingwayapp.com',
       pricing: 'freemium',
-      badges: ['popular', 'featured'],
+      badges: ['featured'],
       category: 'Content Creation',
       categorySlug: 'content-creation',
       subcategory: 'Writing Tools',
       subcategorySlug: 'writing-tools',
-      description: 'Notion is an all-in-one workspace that combines notes, docs, tasks, wikis, and databases in one place. It helps teams write, plan, and collaborate on any project.',
-      features: ['Notes and docs', 'Task management', 'Wikis and knowledge bases', 'Databases', 'Templates', 'Collaboration', 'Web clipper', 'Mobile apps'],
-      useCases: ['Content planning', 'Team collaboration', 'Knowledge management', 'Project documentation', 'Content calendars', 'Writing workflows'],
-      tags: ['productivity', 'notes', 'collaboration', 'workspace', 'documentation'],
-      rating: 4.7,
-      reviewCount: 156000
-    }
-  ],
-
-  // Content Creation > Podcasting
-  'podcasting': [
-    {
-      name: 'Anchor',
-      slug: 'anchor',
-      tagline: 'Free podcast hosting by Spotify',
-      logoUrl: '/logos/anchor.png',
-      website: 'https://anchor.fm',
-      pricing: 'free',
-      badges: ['popular', 'featured'],
-      category: 'Content Creation',
-      categorySlug: 'content-creation',
-      subcategory: 'Podcasting',
-      subcategorySlug: 'podcasting',
-      description: 'Anchor is the easiest way to make a podcast, brought to you by Spotify. It provides everything you need to create, distribute, and monetize your show.',
-      features: ['Free hosting', 'Distribution to Spotify', 'Recording tools', 'Monetization options', 'Analytics', 'Website builder', 'Social sharing', 'Mobile recording'],
-      useCases: ['Podcast creation', 'Audio content distribution', 'Audience growth', 'Revenue generation', 'Content marketing', 'Brand building'],
-      tags: ['podcast', 'audio', 'hosting', 'spotify', 'content-creation'],
+      description: 'Hemingway Editor makes your writing bold and clear by highlighting complex sentences and errors.',
+      features: ['Readability scoring', 'Sentence complexity', 'Passive voice detection', 'Adverb highlighting', 'Word count', 'Desktop app', 'Publish to WordPress', 'Simple interface'],
+      useCases: ['Content writing', 'Blogging', 'Copywriting', 'Academic writing', 'Business writing', 'Editing'],
+      tags: ['writing', 'editing', 'readability', 'content', 'blogging'],
       rating: 4.5,
-      reviewCount: 12800
-    },
-    {
-      name: 'Descript',
-      slug: 'descript',
-      tagline: 'Audio and video editing, supercharged',
-      logoUrl: '/logos/descript.png',
-      website: 'https://www.descript.com',
-      pricing: 'freemium',
-      badges: ['popular', 'trending'],
-      category: 'Content Creation',
-      categorySlug: 'content-creation',
-      subcategory: 'Podcasting',
-      subcategorySlug: 'podcasting',
-      description: 'Descript is an all-in-one audio and video editing tool that works like a doc. It allows you to edit media by editing text, making it incredibly easy to create professional content.',
-      features: ['Text-based editing', 'Overdub AI voice cloning', 'Screen recording', 'Collaboration tools', 'Publishing options', 'Transcription', 'Stock assets', 'Cloud storage'],
-      useCases: ['Podcast editing', 'Video content creation', 'Transcription services', 'Content repurposing', 'Team collaboration', 'Audio post-production'],
-      tags: ['audio-editing', 'video-editing', 'transcription', 'ai', 'podcast'],
-      rating: 4.7,
-      reviewCount: 8900
-    }
-  ],
-
-  // Content Creation > Content Management
-  'content-management': [
-    {
-      name: 'WordPress',
-      slug: 'wordpress',
-      tagline: 'Create and manage websites',
-      logoUrl: '/logos/wordpress.png',
-      website: 'https://wordpress.org',
-      pricing: 'freemium',
-      badges: ['popular', 'community-favorite'],
-      category: 'Content Creation',
-      categorySlug: 'content-creation',
-      subcategory: 'Content Management',
-      subcategorySlug: 'content-management',
-      description: 'WordPress is the world\'s most popular content management system, powering over 40% of all websites. It\'s an open-source platform for building and managing websites of all sizes.',
-      features: ['Thousands of themes', 'Extensive plugin ecosystem', 'SEO-friendly', 'Mobile-responsive', 'User management', 'Media library', 'Custom post types', 'Multilingual support'],
-      useCases: ['Blog creation', 'Business websites', 'E-commerce sites', 'Portfolio sites', 'News websites', 'Community sites'],
-      tags: ['cms', 'website-builder', 'blog', 'open-source', 'community-favorite'],
-      rating: 4.6,
-      reviewCount: 567000
-    },
-    {
-      name: 'Ghost',
-      slug: 'ghost',
-      tagline: 'Professional publishing platform',
-      logoUrl: '/logos/ghost.png',
-      website: 'https://ghost.org',
-      pricing: 'freemium',
-      badges: ['popular', 'trending'],
-      category: 'Content Creation',
-      categorySlug: 'content-creation',
-      subcategory: 'Content Management',
-      subcategorySlug: 'content-management',
-      description: 'Ghost is a professional publishing platform designed for bloggers, journalists, and content creators who want to focus on writing and growing their audience.',
-      features: ['Distraction-free writing', 'Built-in SEO tools', 'Newsletter integration', 'Membership subscriptions', 'Analytics dashboard', 'Responsive themes', 'Markdown support', 'Team collaboration'],
-      useCases: ['Blogging', 'Newsletter publishing', 'Content marketing', 'Journalism', 'Membership sites', 'Audience building'],
-      tags: ['blogging', 'publishing', 'newsletter', 'content-marketing', 'journalism'],
-      rating: 4.7,
-      reviewCount: 12300
+      reviewCount: 45600
     }
   ],
 
@@ -9510,267 +9407,6 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       rating: 4.7,
       reviewCount: 18900
     }
-,
-    {
-      name: 'Gitea',
-      slug: 'gitea',
-      tagline: 'Lightweight Git service that can run on your own server',
-      logoUrl: '/logos/gitea.png',
-      website: 'https://gitea.io',
-      pricing: 'community-favorite',
-      badges: ['community-favorite', 'trending'],
-      category: 'Development & Engineering',
-      categorySlug: 'development-engineering',
-      subcategory: 'Version Control',
-      subcategorySlug: 'version-control',
-      description: 'Gitea is a lightweight Git service that can run on your own server. It\'s similar to GitHub, Bitbucket, and GitLab, but is open source and can be hosted yourself.',
-      features: [
-        'Git repository management',
-        'Code review',
-        'Issue tracking',
-        'Wiki support',
-        'Webhooks',
-        'LDAP integration',
-        'OAuth2 support',
-        'Docker support'
-      ],
-      useCases: [
-        'Self-hosted Git service',
-        'Private code repositories',
-        'Team collaboration',
-        'Open source projects',
-        'CI/CD integration',
-        'Code review workflows'
-      ],
-      tags: ['git', 'version-control', 'self-hosted', 'open-source', 'code-review'],
-      rating: 4.6,
-      reviewCount: 3200,
-      alternatives: ['GitHub', 'GitLab', 'Bitbucket'],
-      integrations: ['Jenkins', 'Drone', 'Docker', 'LDAP', 'OAuth2'],
-      pricingDetails: {
-        type: 'community-favorite',
-        price: 'Free open source',
-        url: 'https://gitea.io/en-us/',
-        description: 'Free and open source, self-hosted'
-      }
-    },
-    {
-      name: 'Phabricator',
-      slug: 'phabricator',
-      tagline: 'Open source collection of web applications for software development',
-      logoUrl: '/logos/phabricator.png',
-      website: 'https://phacility.com/phabricator/',
-      pricing: 'community-favorite',
-      badges: ['community-favorite', 'trending'],
-      category: 'Development & Engineering',
-      categorySlug: 'development-engineering',
-      subcategory: 'Version Control',
-      subcategorySlug: 'version-control',
-      description: 'Phabricator is a collection of open source web applications that help software companies build better software. It includes applications for code review, repository hosting, bug tracking, and more.',
-      features: [
-        'Code review',
-        'Repository browsing',
-        'Bug tracking',
-        'Wiki',
-        'Task management',
-        'Continuous integration',
-        'Command line tools',
-        'Web interface'
-      ],
-      useCases: [
-        'Code review workflows',
-        'Bug tracking',
-        'Project management',
-        'Documentation',
-        'Team collaboration',
-        'Repository management',
-        'Continuous integration'
-      ],
-      tags: ['code-review', 'bug-tracking', 'project-management', 'open-source', 'repository-management'],
-      rating: 4.3,
-      reviewCount: 1800,
-      alternatives: ['GitHub', 'GitLab', 'Bitbucket'],
-      integrations: ['Git', 'Mercurial', 'Subversion', 'Jenkins', 'Travis CI'],
-      pricingDetails: {
-        type: 'community-favorite',
-        price: 'Free open source',
-        url: 'https://github.com/phacility/phabricator',
-        description: 'Free and open source'
-      }
-    },
-    {
-      name: 'RhodeCode',
-      slug: 'rhodecode',
-      tagline: 'Enterprise source code management platform',
-      logoUrl: '/logos/rhodecode.png',
-      website: 'https://rhodecode.com',
-      pricing: 'enterprise',
-      badges: ['enterprise', 'featured'],
-      category: 'Development & Engineering',
-      categorySlug: 'development-engineering',
-      subcategory: 'Version Control',
-      subcategorySlug: 'version-control',
-      description: 'RhodeCode is an enterprise source code management platform that unifies Git, Mercurial, and Subversion repositories. It provides enterprise-grade security, compliance, and collaboration features.',
-      features: [
-        'Multi-VCS support',
-        'Enterprise security',
-        'Audit trails',
-        'Code review',
-        'Repository management',
-        'LDAP integration',
-        'SSO support',
-        'API access'
-      ],
-      useCases: [
-        'Enterprise Git management',
-        'Multi-VCS environments',
-        'Compliance requirements',
-        'Audit trails',
-        'Code review workflows',
-        'Repository security'
-      ],
-      tags: ['git', 'mercurial', 'subversion', 'enterprise', 'code-review'],
-      rating: 4.4,
-      reviewCount: 900,
-      alternatives: ['GitHub Enterprise', 'GitLab EE', 'Bitbucket Server'],
-      integrations: ['LDAP', 'Active Directory', 'Jenkins', 'JIRA', 'Slack'],
-      pricingDetails: {
-        type: 'enterprise',
-        price: 'Custom enterprise pricing',
-        url: 'https://rhodecode.com/pricing',
-        description: 'Enterprise licensing with support'
-      }
-    },
-    {
-      name: 'Gitea',
-      slug: 'gitea',
-      tagline: 'Lightweight Git service that can run on your own server',
-      logoUrl: '/logos/gitea.png',
-      website: 'https://gitea.io',
-      pricing: 'community-favorite',
-      badges: ['community-favorite', 'trending'],
-      category: 'Development & Engineering',
-      categorySlug: 'development-engineering',
-      subcategory: 'Version Control',
-      subcategorySlug: 'version-control',
-      description: 'Gitea is a lightweight Git service that can run on your own server. It\'s similar to GitHub, Bitbucket, and GitLab, but is open source and can be hosted yourself.',
-      features: [
-        'Git repository management',
-        'Code review',
-        'Issue tracking',
-        'Wiki support',
-        'Webhooks',
-        'LDAP integration',
-        'OAuth2 support',
-        'Docker support'
-      ],
-      useCases: [
-        'Self-hosted Git service',
-        'Private code repositories',
-        'Team collaboration',
-        'Open source projects',
-        'CI/CD integration',
-        'Code review workflows'
-      ],
-      tags: ['git', 'version-control', 'self-hosted', 'open-source', 'code-review'],
-      rating: 4.6,
-      reviewCount: 3200,
-      alternatives: ['GitHub', 'GitLab', 'Bitbucket'],
-      integrations: ['Jenkins', 'Drone', 'Docker', 'LDAP', 'OAuth2'],
-      pricingDetails: {
-        type: 'community-favorite',
-        price: 'Free open source',
-        url: 'https://gitea.io/en-us/',
-        description: 'Free and open source, self-hosted'
-      }
-    },
-    {
-      name: 'Phabricator',
-      slug: 'phabricator',
-      tagline: 'Open source collection of web applications for software development',
-      logoUrl: '/logos/phabricator.png',
-      website: 'https://phacility.com/phabricator/',
-      pricing: 'community-favorite',
-      badges: ['community-favorite', 'trending'],
-      category: 'Development & Engineering',
-      categorySlug: 'development-engineering',
-      subcategory: 'Version Control',
-      subcategorySlug: 'version-control',
-      description: 'Phabricator is a collection of open source web applications that help software companies build better software. It includes applications for code review, repository hosting, bug tracking, and more.',
-      features: [
-        'Code review',
-        'Repository browsing',
-        'Bug tracking',
-        'Wiki',
-        'Task management',
-        'Continuous integration',
-        'Command line tools',
-        'Web interface'
-      ],
-      useCases: [
-        'Code review workflows',
-        'Bug tracking',
-        'Project management',
-        'Documentation',
-        'Team collaboration',
-        'Repository management',
-        'Continuous integration'
-      ],
-      tags: ['code-review', 'bug-tracking', 'project-management', 'open-source', 'repository-management'],
-      rating: 4.3,
-      reviewCount: 1800,
-      alternatives: ['GitHub', 'GitLab', 'Bitbucket'],
-      integrations: ['Git', 'Mercurial', 'Subversion', 'Jenkins', 'Travis CI'],
-      pricingDetails: {
-        type: 'community-favorite',
-        price: 'Free open source',
-        url: 'https://github.com/phacility/phabricator',
-        description: 'Free and open source'
-      }
-    },
-    {
-      name: 'RhodeCode',
-      slug: 'rhodecode',
-      tagline: 'Enterprise source code management platform',
-      logoUrl: '/logos/rhodecode.png',
-      website: 'https://rhodecode.com',
-      pricing: 'enterprise',
-      badges: ['enterprise', 'featured'],
-      category: 'Development & Engineering',
-      categorySlug: 'development-engineering',
-      subcategory: 'Version Control',
-      subcategorySlug: 'version-control',
-      description: 'RhodeCode is an enterprise source code management platform that unifies Git, Mercurial, and Subversion repositories. It provides enterprise-grade security, compliance, and collaboration features.',
-      features: [
-        'Multi-VCS support',
-        'Enterprise security',
-        'Audit trails',
-        'Code review',
-        'Repository management',
-        'LDAP integration',
-        'SSO support',
-        'API access'
-      ],
-      useCases: [
-        'Enterprise Git management',
-        'Multi-VCS environments',
-        'Compliance requirements',
-        'Audit trails',
-        'Code review workflows',
-        'Repository security'
-      ],
-      tags: ['git', 'mercurial', 'subversion', 'enterprise', 'code-review'],
-      rating: 4.4,
-      reviewCount: 900,
-      alternatives: ['GitHub Enterprise', 'GitLab EE', 'Bitbucket Server'],
-      integrations: ['LDAP', 'Active Directory', 'Jenkins', 'JIRA', 'Slack'],
-      pricingDetails: {
-        type: 'enterprise',
-        price: 'Custom enterprise pricing',
-        url: 'https://rhodecode.com/pricing',
-        description: 'Enterprise licensing with support'
-      }
-    }
   ],
 
   // Development & Engineering > APIs & Tools
@@ -10268,267 +9904,6 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tags: ['devops', 'monitoring', 'metrics', 'alerting', 'observability'],
       rating: 4.6,
       reviewCount: 45600
-    }
-,
-    {
-      name: 'Datadog',
-      slug: 'datadog',
-      tagline: 'Monitoring and analytics platform for cloud-scale applications',
-      logoUrl: '/logos/datadog.png',
-      website: 'https://www.datadoghq.com',
-      pricing: 'paid',
-      badges: ['popular', 'featured'],
-      category: 'Development & Engineering',
-      categorySlug: 'development-engineering',
-      subcategory: 'DevOps',
-      subcategorySlug: 'devops',
-      description: 'Datadog is a monitoring and analytics platform for cloud-scale applications, providing unified DevOps monitoring from infrastructure to applications.',
-      features: [
-        'Infrastructure monitoring',
-        'Application performance monitoring',
-        'Log management',
-        'User experience monitoring',
-        'Synthetic monitoring',
-        'Security monitoring',
-        'APM',
-        'Dashboarding'
-      ],
-      useCases: [
-        'Cloud infrastructure monitoring',
-        'Microservices monitoring',
-        'Container monitoring',
-        'Log analysis',
-        'Performance optimization',
-        'Incident response',
-        'Business metrics tracking'
-      ],
-      tags: ['monitoring', 'devops', 'cloud', 'apm', 'infrastructure'],
-      rating: 4.7,
-      reviewCount: 12500,
-      alternatives: ['New Relic', 'AppDynamics', 'Prometheus'],
-      integrations: ['AWS', 'Azure', 'GCP', 'Kubernetes', 'Docker', 'Nginx', 'MySQL'],
-      pricingDetails: {
-        type: 'paid',
-        price: 'From $15/host/month',
-        url: 'https://www.datadoghq.com/pricing/',
-        description: 'Tiered pricing based on infrastructure and features'
-      }
-    },
-    {
-      name: 'New Relic',
-      slug: 'new-relic',
-      tagline: 'Observability platform built to help engineers create more perfect software',
-      logoUrl: '/logos/new-relic.png',
-      website: 'https://newrelic.com',
-      pricing: 'freemium',
-      badges: ['popular', 'featured'],
-      category: 'Development & Engineering',
-      categorySlug: 'development-engineering',
-      subcategory: 'DevOps',
-      subcategorySlug: 'devops',
-      description: 'New Relic is an observability platform that helps engineers create more perfect software through full-stack visibility and AI-powered analytics.',
-      features: [
-        'Full-stack observability',
-        'AI-powered analytics',
-        'Real user monitoring',
-        'Infrastructure monitoring',
-        'APM',
-        'Log management',
-        'Synthetic monitoring',
-        'Mobile monitoring'
-      ],
-      useCases: [
-        'Application performance monitoring',
-        'Infrastructure monitoring',
-        'User experience optimization',
-        'Error tracking',
-        'Capacity planning',
-        'Digital business analytics'
-      ],
-      tags: ['apm', 'observability', 'monitoring', 'devops', 'analytics'],
-      rating: 4.6,
-      reviewCount: 15200,
-      alternatives: ['Datadog', 'AppDynamics', 'Dynatrace'],
-      integrations: ['AWS', 'Azure', 'GCP', 'Kubernetes', 'Docker', 'Nginx', 'Apache'],
-      pricingDetails: {
-        type: 'freemium',
-        price: 'Free tier available, paid plans from $144/month',
-        url: 'https://newrelic.com/pricing',
-        description: 'Free tier with paid upgrades for advanced features'
-      }
-    },
-    {
-      name: 'Grafana',
-      slug: 'grafana',
-      tagline: 'Open source analytics and interactive visualization web application',
-      logoUrl: '/logos/grafana.png',
-      website: 'https://grafana.com',
-      pricing: 'freemium',
-      badges: ['popular', 'community-favorite'],
-      category: 'Development & Engineering',
-      categorySlug: 'development-engineering',
-      subcategory: 'DevOps',
-      subcategorySlug: 'devops',
-      description: 'Grafana is an open source analytics and interactive visualization web application. It provides charts, graphs, and alerts when connected to supported data sources.',
-      features: [
-        'Dashboard creation',
-        'Data visualization',
-        'Alerting',
-        'Plugin architecture',
-        'Multi-data source support',
-        'Team collaboration',
-        'Sharing capabilities',
-        'Mobile support'
-      ],
-      useCases: [
-        'Infrastructure monitoring',
-        'Application performance monitoring',
-        'Business metrics tracking',
-        'IoT data visualization',
-        'Log analysis',
-        'Time series data visualization'
-      ],
-      tags: ['monitoring', 'visualization', 'dashboard', 'open-source', 'time-series'],
-      rating: 4.8,
-      reviewCount: 22000,
-      alternatives: ['Kibana', 'Prometheus', 'Datadog'],
-      integrations: ['Prometheus', 'InfluxDB', 'Elasticsearch', 'AWS CloudWatch', 'Azure Monitor', 'Google Cloud Monitoring'],
-      pricingDetails: {
-        type: 'freemium',
-        price: 'Open source free, Grafana Cloud from $9/month',
-        url: 'https://grafana.com/pricing/',
-        description: 'Open source version free, cloud service with paid tiers'
-      }
-    },
-    {
-      name: 'Datadog',
-      slug: 'datadog',
-      tagline: 'Monitoring and analytics platform for cloud-scale applications',
-      logoUrl: '/logos/datadog.png',
-      website: 'https://www.datadoghq.com',
-      pricing: 'paid',
-      badges: ['popular', 'featured'],
-      category: 'Development & Engineering',
-      categorySlug: 'development-engineering',
-      subcategory: 'DevOps',
-      subcategorySlug: 'devops',
-      description: 'Datadog is a monitoring and analytics platform for cloud-scale applications, providing unified DevOps monitoring from infrastructure to applications.',
-      features: [
-        'Infrastructure monitoring',
-        'Application performance monitoring',
-        'Log management',
-        'User experience monitoring',
-        'Synthetic monitoring',
-        'Security monitoring',
-        'APM',
-        'Dashboarding'
-      ],
-      useCases: [
-        'Cloud infrastructure monitoring',
-        'Microservices monitoring',
-        'Container monitoring',
-        'Log analysis',
-        'Performance optimization',
-        'Incident response',
-        'Business metrics tracking'
-      ],
-      tags: ['monitoring', 'devops', 'cloud', 'apm', 'infrastructure'],
-      rating: 4.7,
-      reviewCount: 12500,
-      alternatives: ['New Relic', 'AppDynamics', 'Prometheus'],
-      integrations: ['AWS', 'Azure', 'GCP', 'Kubernetes', 'Docker', 'Nginx', 'MySQL'],
-      pricingDetails: {
-        type: 'paid',
-        price: 'From $15/host/month',
-        url: 'https://www.datadoghq.com/pricing/',
-        description: 'Tiered pricing based on infrastructure and features'
-      }
-    },
-    {
-      name: 'New Relic',
-      slug: 'new-relic',
-      tagline: 'Observability platform built to help engineers create more perfect software',
-      logoUrl: '/logos/new-relic.png',
-      website: 'https://newrelic.com',
-      pricing: 'freemium',
-      badges: ['popular', 'featured'],
-      category: 'Development & Engineering',
-      categorySlug: 'development-engineering',
-      subcategory: 'DevOps',
-      subcategorySlug: 'devops',
-      description: 'New Relic is an observability platform that helps engineers create more perfect software through full-stack visibility and AI-powered analytics.',
-      features: [
-        'Full-stack observability',
-        'AI-powered analytics',
-        'Real user monitoring',
-        'Infrastructure monitoring',
-        'APM',
-        'Log management',
-        'Synthetic monitoring',
-        'Mobile monitoring'
-      ],
-      useCases: [
-        'Application performance monitoring',
-        'Infrastructure monitoring',
-        'User experience optimization',
-        'Error tracking',
-        'Capacity planning',
-        'Digital business analytics'
-      ],
-      tags: ['apm', 'observability', 'monitoring', 'devops', 'analytics'],
-      rating: 4.6,
-      reviewCount: 15200,
-      alternatives: ['Datadog', 'AppDynamics', 'Dynatrace'],
-      integrations: ['AWS', 'Azure', 'GCP', 'Kubernetes', 'Docker', 'Nginx', 'Apache'],
-      pricingDetails: {
-        type: 'freemium',
-        price: 'Free tier available, paid plans from $144/month',
-        url: 'https://newrelic.com/pricing',
-        description: 'Free tier with paid upgrades for advanced features'
-      }
-    },
-    {
-      name: 'Grafana',
-      slug: 'grafana',
-      tagline: 'Open source analytics and interactive visualization web application',
-      logoUrl: '/logos/grafana.png',
-      website: 'https://grafana.com',
-      pricing: 'freemium',
-      badges: ['popular', 'community-favorite'],
-      category: 'Development & Engineering',
-      categorySlug: 'development-engineering',
-      subcategory: 'DevOps',
-      subcategorySlug: 'devops',
-      description: 'Grafana is an open source analytics and interactive visualization web application. It provides charts, graphs, and alerts when connected to supported data sources.',
-      features: [
-        'Dashboard creation',
-        'Data visualization',
-        'Alerting',
-        'Plugin architecture',
-        'Multi-data source support',
-        'Team collaboration',
-        'Sharing capabilities',
-        'Mobile support'
-      ],
-      useCases: [
-        'Infrastructure monitoring',
-        'Application performance monitoring',
-        'Business metrics tracking',
-        'IoT data visualization',
-        'Log analysis',
-        'Time series data visualization'
-      ],
-      tags: ['monitoring', 'visualization', 'dashboard', 'open-source', 'time-series'],
-      rating: 4.8,
-      reviewCount: 22000,
-      alternatives: ['Kibana', 'Prometheus', 'Datadog'],
-      integrations: ['Prometheus', 'InfluxDB', 'Elasticsearch', 'AWS CloudWatch', 'Azure Monitor', 'Google Cloud Monitoring'],
-      pricingDetails: {
-        type: 'freemium',
-        price: 'Open source free, Grafana Cloud from $9/month',
-        url: 'https://grafana.com/pricing/',
-        description: 'Open source version free, cloud service with paid tiers'
-      }
     }
   ],
 
@@ -14817,261 +14192,6 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
     }
   ],
 
-  // Human Resources > Payroll
-  'payroll': [
-    {
-      name: 'Gusto',
-      slug: 'gusto',
-      tagline: 'Modern payroll, benefits, and HR platform',
-      logoUrl: '/logos/gusto.png',
-      website: 'https://gusto.com',
-      pricing: 'paid',
-      badges: ['popular', 'featured'],
-      category: 'Human Resources',
-      categorySlug: 'human-resources',
-      subcategory: 'Payroll',
-      subcategorySlug: 'payroll',
-      description: 'Gusto is a complete payroll, benefits, and HR platform that helps businesses take care of their teams. From paying employees and filing taxes to offering benefits and managing HR, Gusto makes the complex simple.',
-      features: ['Payroll processing', 'Automatic tax filing', 'Employee benefits', 'Time tracking', 'HR tools', 'Compliance management', 'Mobile app', 'Integrations'],
-      useCases: ['Payroll management', 'Tax compliance', 'Employee benefits', 'HR administration', 'Contractor payments'],
-      tags: ['payroll', 'hr', 'benefits', 'taxes', 'gusto'],
-      rating: 4.7,
-      reviewCount: 12500,
-      alternatives: ['QuickBooks Payroll', 'ADP', 'Paychex'],
-      integrations: ['QuickBooks', 'Xero', 'Slack', 'Google Workspace'],
-      pricingDetails: {
-        type: 'paid',
-        price: 'From $39/month + $6/employee',
-        url: 'https://gusto.com/pricing',
-        description: 'Core plan starts at $39/month plus $6 per employee per month'
-      }
-    },
-    {
-      name: 'ADP',
-      slug: 'adp',
-      tagline: 'Comprehensive HR and payroll solutions',
-      logoUrl: '/logos/adp.png',
-      website: 'https://www.adp.com',
-      pricing: 'enterprise',
-      badges: ['enterprise', 'featured'],
-      category: 'Human Resources',
-      categorySlug: 'human-resources',
-      subcategory: 'Payroll',
-      subcategorySlug: 'payroll',
-      description: 'ADP provides comprehensive human capital management solutions including payroll, benefits, talent management, and workforce analytics to help businesses manage their most important asset - their people.',
-      features: ['Payroll processing', 'Tax compliance', 'Benefits administration', 'Time and attendance', 'HR management', 'Analytics and reporting', 'Mobile app', 'Global payroll'],
-      useCases: ['Enterprise payroll', 'Global payroll management', 'Benefits administration', 'HR compliance', 'Workforce analytics'],
-      tags: ['payroll', 'enterprise', 'hr', 'benefits', 'adp'],
-      rating: 4.2,
-      reviewCount: 28900,
-      alternatives: ['Paychex', 'Gusto', 'QuickBooks Payroll'],
-      integrations: ['Microsoft 365', 'Salesforce', 'Workday', 'SAP'],
-      pricingDetails: {
-        type: 'enterprise',
-        price: 'Custom enterprise pricing',
-        url: 'https://www.adp.com/solutions/pricing.aspx',
-        description: 'Pricing based on company size and required features'
-      }
-    },
-    {
-      name: 'QuickBooks Payroll',
-      slug: 'quickbooks-payroll',
-      tagline: 'Integrated payroll and accounting solution',
-      logoUrl: '/logos/quickbooks.png',
-      website: 'https://quickbooks.intuit.com/payroll',
-      pricing: 'paid',
-      badges: ['popular'],
-      category: 'Human Resources',
-      categorySlug: 'human-resources',
-      subcategory: 'Payroll',
-      subcategorySlug: 'payroll',
-      description: 'QuickBooks Payroll seamlessly integrates with QuickBooks accounting software to make payroll processing simple and accurate. It handles payroll taxes, direct deposit, and employee benefits all in one place.',
-      features: ['Payroll processing', 'Automatic tax filing', 'Direct deposit', 'Employee self-service', 'Time tracking', 'Benefits administration', 'Mobile app', 'Accounting integration'],
-      useCases: ['Small business payroll', 'Accounting integration', 'Tax compliance', 'Employee self-service', 'Direct deposit'],
-      tags: ['payroll', 'accounting', 'small-business', 'taxes', 'quickbooks'],
-      rating: 4.5,
-      reviewCount: 15600,
-      alternatives: ['Gusto', 'Wave Payroll', 'Xero Payroll'],
-      integrations: ['QuickBooks', 'TSheets', 'Expensify', 'Shopify'],
-      pricingDetails: {
-        type: 'paid',
-        price: 'From $45/month + $4/employee',
-        url: 'https://quickbooks.intuit.com/payroll/pricing/',
-        description: 'Core plan starts at $45/month plus $4 per employee per month'
-      }
-    }
-  ],
-
-  // Human Resources > Employee Management
-  'employee-management': [
-    {
-      name: 'BambooHR',
-      slug: 'bamboohr',
-      tagline: 'Beautiful HR software for small and medium businesses',
-      logoUrl: '/logos/bamboohr.png',
-      website: 'https://www.bamboohr.com',
-      pricing: 'paid',
-      badges: ['popular', 'featured'],
-      category: 'Human Resources',
-      categorySlug: 'human-resources',
-      subcategory: 'Employee Management',
-      subcategorySlug: 'employee-management',
-      description: 'BambooHR is the #1 rated human resources software that helps HR professionals manage employee information, track time off, post jobs, and more - all in one beautiful, easy-to-use platform.',
-      features: ['Employee database', 'Time off tracking', 'Performance management', 'Applicant tracking', 'Onboarding', 'Reporting', 'Employee self-service', 'Mobile app'],
-      useCases: ['Employee data management', 'HR administration', 'Performance reviews', 'Onboarding', 'Time off management'],
-      tags: ['hr', 'employee-management', 'bamboo', 'small-business', 'hris'],
-      rating: 4.6,
-      reviewCount: 11200,
-      alternatives: ['Workday', 'SAP SuccessFactors', 'Oracle HCM'],
-      integrations: ['Slack', 'Google Workspace', 'Microsoft 365', 'Zenefits'],
-      pricingDetails: {
-        type: 'paid',
-        price: 'From $6/employee/month',
-        url: 'https://www.bamboohr.com/pricing/',
-        description: 'Pricing based on number of employees, starting at $6 per employee per month'
-      }
-    },
-    {
-      name: 'Workday',
-      slug: 'workday',
-      tagline: 'Enterprise cloud applications for finance and HR',
-      logoUrl: '/logos/workday.png',
-      website: 'https://www.workday.com',
-      pricing: 'enterprise',
-      badges: ['enterprise', 'featured'],
-      category: 'Human Resources',
-      categorySlug: 'human-resources',
-      subcategory: 'Employee Management',
-      subcategorySlug: 'employee-management',
-      description: 'Workday is a leading provider of enterprise cloud applications for finance and human resources. Workday helps organizations manage their entire employee lifecycle from hire to retire.',
-      features: ['Human capital management', 'Talent management', 'Payroll', 'Time tracking', 'Analytics', 'Mobile platform', 'Integration cloud', 'AI insights'],
-      useCases: ['Enterprise HR management', 'Talent development', 'Workforce planning', 'Analytics and reporting', 'Global HR'],
-      tags: ['hr', 'enterprise', 'hcm', 'workday', 'cloud'],
-      rating: 4.3,
-      reviewCount: 8900,
-      alternatives: ['SAP SuccessFactors', 'Oracle HCM', 'BambooHR'],
-      integrations: ['Microsoft 365', 'Salesforce', 'ServiceNow', 'Tableau'],
-      pricingDetails: {
-        type: 'enterprise',
-        price: 'Custom enterprise pricing',
-        url: 'https://www.workday.com/en-us/pricing.html',
-        description: 'Contact for custom enterprise pricing'
-      }
-    },
-    {
-      name: '15Five',
-      slug: '15five',
-      tagline: 'Continuous performance management platform',
-      logoUrl: '/logos/15five.png',
-      website: 'https://www.15five.com',
-      pricing: 'paid',
-      badges: ['popular'],
-      category: 'Human Resources',
-      categorySlug: 'human-resources',
-      subcategory: 'Employee Management',
-      subcategorySlug: 'employee-management',
-      description: '15Five combines weekly check-ins, continuous feedback, OKRs, and employee engagement surveys into one integrated platform that helps managers understand, develop, and retain their team members.',
-      features: ['Weekly check-ins', 'Continuous feedback', 'OKR tracking', 'Employee engagement surveys', 'One-on-ones', 'Performance reviews', 'Pulse surveys', 'Analytics'],
-      useCases: ['Performance management', 'Employee engagement', 'Goal tracking', 'Feedback culture', 'Manager effectiveness'],
-      tags: ['performance-management', 'employee-engagement', 'feedback', 'okr', '15five'],
-      rating: 4.6,
-      reviewCount: 4500,
-      alternatives: ['Lattice', 'Betterworks', 'Culture Amp'],
-      integrations: ['Slack', 'Microsoft Teams', 'Google Workspace', 'Zoom'],
-      pricingDetails: {
-        type: 'paid',
-        price: 'From $7/employee/month',
-        url: 'https://www.15five.com/pricing/',
-        description: 'Habit Building plan starts at $7 per employee per month'
-      }
-    }
-  ],
-
-  // Human Resources > Time Tracking
-  'time-tracking': [
-    {
-      name: 'TSheets',
-      slug: 'tsheets',
-      tagline: 'Time tracking and workforce management',
-      logoUrl: '/logos/tsheets.png',
-      website: 'https://www.tsheets.com',
-      pricing: 'paid',
-      badges: ['popular', 'featured'],
-      category: 'Human Resources',
-      categorySlug: 'human-resources',
-      subcategory: 'Time Tracking',
-      subcategorySlug: 'time-tracking',
-      description: 'TSheets by QuickBooks is an easy-to-use time tracking and scheduling software that helps businesses track employee time, manage scheduling, and streamline payroll processing.',
-      features: ['Time tracking', 'Scheduling', 'Timesheet approval', 'GPS tracking', 'Mobile app', 'Reporting', 'Integrations', 'Overtime tracking'],
-      useCases: ['Employee time tracking', 'Payroll processing', 'Scheduling', 'Project management', 'Compliance'],
-      tags: ['time-tracking', 'scheduling', 'payroll', 'timesheets', 'tsheets'],
-      rating: 4.4,
-      reviewCount: 7800,
-      alternatives: ['Clockify', 'Harvest', 'Time Doctor'],
-      integrations: ['QuickBooks', 'Xero', 'Gusto', 'Slack'],
-      pricingDetails: {
-        type: 'paid',
-        price: 'From $20/month + $8/employee',
-        url: 'https://www.tsheets.com/pricing',
-        description: 'Starter plan at $20/month plus $8 per employee per month'
-      }
-    },
-    {
-      name: 'Clockify',
-      slug: 'clockify',
-      tagline: 'Free time tracking for teams',
-      logoUrl: '/logos/clockify.png',
-      website: 'https://clockify.me',
-      pricing: 'freemium',
-      badges: ['popular', 'community-favorite'],
-      category: 'Human Resources',
-      categorySlug: 'human-resources',
-      subcategory: 'Time Tracking',
-      subcategorySlug: 'time-tracking',
-      description: 'Clockify is the most popular free time tracking software for teams. It helps you track work hours across projects and analyze productivity.',
-      features: ['Time tracking', 'Timesheet reporting', 'Project tracking', 'Team management', 'Integrations', 'Mobile app', 'Screenshots', 'Calendar integration'],
-      useCases: ['Project time tracking', 'Freelancer time tracking', 'Team productivity', 'Client billing', 'Task management'],
-      tags: ['time-tracking', 'freelance', 'productivity', 'projects', 'clockify'],
-      rating: 4.7,
-      reviewCount: 23400,
-      alternatives: ['Toggl', 'RescueTime', 'Time Doctor'],
-      integrations: ['Trello', 'Asana', 'Slack', 'Google Calendar'],
-      pricingDetails: {
-        type: 'freemium',
-        price: 'Free plan available, Paid from $4.99/user/month',
-        url: 'https://clockify.me/pricing',
-        description: 'Free forever plan with unlimited users and basic features'
-      }
-    },
-    {
-      name: 'Hubstaff',
-      slug: 'hubstaff',
-      tagline: 'Time tracking with screenshots and activity monitoring',
-      logoUrl: '/logos/hubstaff.png',
-      website: 'https://hubstaff.com',
-      pricing: 'freemium',
-      badges: ['popular'],
-      category: 'Human Resources',
-      categorySlug: 'human-resources',
-      subcategory: 'Time Tracking',
-      subcategorySlug: 'time-tracking',
-      description: 'Hubstaff automatically tracks time, takes screenshots, and monitors activity levels to help you see where time is spent and keep remote teams productive.',
-      features: ['Automatic time tracking', 'Screenshots', 'Activity monitoring', 'GPS tracking', 'Timesheet reporting', 'Project management', 'Payroll integration', 'Invoicing'],
-      useCases: ['Remote team management', 'Freelancer tracking', 'Productivity monitoring', 'Payroll processing', 'Client billing'],
-      tags: ['time-tracking', 'screenshots', 'remote-work', 'activity-monitoring', 'hubstaff'],
-      rating: 4.5,
-      reviewCount: 6700,
-      alternatives: ['Time Doctor', 'RescueTime', 'TSheets'],
-      integrations: ['QuickBooks', 'Gusto', 'Trello', 'Asana'],
-      pricingDetails: {
-        type: 'freemium',
-        price: 'Free plan available, Paid from $7/user/month',
-        url: 'https://hubstaff.com/pricing',
-        description: 'Free plan with basic features for up to 5 users'
-      }
-    }
-  ],
-
   // Customer Support > Help Desk
   'help-desk': [
     {
@@ -15881,6 +15001,148 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         url: 'https://mybrightwheel.com/pricing',
         description: 'Free and paid tiers available'
       }
+    }
+  ,
+    {
+      name: 'HiMama',
+      slug: 'himama',
+      tagline: 'Early childhood education platform for documentation and parent engagement',
+      logoUrl: '/logos/himama.png',
+      website: 'https://himama.com',
+      pricing: 'paid',
+      badges: ['popular', 'trending'],
+      category: 'Childcare & Education',
+      categorySlug: 'childcare-education',
+      subcategory: 'Daycare Management',
+      subcategorySlug: 'daycare-management',
+      description: 'HiMama is an early childhood education platform that helps educators document children\'s learning, create portfolios, and engage with parents through a centralized digital platform.',
+      features: [
+        'Learning story documentation',
+        'Photo and video sharing',
+        'Parent communication app',
+        'Curriculum planning',
+        'Child assessment tools',
+        'Report generation',
+        'Mobile accessibility',
+        'Offline mode'
+      ],
+      useCases: [
+        'Child development tracking',
+        'Parent engagement',
+        'Educational documentation',
+        'Curriculum implementation',
+        'Staff collaboration',
+        'Regulatory compliance'
+      ],
+      tags: ['childcare', 'documentation', 'parent-communication', 'early-childhood', 'portfolio'],
+      rating: 4.5,
+      reviewCount: 2400
+    },
+    {
+      name: 'Kangarootime',
+      slug: 'kangarootime',
+      tagline: 'Child care management software for enrollment to graduation',
+      logoUrl: '/logos/kangarootime.png',
+      website: 'https://kangarootime.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Childcare & Education',
+      categorySlug: 'childcare-education',
+      subcategory: 'Daycare Management',
+      subcategorySlug: 'daycare-management',
+      description: 'Kangarootime is a comprehensive child care management software that streamlines operations from enrollment to graduation, helping centers manage attendance, billing, parent communication, and more.',
+      features: [
+        'Attendance tracking',
+        'Automated billing',
+        'Parent portal',
+        'Classroom management',
+        'Meal and allergy tracking',
+        'Staff scheduling',
+        'Waitlist management',
+        'Mobile apps'
+      ],
+      useCases: [
+        'Childcare center operations',
+        'Parent communication',
+        'Billing automation',
+        'Attendance management',
+        'Staff coordination',
+        'Enrollment processing'
+      ],
+      tags: ['childcare', 'management', 'billing', 'attendance', 'parent-portal'],
+      rating: 4.4,
+      reviewCount: 1900
+    }
+  ,
+    {
+      name: 'HiMama',
+      slug: 'himama',
+      tagline: 'Early childhood education platform for documentation and parent engagement',
+      logoUrl: '/logos/himama.png',
+      website: 'https://himama.com',
+      pricing: 'paid',
+      badges: ['popular', 'trending'],
+      category: 'Childcare & Education',
+      categorySlug: 'childcare-education',
+      subcategory: 'Daycare Management',
+      subcategorySlug: 'daycare-management',
+      description: 'HiMama is an early childhood education platform that helps educators document children\'s learning, create portfolios, and engage with parents through a centralized digital platform.',
+      features: [
+        'Learning story documentation',
+        'Photo and video sharing',
+        'Parent communication app',
+        'Curriculum planning',
+        'Child assessment tools',
+        'Report generation',
+        'Mobile accessibility',
+        'Offline mode'
+      ],
+      useCases: [
+        'Child development tracking',
+        'Parent engagement',
+        'Educational documentation',
+        'Curriculum implementation',
+        'Staff collaboration',
+        'Regulatory compliance'
+      ],
+      tags: ['childcare', 'documentation', 'parent-communication', 'early-childhood', 'portfolio'],
+      rating: 4.5,
+      reviewCount: 2400
+    },
+    {
+      name: 'Kangarootime',
+      slug: 'kangarootime',
+      tagline: 'Child care management software for enrollment to graduation',
+      logoUrl: '/logos/kangarootime.png',
+      website: 'https://kangarootime.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Childcare & Education',
+      categorySlug: 'childcare-education',
+      subcategory: 'Daycare Management',
+      subcategorySlug: 'daycare-management',
+      description: 'Kangarootime is a comprehensive child care management software that streamlines operations from enrollment to graduation, helping centers manage attendance, billing, parent communication, and more.',
+      features: [
+        'Attendance tracking',
+        'Automated billing',
+        'Parent portal',
+        'Classroom management',
+        'Meal and allergy tracking',
+        'Staff scheduling',
+        'Waitlist management',
+        'Mobile apps'
+      ],
+      useCases: [
+        'Childcare center operations',
+        'Parent communication',
+        'Billing automation',
+        'Attendance management',
+        'Staff coordination',
+        'Enrollment processing'
+      ],
+      tags: ['childcare', 'management', 'billing', 'attendance', 'parent-portal'],
+      rating: 4.4,
+      reviewCount: 1900
     }
   ],
 
@@ -19437,6 +18699,231 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         description: 'Enterprise subscription with hardware components'
       }
     }
+  ],
+
+  // Childcare & Education > Billing & Payments
+  'childcare-billing': [
+  
+    {
+      name: 'TuitionExpress',
+      slug: 'tuitionexpress',
+      tagline: 'Automated payment processing for childcare and educational institutions',
+      logoUrl: '/logos/tuitionexpress.png',
+      website: 'https://www.tuitionexpress.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Childcare & Education',
+      categorySlug: 'childcare-education',
+      subcategory: 'Billing & Payments',
+      subcategorySlug: 'childcare-billing',
+      description: 'TuitionExpress simplifies payment processing for childcare centers and educational institutions with automated billing, recurring payments, and comprehensive financial management tools.',
+      features: [
+        'Automated recurring billing',
+        'Multiple payment methods',
+        'Parent portal',
+        'Financial reporting',
+        'Late fee automation',
+        'ACH and credit card processing',
+        'Integration capabilities',
+        'Mobile check deposit'
+      ],
+      useCases: [
+        'Tuition collection',
+        'Automated billing',
+        'Payment processing',
+        'Financial reporting',
+        'Parent payment management',
+        'Cash flow optimization'
+      ],
+      tags: ['billing', 'payments', 'tuition', 'automation', 'financial-management'],
+      rating: 4.4,
+      reviewCount: 1700
+    },
+    {
+      name: 'PushCoin',
+      slug: 'pushcoin',
+      tagline: 'Comprehensive student information and payment management system',
+      logoUrl: '/logos/pushcoin.png',
+      website: 'https://www.pushcoin.com',
+      pricing: 'paid',
+      badges: ['enterprise', 'featured'],
+      category: 'Childcare & Education',
+      categorySlug: 'childcare-education',
+      subcategory: 'Billing & Payments',
+      subcategorySlug: 'childcare-billing',
+      description: 'PushCoin provides a complete student information system with integrated payment processing, meal accounting, and financial management for schools and childcare institutions.',
+      features: [
+        'Student information management',
+        'Meal accounting',
+        'Online payment processing',
+        'Financial aid tracking',
+        'Parent and student portals',
+        'Reporting and analytics',
+        'Mobile apps',
+        'Integration with SIS'
+      ],
+      useCases: [
+        'School payment processing',
+        'Meal program management',
+        'Student data management',
+        'Financial aid administration',
+        'Parent billing communication',
+        'Regulatory compliance'
+      ],
+      tags: ['student-information', 'payment-processing', 'meal-accounting', 'school-management', 'financial-aid'],
+      rating: 4.6,
+      reviewCount: 1300
+    },
+],
+
+  // Childcare & Education > Child Development
+  'child-development': [
+  
+    {
+      name: 'Teachstone',
+      slug: 'teachstone',
+      tagline: 'Classroom assessment and professional development for early childhood',
+      logoUrl: '/logos/teachstone.png',
+      website: 'https://teachstone.com',
+      pricing: 'paid',
+      badges: ['enterprise', 'featured'],
+      category: 'Childcare & Education',
+      categorySlug: 'childcare-education',
+      subcategory: 'Child Development',
+      subcategorySlug: 'child-development',
+      description: 'Teachstone provides classroom assessment tools and professional development solutions to improve the quality of early childhood education and enhance child development outcomes.',
+      features: [
+        'Classroom observation tools',
+        'Teacher-child interaction assessment',
+        'Professional development modules',
+        'Coaching support',
+        'Data analytics',
+        'Reporting dashboard',
+        'Research-based practices',
+        'Quality improvement tracking'
+      ],
+      useCases: [
+        'Classroom quality assessment',
+        'Teacher professional development',
+        'Child development monitoring',
+        'Program evaluation',
+        'Regulatory compliance',
+        'Educational research'
+      ],
+      tags: ['child-development', 'assessment', 'professional-development', 'early-childhood', 'observation'],
+      rating: 4.7,
+      reviewCount: 1500
+    },
+    {
+      name: 'GoldieBlox',
+      slug: 'goldieblox',
+      tagline: 'Early childhood STEM education and development platform',
+      logoUrl: '/logos/goldieblox.png',
+      website: 'https://www.goldieblox.com',
+      pricing: 'freemium',
+      badges: ['popular', 'trending'],
+      category: 'Childcare & Education',
+      categorySlug: 'childcare-education',
+      subcategory: 'Child Development',
+      subcategorySlug: 'child-development',
+      description: 'GoldieBlox creates engaging STEM toys and digital content that inspire young children, especially girls, to develop critical thinking, spatial skills, and confidence in engineering and technology.',
+      features: [
+        'Interactive storybooks',
+        'Engineering and building challenges',
+        'Digital learning games',
+        'Parent and teacher guides',
+        'Progress tracking',
+        'Creative problem solving',
+        'Spatial reasoning development',
+        'Gender-inclusive design'
+      ],
+      useCases: [
+        'STEM skill development',
+        'Early engineering education',
+        'Spatial reasoning enhancement',
+        'Creative problem solving',
+        'Parent-child engagement',
+        'Classroom enrichment'
+      ],
+      tags: ['child-development', 'stem', 'engineering', 'spatial-skills', 'early-learning'],
+      rating: 4.5,
+      reviewCount: 2800
+    },
+],
+
+  // Childcare & Education > Parent Communication
+  'parent-communication': [
+  
+    {
+      name: 'ClassTag',
+      slug: 'classtag',
+      tagline: 'Communication and classroom management for early childhood educators',
+      logoUrl: '/logos/classtag.png',
+      website: 'https://www.classtag.com',
+      pricing: 'freemium',
+      badges: ['popular', 'trending'],
+      category: 'Childcare & Education',
+      categorySlug: 'childcare-education',
+      subcategory: 'Parent Communication',
+      subcategorySlug: 'parent-communication',
+      description: 'ClassTag is a communication and classroom management platform designed specifically for early childhood educators to connect with families and manage classroom activities.',
+      features: [
+        'Instant messaging',
+        'Photo and video sharing',
+        'Event calendar',
+        'Attendance tracking',
+        'Behavior logging',
+        'Portfolio creation',
+        'Two-way communication',
+        'Multilingual support'
+      ],
+      useCases: [
+        'Parent-teacher communication',
+        'Classroom updates',
+        'Event coordination',
+        'Child progress sharing',
+        'Family engagement',
+        'Daily activity reporting'
+      ],
+      tags: ['parent-communication', 'classroom', 'messaging', 'early-childhood', 'portfolio'],
+      rating: 4.6,
+      reviewCount: 3200
+    },
+    {
+      name: 'Remind',
+      slug: 'remind',
+      tagline: 'Safe school communication platform for educators and families',
+      logoUrl: '/logos/remind.png',
+      website: 'https://www.remind.com',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Childcare & Education',
+      categorySlug: 'childcare-education',
+      subcategory: 'Parent Communication',
+      subcategorySlug: 'parent-communication',
+      description: 'Remind is a safe communication platform that helps educators and child care providers connect with families instantly, share updates, and build stronger relationships.',
+      features: [
+        'One-way messaging',
+        'File sharing',
+        'Translation services',
+        'Attendance tracking',
+        'Two-way conversations',
+        'School directory',
+        'Announcement scheduling',
+        'Mobile apps'
+      ],
+      useCases: [
+        'School and childcare communication',
+        'Emergency notifications',
+        'Event announcements',
+        'Resource sharing',
+        'Parent engagement',
+        'Staff coordination'
+      ],
+      tags: ['communication', 'messaging', 'education', 'parent-engagement', 'safety'],
+      rating: 4.3,
+      reviewCount: 8900
+    }
   ]
 };
 
@@ -19468,5 +18955,5 @@ export function getSubcategoryBySlug(categorySlug: string, subcategorySlug: stri
 }
 
 // Count total tools
-const totalTools = Object.values(toolsBySubcategory).flat().length;
+const totalTools = getAllTools().length;
 console.log(`Total tools in directory: ${totalTools}`);

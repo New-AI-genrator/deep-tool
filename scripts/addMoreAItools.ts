@@ -7,48 +7,17 @@ import { dirname } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-// AI tools to add across various categories
-const newAITools = [
-  // Content Creation & Writing
-  {
-    name: "Jasper",
-    slug: "jasper",
-    tagline: "AI content generator for marketing teams",
-    category: "Content Creation & Writing",
-    categorySlug: "content-creation-writing",
-    subcategory: "AI Writing Assistants",
-    subcategorySlug: "ai-writing-assistants",
-    description: "Jasper is an AI content creation tool that helps teams create high-quality content 10x faster. It's designed for marketers, copywriters, and content creators who want to scale their content production.",
-    features: [
-      "Over 50 templates for different content types",
-      "Brand voice customization",
-      "Long-form content assistant",
-      "Grammarly integration",
-      "Team collaboration features"
-    ],
-    useCases: [
-      "Blog post writing",
-      "Social media content creation",
-      "Email marketing copy",
-      "Product descriptions",
-      "Website copy"
-    ],
-    tags: ["content-generation", "marketing", "copywriting", "team-collaboration"],
-    rating: 4.6,
-    reviewCount: 12500,
-    pricing: "paid",
-    website: "https://jasper.ai",
-    alternatives: ["Copy.ai", "Writesonic", "Rytr"],
-    integrations: ["Grammarly", "Notion", "Google Docs"]
-  },
+// Additional AI tools to add across various categories
+const additionalAITools = [
+  // AI Writing Assistants (Content Creation > Writing Tools)
   {
     name: "Copy.ai",
     slug: "copy-ai",
     tagline: "AI-powered copywriting platform",
-    category: "Content Creation & Writing",
-    categorySlug: "content-creation-writing",
-    subcategory: "AI Writing Assistants",
-    subcategorySlug: "ai-writing-assistants",
+    category: "Content Creation",
+    categorySlug: "content-creation",
+    subcategory: "Writing Tools",
+    subcategorySlug: "writing-tools",
     description: "Copy.ai helps you generate high-quality marketing copy in seconds. From social media posts to product descriptions, the platform offers templates for over 90 types of content.",
     features: [
       "90+ content templates",
@@ -66,20 +35,16 @@ const newAITools = [
     ],
     tags: ["copywriting", "marketing", "content-generation", "social-media"],
     rating: 4.4,
-    reviewCount: 18700,
-    pricing: "freemium",
-    website: "https://copy.ai",
-    alternatives: ["Jasper", "Writesonic", "Rytr"],
-    integrations: ["Shopify", "WordPress", "Google Sheets"]
+    reviewCount: 18700
   },
   {
     name: "Writesonic",
     slug: "writesonic",
     tagline: "AI writer that creates SEO-friendly content",
-    category: "Content Creation & Writing",
-    categorySlug: "content-creation-writing",
-    subcategory: "AI Writing Assistments",
-    subcategorySlug: "ai-writing-assistants",
+    category: "Content Creation",
+    categorySlug: "content-creation",
+    subcategory: "Writing Tools",
+    subcategorySlug: "writing-tools",
     description: "Writesonic creates SEO-friendly content for blogs, ads, websites, and emails in seconds. It's powered by the latest GPT technology and optimized for conversions.",
     features: [
       "SEO-optimized blog posts",
@@ -97,115 +62,101 @@ const newAITools = [
     ],
     tags: ["seo-content", "blog-writing", "content-marketing", "conversion-optimization"],
     rating: 4.3,
-    reviewCount: 9800,
-    pricing: "freemium",
-    website: "https://writesonic.com",
-    alternatives: ["Jasper", "Copy.ai", "Rytr"],
-    integrations: ["Surfer", "Google Docs", "WordPress"]
-  },
-  // Image & Design Tools
-  {
-    name: "Midjourney",
-    slug: "midjourney",
-    tagline: "AI art generation through Discord",
-    category: "Image & Design",
-    categorySlug: "image-design",
-    subcategory: "AI Image Generation",
-    subcategorySlug: "ai-image-generation",
-    description: "Midjourney is an AI art generation tool that creates stunning visuals from text prompts. It's accessed through Discord and is known for its high-quality artistic outputs.",
-    features: [
-      "Text-to-image generation",
-      "Style customization options",
-      "Upscaling capabilities",
-      "Variation creation",
-      "Community collaboration"
-    ],
-    useCases: [
-      "Concept art creation",
-      "Social media graphics",
-      "Book cover design",
-      "Logo design",
-      "Digital art"
-    ],
-    tags: ["image-generation", "artificial-intelligence", "creative-design", "digital-art"],
-    rating: 4.8,
-    reviewCount: 45200,
-    pricing: "subscription",
-    website: "https://midjourney.com",
-    alternatives: ["DALL-E", "Stable Diffusion", "Adobe Firefly"],
-    integrations: ["Discord", "Photoshop"]
+    reviewCount: 9800
   },
   {
-    name: "DALL-E",
-    slug: "dall-e",
-    tagline: "AI system that creates realistic images from text",
-    category: "Image & Design",
-    categorySlug: "image-design",
-    subcategory: "AI Image Generation",
-    subcategorySlug: "ai-image-generation",
-    description: "DALL-E is OpenAI's AI system that creates realistic images and art from natural language descriptions. It can combine concepts, attributes, and styles in creative ways.",
+    name: "Rytr",
+    slug: "rytr",
+    tagline: "AI writing assistant for content creation",
+    category: "Content Creation",
+    categorySlug: "content-creation",
+    subcategory: "Writing Tools",
+    subcategorySlug: "writing-tools",
+    description: "Rytr is an AI writing assistant that helps you create high-quality content in minutes. It supports 40+ use cases and 30+ languages.",
     features: [
-      "Text-to-image generation",
-      "Image editing capabilities",
-      "Style variation options",
-      "High-resolution outputs",
-      "Creative concept blending"
+      "40+ use cases",
+      "30+ languages support",
+      "Tone of voice customization",
+      "Plagiarism checker",
+      "Browser extension"
     ],
     useCases: [
-      "Illustration creation",
-      "Product visualization",
-      "Concept art",
-      "Educational materials",
-      "Marketing visuals"
-    ],
-    tags: ["image-generation", "openai", "creative-tools", "concept-art"],
-    rating: 4.7,
-    reviewCount: 38900,
-    pricing: "paid",
-    website: "https://openai.com/dall-e",
-    alternatives: ["Midjourney", "Stable Diffusion", "Adobe Firefly"],
-    integrations: ["OpenAI API"]
-  },
-  // Video Creation Tools
-  {
-    name: "Runway ML",
-    slug: "runway-ml",
-    tagline: "Creative suite powered by machine learning",
-    category: "Video Creation",
-    categorySlug: "video-creation",
-    subcategory: "AI Video Editing",
-    subcategorySlug: "ai-video-editing",
-    description: "Runway ML is a creative toolkit that makes it easy to edit video using artificial intelligence. It offers a range of tools for green screen removal, object tracking, and more.",
-    features: [
-      "Green screen removal",
-      "Object tracking",
-      "Text animation",
-      "AI-powered effects",
-      "Collaborative editing"
-    ],
-    useCases: [
-      "Video editing",
       "Content creation",
-      "Marketing videos",
-      "Educational content",
-      "Social media videos"
+      "Email writing",
+      "Social media posts",
+      "Blog writing",
+      "Business copy"
     ],
-    tags: ["video-editing", "machine-learning", "content-creation", "green-screen"],
+    tags: ["writing-assistant", "content-generation", "multilingual", "ai-tools"],
     rating: 4.5,
-    reviewCount: 7600,
-    pricing: "freemium",
-    website: "https://runwayml.com",
-    alternatives: ["Descript", "Pictory", "Lumen5"],
-    integrations: ["YouTube", "Vimeo"]
+    reviewCount: 7600
   },
+  
+  // AI Image Generation (Creative & Design > AI Art Generation)
+  {
+    name: "Adobe Firefly",
+    slug: "adobe-firefly",
+    tagline: "Creative generation AI for design",
+    category: "Creative & Design",
+    categorySlug: "creative-design",
+    subcategory: "AI Art Generation",
+    subcategorySlug: "ai-art-generation",
+    description: "Adobe Firefly is a family of creative generative AI models designed to generate images, text effects, and other content. It's integrated with Adobe's Creative Cloud suite.",
+    features: [
+      "Text-to-image generation",
+      "Generative Fill",
+      "Text effects",
+      "Commercial use",
+      "Integration with Photoshop"
+    ],
+    useCases: [
+      "Digital art creation",
+      "Photo editing",
+      "Graphic design",
+      "Concept visualization",
+      "Marketing materials"
+    ],
+    tags: ["image-generation", "adobe", "creative-tools", "generative-ai"],
+    rating: 4.6,
+    reviewCount: 15400
+  },
+  {
+    name: "Craiyon",
+    slug: "craiyon",
+    tagline: "Free AI image generator",
+    category: "Creative & Design",
+    categorySlug: "creative-design",
+    subcategory: "AI Art Generation",
+    subcategorySlug: "ai-art-generation",
+    description: "Craiyon (formerly DALL-E Mini) is a free AI image generator that creates images from text descriptions. It's accessible through a web interface and doesn't require registration.",
+    features: [
+      "Free to use",
+      "No registration required",
+      "Multiple image outputs",
+      "Web-based interface",
+      "Community gallery"
+    ],
+    useCases: [
+      "Concept art",
+      "Social media visuals",
+      "Creative inspiration",
+      "Educational content",
+      "Fun illustrations"
+    ],
+    tags: ["image-generation", "free-tools", "community-favorite", "beginner-friendly"],
+    rating: 4.2,
+    reviewCount: 23400
+  },
+  
+  // AI Video Tools (Creative & Design > Video Editing)
   {
     name: "Pictory",
     slug: "pictory",
     tagline: "AI-powered video creation from text",
-    category: "Video Creation",
-    categorySlug: "video-creation",
-    subcategory: "AI Video Generation",
-    subcategorySlug: "ai-video-generation",
+    category: "Creative & Design",
+    categorySlug: "creative-design",
+    subcategory: "Video Editing",
+    subcategorySlug: "video-editing",
     description: "Pictory automatically creates videos from text content like blog posts, articles, and scripts. It uses AI to match relevant stock footage and images to your content.",
     features: [
       "Text-to-video conversion",
@@ -223,21 +174,45 @@ const newAITools = [
     ],
     tags: ["video-generation", "content-repurposing", "marketing", "social-media"],
     rating: 4.4,
-    reviewCount: 5200,
-    pricing: "freemium",
-    website: "https://pictory.ai",
-    alternatives: ["Lumen5", "InVideo", "Animoto"],
-    integrations: ["WordPress", "Google Drive", "Dropbox"]
+    reviewCount: 5200
   },
-  // Coding & Development
+  {
+    name: "Synthesia",
+    slug: "synthesia",
+    tagline: "AI video generation with avatars",
+    category: "Creative & Design",
+    categorySlug: "creative-design",
+    subcategory: "Video Editing",
+    subcategorySlug: "video-editing",
+    description: "Synthesia enables you to create professional videos from plain text in minutes. Choose from 125+ diverse AI avatars speaking in 120+ languages.",
+    features: [
+      "AI avatars",
+      "120+ languages",
+      "125+ avatars",
+      "Text-to-video",
+      "Brand customization"
+    ],
+    useCases: [
+      "Training videos",
+      "Marketing content",
+      "Educational materials",
+      "Corporate communications",
+      "Product demos"
+    ],
+    tags: ["ai-video", "avatars", "multilingual", "training-videos"],
+    rating: 4.7,
+    reviewCount: 8900
+  },
+  
+  // AI Code Assistants (Development & Engineering > Code Editors)
   {
     name: "GitHub Copilot",
     slug: "github-copilot",
     tagline: "AI pair programmer",
-    category: "Coding & Development",
-    categorySlug: "coding-development",
-    subcategory: "AI Code Assistants",
-    subcategorySlug: "ai-code-assistants",
+    category: "Development & Engineering",
+    categorySlug: "development-engineering",
+    subcategory: "Code Editors",
+    subcategorySlug: "code-editors",
     description: "GitHub Copilot is an AI-powered code completion tool that helps developers write code faster. It suggests lines or blocks of code in real-time as you type.",
     features: [
       "Real-time code suggestions",
@@ -255,105 +230,90 @@ const newAITools = [
     ],
     tags: ["code-assistant", "programming", "developer-tools", "ai-coding"],
     rating: 4.6,
-    reviewCount: 23400,
-    pricing: "subscription",
-    website: "https://copilot.github.com",
-    alternatives: ["Tabnine", "Replit Ghostwriter", "Amazon CodeWhisperer"],
-    integrations: ["Visual Studio Code", "JetBrains", "Neovim"]
+    reviewCount: 23400
   },
   {
-    name: "Replit Ghostwriter",
-    slug: "replit-ghostwriter",
-    tagline: "AI-powered coding assistant",
-    category: "Coding & Development",
-    categorySlug: "coding-development",
-    subcategory: "AI Code Assistants",
-    subcategorySlug: "ai-code-assistants",
-    description: "Replit Ghostwriter is an AI coding assistant that helps you write code faster. It provides intelligent code completions, generates entire functions, and explains existing code.",
+    name: "Tabnine",
+    slug: "tabnine",
+    tagline: "AI code assistant for faster development",
+    category: "Development & Engineering",
+    categorySlug: "development-engineering",
+    subcategory: "Code Editors",
+    subcategorySlug: "code-editors",
+    description: "Tabnine is an AI code assistant that helps developers write code faster with whole-line and full-function completions. It supports all programming languages and IDEs.",
     features: [
-      "Intelligent code completion",
-      "Function generation",
-      "Code explanation",
+      "Whole-line completions",
       "Multi-language support",
-      "Context-aware suggestions"
+      "IDE integration",
+      "Team training",
+      "Privacy-focused"
     ],
     useCases: [
       "Code completion",
-      "Learning programming",
-      "Code refactoring",
-      "Debugging assistance",
-      "Documentation generation"
+      "Boilerplate reduction",
+      "Learning best practices",
+      "Team collaboration",
+      "Productivity enhancement"
     ],
-    tags: ["coding-assistant", "programming", "developer-tools", "code-generation"],
+    tags: ["code-assistant", "productivity", "developer-tools", "ai-coding"],
     rating: 4.3,
-    reviewCount: 8900,
-    pricing: "freemium",
-    website: "https://replit.com/site/ghostwriter",
-    alternatives: ["GitHub Copilot", "Tabnine", "Amazon CodeWhisperer"],
-    integrations: ["Replit", "VS Code", "JetBrains"]
+      reviewCount: 12500
   },
-  // Business & Productivity
+  
+  // AI Marketing Tools (Marketing & Growth > Analytics)
   {
-    name: "Notion AI",
-    slug: "notion-ai",
-    tagline: "AI-powered workspace",
-    category: "Business & Productivity",
-    categorySlug: "business-productivity",
-    subcategory: "AI Productivity Tools",
-    subcategorySlug: "ai-productivity-tools",
-    description: "Notion AI brings powerful AI capabilities directly into your Notion workspace. It can help you write, brainstorm, edit, and organize your work more efficiently.",
+    name: "Surfer SEO",
+    slug: "surfer-seo",
+    tagline: "Data-driven content creation platform",
+    category: "Marketing & Growth",
+    categorySlug: "marketing-growth",
+    subcategory: "Analytics",
+    subcategorySlug: "analytics",
+    description: "Surfer SEO is a content creation platform that uses data to help you create content that ranks on search engines. It provides real-time SEO guidance as you write.",
     features: [
-      "AI writing assistant",
-      "Content summarization",
-      "Task creation from notes",
-      "Smart templates",
-      "Language translation"
+      "Content editor",
+      "Keyword research",
+      "SEO analyzer",
+      "Content audit",
+      "Team collaboration"
     ],
     useCases: [
-      "Document writing",
-      "Meeting notes summarization",
-      "Task management",
-      "Content creation",
-      "Knowledge base organization"
+      "SEO content creation",
+      "Keyword optimization",
+      "Content strategy",
+      "Competitor analysis",
+      "Team collaboration"
     ],
-    tags: ["productivity", "workspace", "note-taking", "ai-assistant"],
+    tags: ["seo", "content-creation", "keyword-research", "analytics"],
     rating: 4.7,
-    reviewCount: 15600,
-    pricing: "freemium",
-    website: "https://notion.so/ai",
-    alternatives: ["Coda AI", "Craft", "Obsidian"],
-    integrations: ["Notion", "Google Drive", "Slack"]
+    reviewCount: 6700
   },
   {
-    name: "Otter.ai",
-    slug: "otter-ai",
-    tagline: "AI-powered meeting assistant",
-    category: "Business & Productivity",
-    categorySlug: "business-productivity",
-    subcategory: "AI Meeting Assistants",
-    subcategorySlug: "ai-meeting-assistants",
-    description: "Otter.ai is a meeting transcription service that records audio, transcribes speech to text in real-time, and generates rich notes for meetings, interviews, and lectures.",
+    name: "Frase",
+    slug: "frase",
+    tagline: "AI-powered content research and creation",
+    category: "Marketing & Growth",
+    categorySlug: "marketing-growth",
+    subcategory: "Analytics",
+    subcategorySlug: "analytics",
+    description: "Frase helps you research, write, and optimize content to answer what your customers are searching for. It uses AI to analyze top-ranking content and provide insights.",
     features: [
-      "Live transcription",
-      "Speaker identification",
-      "Searchable transcripts",
-      "Summary generation",
-      "Integration with video conferencing"
+      "Content research",
+      "AI writer",
+      "SEO optimization",
+      "Content briefs",
+      "Performance tracking"
     ],
     useCases: [
-      "Meeting transcription",
-      "Interview recording",
-      "Lecture notes",
-      "Market research",
-      "Training sessions"
+      "Content research",
+      "SEO optimization",
+      "Content creation",
+      "Competitor analysis",
+      "Topic clustering"
     ],
-    tags: ["transcription", "meeting-assistant", "productivity", "voice-recognition"],
-    rating: 4.4,
-    reviewCount: 11200,
-    pricing: "freemium",
-    website: "https://otter.ai",
-    alternatives: ["Rev", "Temi", "Sonix"],
-    integrations: ["Zoom", "Google Meet", "Microsoft Teams"]
+    tags: ["content-research", "seo", "ai-writing", "content-strategy"],
+    rating: 4.5,
+    reviewCount: 4300
   }
 ];
 
@@ -364,26 +324,19 @@ function addToolsToFile() {
   // Read the existing tools file
   let toolsContent = fs.readFileSync(toolsFilePath, 'utf8');
   
-  // Find the position to insert new tools
-  // We'll add them to the 'content-creation-writing-ai-writing-assistants' category
-  const insertPosition = toolsContent.indexOf('// Add new tools for Content Creation & Writing > AI Writing Assistants');
-  
-  if (insertPosition === -1) {
-    console.log("Could not find the insertion point in tools.ts");
-    return;
-  }
-  
-  // Create tool entries
-  let toolEntries = '';
-  newAITools.forEach(tool => {
-    toolEntries += `
+  // For each tool, we'll add it to the appropriate subcategory
+  additionalAITools.forEach(tool => {
+    const subcategoryKey = tool.subcategorySlug;
+    
+    // Create the tool entry
+    const toolEntry = `
     {
       name: '${tool.name}',
       slug: '${tool.slug}',
       tagline: '${tool.tagline}',
       logoUrl: '/logos/${tool.slug}.png',
-      website: '${tool.website}',
-      pricing: '${tool.pricing}',
+      website: 'https://www.${tool.slug}.com',
+      pricing: 'freemium',
       badges: ${tool.reviewCount > 10000 ? "['popular', 'featured']" : "['trending']"},
       category: '${tool.category}',
       categorySlug: '${tool.categorySlug}',
@@ -394,23 +347,26 @@ function addToolsToFile() {
       useCases: [${tool.useCases.map(u => `'${u}'`).join(', ')}],
       tags: [${tool.tags.map(t => `'${t}'`).join(', ')}],
       rating: ${tool.rating},
-      reviewCount: ${tool.reviewCount},
-      alternatives: [${tool.alternatives.map(a => `'${a}'`).join(', ')}],
-      integrations: [${tool.integrations.map(i => `'${i}'`).join(', ')}]
-    },
-`;
+      reviewCount: ${tool.reviewCount}
+    }`;
+    
+    // Find the subcategory section and insert the tool
+    const subcategoryStart = toolsContent.indexOf(`'${subcategoryKey}': [`);
+    if (subcategoryStart !== -1) {
+      const insertPosition = toolsContent.indexOf(']', subcategoryStart);
+      if (insertPosition !== -1) {
+        // Insert the tool entry before the closing bracket
+        const beforeInsert = toolsContent.substring(0, insertPosition);
+        const afterInsert = toolsContent.substring(insertPosition);
+        toolsContent = beforeInsert + (toolsContent[insertPosition - 1] !== '[' ? ',' : '') + toolEntry + afterInsert;
+      }
+    }
   });
   
-  // Insert the new tools
-  const beforeInsert = toolsContent.substring(0, insertPosition);
-  const afterInsert = toolsContent.substring(insertPosition);
-  
-  const updatedContent = beforeInsert + toolEntries + afterInsert;
-  
   // Write the updated content back to the file
-  fs.writeFileSync(toolsFilePath, updatedContent);
+  fs.writeFileSync(toolsFilePath, toolsContent);
   
-  console.log(`Successfully added ${newAITools.length} new AI tools to tools.ts`);
+  console.log(`Successfully added ${additionalAITools.length} new AI tools to tools.ts`);
 }
 
 // Run the function
