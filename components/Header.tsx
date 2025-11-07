@@ -3,6 +3,8 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MagnifyingGlassIcon, ChatBubbleLeftRightIcon } from '@heroicons/react/24/outline';
+import SearchOverlay from './SearchOverlay';
 
 export function Header() {
 	const [open, setOpen] = useState(false);
@@ -24,6 +26,9 @@ export function Header() {
 		{ name: 'Best', href: '/best' },
 		{ name: 'Intelligence', href: '/intelligence' },
 		{ name: 'Pricing', href: '/pricing' },
+		{ name: 'For You', href: '/recommended' },
+		{ name: 'Favorites', href: '/favorites' },
+		{ name: 'Chatbot', href: '/chatbot' }, // Added Chatbot link
 		{ name: 'Ads', href: '/ad-example' } // Added Ad Example link
 	];
 
@@ -64,8 +69,25 @@ export function Header() {
 					))}
 				</nav>
 
-				{/* CTA Button */}
+				{/* Search and CTA Buttons */}
 				<div className="hidden items-center space-x-4 md:flex">
+					<button
+						onClick={() => {
+							// This will be handled by the keyboard shortcut in SearchOverlay
+						}}
+						className="px-4 py-2 text-sm font-medium text-aether-mist hover:text-white transition-colors duration-300 flex items-center gap-2"
+					>
+						<MagnifyingGlassIcon className="w-4 h-4" />
+						<span>Search</span>
+						<span className="text-xs bg-gray-700 px-1.5 py-0.5 rounded">Ctrl+K</span>
+					</button>
+					<Link
+						href="/chatbot"
+						className="px-4 py-2 text-sm font-medium text-aether-mist hover:text-white transition-colors duration-300 flex items-center gap-2"
+					>
+						<ChatBubbleLeftRightIcon className="w-4 h-4" />
+						<span>AI Assistant</span>
+					</Link>
 					<Link
 						href="/playground"
 						className="px-4 py-2 text-sm font-medium text-aether-mist hover:text-white transition-colors duration-300"
@@ -138,12 +160,31 @@ export function Header() {
 								</motion.div>
 							))}
 							
-							{/* Mobile CTA */}
+							{/* Mobile Search */}
 							<motion.div
 								initial={{ opacity: 0, x: -20 }}
 								animate={{ opacity: 1, x: 0 }}
 								transition={{ duration: 0.3, delay: navItems.length * 0.1 }}
 								className="pt-4 border-t border-white/10 mt-4"
+							>
+								<button
+									onClick={() => {
+										setOpen(false);
+										// The SearchOverlay will handle the keyboard shortcut
+									}}
+									className="block w-full text-left rounded-xl px-4 py-3 text-sm font-medium text-aether-mist hover:bg-white/5 hover:text-white transition-all duration-300 mb-2"
+								>
+									<MagnifyingGlassIcon className="w-4 h-4 inline mr-2" />
+									Search (Ctrl+K)
+								</button>
+							</motion.div>
+							
+							{/* Mobile CTA */}
+							<motion.div
+								initial={{ opacity: 0, x: -20 }}
+								animate={{ opacity: 1, x: 0 }}
+								transition={{ duration: 0.3, delay: (navItems.length + 1) * 0.1 }}
+								className="pt-2"
 							>
 								<Link
 									href="/playground"
@@ -164,6 +205,9 @@ export function Header() {
 					</motion.div>
 				)}
 			</AnimatePresence>
+			
+			{/* Search Overlay */}
+			<SearchOverlay />
 		</motion.header>
 	);
 }

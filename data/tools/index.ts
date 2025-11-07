@@ -37,12 +37,6 @@ import { paperForestProductsTools } from './paper-forest-products';
 import { metalsMiningTools } from './metals-mining';
 import { consumerGoodsRetailTools } from './consumer-goods-retail';
 import { luxuryFashionTools } from './luxury-fashion';
-import { aviationAirlinesTools } from './aviation-airlines';
-import { maritimeShippingTools } from './maritime-shipping';
-import { railTransportationTools } from './rail-transportation';
-import { constructionInfrastructureTools } from './construction-infrastructure';
-import { oilGasTools } from './oil-gas';
-import { renewableEnergyTools } from './renewable-energy';
 
 // Export all tools from individual category files
 export const allTools: ToolEntry[] = [
@@ -84,12 +78,6 @@ export const allTools: ToolEntry[] = [
   ...metalsMiningTools,
   ...consumerGoodsRetailTools,
   ...luxuryFashionTools,
-  ...aviationAirlinesTools,
-  ...maritimeShippingTools,
-  ...railTransportationTools,
-  ...constructionInfrastructureTools,
-  ...oilGasTools,
-  ...renewableEnergyTools,
 ];
 
 // Export tools organized by subcategory for backward compatibility

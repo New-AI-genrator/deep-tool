@@ -3,6 +3,8 @@ import { NexusMiniPlayground } from '../../../components/NexusMiniPlayground';
 import { generateToolMetadata } from '../../../lib/seo';
 import { getToolBySlug } from '../../../data/tools';
 import { BreadcrumbSchema, SoftwareApplicationSchema } from '../../../components/StructuredData';
+import AdUnit from '../../../components/AdUnit';
+import UserPreferencesTracker from '../../../components/UserPreferencesTracker';
 
 export const dynamicParams = true;
 
@@ -45,6 +47,7 @@ export default function ToolDetailPage({ params }: { params: { slug: string } })
   
   return (
     <>
+      <UserPreferencesTracker toolId={tool.slug} />
       <BreadcrumbSchema 
         items={[
           { name: "Home", url: "/" },
@@ -64,6 +67,7 @@ export default function ToolDetailPage({ params }: { params: { slug: string } })
         features={tool.features}
         tags={tool.tags}
       />
+      <UserPreferencesTracker category={tool.category} toolId={tool.slug} />
       <main className="grid grid-cols-1 gap-8 md:grid-cols-3">
         <section className="md:col-span-2">
           <div className="flex items-center gap-4 mb-4">
@@ -76,6 +80,12 @@ export default function ToolDetailPage({ params }: { params: { slug: string } })
               <p className="text-sm text-aether-mist">{tool.tagline}</p>
             </div>
           </div>
+          
+          <AdUnit 
+            slot="1234567894" 
+            format="horizontal" 
+            className="my-4"
+          />
           
           <div className="flex flex-wrap gap-2 mb-6">
             {tool.badges && tool.badges.map((badge) => (
@@ -108,6 +118,12 @@ export default function ToolDetailPage({ params }: { params: { slug: string } })
               <div className="mt-1 text-sm text-white capitalize">{tool.pricing}</div>
             </div>
           </div>
+          
+          <AdUnit 
+            slot="1234567895" 
+            format="horizontal" 
+            className="my-6"
+          />
           
           <div className="mt-8 rounded-2xl border border-[#2A2F3A] bg-aether-obsidian p-6">
             <h2 className="text-base font-semibold text-white mb-4">Key Features</h2>
@@ -148,6 +164,12 @@ export default function ToolDetailPage({ params }: { params: { slug: string } })
         </section>
         <aside className="md:col-span-1">
           <NexusMiniPlayground />
+          
+          <AdUnit 
+            slot="1234567896" 
+            format="vertical" 
+            className="my-6"
+          />
           
           {tool.pricingDetails && (
             <div className="mt-6 rounded-2xl border border-[#2A2F3A] bg-aether-obsidian p-6">

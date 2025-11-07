@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { categoriesWithSubcategories, toolsBySubcategory } from '../../../../data/tools';
 import Link from 'next/link';
+import UserPreferencesTracker from '../../../../components/UserPreferencesTracker';
 
 export default function SubcategoryPage({ 
   params 
@@ -33,6 +34,7 @@ export default function SubcategoryPage({
           <span className="mx-2">/</span>
           <span className="text-white">{subcategory.name}</span>
         </nav>
+        <UserPreferencesTracker category={category.name} />
         
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4">{subcategory.name}</h1>

@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MagnifyingGlassIcon, FunnelIcon, XMarkIcon, ArrowTrendingUpIcon, StarIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline';
 
@@ -17,12 +17,43 @@ interface SearchFilters {
 export function AdvancedSearch({ onSearch }: AdvancedSearchProps) {
   const [query, setQuery] = useState('');
   const [showFilters, setShowFilters] = useState(false);
+  const [searchHistory, setSearchHistory] = useState<string[]>([]);
+  const [showHistory, setShowHistory] = useState(false);
   const [filters, setFilters] = useState<SearchFilters>({
     pricing: [],
     rating: null,
     badges: [],
     sortBy: 'relevance'
   });
+
+  // Load search history from localStorage
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const history = JSON.parse(localStorage.getItem('deeptool_search_history') || '[]');
+        setSearchHistory(history.slice(0, 5)); // Show only the last 5 searches
+      } catch (error) {
+        console.error('Error loading search history:', error);
+      }
+    }
+  }, []);
+
+  // Save search query to history
+  const saveToHistory = (searchQuery: string) => {
+    if (typeof window !== 'undefined' && searchQuery.trim()) {
+      try {
+        const history = JSON.parse(localStorage.getItem('deeptool_search_history') || '[]');
+        // Add new query to the beginning and remove duplicates
+        const updatedHistory = [searchQuery, ...history.filter((q: string) => q !== searchQuery)];
+        // Keep only the last 10 searches
+        const trimmedHistory = updatedHistory.slice(0, 10);
+        localStorage.setItem('deeptool_search_history', JSON.stringify(trimmedHistory));
+        setSearchHistory(trimmedHistory.slice(0, 5)); // Update state with last 5
+      } catch (error) {
+        console.error('Error saving to search history:', error);
+      }
+    }
+  };
 
   const pricingOptions = ['free', 'freemium', 'paid'];
   const badgeOptions = ['popular', 'featured', 'trending', 'enterprise', 'new'];
@@ -34,7 +65,19 @@ export function AdvancedSearch({ onSearch }: AdvancedSearchProps) {
   ];
 
   const handleSearch = () => {
-    onSearch(query, filters);
+    if (query.trim()) {
+      saveToHistory(query);
+      onSearch(query, filters);
+      setShowHistory(false);
+    }
+  };
+
+  const handleHistorySelect = (historyQuery: string) => {
+    setQuery(historyQuery);
+    setShowHistory(false);
+    // Trigger search with the selected query
+    saveToHistory(historyQuery);
+    onSearch(historyQuery, filters);
   };
 
   const toggleFilter = (type: keyof SearchFilters, value: any) => {
@@ -58,6 +101,13 @@ export function AdvancedSearch({ onSearch }: AdvancedSearchProps) {
     });
   };
 
+  const clearHistory = () => {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('deeptool_search_history', JSON.stringify([]));
+      setSearchHistory([]);
+    }
+  };
+
   const activeFilterCount = 
     filters.pricing.length + 
     filters.badges.length + 
@@ -74,6 +124,11 @@ export function AdvancedSearch({ onSearch }: AdvancedSearchProps) {
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
+            onFocus={() => setShowHistory(true)}
+            onBlur={() => {
+              // Delay hiding history to allow for clicks on history items
+              setTimeout(() => setShowHistory(false), 200);
+            }}
             onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
             placeholder="Search 10,000+ tools across 264 categories..."
             className="w-full pl-12 pr-32 py-4 bg-gray-800/50 backdrop-blur-xl border border-white/10 rounded-2xl text-white placeholder-gray-400 focus:outline-none focus:border-blue-500/50 focus:ring-2 focus:ring-blue-500/20 transition-all"
@@ -99,6 +154,34 @@ export function AdvancedSearch({ onSearch }: AdvancedSearchProps) {
             </button>
           </div>
         </div>
+
+        {/* Search History Dropdown */}
+        {showHistory && searchHistory.length > 0 && (
+          <div className="absolute top-full left-0 w-full bg-gray-800 rounded-b-xl shadow-lg z-50 mt-1">
+            <div className="p-4">
+              <div className="flex justify-between items-center mb-2">
+                <h3 className="text-sm font-medium text-gray-300">Recent Searches</h3>
+                <button 
+                  onClick={clearHistory}
+                  className="text-xs text-gray-500 hover:text-gray-300"
+                >
+                  Clear
+                </button>
+              </div>
+              <div className="space-y-1">
+                {searchHistory.map((historyQuery, index) => (
+                  <button
+                    key={index}
+                    onMouseDown={() => handleHistorySelect(historyQuery)} // Use onMouseDown to prevent blur
+                    className="block w-full text-left px-3 py-2 text-sm text-gray-300 hover:bg-gray-700 rounded-lg transition-colors"
+                  >
+                    {historyQuery}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Advanced Filters Panel */}

@@ -4,6 +4,7 @@ import { categoriesWithSubcategories, getToolsByCategory } from '../../../data/t
 import Link from 'next/link';
 import { generateCategoryMetadata } from '../../../lib/seo';
 import { BreadcrumbSchema } from '../../../components/StructuredData';
+import UserPreferencesTracker from '../../../components/UserPreferencesTracker';
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const category = categoriesWithSubcategories.find(
@@ -49,6 +50,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
           { name: category.name, url: `/categories/${category.slug}` }
         ]} 
       />
+      <UserPreferencesTracker category={category.name} />
       <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 text-white p-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">

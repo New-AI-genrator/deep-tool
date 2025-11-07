@@ -25529,6 +25529,6 @@ export function getBlogCategories() {
     categories.set(post.category, (categories.get(post.category) || 0) + 1);
   });
   return Array.from(categories, ([id, count]) => ({ id, count }));
-};
+}
 
 export default blogPosts;

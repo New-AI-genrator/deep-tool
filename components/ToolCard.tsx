@@ -2,16 +2,20 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import UserPreferencesTracker from './UserPreferencesTracker';
+import FavoriteButton from './FavoriteButton';
 
 export type ToolCardProps = {
 	name: string;
 	tagline: string;
 	logoUrl: string;
+	category?: string;
+	id?: string;
 	badges?: Array<'nexus-verified' | 'trending' | 'enterprise'>;
 	onClick?: () => void;
 };
 
-export function ToolCard({ name, tagline, logoUrl, badges = [], onClick }: ToolCardProps) {
+export function ToolCard({ name, tagline, logoUrl, category, id, badges = [], onClick }: ToolCardProps) {
 	return (
 		<motion.button
 			onClick={onClick}
@@ -23,6 +27,7 @@ export function ToolCard({ name, tagline, logoUrl, badges = [], onClick }: ToolC
 					'radial-gradient(1200px 200px at 100% 0%, rgba(0,240,255,0.08), transparent), radial-gradient(800px 160px at 0% 100%, rgba(230,210,161,0.07), transparent)'
 			}}
 		>
+			<UserPreferencesTracker category={category} toolId={id} />
 			<div className="flex items-center gap-4">
 				<div className="relative h-12 w-12 overflow-hidden rounded-xl ring-1 ring-[#2A2F3A]">
 					<Image src={logoUrl} alt={`${name} logo`} fill className="object-contain" />
@@ -49,6 +54,11 @@ export function ToolCard({ name, tagline, logoUrl, badges = [], onClick }: ToolC
 					<p className="mt-1 line-clamp-2 text-[12px] text-aether-mist">{tagline}</p>
 				</div>
 			</div>
+			{id && (
+				<div className="absolute top-2 right-2">
+					<FavoriteButton toolId={id} />
+				</div>
+			)}
 			<div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
 				<div className="absolute -right-10 -top-10 h-40 w-40 rotate-12 rounded-full bg-[radial-gradient(circle,rgba(0,240,255,0.22),rgba(0,240,255,0)_60%)]" />
 				<div className="absolute -bottom-12 -left-12 h-44 w-44 -rotate-6 rounded-full bg-[radial-gradient(circle,rgba(230,210,161,0.18),rgba(230,210,161,0)_60%)]" />

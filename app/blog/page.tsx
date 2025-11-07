@@ -7,6 +7,7 @@ import Head from 'next/head';
 import { getAllBlogPosts, getBlogCategories } from '../../data/blog-posts';
 import { SectionHeader } from '../../components/SectionHeader';
 import { MagnifyingGlassIcon, SparklesIcon, FireIcon, ClockIcon } from '@heroicons/react/24/outline';
+import AdUnit from '../../components/AdUnit';
 
 interface BlogPost {
   slug: string;
@@ -28,15 +29,27 @@ interface BlogPost {
   likes?: number;
 }
 
+interface Category {
+  id: string;
+  name: string;
+  count: number;
+}
+
+interface BlogCategory {
+  id: string;
+  count: number;
+}
+
 export default function BlogIndexPage() {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
 
   // Get blog data
   const blogPosts: BlogPost[] = getAllBlogPosts();
-  const categories = [
+  const blogCategories: BlogCategory[] = getBlogCategories();
+  const categories: Category[] = [
     { id: 'all', name: 'All Posts', count: blogPosts.length },
-    ...getBlogCategories().map(cat => ({
+    ...blogCategories.map((cat: BlogCategory) => ({
       id: cat.id,
       name: cat.id.charAt(0).toUpperCase() + cat.id.slice(1).replace('-', ' '),
       count: cat.count
@@ -139,6 +152,15 @@ export default function BlogIndexPage() {
             </div>
           </div>
 
+          {/* Ad Unit */}
+          <div className="mb-8">
+            <AdUnit 
+              slot="1234567897" 
+              format="horizontal" 
+              className="mx-auto"
+            />
+          </div>
+
           {/* Featured Posts */}
           {selectedCategory === 'all' && searchQuery === '' && featuredPosts.length > 0 && (
             <motion.section 
@@ -233,6 +255,15 @@ export default function BlogIndexPage() {
             </motion.section>
           )}
 
+          {/* Ad Unit */}
+          <div className="mb-8">
+            <AdUnit 
+              slot="1234567898" 
+              format="horizontal" 
+              className="mx-auto"
+            />
+          </div>
+
           {/* All Posts */}
           <motion.section 
             initial={{ opacity: 0, y: 20 }}
@@ -322,6 +353,15 @@ export default function BlogIndexPage() {
               </div>
             )}
           </motion.section>
+
+          {/* Ad Unit */}
+          <div className="my-8">
+            <AdUnit 
+              slot="1234567899" 
+              format="horizontal" 
+              className="mx-auto"
+            />
+          </div>
 
           {/* Load More Button */}
           {filteredPosts.length > 0 && (

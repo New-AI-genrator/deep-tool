@@ -3,12 +3,13 @@ import type { ReactNode } from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { PageTransition } from '../components/PageTransition';
-import { SearchOverlay } from '../components/SearchOverlay';
+import SearchOverlay from '../components/SearchOverlay';
 import { OrganizationSchema, WebSiteSchema } from '../components/StructuredData';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import Script from 'next/script';
 import ClientGoogleAnalytics from '../components/ClientGoogleAnalytics';
+import AdvancedChatbot from '../components/AdvancedChatbot';
 
 export const metadata = {
   other: {
@@ -112,6 +113,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 					</PageTransition>
 				</div>
 				<Footer />
+				<AdvancedChatbot />
 				<Analytics />
 				<SpeedInsights />
 			</body>

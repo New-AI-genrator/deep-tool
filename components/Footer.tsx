@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
+import { ChatBubbleLeftRightIcon } from '@heroicons/react/24/outline';
 
 export function Footer() {
 	const [currentTime, setCurrentTime] = useState(new Date());
@@ -71,7 +72,7 @@ export function Footer() {
 
 			<div className="relative z-10 mx-auto max-w-7xl px-4 py-16 md:px-6">
 				{/* Main Footer Content */}
-				<div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
+				<div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-5">
 					{/* Brand Section */}
 					<motion.div variants={itemVariants} className="lg:col-span-1">
 						<div className="flex items-center space-x-3 mb-6">
@@ -198,6 +199,42 @@ export function Footer() {
 										className="text-aether-mist hover:text-white transition-colors duration-300 flex items-center group"
 									>
 										<span className="w-0 h-0.5 bg-gradient-to-r from-green-400 to-emerald-400 transition-all duration-300 group-hover:w-4 mr-0 group-hover:mr-2" />
+										{item.name}
+									</Link>
+								</motion.li>
+							))}
+						</ul>
+					</motion.div>
+
+					{/* Search & AI Section */}
+					<motion.div variants={itemVariants}>
+						<h4 className="text-lg font-semibold text-white mb-6 relative">
+							Search & AI
+							<div className="absolute -bottom-2 left-0 h-0.5 w-8 bg-gradient-to-r from-yellow-400 to-orange-400" />
+						</h4>
+						<ul className="space-y-3">
+							{[
+								{ name: 'Basic Search', href: '/search' },
+								{ name: 'Advanced Search', href: '/advanced-search' },
+								{ name: 'AI Assistant', href: '/chatbot' },
+								{ name: 'Categories', href: '/categories' },
+								{ name: 'Trending Tools', href: '/best' }
+							].map((item, index) => (
+								<motion.li
+									key={item.name}
+									initial={{ opacity: 0, x: -20 }}
+									whileInView={{ opacity: 1, x: 0 }}
+									transition={{ duration: 0.5, delay: index * 0.1 }}
+									whileHover={{ x: 5 }}
+								>
+									<Link 
+										href={item.href} 
+										className="text-aether-mist hover:text-white transition-colors duration-300 flex items-center group"
+									>
+										{item.name === 'AI Assistant' && (
+											<ChatBubbleLeftRightIcon className="w-4 h-4 mr-2 text-blue-400" />
+										)}
+										<span className="w-0 h-0.5 bg-gradient-to-r from-yellow-400 to-orange-400 transition-all duration-300 group-hover:w-4 mr-0 group-hover:mr-2" />
 										{item.name}
 									</Link>
 								</motion.li>

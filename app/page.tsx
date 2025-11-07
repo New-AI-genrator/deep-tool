@@ -10,6 +10,9 @@ import { GlobalAIMap } from '../components/home/GlobalAIMap';
 import { CollectionPageSchema, OrganizationSchema, WebSiteSchema } from '../components/StructuredData';
 import { getAllTools } from '../data/tools';
 import type { Metadata } from 'next';
+import RealTimeRecommendations from '../components/RealTimeRecommendations';
+import RecentlyViewed from '../components/RecentlyViewed';
+import HomepageTracker from '../components/HomepageTracker';
 
 export const metadata: Metadata = {
   title: 'DeepTool - World\'s Largest AI & Software Tools Directory | 10,000+ Tools',
@@ -72,9 +75,12 @@ export default async function HomePage() {
         numberOfItems={allTools.length}
       />
 			<main>
+				<HomepageTracker />
 				<HeroSanctuary />
 				<NexusGateway />
 				<CathedralOfCategories />
+				<RealTimeRecommendations />
+				<RecentlyViewed />
 				<FeaturedPantheon />
 				<DailyIntelligence />
 				<ExpertSanctum />
