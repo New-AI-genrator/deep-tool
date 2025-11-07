@@ -274,7 +274,7 @@ export function Footer() {
 								type="submit"
 								whileHover={{ scale: 1.05 }}
 								whileTap={{ scale: 0.95 }}
-								className="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold rounded-xl hover:from-blue-600 hover:to-cyan-600 transition-all duration-300 shadow-lg hover:shadow-blue-500/25"
+								className="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold rounded-xl hover:from-blue-600 hover:to-cyan-600 transition-all duration-300 shadow-lg hover:shadow-blue-500/25 w-full sm:w-auto"
 							>
 								Subscribe
 							</motion.button>
@@ -287,10 +287,10 @@ export function Footer() {
 					variants={itemVariants}
 					className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center"
 				>
-					<div className="text-aether-mist text-sm mb-4 md:mb-0">
+					<div className="text-aether-mist text-sm mb-4 md:mb-0 text-center md:text-left">
 						© {currentTime.getFullYear()} Aether Nexus. All rights reserved.
 					</div>
-					<div className="flex items-center space-x-6 text-sm text-aether-mist">
+					<div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm text-aether-mist text-center">
 						<span className="flex items-center">
 							<div className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse" />
 							All systems operational

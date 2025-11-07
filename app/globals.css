@@ -91,12 +91,18 @@ html, body {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Improve mobile touch targets */
+  -webkit-tap-highlight-color: transparent;
+  /* Better text rendering on mobile */
+  text-rendering: optimizeLegibility;
 }
 
 body {
   background: var(--bg-obsidian);
   color: white;
   overflow-x: hidden;
+  /* Prevent zoom on input focus on mobile */
+  font-size: 16px;
 }
 
 /* Thin electrum dividers */
@@ -113,4 +119,72 @@ body {
   outline: 2px solid var(--accent-holo);
   outline-offset: 2px;
   border-radius: 0.25rem;
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 768px) {
+  /* Prevent text size adjustment on orientation change */
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  /* Improve touch targets */
+  button, a, input, select, textarea {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Better spacing on mobile */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Improve readability on small screens */
+  p {
+    line-height: 1.6;
+  }
+  
+  /* Prevent horizontal scrolling */
+  .overflow-x-hidden {
+    overflow-x: hidden;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --bg-obsidian: #000000;
+    --text-mist: #ffffff;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-obsidian: #0D0F16;
+    --text-mist: #C7CFDC;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+  
+  /* Hide non-essential elements when printing */
+  .no-print {
+    display: none !important;
+  }
 }

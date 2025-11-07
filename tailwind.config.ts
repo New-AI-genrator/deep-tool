@@ -32,6 +32,15 @@ const config: Config = {
           '100%': { transform: 'translateX(100%)' },
         },
       },
+      // Add custom breakpoints for better mobile responsiveness
+      screens: {
+        'xs': '475px',
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+      },
     }
   },
   plugins: []

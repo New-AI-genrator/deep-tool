@@ -10,6 +10,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import Script from 'next/script';
 import ClientGoogleAnalytics from '../components/ClientGoogleAnalytics';
 import AdvancedChatbot from '../components/AdvancedChatbot';
+import { MobilePerformanceOptimizer } from '../components/MobilePerformanceOptimizer';
 
 export const metadata = {
   other: {
@@ -67,6 +68,14 @@ export const metadata = {
 	verification: {
 		google: 'google48dadb8c7f2f2d13',
 	},
+	// Add viewport meta tag for better mobile responsiveness
+	viewport: {
+		width: 'device-width',
+		initialScale: 1,
+		maximumScale: 5,
+		userScalable: true,
+		viewportFit: 'cover'
+	},
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -104,6 +113,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 				/>
 			</head>
 			<body className="min-h-screen bg-aether-obsidian antialiased">
+				<MobilePerformanceOptimizer />
 				<SearchOverlay />
 				<Header />
 				{gaId && <ClientGoogleAnalytics />}

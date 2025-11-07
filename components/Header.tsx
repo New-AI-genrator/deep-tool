@@ -3,8 +3,9 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MagnifyingGlassIcon, ChatBubbleLeftRightIcon } from '@heroicons/react/24/outline';
+import { MagnifyingGlassIcon, ChatBubbleLeftRightIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import SearchOverlay from './SearchOverlay';
+import { MobileNavigation } from './MobileNavigation';
 
 export function Header() {
 	const [open, setOpen] = useState(false);
@@ -114,21 +115,25 @@ export function Header() {
 					aria-label="Toggle navigation"
 					whileTap={{ scale: 0.95 }}
 				>
-					<svg 
-						width="24" 
-						height="24" 
-						viewBox="0 0 24 24" 
-						fill="none" 
-						xmlns="http://www.w3.org/2000/svg"
-						className={`transition-transform duration-300 ${open ? 'rotate-90' : ''}`}
-					>
-						<path 
-							d="M4 6h16M4 12h16M4 18h16" 
-							stroke="currentColor" 
-							strokeWidth="2" 
-							strokeLinecap="round" 
-						/>
-					</svg>
+					{open ? (
+						<XMarkIcon className="w-6 h-6" />
+					) : (
+						<svg 
+							width="24" 
+							height="24" 
+							viewBox="0 0 24 24" 
+							fill="none" 
+							xmlns="http://www.w3.org/2000/svg"
+							className={`transition-transform duration-300 ${open ? 'rotate-90' : ''}`}
+						>
+							<path 
+								d="M4 6h16M4 12h16M4 18h16" 
+								stroke="currentColor" 
+								strokeWidth="2" 
+								strokeLinecap="round" 
+							/>
+						</svg>
+					)}
 				</motion.button>
 			</div>
 
@@ -187,6 +192,14 @@ export function Header() {
 								className="pt-2"
 							>
 								<Link
+									href="/chatbot"
+									onClick={() => setOpen(false)}
+									className="block rounded-xl px-4 py-3 text-sm font-medium text-aether-mist hover:bg-white/5 hover:text-white transition-all duration-300 mb-2 flex items-center"
+								>
+									<ChatBubbleLeftRightIcon className="w-4 h-4 inline mr-2" />
+									AI Assistant
+								</Link>
+								<Link
 									href="/playground"
 									onClick={() => setOpen(false)}
 									className="block rounded-xl px-4 py-3 text-sm font-medium text-aether-mist hover:bg-white/5 hover:text-white transition-all duration-300 mb-2"
@@ -208,6 +221,9 @@ export function Header() {
 			
 			{/* Search Overlay */}
 			<SearchOverlay />
+			
+			{/* Mobile Navigation (Floating Button) */}
+			<MobileNavigation />
 		</motion.header>
 	);
 }

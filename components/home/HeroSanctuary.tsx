@@ -78,7 +78,7 @@ export function HeroSanctuary() {
 			</svg>
 
 			{/* Main Content */}
-			<div className="relative z-10 text-center max-w-6xl mx-auto px-6">
+			<div className="relative z-10 text-center max-w-6xl mx-auto px-4 sm:px-6">
 				<motion.div
 					initial={{ opacity: 0, y: 30 }}
 					animate={{ opacity: 1, y: 0 }}
@@ -100,7 +100,7 @@ export function HeroSanctuary() {
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ duration: 1, delay: 0.4 }}
-						className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white mb-6"
+						className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white mb-6"
 						style={{
 							fontFamily: 'system-ui, -apple-system, sans-serif',
 							fontWeight: 800,
@@ -120,7 +120,7 @@ export function HeroSanctuary() {
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ duration: 1, delay: 0.6 }}
-						className="text-xl md:text-2xl text-aether-mist mb-8 max-w-3xl mx-auto leading-relaxed"
+						className="text-lg sm:text-xl md:text-2xl text-aether-mist mb-8 max-w-3xl mx-auto leading-relaxed"
 					>
 						Every AI tool in existence, perfectly organized and expertly reviewed. 
 						<br />
@@ -137,14 +137,14 @@ export function HeroSanctuary() {
 						<motion.button
 							whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(0,229,255,0.3)" }}
 							whileTap={{ scale: 0.95 }}
-							className="px-8 py-4 bg-gradient-to-r from-aether-holo to-aether-holo/80 text-black font-semibold rounded-2xl text-lg hover:shadow-holo transition-all duration-300"
+							className="px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-aether-holo to-aether-holo/80 text-black font-semibold rounded-2xl text-lg hover:shadow-holo transition-all duration-300 w-full sm:w-auto"
 						>
 							Explore 12,847 Tools
 						</motion.button>
 						<motion.button
 							whileHover={{ scale: 1.05 }}
 							whileTap={{ scale: 0.95 }}
-							className="px-8 py-4 border-2 border-aether-holo/50 text-aether-holo font-semibold rounded-2xl text-lg hover:bg-aether-holo/10 transition-all duration-300 backdrop-blur-sm"
+							className="px-6 py-3 sm:px-8 sm:py-4 border-2 border-aether-holo/50 text-aether-holo font-semibold rounded-2xl text-lg hover:bg-aether-holo/10 transition-all duration-300 backdrop-blur-sm w-full sm:w-auto"
 						>
 							Watch Demo
 						</motion.button>
@@ -155,7 +155,7 @@ export function HeroSanctuary() {
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ duration: 1, delay: 1 }}
-						className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto"
+						className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-w-4xl mx-auto"
 					>
 						{[
 							{ label: "AI Tools", value: "12,847", suffix: "+" },
@@ -170,11 +170,11 @@ export function HeroSanctuary() {
 								transition={{ duration: 0.6, delay: 1.2 + index * 0.1 }}
 								className="text-center"
 							>
-								<div className="text-2xl md:text-3xl font-bold text-white mb-1">
+								<div className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1">
 									{stat.value}
 									<span className="text-aether-holo">{stat.suffix}</span>
 								</div>
-								<div className="text-sm text-aether-mist">{stat.label}</div>
+								<div className="text-xs sm:text-sm text-aether-mist">{stat.label}</div>
 							</motion.div>
 						))}
 					</motion.div>
