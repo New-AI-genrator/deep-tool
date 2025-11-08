@@ -24,12 +24,10 @@ export function MobileNavigation() {
   const [scrolled, setScrolled] = useState(false);
   const { isMobile } = useMobileDetection();
 
-  // Only render on mobile devices
-  if (!isMobile) {
-    return null;
-  }
-
   useEffect(() => {
+    // Don't set up scroll listener if not on mobile
+    if (!isMobile) return;
+    
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
@@ -39,7 +37,12 @@ export function MobileNavigation() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [isMobile]);
+
+  // Only render on mobile devices
+  if (!isMobile) {
+    return null;
+  }
 
   const navItems: NavItem[] = [
     { name: 'Home', href: '/', icon: <HomeIcon className="w-5 h-5" /> },
