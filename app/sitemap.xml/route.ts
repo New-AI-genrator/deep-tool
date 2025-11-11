@@ -5,6 +5,13 @@ import { categoriesWithSubcategories } from '../../data/tools';
 export async function GET() {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://deep-tool.vercel.app';
   
+  // Function to get valid date (today or earlier)
+  const getValidDate = (dateString: string) => {
+    const date = new Date(dateString);
+    const now = new Date();
+    return date <= now ? date.toISOString() : now.toISOString();
+  };
+  
   // Homepage and main pages
   let xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -95,9 +102,10 @@ export async function GET() {
   // Tool pages
   const tools = getAllTools();
   tools.forEach((tool) => {
+    const lastmod = tool.launchDate ? getValidDate(tool.launchDate) : new Date().toISOString();
     xml += `  <url>
     <loc>${baseUrl}/tools/${tool.slug}</loc>
-    <lastmod>${new Date().toISOString()}</lastmod>
+    <lastmod>${lastmod}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -106,9 +114,10 @@ export async function GET() {
 
   // Blog posts
   blogPosts.forEach((post) => {
+    const lastmod = getValidDate(post.publishedAt);
     xml += `  <url>
     <loc>${baseUrl}/blog/${post.slug}</loc>
-    <lastmod>${new Date(post.publishedAt).toISOString()}</lastmod>
+    <lastmod>${lastmod}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
