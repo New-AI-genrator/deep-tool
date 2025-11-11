@@ -225,6 +225,8 @@ function formatMarkdown(content: string): string {
     .replace(/^### (.*$)/gim, '<h3 class="text-2xl font-bold mt-8 mb-4 text-white">$1</h3>')
     .replace(/^## (.*$)/gim, '<h2 class="text-3xl font-bold mt-10 mb-4 text-white">$1</h2>')
     .replace(/^# (.*$)/gim, '<h1 class="text-4xl font-bold mt-12 mb-6 text-white">$1</h1>')
+    // Images
+    .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<div class="my-6"><img src="$2" alt="$1" class="rounded-lg shadow-lg w-full max-w-2xl mx-auto" loading="lazy" /></div>')
     // Bold
     .replace(/\*\*(.*?)\*\*/g, '<strong class="text-white font-semibold">$1</strong>')
     // Lists
