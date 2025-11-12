@@ -153,6 +153,55 @@ export default function IntelligenceFeedPage() {
 			impact: 'medium',
 			category: 'Business',
 			change: '+450%'
+		},
+		// New events for additional tools
+		{
+			id: '11',
+			tool: 'Runway ML',
+			type: 'new_feature',
+			detail: 'Released new AI video editing tools with green screen removal and object tracking',
+			timestamp: '4 days ago',
+			impact: 'high',
+			category: 'AI Generation'
+		},
+		{
+			id: '12',
+			tool: 'Claude',
+			type: 'trending',
+			detail: 'Anthropic releases Claude 3 with improved reasoning and multimodal capabilities',
+			timestamp: '5 days ago',
+			impact: 'high',
+			category: 'AI Generation',
+			change: '+200% API usage'
+		},
+		{
+			id: '13',
+			tool: 'Linear',
+			type: 'milestone',
+			detail: 'Reached 1 million users milestone with new enterprise features',
+			timestamp: '1 week ago',
+			impact: 'medium',
+			category: 'Productivity',
+			change: '1M users'
+		},
+		{
+			id: '14',
+			tool: 'Vercel',
+			type: 'update',
+			detail: 'Improved deployment speeds with new edge network infrastructure',
+			timestamp: '1 week ago',
+			impact: 'medium',
+			category: 'Development',
+			change: '+35% faster'
+		},
+		{
+			id: '15',
+			tool: 'Framer',
+			type: 'price_change',
+			detail: 'Added new e-commerce features to all paid plans',
+			timestamp: '1 week ago',
+			impact: 'medium',
+			category: 'Design'
 		}
 	];
 
@@ -161,7 +210,13 @@ export default function IntelligenceFeedPage() {
 		{ name: 'Midjourney', category: 'Design', trend: 88, users: '15M+', logo: '🎨' },
 		{ name: 'Notion', category: 'Productivity', trend: 82, users: '30M+', logo: '📝' },
 		{ name: 'Canva', category: 'Design', trend: 79, users: '135M+', logo: '🎨' },
-		{ name: 'GitHub Copilot', category: 'Dev', trend: 76, users: '5M+', logo: '💻' }
+		{ name: 'GitHub Copilot', category: 'Dev', trend: 76, users: '5M+', logo: '💻' },
+		// Additional trending tools
+		{ name: 'Claude', category: 'AI', trend: 85, users: '20M+', logo: '🧠' },
+		{ name: 'Runway ML', category: 'Video', trend: 72, users: '2M+', logo: '🎬' },
+		{ name: 'Linear', category: 'Productivity', trend: 68, users: '1.2M+', logo: '🔗' },
+		{ name: 'Vercel', category: 'Development', trend: 70, users: '3M+', logo: '▲' },
+		{ name: 'Framer', category: 'Design', trend: 65, users: '800K+', logo: '📱' }
 	];
 
 	const marketInsights: MarketInsight[] = [

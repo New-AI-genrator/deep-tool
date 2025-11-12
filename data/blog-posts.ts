@@ -18,6 +18,7 @@ export interface BlogPost {
   trending?: boolean;
   views?: number;
   likes?: number;
+  metaDescription?: string;
 }
 
 export const blogPosts: BlogPost[] = [

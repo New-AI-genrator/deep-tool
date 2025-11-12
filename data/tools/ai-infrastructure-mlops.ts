@@ -194,5 +194,150 @@ export const aiInfrastructureMLOpsTools: ToolEntry[] = [
       url: 'https://www.tecton.ai/contact/',
       description: 'Enterprise pricing based on usage and requirements'
     }
+  },
+  
+  // Model Monitoring
+  {
+    name: 'Aporia',
+    slug: 'aporia',
+    tagline: 'Full-stack ML observability platform',
+    logoUrl: '/logos/aporia.png',
+    website: 'https://www.aporia.com',
+    pricing: 'paid',
+    badges: ['enterprise'],
+    category: 'AI Infrastructure & MLOps',
+    categorySlug: 'ai-infrastructure-mlops',
+    subcategory: 'Model Monitoring',
+    subcategorySlug: 'model-monitoring',
+    description: 'Aporia provides full-stack ML observability to monitor, explain, and improve models in production with actionable insights and automated anomaly detection.',
+    features: ['Model monitoring', 'Drift detection', 'Bias detection', 'Explainability', 'Performance tracking', 'Alerting', 'Root cause analysis', 'Data quality monitoring'],
+    useCases: ['Production ML monitoring', 'Model performance tracking', 'ML model debugging', 'Regulatory compliance', 'Model risk management', 'ML system health'],
+    tags: ['mlops', 'model-monitoring', 'ml-observability', 'ai-governance', 'ml-reliability'],
+    rating: 4.7,
+    reviewCount: 3200,
+    alternatives: ['Arize', 'Fiddler', 'WhyLabs'],
+    integrations: ['Python', 'TensorFlow', 'PyTorch', 'Scikit-learn', 'AWS SageMaker', 'Azure ML', 'GCP Vertex AI'],
+    pricingDetails: {
+      type: 'paid',
+      price: 'Starts at $999/month',
+      url: 'https://www.aporia.com/pricing',
+      description: 'Pricing based on number of models and data volume'
+    }
+  },
+  
+  // Data Labeling
+  {
+    name: 'Label Studio',
+    slug: 'label-studio',
+    tagline: 'Open source data labeling platform',
+    logoUrl: '/logos/label-studio.png',
+    website: 'https://labelstud.io',
+    pricing: 'free',
+    badges: ['community-favorite'],
+    category: 'AI Infrastructure & MLOps',
+    categorySlug: 'ai-infrastructure-mlops',
+    subcategory: 'Data Labeling',
+    subcategorySlug: 'data-labeling',
+    description: 'Label Studio is an open source data labeling tool for various data types including text, images, audio, and video with support for multiple machine learning frameworks.',
+    features: ['Multi-format support', 'Collaborative labeling', 'Active learning', 'Quality control', 'Customizable UI', 'ML backend integration', 'API access', 'Self-hosted'],
+    useCases: ['Training data creation', 'Data annotation', 'Model fine-tuning', 'Data quality improvement', 'Team collaboration', 'Active learning pipelines'],
+    tags: ['data-labeling', 'open-source', 'ml-data', 'data-annotation', 'training-data'],
+    rating: 4.6,
+    reviewCount: 4200,
+    alternatives: ['Labelbox', 'Prodigy', 'Amazon SageMaker Ground Truth'],
+    integrations: ['Python', 'TensorFlow', 'PyTorch', 'Hugging Face', 'YOLO', 'COCO', 'Pascal VOC'],
+    pricingDetails: {
+      type: 'free',
+      price: 'Free and open source',
+      url: 'https://labelstud.io/pricing',
+      description: 'Open source with premium cloud offering available'
+    }
+  },
+  
+  // Model Serving
+  {
+    name: 'BentoML',
+    slug: 'bentoml',
+    tagline: 'Open source model serving framework',
+    logoUrl: '/logos/bentoml.png',
+    website: 'https://www.bentoml.com',
+    pricing: 'free',
+    badges: ['community-favorite'],
+    category: 'AI Infrastructure & MLOps',
+    categorySlug: 'ai-infrastructure-mlops',
+    subcategory: 'Model Serving',
+    subcategorySlug: 'model-serving',
+    description: 'BentoML is an open source framework for serving, deploying, and scaling machine learning models in production with high performance and low latency.',
+    features: ['Model packaging', 'Docker support', 'Kubernetes native', 'Autoscaling', 'Monitoring', 'Batch processing', 'Model registry', 'REST/GRPC APIs'],
+    useCases: ['Model deployment', 'ML model serving', 'Production ML', 'Microservices', 'Kubernetes deployment', 'Serverless ML'],
+    tags: ['mlops', 'model-serving', 'open-source', 'kubernetes', 'ml-deployment'],
+    rating: 4.5,
+    reviewCount: 2800,
+    alternatives: ['Seldon', 'KServe', 'TorchServe'],
+    integrations: ['Python', 'TensorFlow', 'PyTorch', 'Scikit-learn', 'XGBoost', 'LightGBM', 'ONNX', 'MLflow'],
+    pricingDetails: {
+      type: 'free',
+      price: 'Free and open source',
+      url: 'https://www.bentoml.com/pricing',
+      description: 'Open source with enterprise support available'
+    }
+  },
+  
+  // Workflow Orchestration
+  {
+    name: 'Prefect',
+    slug: 'prefect',
+    tagline: 'The easiest way to orchestrate and observe data workflows',
+    logoUrl: '/logos/prefect.png',
+    website: 'https://www.prefect.io',
+    pricing: 'freemium',
+    badges: ['popular'],
+    category: 'AI Infrastructure & MLOps',
+    categorySlug: 'ai-infrastructure-mlops',
+    subcategory: 'Workflow Orchestration',
+    subcategorySlug: 'workflow-orchestration',
+    description: 'Prefect is a modern workflow orchestration platform that makes it easy to build, schedule, and monitor data workflows at scale with Python.',
+    features: ['Workflow automation', 'Task scheduling', 'Dependency management', 'Distributed execution', 'UI dashboard', 'Error handling', 'Retry mechanisms', 'Event-driven workflows'],
+    useCases: ['Data pipeline orchestration', 'ETL workflows', 'ML pipeline automation', 'Batch processing', 'Scheduled jobs', 'Data processing'],
+    tags: ['workflow', 'orchestration', 'data-pipelines', 'mlops', 'automation'],
+    rating: 4.7,
+    reviewCount: 3800,
+    alternatives: ['Airflow', 'Dagster', 'Kubeflow'],
+    integrations: ['Python', 'Dask', 'Kubernetes', 'AWS', 'GCP', 'Azure', 'Docker', 'Snowflake'],
+    pricingDetails: {
+      type: 'freemium',
+      price: 'Free for individuals, Team from $20/month, Enterprise pricing available',
+      url: 'https://www.prefect.io/pricing',
+      description: 'Different tiers based on features and scale'
+    }
+  },
+  
+  // Experiment Tracking
+  {
+    name: 'Comet.ml',
+    slug: 'comet-ml',
+    tagline: 'ML platform for tracking experiments, models, and more',
+    logoUrl: '/logos/comet-ml.png',
+    website: 'https://www.comet.ml',
+    pricing: 'freemium',
+    badges: ['popular', 'trending'],
+    category: 'AI Infrastructure & MLOps',
+    categorySlug: 'ai-infrastructure-mlops',
+    subcategory: 'Experiment Tracking',
+    subcategorySlug: 'experiment-tracking',
+    description: 'Comet.ml is a platform that helps data scientists and teams track, compare, explain, and optimize experiments and models across the machine learning lifecycle.',
+    features: ['Experiment tracking', 'Model versioning', 'Hyperparameter optimization', 'Model monitoring', 'Collaboration tools', 'Visualization', 'Reproducibility', 'Integration with ML frameworks'],
+    useCases: ['ML experiment management', 'Model comparison', 'Hyperparameter tuning', 'Team collaboration', 'Research reproducibility', 'Model debugging'],
+    tags: ['mlops', 'experiment-tracking', 'machine-learning', 'model-management', 'ml-ops'],
+    rating: 4.6,
+    reviewCount: 5200,
+    alternatives: ['Weights & Biases', 'MLflow', 'Neptune.ai'],
+    integrations: ['Python', 'TensorFlow', 'PyTorch', 'Scikit-learn', 'Keras', 'XGBoost', 'LightGBM', 'Hugging Face'],
+    pricingDetails: {
+      type: 'freemium',
+      price: 'Free for individuals, Teams from $179/month, Enterprise pricing available',
+      url: 'https://www.comet.ml/pricing',
+      description: 'Different tiers based on features and team size'
+    }
   }
 ];

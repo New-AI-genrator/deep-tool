@@ -848,9 +848,14 @@ export const categoriesWithSubcategories: CategoryWithSubcategories[] = [
     icon: '🛢️',
     subcategories: [
       { name: 'Exploration', slug: 'oil-exploration', description: 'Seismic and exploration software', icon: '🗺️' },
+      { name: 'Seismic Analysis', slug: 'seismic-analysis', description: 'Seismic data processing and interpretation', icon: '📊' },
+      { name: 'Reservoir Modeling', slug: 'reservoir-modeling', description: 'Reservoir characterization and simulation', icon: '📈' },
+      { name: 'Drilling Optimization', slug: 'drilling-optimization', description: 'Drilling efficiency and optimization tools', icon: '⚙️' },
+      { name: 'Well Logging', slug: 'well-logging', description: 'Downhole logging and formation evaluation', icon: '🔍' },
       { name: 'Production Management', slug: 'oil-production', description: 'Well and production tracking', icon: '⚡' },
       { name: 'Pipeline Management', slug: 'pipeline-management', description: 'Pipeline monitoring and control', icon: '🔧' },
       { name: 'Refining', slug: 'refining', description: 'Refinery operations software', icon: '🏭' },
+      { name: 'Field Development', slug: 'field-development', description: 'Field planning and development optimization', icon: '🏗️' },
     ]
   },
   {
