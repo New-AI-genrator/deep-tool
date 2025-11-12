@@ -16,8 +16,8 @@ interface BlogPost {
   category: string;
   author: {
     name: string;
-    role: string;
-    image: string;
+    role?: string;
+    image?: string;
   };
   publishedAt: string;
   readTime: string;
@@ -201,7 +201,13 @@ export default function BlogIndexPage() {
                     
                     <div className="flex items-center justify-between text-sm text-gray-500">
                       <div className="flex items-center gap-2">
-                        <div className="text-lg">{post.author.image}</div>
+                        {post.author.image ? (
+                          <div className="text-lg">{post.author.image}</div>
+                        ) : (
+                          <div className="w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center text-white">
+                            {post.author.name.charAt(0)}
+                          </div>
+                        )}
                         <div>
                           <div className="text-gray-300 font-medium">{post.author.name}</div>
                           <div className="text-xs">{post.readTime}</div>
@@ -338,7 +344,13 @@ export default function BlogIndexPage() {
                     
                     <div className="flex items-center justify-between text-sm text-gray-500">
                       <div className="flex items-center gap-2">
-                        <div className="text-lg">{post.author.image}</div>
+                        {post.author.image ? (
+                          <div className="text-lg">{post.author.image}</div>
+                        ) : (
+                          <div className="w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center text-white">
+                            {post.author.name.charAt(0)}
+                          </div>
+                        )}
                         <div>
                           <div className="text-gray-300 font-medium">{post.author.name}</div>
                           <div className="text-xs">{post.readTime}</div>
