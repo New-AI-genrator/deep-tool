@@ -1,5 +1,5 @@
-import { BlogPost } from './blog-posts';
-import { Tool } from './tools';
+import { BlogPost, getAllBlogPosts } from '../data/blog-posts';
+import { ToolEntry as Tool, toolsBySubcategory } from '../data/tools';
 
 export interface RelatedContent {
   title: string;
@@ -16,21 +16,18 @@ export async function findRelatedContent(
   limit: number = 3
 ): Promise<RelatedContent[]> {
   try {
-    // Dynamically import to avoid circular dependencies
-    const { getAllBlogPosts } = await import('./blog-posts');
-    const { getAllTools } = await import('./tools');
-    
     const allPosts = await getAllBlogPosts();
-    const allTools = await getAllTools();
+    // Flatten the tools from all subcategories
+    const allTools = Object.values(toolsBySubcategory).flat();
     
     // Combine all content for analysis
     const allContent = [
-      ...allPosts.map(p => ({
+      ...allPosts.map((p: BlogPost) => ({
         ...p,
         type: 'blog' as const,
         fullText: `${p.title} ${p.excerpt} ${p.tags?.join(' ') || ''}`.toLowerCase(),
       })),
-      ...allTools.map(t => ({
+      ...allTools.map((t: Tool) => ({
         ...t,
         type: 'tool' as const,
         fullText: `${t.name} ${t.description} ${t.category} ${t.tags?.join(' ') || ''}`.toLowerCase(),
@@ -72,14 +69,26 @@ export async function findRelatedContent(
         score += item.tags.length * 0.5;
       }
       
-      return {
-        title: item.name || item.title,
-        slug: item.slug,
-        description: item.description || item.excerpt,
-        type: item.type,
-        image: 'coverImage' in item ? item.coverImage : undefined,
-        score,
-      };
+      // Handle both blog and tool types
+      if (item.type === 'blog') {
+        return {
+          title: item.title,
+          slug: item.slug,
+          description: item.excerpt,
+          type: item.type,
+          image: 'coverImage' in item ? item.coverImage : undefined,
+          score,
+        };
+      } else {
+        return {
+          title: item.name,
+          slug: item.slug,
+          description: item.tagline,
+          type: item.type,
+          image: 'logoUrl' in item ? item.logoUrl : undefined,
+          score,
+        };
+      }
     });
 
     // Sort by score and return top results
