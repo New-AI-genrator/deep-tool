@@ -3,19 +3,42 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
-export async function DailyIntelligence() {
-	const base = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
-	let events: Array<any> = [];
-	try {
-		const res = await fetch(`${base}/api/intelligence`, { cache: 'no-store' });
-		if (res.ok) {
-			const data = await res.json();
-			events = data.events;
-		}
-	} catch {}
+interface NewsItem {
+  id: number;
+  title: string;
+  category: string;
+  timestamp: string;
+  impact: string;
+  source: string;
+}
 
-	// Mock market data for demonstration
-	const marketData = {
+export function DailyIntelligence() {
+  const [events, setEvents] = useState<Array<any>>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const base = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+        const res = await fetch(`${base}/api/intelligence`, { cache: 'no-store' });
+        if (res.ok) {
+          const data = await res.json();
+          setEvents(data.events || []);
+        }
+      } catch (err) {
+        console.error('Error fetching intelligence data:', err);
+        setError('Failed to load intelligence data');
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  // Mock market data for demonstration
+  const marketData = {
 		totalFunding: 45.2,
 		fundingGrowth: 12.5,
 		newTools: 23,
