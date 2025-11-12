@@ -6,15 +6,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { format } from 'date-fns';
 import { ClockIcon, UserIcon, CalendarIcon, TagIcon, ShareIcon, BookOpenIcon } from '@heroicons/react/24/outline';
+import dynamicImport from 'next/dynamic';
+import { Suspense } from 'react';
 import { getBlogPostBySlug, getAllBlogPosts, getTrendingPosts } from '../../../data/blog-posts';
 import { generateBlogMetadata } from '../../../lib/seo';
 import { formatDate } from '../../../lib/utils';
 import { generateBlogPostSchema, generateOrganizationSchema } from '../../../lib/schema';
-
-'use client';
-
-import dynamicImport from 'next/dynamic';
-import { Suspense } from 'react';
 
 // Simple loading components
 const LoadingIcon = () => <div className="h-6 w-6 animate-pulse bg-gray-200 rounded" />;
