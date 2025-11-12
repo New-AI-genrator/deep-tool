@@ -1,0 +1,346 @@
+import { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+import Link from 'next/link';
+import Image from 'next/image';
+import { format } from 'date-fns';
+import { getBlogPostBySlug, getAllBlogPosts, getTrendingPosts } from '../../../data/blog-posts';
+import { generateBlogMetadata } from '../../../lib/seo';
+import { ClockIcon, UserIcon, CalendarIcon, TagIcon, ShareIcon, BookOpenIcon } from '@heroicons/react/24/outline';
+import ErrorBoundary from '../../../components/ErrorBoundary';
+
+// Import utility functions
+import { formatDate } from '../../../lib/utils';
+import { generateBlogPostSchema, generateOrganizationSchema } from '../../../lib/schema';
+
+// Import components with next/dynamic
+import dynamic from 'next/dynamic';
+
+// Dynamically import components with no SSR
+const DynamicSocialShare = dynamic(
+  () => import('../../../components/SocialShare'),
+  { 
+    ssr: false, 
+    loading: () => <div className="h-6 w-6" /> 
+  }
+);
+
+const DynamicBreadcrumbs = dynamic(
+  () => import('../../../components/Breadcrumbs'),
+  { 
+    ssr: false, 
+    loading: () => <div className="h-4 w-full bg-gray-100 rounded" /> 
+  }
+);
+
+const DynamicTableOfContents = dynamic(
+  () => import('../../../components/TableOfContents'),
+  { 
+    ssr: false, 
+    loading: () => <div className="h-64 w-full bg-gray-100 rounded" /> 
+  }
+);
+
+const DynamicImageGallery = dynamic(
+  () => import('../../../components/ImageGallery'),
+  { 
+    ssr: false, 
+    loading: () => <div className="w-full h-64 bg-gray-100 rounded" />
+  }
+);
+
+const DynamicVideoEmbed = dynamic(
+  () => import('../../../components/VideoEmbed'),
+  { 
+    ssr: false, 
+    loading: () => <div className="aspect-video w-full bg-gray-100 rounded" /> 
+  }
+);
+
+// Add getReadingTime utility function
+const getReadingTime = (content: string): number => {
+  const wordsPerMinute = 200;
+  const words = content.trim().split(/\s+/).length;
+  return Math.ceil(words / wordsPerMinute);
+};
+
+interface Author {
+  name: string;
+  role?: string;
+  image?: string;
+  website?: string;
+  twitter?: string;
+  bio?: string;
+  avatar?: string;
+}
+
+interface BlogPost {
+  slug: string;
+  title: string;
+  excerpt: string;
+  content: string;
+  coverImage: string;
+  publishedAt: string;
+  updatedAt?: string;
+  tags: string[];
+  author: Author;
+  readTime?: string | number;
+}
+
+interface Props {
+  params: {
+    slug: string;
+  };
+}
+
+export const dynamic = 'force-static';
+export const revalidate = 3600; // Revalidate at most every hour
+export const dynamicParams = true; // Enable dynamic params
+
+export async function generateStaticParams() {
+  // Only generate the most recent posts at build time
+  const posts = await getAllBlogPosts();
+  return posts.slice(0, 10).map((post) => ({
+    slug: post.slug,
+  }));
+}
+
+// Increase the static generation timeout to 60 seconds
+const staticGenerationTimeout = 60;
+
+// Add a promise that will reject after the timeout
+const timeout = (ms: number) => new Promise((_, reject) => 
+  setTimeout(() => reject(new Error(`Timed out after ${ms}ms`)), ms)
+);
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const post = getBlogPostBySlug(params.slug);
+
+  if (!post) {
+    return {
+      title: 'Post Not Found | DeepTool Blog',
+    };
+  }
+
+  return generateBlogMetadata({
+    title: post.title,
+    description: post.excerpt,
+    path: `/blog/${post.slug}`,
+    image: post.coverImage,
+    type: 'article',
+    publishedTime: post.publishedAt,
+    modifiedTime: post.updatedAt,
+    authors: [post.author.name],
+    tags: post.tags,
+  });
+}
+
+async function BlogPostContent({ params }: { params: { slug: string } }) {
+  const post = getBlogPostBySlug(params.slug);
+
+  if (!post) {
+    notFound();
+  }
+
+  const relatedPosts = getTrendingPosts().filter(p => p.slug !== post.slug).slice(0, 3);
+  const faqs = extractFAQsFromContent(post.content);
+
+  return (
+    <ErrorBoundary 
+      fallback={
+        <div className="min-h-screen bg-white dark:bg-gray-900 p-8">
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-2xl font-bold text-red-600">Error Loading Post</h1>
+            <p className="mt-2 text-gray-600 dark:text-gray-300">
+              We're having trouble loading this blog post. Please try refreshing the page or come back later.
+            </p>
+            <Link 
+              href="/blog" 
+              className="mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
+            >
+              Back to Blog
+            </Link>
+          </div>
+        </div>
+      }
+    >
+      <div className="min-h-screen bg-white dark:bg-gray-900">
+        {/* Your existing JSX here */}
+        <div className="max-w-4xl mx-auto px-4 py-8">
+          <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
+          <div className="flex items-center text-gray-500 dark:text-gray-400 mb-8">
+            <div className="flex items-center mr-4">
+              <UserIcon className="h-5 w-5 mr-1" />
+              <span>{post.author.name}</span>
+            </div>
+            <div className="flex items-center mr-4">
+              <CalendarIcon className="h-5 w-5 mr-1" />
+              <span>{format(new Date(post.publishedAt), 'MMMM d, yyyy')}</span>
+            </div>
+            <div className="flex items-center">
+              <ClockIcon className="h-5 w-5 mr-1" />
+              <span>{post.readTime || getReadingTime(post.content)} min read</span>
+            </div>
+          </div>
+          
+          {post.coverImage && (
+            <div className="mb-8 rounded-lg overflow-hidden">
+              <Image
+                src={post.coverImage}
+                alt={post.title}
+                width={1200}
+                height={630}
+                className="w-full h-auto object-cover"
+                priority
+              />
+            </div>
+          )}
+
+          <div className="prose dark:prose-invert max-w-none">
+            <div dangerouslySetInnerHTML={{ __html: formatMarkdown(post.content) }} />
+          </div>
+
+          {faqs.length > 0 && (
+            <div className="mt-12">
+              <h2 className="text-2xl font-bold mb-4">Frequently Asked Questions</h2>
+              <div className="space-y-4">
+                {faqs.map((faq, index) => (
+                  <div key={index} className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg">
+                    <h3 className="font-semibold">{faq.question}</h3>
+                    <p className="mt-2 text-gray-600 dark:text-gray-300">{faq.answer}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
+            <h2 className="text-2xl font-bold mb-6">Related Posts</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {relatedPosts.map((post) => (
+                <Link 
+                  key={post.slug} 
+                  href={`/blog/${post.slug}`}
+                  className="block group"
+                >
+                  <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow hover:shadow-lg transition-shadow">
+                    {post.coverImage && (
+                      <div className="aspect-w-16 aspect-h-9">
+                        <Image
+                          src={post.coverImage}
+                          alt={post.title}
+                          width={400}
+                          height={225}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    )}
+                    <div className="p-4">
+                      <h3 className="font-semibold text-lg mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                        {post.title}
+                      </h3>
+                      <p className="text-sm text-gray-600 dark:text-gray-400 line-clamp-2">
+                        {post.excerpt}
+                      </p>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </ErrorBoundary>
+  );
+}
+
+// Simple markdown formatter (you can use a library like marked or remark for production)
+function formatMarkdown(content: string): string {
+  let html = content
+    // Headers
+    .replace(/^### (.*$)/gim, '<h3 class="text-2xl font-bold mt-8 mb-4">$1</h3>')
+    .replace(/^## (.*$)/gim, '<h2 class="text-3xl font-bold mt-10 mb-4">$1</h2>')
+    .replace(/^# (.*$)/gim, '<h1 class="text-4xl font-bold mt-12 mb-6">$1</h1>')
+    // Bold and Italic
+    .replace(/\*\*(.*?)\*\*/gim, '<strong>$1</strong>')
+    .replace(/\*(.*?)\*/gim, '<em>$1</em>')
+    // Links
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/gim, '<a href="$2" class="text-blue-600 hover:underline dark:text-blue-400">$1</a>')
+    // Images
+    .replace(/!\[([^\]]*)\]\(([^)]+)\)/gim, '<img src="$2" alt="$1" class="my-4 rounded-lg" />')
+    // Lists
+    .replace(/^\s*\* (.*$)/gim, '<li>$1</li>')
+    .replace(/<li>\s*\n/gim, '<li>')
+    .replace(/^<li>/gm, '<ul class="list-disc pl-6 my-4"><li>')
+    .replace(/<\/li>\s*\n/gim, '</li>\n')
+    .replace(/<\/li>\s*<li>/gim, '</li><li>')
+    .replace(/<\/li>\s*<\/ul>/gim, '</li></ul>\n')
+    // Paragraphs
+    .replace(/^([^<\n][^\n]*(\n|$))/gim, '<p class="my-4">$1</p>');
+
+  return html;
+}
+
+// Extract FAQ data from content
+function extractFAQsFromContent(content: string): Array<{ question: string; answer: string }> {
+  const faqs: Array<{ question: string; answer: string }> = [];
+  
+  // Simple regex to find FAQ sections (## Q: or ## Q.) followed by A: or A.
+  const faqRegex = /##\s*[Qq][:.]\s*(.*?)(?=##\s*[Qq][:.]|$)/gs;
+  const answerRegex = /[Aa][:.]\s*(.*?)(?=\n##|$)/s;
+  
+  let match;
+  while ((match = faqRegex.exec(content)) !== null) {
+    const faqSection = match[1];
+    const answerMatch = answerRegex.exec(faqSection);
+    
+    if (answerMatch) {
+      const question = faqSection.substring(0, answerMatch.index).trim();
+      const answer = answerMatch[1].trim();
+      
+      if (question && answer) {
+        faqs.push({
+          question: question.replace(/^[Qq][:.]\s*/, '').trim(),
+          answer: answer.replace(/^[Aa][:.]\s*/, '').trim()
+        });
+      }
+    }
+  }
+  
+  return faqs;
+}
+
+export default async function BlogPostPage({ params }: Props) {
+  try {
+    // Race the blog post fetch against the timeout
+    const post = await Promise.race([
+      getBlogPostBySlug(params.slug),
+      timeout(staticGenerationTimeout * 1000)
+    ]) as any;
+
+    if (!post) {
+      notFound();
+    }
+
+    return <BlogPostContent params={params} />;
+  } catch (error) {
+    console.error(`Error generating blog post ${params.slug}:`, error);
+    
+    // Return a simple error message if we timed out
+    return (
+      <div className="min-h-screen bg-white dark:bg-gray-900 p-8">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-2xl font-bold">Loading Post...</h1>
+          <p className="mt-2 text-gray-600 dark:text-gray-300">
+            This post is taking longer than expected to load. Please wait or try again later.
+          </p>
+          <Link 
+            href="/blog" 
+            className="mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
+          >
+            Back to Blog
+          </Link>
+        </div>
+      </div>
+    );
+  }
+}

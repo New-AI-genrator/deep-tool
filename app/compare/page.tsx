@@ -1,7 +1,7 @@
 import { headers } from 'next/headers';
 
-function getQueryParam(name: string): string | null {
-	const hdrs = headers();
+async function getQueryParam(name: string): Promise<string | null> {
+	const hdrs = await headers();
 	const url = hdrs.get('x-url') || '';
 	try {
 		const u = new URL(url, 'http://localhost');
@@ -23,9 +23,11 @@ function Kpi({ label, value, barPct, color }: { label: string; value: string; ba
 	);
 }
 
-export default function ComparePage() {
-	const a = getQueryParam('a') || 'midjourney';
-	const b = getQueryParam('b') || 'runway';
+export default async function ComparePage() {
+	const [a, b] = await Promise.all([
+	  getQueryParam('a') || 'midjourney',
+	  getQueryParam('b') || 'runway'
+	]);
 	return (
 		<main>
 			<h1 className="text-xl font-semibold text-white">Compare</h1>
