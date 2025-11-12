@@ -71,54 +71,54 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
-	const gaId = process.env.NEXT_PUBLIC_GA_ID;
-	const adsenseId = 'ca-pub-2894915343289598';
-	
-	return (
-		<html lang="en">
-			<head>
-				<OrganizationSchema />
-				<WebSiteSchema />
-				{gaId && (
-					<>
-						<Script
-							src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
-							strategy="afterInteractive"
-						/>
-						<Script id="gtag-init" strategy="afterInteractive">
-							{`
-								window.dataLayer = window.dataLayer || [];
-								function gtag(){dataLayer.push(arguments);}
-								gtag('js', new Date());
-								gtag('config', '${gaId}', {
-									page_path: window.location.pathname,
-								});
-							`}
-						</Script>
-					</>
-				)}
-				<Script
-					async
-					src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseId}`}
-					crossOrigin="anonymous"
-					strategy="afterInteractive"
-				/>
-			</head>
-			<body className="min-h-screen bg-aether-obsidian antialiased">
-				<MobilePerformanceOptimizer />
-				<SearchOverlay />
-				<Header />
-				{gaId && <ClientGoogleAnalytics />}
-				<div className="mx-auto max-w-7xl px-4 py-6 md:px-6">
-					<PageTransition>
-						{children}
-					</PageTransition>
-				</div>
-				<Footer />
-				<AdvancedChatbot />
-				<Analytics />
-				<SpeedInsights />
-			</body>
-		</html>
-	);
+  const gaId = process.env.NEXT_PUBLIC_GA_ID;
+  const adsenseId = 'ca-pub-2894915343289598';
+  
+  return (
+    <html lang="en">
+      <head>
+        <OrganizationSchema />
+        <WebSiteSchema />
+        {gaId && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+              strategy="afterInteractive"
+            />
+            <Script id="gtag-init" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${gaId}', {
+                  page_path: window.location.pathname,
+                });
+              `}
+            </Script>
+          </>
+        )}
+        <Script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseId}`}
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+      </head>
+      <body className="min-h-screen bg-aether-obsidian antialiased">
+        <MobilePerformanceOptimizer />
+        <SearchOverlay />
+        <Header />
+        {gaId && <ClientGoogleAnalytics />}
+        <div className="mx-auto max-w-7xl px-4 py-6 md:px-6">
+          <PageTransition>
+            {children}
+          </PageTransition>
+        </div>
+        <Footer />
+        <AdvancedChatbot />
+        <Analytics />
+        <SpeedInsights />
+      </body>
+    </html>
+  );
 }

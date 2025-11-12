@@ -20,6 +20,15 @@ interface SitemapEntry {
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://deeptool.vercel.app';
 
 export async function generateSitemap(entries: SitemapEntry[] = []) {
+  // Ensure the public directory exists
+  const publicDir = path.join(process.cwd(), 'public');
+  if (!fs.existsSync(publicDir)) {
+    fs.mkdirSync(publicDir, { recursive: true });
+  }
+  
+  // Initialize entries with the provided entries
+  const allEntries: SitemapEntry[] = [...entries];
+  
   // Add static pages
   const staticPages: SitemapEntry[] = [
     {
@@ -81,7 +90,7 @@ export async function generateSitemap(entries: SitemapEntry[] = []) {
   });
 
   // Combine all entries
-  const allEntries = [...staticPages, ...blogEntries, ...toolEntries, ...entries];
+  allEntries.push(...staticPages, ...blogEntries, ...toolEntries);
 
   // Generate sitemap XML
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -119,11 +128,7 @@ export async function generateSitemap(entries: SitemapEntry[] = []) {
     .join('')}
 </urlset>`;
 
-  // Create public directory if it doesn't exist
-  const publicDir = path.join(process.cwd(), 'public');
-  if (!fs.existsSync(publicDir)) {
-    fs.mkdirSync(publicDir, { recursive: true });
-  }
+  // The public directory check is already done at the beginning of the function
 
   // Write sitemap to file
   const sitemapPath = path.join(publicDir, 'sitemap.xml');

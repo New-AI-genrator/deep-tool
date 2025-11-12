@@ -9,7 +9,7 @@
     "postinstall": "next telemetry disable || true",
     "test:mobile": "node scripts/mobileTest.js",
     "test:mobile:watch": "nodemon scripts/mobileTest.js",
-    "generate-sitemap": "ts-node scripts/generate-sitemap.ts"
+    "generate-sitemap": "tsx scripts/generate-sitemap.ts"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",

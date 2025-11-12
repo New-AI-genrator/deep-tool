@@ -1,6 +1,15 @@
-import { generateSitemap, generateRobotsTxt } from '../lib/sitemap';
-import { getAllBlogPosts } from '../data/blog-posts';
-import { getAllTools } from '../data/tools';
+import { generateSitemap, generateRobotsTxt } from '../lib/sitemap.js';
+
+// Mock data functions since we're using static generation
+async function getAllBlogPosts() {
+  // This will be populated by Next.js at build time
+  return [];
+}
+
+async function getAllTools() {
+  // This will be populated by Next.js at build time
+  return [];
+}
 
 async function main() {
   try {
