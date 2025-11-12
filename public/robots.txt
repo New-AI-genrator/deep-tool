@@ -1,0 +1,39 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://deeptool.vercel.app/sitemap.xml
+
+# Crawl-delay: 10
+# Uncomment the above line if you want to limit crawl rate (requests per second)
+
+# Disallow specific paths
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /404
+Disallow: /500
+
+# Allow all other paths
+Allow: /*
+
+# Crawl-delay for specific bots
+User-agent: Googlebot
+Crawl-delay: 10
+
+User-agent: bingbot
+Crawl-delay: 10
+
+# Allow media files
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+
+# Host
+Host: https://deeptool.vercel.app

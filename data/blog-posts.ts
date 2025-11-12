@@ -6,8 +6,12 @@ export interface BlogPost {
   category: string;
   author: {
     name: string;
-    role: string;
-    image: string;
+    role?: string;
+    image?: string;
+    website?: string;
+    twitter?: string;
+    bio?: string;
+    avatar?: string;
   };
   publishedAt: string;
   updatedAt?: string;

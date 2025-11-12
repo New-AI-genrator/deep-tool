@@ -1,10 +1,98 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
+import { format } from 'date-fns';
 import { getBlogPostBySlug, getAllBlogPosts, getTrendingPosts } from '../../../data/blog-posts';
-import { SoftwareApplicationSchema, BreadcrumbSchema, FAQSchema } from '../../../components/StructuredData';
 import { generateBlogMetadata } from '../../../lib/seo';
-import { ClockIcon, UserIcon, CalendarIcon, TagIcon, HeartIcon, EyeIcon, ShareIcon } from '@heroicons/react/24/outline';
+import { ClockIcon, UserIcon, CalendarIcon, TagIcon, ShareIcon, BookOpenIcon } from '@heroicons/react/24/outline';
+
+// Import our new components
+import dynamic from 'next/dynamic';
+
+// Import utility functions
+import { formatDate } from '../../../lib/utils';
+import { generateBlogPostSchema, generateOrganizationSchema } from '../../../lib/schema';
+
+// Helper function to handle both default and named exports
+const dynamicImport = (path: string, exportName?: string) => 
+  import(path).then(module => {
+    if (exportName && module[exportName]) {
+      return module[exportName];
+    }
+    return module.default || module;
+  });
+
+// Dynamically import components with no SSR
+const SocialShare = dynamic(
+  () => dynamicImport('../../../components/SocialShare'),
+  { 
+    ssr: false, 
+    loading: () => <div className="h-6 w-6" /> 
+  }
+) as React.ComponentType<any>;
+
+const Breadcrumbs = dynamic(
+  () => dynamicImport('../../../components/Breadcrumbs', 'Breadcrumbs'),
+  { 
+    ssr: false, 
+    loading: () => <div className="h-4 w-full bg-gray-100 rounded" /> 
+  }
+) as React.ComponentType<any>;
+
+const TableOfContents = dynamic(
+  () => dynamicImport('../../../components/TableOfContents', 'TableOfContents'),
+  { 
+    ssr: false, 
+    loading: () => <div className="h-64 w-full bg-gray-100 rounded" /> 
+  }
+) as React.ComponentType<any>;
+
+const ImageGallery = dynamic(
+  () => dynamicImport('../../../components/ImageGallery', 'ImageGallery'),
+  { 
+    ssr: false, 
+    loading: () => <div className="h-64 w-full bg-gray-100 rounded" /> 
+  }
+) as React.ComponentType<any>;
+
+const VideoEmbed = dynamic(
+  () => dynamicImport('../../../components/VideoEmbed', 'VideoEmbed'),
+  { 
+    ssr: false, 
+    loading: () => <div className="h-64 w-full bg-gray-100 rounded" /> 
+  }
+) as React.ComponentType<any>;
+
+// Add getReadingTime utility function
+const getReadingTime = (content: string): number => {
+  const wordsPerMinute = 200;
+  const words = content.trim().split(/\s+/).length;
+  return Math.ceil(words / wordsPerMinute);
+};
+
+interface Author {
+  name: string;
+  role?: string;
+  image?: string;
+  website?: string;
+  twitter?: string;
+  bio?: string;
+  avatar?: string;
+}
+
+interface BlogPost {
+  slug: string;
+  title: string;
+  excerpt: string;
+  content: string;
+  coverImage: string;
+  publishedAt: string;
+  updatedAt?: string;
+  tags: string[];
+  author: Author;
+  readTime?: string | number;
+}
 
 interface Props {
   params: {
@@ -28,13 +116,76 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
-  return generateBlogMetadata({
-    title: post.title,
-    description: post.excerpt,
-    slug: post.slug,
-    publishedAt: post.publishedAt,
-    tags: post.tags,
+  // Safely extend the post type with optional fields
+  const authorDefaults = {
+    role: 'Author',
+    image: '',
+    website: '',
+    twitter: '',
+    bio: '',
+    ...post.author
+  };
+
+  const postWithDefaults: BlogPost = {
+    ...post,
+    updatedAt: post.updatedAt || post.publishedAt,
+    author: {
+      ...authorDefaults,
+      avatar: (post.author as any).avatar || post.author.image || ''
+    },
+    readTime: Math.ceil(post.content.split(/\s+/).length / 200)
+  };
+
+  // Create base metadata
+  const baseMetadata = generateBlogMetadata({
+    title: postWithDefaults.title,
+    description: postWithDefaults.excerpt,
+    slug: postWithDefaults.slug,
+    publishedAt: postWithDefaults.publishedAt,
+    tags: postWithDefaults.tags || [],
   });
+
+  // Add additional metadata properties
+  const metadata = {
+    ...baseMetadata,
+    openGraph: {
+      ...baseMetadata.openGraph,
+      type: 'article',
+      publishedTime: postWithDefaults.publishedAt,
+      modifiedTime: postWithDefaults.updatedAt,
+      authors: [postWithDefaults.author.name],
+      tags: postWithDefaults.tags,
+      images: [
+        {
+          url: postWithDefaults.coverImage,
+          width: 1200,
+          height: 630,
+          alt: postWithDefaults.title,
+        },
+      ],
+    },
+    twitter: {
+      ...baseMetadata.twitter,
+      card: 'summary_large_image',
+    },
+  };
+
+  // Add additional metadata
+  return {
+    ...metadata,
+    openGraph: {
+      ...metadata.openGraph,
+      type: 'article',
+      publishedTime: post.publishedAt,
+      modifiedTime: post.updatedAt || post.publishedAt,
+      authors: [post.author.name],
+      tags: post.tags,
+    },
+    twitter: {
+      ...metadata.twitter,
+      card: 'summary_large_image',
+    },
+  };
 }
 
 export default function BlogPostPage({ params }: Props) {
@@ -48,173 +199,341 @@ export default function BlogPostPage({ params }: Props) {
 
   // Extract FAQ data from content (simple approach)
   const faqs = extractFAQsFromContent(post.content);
+  const readingTime = getReadingTime(post.content);
 
+  // Generate breadcrumb items
   const breadcrumbItems = [
-    { name: 'Home', url: 'https://deep-tool.vercel.app' },
-    { name: 'Blog', url: 'https://deep-tool.vercel.app/blog' },
-    { name: post.title, url: `https://deep-tool.vercel.app/blog/${post.slug}` },
+    { label: 'Home', href: '/' },
+    { label: 'Blog', href: '/blog' },
+    { label: post.title, href: `/blog/${post.slug}` },
   ];
 
+  // Generate schema.org data
+  const blogPostSchema = generateBlogPostSchema({
+    title: post.title,
+    description: post.excerpt,
+    url: `https://deeptool.vercel.app/blog/${post.slug}`,
+    publishedAt: post.publishedAt,
+    updatedAt: post.updatedAt || post.publishedAt,
+    author: {
+      name: post.author.name,
+      url: post.author.website || 'https://deeptool.vercel.app/about',
+    },
+    image: post.coverImage,
+    publisher: {
+      name: 'DeepTool',
+      logo: 'https://deeptool.vercel.app/logo.png',
+    },
+  });
+
+  const organizationSchema = generateOrganizationSchema({
+    name: 'DeepTool',
+    url: 'https://deeptool.vercel.app',
+    logo: 'https://deeptool.vercel.app/logo.png',
+    description: 'AI-powered tools for developers and content creators',
+    sameAs: [
+      'https://twitter.com/deeptool',
+      'https://github.com/deeptool',
+    ],
+  });
+
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900/20 to-purple-900/20">
-      <BreadcrumbSchema items={breadcrumbItems} />
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      {/* Breadcrumbs */}
+      <Breadcrumbs 
+        items={breadcrumbItems} 
+        className="mb-6" 
+        ariaLabel="Breadcrumb navigation"
+      />
       
-      {/* Add FAQ Schema if FAQs exist */}
-      {faqs.length > 0 && <FAQSchema faqs={faqs} />}
+      <div className="flex flex-col lg:flex-row gap-8">
+        {/* Main Content */}
+        <main className="flex-1">
+          <article className="prose dark:prose-invert max-w-none">
+            <header className="mb-8">
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">{post.title}</h1>
+              
+              {/* Author and Metadata */}
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+                <div className="flex items-center">
+                  {post.author && (post.author.avatar || post.author.image) && (
+                    <div className="relative h-10 w-10 rounded-full overflow-hidden mr-3">
+                      <Image
+                        src={(post.author.avatar || post.author.image) as string}
+                        alt={post.author.name || 'Author'}
+                        width={40}
+                        height={40}
+                        className="object-cover"
+                        onError={(e) => {
+                          // Fallback to a placeholder image if the image fails to load
+                          const target = e.target as HTMLImageElement;
+                          target.onerror = null;
+                          target.src = '/images/avatar-placeholder.png';
+                        }}
+                      />
+                    </div>
+                  )}
+                  <div>
+                    <div className="font-medium">{post.author?.name}</div>
+                    <div className="text-sm text-gray-600 dark:text-gray-400">
+                      {formatDate(post.publishedAt)}
+                      {post.updatedAt && post.updatedAt !== post.publishedAt && (
+                        <span className="ml-2 text-xs">
+                          (Updated: {formatDate(post.updatedAt)})
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="flex items-center text-sm text-gray-600 dark:text-gray-400 gap-4">
+                  <div className="flex items-center">
+                    <ClockIcon className="h-4 w-4 mr-1.5" />
+                    {readingTime} min read
+                  </div>
+                  <div className="flex items-center">
+                    <BookOpenIcon className="h-4 w-4 mr-1.5" />
+                    {Math.ceil(post.content.split(/\s+/).length / 200)} min read
+                  </div>
+                </div>
+              </div>
 
-      {/* Article Header */}
-      <div className="relative bg-gradient-to-r from-blue-600/10 to-purple-600/10 border-b border-white/10">
-        <div className="max-w-4xl mx-auto px-4 py-16 md:py-24">
-          {/* Category Badge */}
-          <Link
-            href={`/blog?category=${post.category}`}
-            className="inline-block px-4 py-2 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium mb-6 hover:bg-blue-500/30 transition"
-          >
-            {post.category.charAt(0).toUpperCase() + post.category.slice(1).replace('-', ' ')}
-          </Link>
+              {/* Tags */}
+              {post.tags && post.tags.length > 0 && (
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {post.tags.map((tag) => (
+                    <Link 
+                      key={tag} 
+                      href={`/blog/tag/${tag.toLowerCase()}`} 
+                      className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+                    >
+                      <TagIcon className="h-3.5 w-3.5 mr-1.5" />
+                      {tag}
+                    </Link>
+                  ))}
+                </div>
+              )}
+              
+              {/* Cover Image */}
+              {post.coverImage && (
+                <div className="mb-8 rounded-xl overflow-hidden shadow-lg">
+                  <Image
+                    src={post.coverImage}
+                    alt={post.title}
+                    width={1200}
+                    height={630}
+                    className="w-full h-auto object-cover"
+                    priority
+                    sizes="(max-width: 768px) 100vw, 80vw"
+                  />
+                </div>
+              )}
+            </header>
 
-          {/* Title */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            {post.title}
-          </h1>
-
-          {/* Excerpt */}
-          <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-            {post.excerpt}
-          </p>
-
-          {/* Meta Information */}
-          <div className="flex flex-wrap items-center gap-6 text-gray-400">
-            <div className="flex items-center gap-2">
-              <div className="text-2xl">{post.author.image}</div>
-              <div>
-                <div className="text-white font-medium">{post.author.name}</div>
-                <div className="text-sm">{post.author.role}</div>
+            {/* Article Content */}
+            <div className="prose dark:prose-invert max-w-none">
+              {formatMarkdown(post.content)}
+            </div>
+            
+            {/* Social Sharing */}
+            <div className="mt-12 pt-6 border-t border-gray-200 dark:border-gray-800">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <h3 className="text-lg font-medium">Share this article</h3>
+                <SocialShare 
+                  title={post.title}
+                  description={post.excerpt}
+                  url={`https://deeptool.vercel.app/blog/${post.slug}`}
+                  tags={post.tags}
+                  via="deeptool"
+                  buttonVariant="outline"
+                  buttonSize="sm"
+                  showLabel={false}
+                  className="flex-wrap justify-start sm:justify-end"
+                />
               </div>
             </div>
-
-            <div className="flex items-center gap-2">
-              <CalendarIcon className="w-5 h-5" />
-              <span>{new Date(post.publishedAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
-            </div>
-
-            <div className="flex items-center gap-2">
-              <ClockIcon className="w-5 h-5" />
-              <span>{post.readTime}</span>
-            </div>
-
-            {post.views && (
-              <div className="flex items-center gap-2">
-                <EyeIcon className="w-5 h-5" />
-                <span>{post.views.toLocaleString()} views</span>
+            
+            {/* Author Bio */}
+            {post?.author && (
+              <div className="mt-12 p-6 bg-gray-50 dark:bg-gray-900 rounded-xl">
+                <div className="flex flex-col sm:flex-row items-start gap-4">
+                  {(post.author.avatar || post.author.image) && (
+                    <div className="relative h-16 w-16 rounded-full overflow-hidden flex-shrink-0">
+                      <Image
+                        src={(post.author.avatar || post.author.image) as string}
+                        alt={post.author.name || 'Author'}
+                        width={64}
+                        height={64}
+                        className="object-cover"
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.onerror = null;
+                          target.src = '/images/avatar-placeholder.png';
+                        }}
+                      />
+                    </div>
+                  )}
+                  <div>
+                    <h3 className="text-lg font-semibold">About {post.author.name}</h3>
+                    {post.author.bio && (
+                      <p className="mt-2 text-gray-700 dark:text-gray-300">
+                        {post.author.bio}
+                      </p>
+                    )}
+                    {(post.author.website || post.author.twitter) && (
+                      <div className="mt-3 flex gap-3">
+                        {post.author.website && (
+                          <a 
+                            href={post.author.website} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors"
+                          >
+                            Website
+                          </a>
+                        )}
+                        {post.author.twitter && (
+                          <a 
+                            href={`https://twitter.com/${post.author.twitter}`} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors"
+                          >
+                            Twitter
+                          </a>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                </div>
               </div>
             )}
+          </article>
 
-            {post.likes && (
-              <div className="flex items-center gap-2">
-                <HeartIcon className="w-5 h-5" />
-                <span>{post.likes.toLocaleString()} likes</span>
+          {/* Related Posts */}
+          {relatedPosts.length > 0 && (
+            <section className="mt-16">
+              <h2 className="text-2xl font-bold mb-6">You May Also Like</h2>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {relatedPosts.map((relatedPost: BlogPost) => (
+                  <article key={relatedPost.slug} className="group border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                    <Link href={`/blog/${relatedPost.slug}`} className="block h-full">
+                      {relatedPost.coverImage && (
+                        <div className="h-48 relative bg-gray-100 dark:bg-gray-800">
+                          <Image
+                            src={relatedPost.coverImage}
+                            alt={relatedPost.title}
+                            fill
+                            className="object-cover group-hover:scale-105 transition-transform duration-300"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          />
+                        </div>
+                      )}
+                      <div className="p-5">
+                        <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                          {relatedPost.title}
+                        </h3>
+                        <p className="text-gray-600 dark:text-gray-400 text-sm line-clamp-2 mb-3">
+                          {relatedPost.excerpt}
+                        </p>
+                        <div className="flex items-center text-sm text-gray-500 dark:text-gray-500">
+                          <span>{formatDate(relatedPost.publishedAt)}</span>
+                          <span className="mx-2">•</span>
+                          <span>{Math.ceil(relatedPost.content.split(/\s+/).length / 200)} min read</span>
+                        </div>
+                      </div>
+                    </Link>
+                  </article>
+                ))}
               </div>
-            )}
+            </section>
+          )}
+        </main>
+        
+        {/* Sidebar */}
+        <aside className="lg:w-80 flex-shrink-0">
+          {/* Table of Contents */}
+          <div className="sticky top-24">
+            <TableOfContents content={post.content} />
+            
+            {/* Newsletter Signup */}
+            <div className="mt-8 p-6 bg-gray-50 dark:bg-gray-900 rounded-xl">
+              <h3 className="text-lg font-semibold mb-3">Subscribe to our newsletter</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                Get the latest articles and resources sent straight to your inbox.
+              </p>
+              <form className="space-y-3">
+                <div>
+                  <label htmlFor="email" className="sr-only">Email address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-800 dark:text-white"
+                    required
+                  />
+                </div>
+                <button
+                  type="submit"
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md transition-colors"
+                >
+                  Subscribe
+                </button>
+              </form>
+              <p className="mt-2 text-xs text-gray-500 dark:text-gray-500">
+                We respect your privacy. Unsubscribe at any time.
+              </p>
+            </div>
+            
+            {/* Popular Tags */}
+            <div className="mt-8">
+              <h3 className="text-lg font-semibold mb-4">Popular Tags</h3>
+              <div className="flex flex-wrap gap-2">
+                {['AI', 'Machine Learning', 'Tutorial', 'Productivity', 'Development', 'Design'].map((tag) => (
+                  <Link
+                    key={tag}
+                    href={`/blog/tag/${tag.toLowerCase()}`}
+                    className="px-3 py-1.5 text-sm bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full transition-colors"
+                  >
+                    {tag}
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
-        </div>
+        </aside>
       </div>
-
-      {/* Article Content */}
-      <div className="max-w-4xl mx-auto px-4 py-12">
-        <article className="prose prose-invert prose-lg max-w-none">
-          <div 
-            className="text-gray-200 leading-relaxed"
-            dangerouslySetInnerHTML={{ __html: formatMarkdown(post.content) }}
-          />
-        </article>
-
-        {/* Tags */}
-        <div className="mt-12 pt-8 border-t border-white/10">
-          <div className="flex items-center gap-2 mb-4 text-gray-400">
-            <TagIcon className="w-5 h-5" />
-            <span className="font-medium">Tags:</span>
-          </div>
-          <div className="flex flex-wrap gap-2">
-            {post.tags.map((tag) => (
-              <span
-                key={tag}
-                className="px-3 py-1 bg-white/5 hover:bg-white/10 rounded-full text-sm text-gray-300 border border-white/10 transition cursor-pointer"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-        </div>
-
-        {/* Share Buttons */}
-        <div className="mt-8 pt-8 border-t border-white/10">
-          <div className="flex items-center gap-4">
-            <span className="text-gray-400 font-medium flex items-center gap-2">
-              <ShareIcon className="w-5 h-5" />
-              Share:
-            </span>
-            <a
-              href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=https://deep-tool.vercel.app/blog/${post.slug}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 bg-blue-500/20 hover:bg-blue-500/30 text-blue-300 rounded-lg transition"
-            >
-              Twitter
-            </a>
-            <a
-              href={`https://www.linkedin.com/sharing/share-offsite/?url=https://deep-tool.vercel.app/blog/${post.slug}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 bg-blue-600/20 hover:bg-blue-600/30 text-blue-300 rounded-lg transition"
-            >
-              LinkedIn
-            </a>
-            <a
-              href={`https://www.facebook.com/sharer/sharer.php?u=https://deep-tool.vercel.app/blog/${post.slug}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 bg-blue-700/20 hover:bg-blue-700/30 text-blue-300 rounded-lg transition"
-            >
-              Facebook
-            </a>
-          </div>
-        </div>
-      </div>
-
-      {/* Related Posts */}
-      {relatedPosts.length > 0 && (
-        <div className="max-w-4xl mx-auto px-4 py-12">
-          <h2 className="text-3xl font-bold text-white mb-8">Related Articles</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {relatedPosts.map((relatedPost) => (
-              <Link
-                key={relatedPost.slug}
-                href={`/blog/${relatedPost.slug}`}
-                className="group bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition"
-              >
-                <div className="text-4xl mb-4">{relatedPost.coverImage}</div>
-                <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-blue-400 transition line-clamp-2">
-                  {relatedPost.title}
-                </h3>
-                <p className="text-sm text-gray-400 line-clamp-2">{relatedPost.excerpt}</p>
-                <div className="mt-4 text-sm text-gray-500">{relatedPost.readTime}</div>
-              </Link>
-            ))}
-          </div>
-        </div>
+      
+      {/* Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      {faqs.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: faqs.map((faq) => ({
+                '@type': 'Question',
+                name: faq.question,
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: faq.answer,
+                },
+              })),
+            }),
+          }}
+        />
       )}
-
-      {/* Back to Blog */}
-      <div className="max-w-4xl mx-auto px-4 pb-12">
-        <Link
-          href="/blog"
-          className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition"
-        >
-          ← Back to Blog
-        </Link>
-      </div>
-    </main>
+    </div>
   );
 }
 
