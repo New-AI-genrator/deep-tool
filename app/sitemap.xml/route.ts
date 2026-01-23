@@ -3,7 +3,7 @@ import { blogPosts } from '../../data/blog-posts';
 import { categoriesWithSubcategories } from '../../data/tools';
 
 export async function GET() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://deep-tool.vercel.app';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://deeptool.vercel.app';
   
   // Function to get valid date (today or earlier)
   const getValidDate = (dateString: string) => {
@@ -132,3 +132,6 @@ export async function GET() {
     },
   });
 }
+
+// Ensure the sitemap is not statically generated
+export const dynamic = 'force-dynamic';
