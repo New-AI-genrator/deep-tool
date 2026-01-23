@@ -113,7 +113,7 @@ export function generateCategoryMetadata({
 }): Metadata {
   const title = `${name} Tools & Software | ${toolCount}+ Options | DeepTool`;
   const metaDescription = `Discover ${toolCount}+ ${name} tools across ${subcategoryCount} subcategories. Compare features, pricing, and reviews. Find the best ${name} software for your needs.`;
-  
+
   const url = `${baseUrl}/categories/${slug}`;
   const keywords = `${name}, ${name} tools, ${name} software, best ${name} tools, ${name} comparison, ${name} reviews, top ${name} software, ${name} 2025`;
 
@@ -182,7 +182,7 @@ export function generateSubcategoryMetadata({
 }): Metadata {
   const title = `Best ${name} Tools & Software | ${toolCount}+ Options | DeepTool`;
   const metaDescription = `Compare ${toolCount}+ ${name} tools. Read reviews, check pricing, and find the perfect ${name} solution. Part of our ${categoryName} directory.`;
-  
+
   const url = `${baseUrl}/categories/${categorySlug}/${subcategorySlug}`;
   const keywords = `${name}, ${name} tools, ${name} software, best ${name}, ${categoryName}, ${name} comparison, ${name} reviews, top ${name} tools, ${name} 2025`;
 
@@ -297,6 +297,13 @@ export function generateBlogMetadata({
         'max-image-preview': 'large',
         'max-snippet': -1,
       },
+    },
+    other: {
+      'article:published_time': publishedAt,
+      'article:modified_time': publishedAt,
+      'article:section': 'Technology',
+      'article:tag': tags?.join(', ') || '',
+      'schema:faq': '',
     },
   };
 }

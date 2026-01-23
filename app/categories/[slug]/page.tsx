@@ -7,8 +7,9 @@ import { BreadcrumbSchema } from '../../../components/StructuredData';
 import UserPreferencesTracker from '../../../components/UserPreferencesTracker';
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+  const resolvedParams = await Promise.resolve(params);
   const category = categoriesWithSubcategories.find(
-    (cat) => cat.slug === params.slug
+    (cat) => cat.slug === resolvedParams.slug
   );
 
   if (!category) {
@@ -30,9 +31,10 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   });
 }
 
-export default function CategoryPage({ params }: { params: { slug: string } }) {
+export default async function CategoryPage({ params }: { params: { slug: string } }) {
+  const resolvedParams = await Promise.resolve(params);
   const category = categoriesWithSubcategories.find(
-    (cat) => cat.slug === params.slug
+    (cat) => cat.slug === resolvedParams.slug
   );
 
   if (!category) {

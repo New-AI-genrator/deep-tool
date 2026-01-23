@@ -3,20 +3,21 @@ import { categoriesWithSubcategories, toolsBySubcategory } from '../../../../dat
 import Link from 'next/link';
 import UserPreferencesTracker from '../../../../components/UserPreferencesTracker';
 
-export default function SubcategoryPage({ 
+export default async function SubcategoryPage({ 
   params 
 }: { 
   params: { slug: string; sub: string } 
 }) {
+  const resolvedParams = await Promise.resolve(params);
   const category = categoriesWithSubcategories.find(
-    (cat) => cat.slug === params.slug
+    (cat) => cat.slug === resolvedParams.slug
   );
   
   const subcategory = category?.subcategories.find(
-    (sub) => sub.slug === params.sub
+    (sub) => sub.slug === resolvedParams.sub
   );
   
-  const tools = toolsBySubcategory[params.sub] || [];
+  const tools = toolsBySubcategory[resolvedParams.sub] || [];
 
   if (!category || !subcategory) {
     notFound();
