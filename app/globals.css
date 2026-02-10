@@ -105,6 +105,22 @@ body {
   font-size: 16px;
 }
 
+/* Ensure blog content is fully visible */
+.blog-content p,
+.blog-content li,
+.blog-content div {
+  color: white !important;
+}
+
+.blog-content h1,
+.blog-content h2,
+.blog-content h3,
+.blog-content h4,
+.blog-content h5,
+.blog-content h6 {
+  color: white !important;
+}
+
 /* Thin electrum dividers */
 .hr-electrum {
   border-color: rgba(230,210,161,0.25);

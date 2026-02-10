@@ -113,5 +113,6 @@ export const masterCategories: MasterCategory[] = [
 	{ name: 'Knowledge Management', slug: 'knowledge-management' },
 	{ name: 'Workflow Automation', slug: 'workflow-automation' },
 	{ name: 'No-Code & Low-Code', slug: 'no-code-low-code' },
-	{ name: 'APIs & Integration', slug: 'apis-integration' }
+	{ name: 'APIs & Integration', slug: 'apis-integration' },
+    { name: 'AI & Future ', slug: 'ai-future '}  
 ];

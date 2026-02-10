@@ -167,5 +167,88 @@ export const contentCreationTools: ToolEntry[] = [
       url: 'https://obsproject.com/download',
       description: 'Open source software with community support'
     }
+  },
+  
+  // Content Management
+  {
+    name: 'WordPress AI',
+    slug: 'wordpress-ai',
+    tagline: 'AI-enhanced content management and publishing platform',
+    logoUrl: '/logos/wordpress-ai.png',
+    website: 'https://wordpress.org/ai',
+    pricing: 'freemium',
+    badges: ['popular', 'featured'],
+    category: 'Content Creation',
+    categorySlug: 'content-creation',
+    subcategory: 'Content Management',
+    subcategorySlug: 'content-management',
+    description: 'WordPress AI enhances the popular content management system with AI-powered content suggestions, automated optimization, smart categorization, and intelligent content analysis.',
+    features: ['AI content suggestions', 'Automated optimization', 'Smart categorization', 'Content analysis', 'SEO optimization', 'Media management', 'Theme customization', 'Plugin ecosystem'],
+    useCases: ['Website creation', 'Blog management', 'Content organization', 'SEO optimization', 'Media publishing', 'E-commerce', 'Portfolio websites', 'Corporate sites'],
+    tags: ['cms', 'content-management', 'blogging', 'website-builder', 'seo-optimization'],
+    rating: 4.7,
+    reviewCount: 45000,
+    alternatives: ['Squarespace', 'Wix', 'Ghost', 'Drupal'],
+    integrations: ['Google Analytics', 'Mailchimp', 'Yoast SEO', 'WooCommerce', 'Jetpack', 'Elementor', 'Divi', 'Caldera Forms'],
+    pricingDetails: {
+      type: 'freemium',
+      price: 'Free hosting options, Premium from $4/month, Business from $25/month',
+      url: 'https://wordpress.com/pricing/',
+      description: 'Different tiers based on hosting and features'
+    }
+  },
+  {
+    name: 'Notion AI',
+    slug: 'notion-ai',
+    tagline: 'AI-powered workspace for content creation and organization',
+    logoUrl: '/logos/notion-ai.png',
+    website: 'https://www.notion.so/product/ai',
+    pricing: 'freemium',
+    badges: ['trending', 'featured'],
+    category: 'Content Creation',
+    categorySlug: 'content-creation',
+    subcategory: 'Content Management',
+    subcategorySlug: 'content-management',
+    description: 'Notion AI enhances the all-in-one workspace with AI-powered writing assistance, content summarization, task automation, and intelligent content organization.',
+    features: ['AI writing assistance', 'Content summarization', 'Task automation', 'Database management', 'Collaboration tools', 'Template library', 'Content organization', 'Smart search'],
+    useCases: ['Content planning', 'Documentation', 'Project management', 'Knowledge base', 'Team collaboration', 'Personal organization', 'Content workflow', 'Idea management'],
+    tags: ['workspace', 'content-organization', 'collaboration', 'documentation', 'project-management'],
+    rating: 4.8,
+    reviewCount: 38000,
+    alternatives: ['Confluence', 'Roam Research', 'Obsidian', 'ClickUp'],
+    integrations: ['Google Drive', 'Slack', 'Figma', 'Zapier', 'Mailchimp', 'Calendar', 'GitHub', 'Linear'],
+    pricingDetails: {
+      type: 'freemium',
+      price: 'Free for personal use, Plus from $5/month, Business from $8/month, Enterprise pricing available',
+      url: 'https://www.notion.so/pricing',
+      description: 'Different tiers based on features and collaboration'
+    }
+  },
+  {
+    name: 'HubSpot CMS AI',
+    slug: 'hubspot-cms-ai',
+    tagline: 'AI-powered content management system with marketing automation',
+    logoUrl: '/logos/hubspot-cms-ai.png',
+    website: 'https://www.hubspot.com/products/cms',
+    pricing: 'freemium',
+    badges: ['enterprise', 'featured'],
+    category: 'Content Creation',
+    categorySlug: 'content-creation',
+    subcategory: 'Content Management',
+    subcategorySlug: 'content-management',
+    description: 'HubSpot CMS AI combines content management with marketing automation and AI-powered content optimization, personalization, and performance analysis.',
+    features: ['AI content optimization', 'Personalization engine', 'Marketing automation', 'SEO tools', 'Analytics dashboard', 'Lead management', 'Email marketing', 'Content personalization'],
+    useCases: ['Marketing websites', 'Content marketing', 'Lead generation', 'Customer journeys', 'E-commerce', 'B2B marketing', 'Sales enablement', 'Customer portals'],
+    tags: ['cms', 'marketing-automation', 'content-personalization', 'lead-generation', 'b2b-marketing'],
+    rating: 4.6,
+    reviewCount: 18000,
+    alternatives: ['WordPress', 'Drupal', 'Sitecore', 'Adobe Experience Manager'],
+    integrations: ['Salesforce', 'Marketo', 'Pipedrive', 'Slack', 'Gmail', 'Outlook', 'Google Analytics', 'Facebook Ads'],
+    pricingDetails: {
+      type: 'freemium',
+      price: 'Free Starter, Professional from $45/month, Enterprise from $1,200/month',
+      url: 'https://www.hubspot.com/products/cms/pricing',
+      description: 'Different tiers based on features and contacts'
+    }
   }
 ];

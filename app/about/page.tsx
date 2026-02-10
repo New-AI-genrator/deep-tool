@@ -13,10 +13,10 @@ export default function AboutUs() {
 
 	const team = [
 		{
-			name: "Alex Chen",
+			name: "Huzaifa karim",
 			role: "Founder & CEO",
 			bio: "AI researcher with 10+ years experience in machine learning and product development.",
-			avatar: "👨‍💼"
+			avatar: "👨‍💻"
 		},
 		{
 			name: "Sarah Johnson",
