@@ -1,6 +1,7 @@
 export type MasterCategory = { name: string; slug: string };
 
 export const masterCategories: MasterCategory[] = [
+	{ name: 'Content Creation', slug: 'content-creation' },
 	{ name: 'Creative & Design', slug: 'creative-design' },
 	{ name: 'Productivity & Business', slug: 'productivity-business' },
 	{ name: 'Development & Engineering', slug: 'development-engineering' },

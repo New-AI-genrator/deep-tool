@@ -3,6 +3,12 @@ export type SubCategory = { name: string; slug: string };
 export type SubCategoryMap = Record<string, SubCategory[]>;
 
 export const subCategories: SubCategoryMap = {
+	'content-creation': [
+		{ name: 'Writing Tools', slug: 'writing-tools' },
+		{ name: 'Podcasting', slug: 'podcasting' },
+		{ name: 'Streaming', slug: 'streaming' },
+		{ name: 'Content Management', slug: 'content-management' }
+	],
 	'creative-design': [
 		{ name: 'Image & Art Generation', slug: 'image-art-generation' },
 		{ name: 'Video Production & Editing', slug: 'video-production-editing' },
