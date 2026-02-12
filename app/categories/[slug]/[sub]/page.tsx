@@ -17,7 +17,8 @@ export default async function SubcategoryPage({
     (sub) => sub.slug === resolvedParams.sub
   );
   
-  const tools = toolsBySubcategory[resolvedParams.sub] || [];
+  const tools = toolsBySubcategory[`${resolvedParams.slug}-${resolvedParams.sub}`] || 
+               toolsBySubcategory[resolvedParams.sub] || [];
 
   if (!category || !subcategory) {
     notFound();

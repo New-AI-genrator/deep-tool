@@ -18,8 +18,8 @@ export function useMobileDetection() {
       setScreenSize({ width, height });
       
       // Mobile detection based on screen width
-      setIsMobile(width <= 768);
-      setIsTablet(width > 768 && width <= 1024);
+      setIsMobile(width <= 700);
+      setIsTablet(width > 700 && width <= 1024);
     };
 
     // Check on mount
