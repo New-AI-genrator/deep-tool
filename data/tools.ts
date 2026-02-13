@@ -3394,6 +3394,238 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
     }
   ],
   
+  // Photography & Imaging > Photo Editing
+  'photo-editing': [
+    {
+      name: 'Adobe Photoshop',
+      slug: 'adobe-photoshop',
+      tagline: 'Professional photo editing and graphic design software',
+      logoUrl: '/logos/photoshop.png',
+      website: 'https://www.adobe.com/products/photoshop.html',
+      pricing: 'paid',
+      badges: ['popular', 'featured', 'industry-standard'],
+      category: 'Photography & Imaging',
+      categorySlug: 'photography-imaging',
+      subcategory: 'Photo Editing',
+      subcategorySlug: 'photo-editing',
+      description: 'Adobe Photoshop is the industry-standard photo editing software for professional photographers, designers, and artists.',
+      features: ['Layer-based editing', 'AI-powered tools', 'Camera RAW', 'Selection tools', 'Retouching', 'Color correction', 'Filters and effects', 'Batch processing'],
+      useCases: ['Photo editing', 'Graphic design', 'Digital art', 'Photo retouching', 'Color grading', 'Image manipulation'],
+      tags: ['photo-editing', 'adobe', 'graphics', 'professional', 'industry-standard'],
+      rating: 4.8,
+      reviewCount: 45000,
+      alternatives: ['Affinity Photo', 'GIMP', 'Capture One', 'Lightroom'],
+      integrations: ['Adobe Creative Cloud', 'Lightroom', 'Bridge', 'Adobe Stock'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $22.99/month (Creative Cloud Photography plan)',
+        url: 'https://www.adobe.com/creativecloud/photography.html',
+        description: 'Monthly subscription with Adobe Creative Cloud'
+      }
+    },
+    {
+      name: 'Canva',
+      slug: 'canva',
+      tagline: 'Online graphic design and photo editing platform',
+      logoUrl: '/logos/canva.png',
+      website: 'https://www.canva.com',
+      pricing: 'freemium',
+      badges: ['popular', 'beginner-friendly', 'trending'],
+      category: 'Photography & Imaging',
+      categorySlug: 'photography-imaging',
+      subcategory: 'Photo Editing',
+      subcategorySlug: 'photo-editing',
+      description: 'Canva is a user-friendly online design platform that makes photo editing and graphic design accessible to everyone.',
+      features: ['Photo filters', 'Text overlays', 'Templates', 'Background remover', 'Collage maker', 'Brand kit', 'Animation', 'Social media formats'],
+      useCases: ['Social media graphics', 'Photo enhancement', 'Marketing materials', 'Presentations', 'Invitations', 'Brand content'],
+      tags: ['photo-editing', 'graphic-design', 'templates', 'social-media', 'beginner-friendly'],
+      rating: 4.7,
+      reviewCount: 25600,
+      alternatives: ['Adobe Express', 'Fotor', 'PicMonkey', 'BeFunky'],
+      integrations: ['Social media platforms', 'Dropbox', 'Google Drive', 'HubSpot'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free plan available, Pro from $12.99/month, Teams from $14.99/month',
+        url: 'https://www.canva.com/pricing',
+        description: 'Free with premium features in paid plans'
+      }
+    }
+  ],
+
+  // Photography & Imaging > Stock Photos
+  'stock-photos': [
+    {
+      name: 'Unsplash',
+      slug: 'unsplash',
+      tagline: 'Beautiful, free images and photography',
+      logoUrl: '/logos/unsplash.png',
+      website: 'https://unsplash.com',
+      pricing: 'free',
+      badges: ['popular', 'community-favorite', 'free'],
+      category: 'Photography & Imaging',
+      categorySlug: 'photography-imaging',
+      subcategory: 'Stock Photos',
+      subcategorySlug: 'stock-photos',
+      description: 'Unsplash is a community-driven platform for high-quality, free-to-use stock photography.',
+      features: ['High-resolution photos', 'Search and discovery', 'Collections', 'Photographer portfolios', 'API access', 'Curated galleries', 'Download tracking', 'License management'],
+      useCases: ['Website design', 'Marketing materials', 'Social media', 'Blog posts', 'Presentations', 'Commercial projects'],
+      tags: ['stock-photos', 'free-images', 'photography', 'community', 'creative-commons'],
+      rating: 4.6,
+      reviewCount: 18000,
+      alternatives: ['Pexels', 'Pixabay', 'Shutterstock', 'Adobe Stock'],
+      integrations: ['Figma', 'Sketch', 'Adobe Creative Cloud', 'API'],
+      pricingDetails: {
+        type: 'free',
+        price: 'Completely free',
+        url: 'https://unsplash.com/license',
+        description: 'Free for commercial and non-commercial use'
+      }
+    },
+    {
+      name: 'Shutterstock',
+      slug: 'shutterstock',
+      tagline: 'Stock images, videos, and music',
+      logoUrl: '/logos/shutterstock.png',
+      website: 'https://www.shutterstock.com',
+      pricing: 'paid',
+      badges: ['enterprise', 'featured', 'comprehensive'],
+      category: 'Photography & Imaging',
+      categorySlug: 'photography-imaging',
+      subcategory: 'Stock Photos',
+      subcategorySlug: 'stock-photos',
+      description: 'Shutterstock is a leading global provider of high-quality stock photos, vectors, illustrations, videos, and music.',
+      features: ['Millions of images', 'Advanced search', 'AI-powered recommendations', 'Editorial content', 'Video library', 'Music collection', 'API access', 'Enterprise solutions'],
+      useCases: ['Marketing campaigns', 'Website content', 'Social media', 'Publishing', 'Advertising', 'Film production'],
+      tags: ['stock-photos', 'stock-videos', 'music', 'enterprise', 'creative-content'],
+      rating: 4.3,
+      reviewCount: 12000,
+      alternatives: ['Getty Images', 'Adobe Stock', 'iStock', 'Unsplash'],
+      integrations: ['Adobe Creative Cloud', 'Microsoft Office', 'Google Workspace', 'API'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $29/month for 10 downloads, Enterprise custom pricing',
+        url: 'https://www.shutterstock.com/pricing',
+        description: 'Subscription plans and on-demand purchases'
+      }
+    }
+  ],
+
+  // Photography & Imaging > Photo Management
+  'photo-management': [
+    {
+      name: 'Adobe Lightroom',
+      slug: 'adobe-lightroom',
+      tagline: 'Photo organization and editing software',
+      logoUrl: '/logos/lightroom.png',
+      website: 'https://www.adobe.com/products/photoshop-lightroom.html',
+      pricing: 'paid',
+      badges: ['popular', 'featured', 'professional'],
+      category: 'Photography & Imaging',
+      categorySlug: 'photography-imaging',
+      subcategory: 'Photo Management',
+      subcategorySlug: 'photo-management',
+      description: 'Adobe Lightroom is a powerful photo editing and management software designed for professional photographers.',
+      features: ['Photo library', 'Non-destructive editing', 'RAW processing', 'Presets and profiles', 'Cloud synchronization', 'Mobile apps', 'Web galleries', 'Batch editing'],
+      useCases: ['Photo organization', 'RAW editing', 'Workflow management', 'Color grading', 'Portfolio creation', 'Client delivery'],
+      tags: ['photo-management', 'raw-processing', 'adobe', 'photography', 'workflow'],
+      rating: 4.7,
+      reviewCount: 22000,
+      alternatives: ['Capture One', 'Darktable', 'Luminar', 'ON1 Photo RAW'],
+      integrations: ['Adobe Creative Cloud', 'Photoshop', 'Lightroom Mobile', 'Adobe Portfolio'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $9.99/month (Lightroom only) or $22.99/month (Photography plan)',
+        url: 'https://www.adobe.com/creativecloud/photography.html',
+        description: 'Monthly subscription with cloud storage'
+      }
+    },
+    {
+      name: 'Google Photos',
+      slug: 'google-photos',
+      tagline: 'Photo storage and organization service',
+      logoUrl: '/logos/google-photos.png',
+      website: 'https://photos.google.com',
+      pricing: 'freemium',
+      badges: ['popular', 'free', 'cloud-storage'],
+      category: 'Photography & Imaging',
+      categorySlug: 'photography-imaging',
+      subcategory: 'Photo Management',
+      subcategorySlug: 'photo-management',
+      description: 'Google Photos is a photo and video storage service that offers intelligent organization and sharing features.',
+      features: ['Cloud storage', 'Auto organization', 'AI-powered search', 'Shared albums', 'Photo books', 'Automatic backups', 'Face recognition', 'Memory creation'],
+      useCases: ['Photo backup', 'Family sharing', 'Photo organization', 'Memory creation', 'Cross-device access'],
+      tags: ['photo-storage', 'cloud', 'ai-organization', 'google', 'backup'],
+      rating: 4.5,
+      reviewCount: 34000,
+      alternatives: ['iCloud Photos', 'Amazon Photos', 'OneDrive', 'Dropbox'],
+      integrations: ['Google Drive', 'Android', 'iOS', 'Google Assistant'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free up to 15GB, then $1.99/month for 100GB',
+        url: 'https://one.google.com/about/plans/',
+        description: 'Free tier with paid storage upgrades'
+      }
+    }
+  ],
+
+  // Photography & Imaging > RAW Processing
+  'raw-processing': [
+    {
+      name: 'Capture One',
+      slug: 'capture-one',
+      tagline: 'Professional RAW editing software',
+      logoUrl: '/logos/capture-one.png',
+      website: 'https://www.captureone.com',
+      pricing: 'paid',
+      badges: ['professional', 'featured', 'industry-standard'],
+      category: 'Photography & Imaging',
+      categorySlug: 'photography-imaging',
+      subcategory: 'RAW Processing',
+      subcategorySlug: 'raw-processing',
+      description: 'Capture One is professional RAW conversion software and digital asset management for photographers.',
+      features: ['RAW processing', 'Color editing', 'Tethered shooting', 'Layer editing', 'Catalog management', 'Phase One support', 'Custom profiles', 'Plugin ecosystem'],
+      useCases: ['Professional photography', 'Studio work', 'RAW conversion', 'Color grading', 'Tethered capture', 'Print preparation'],
+      tags: ['raw-processing', 'professional', 'photography', 'color-grading', 'studio'],
+      rating: 4.6,
+      reviewCount: 8500,
+      alternatives: ['Adobe Lightroom', 'Darktable', 'RAW Therapee', 'Luminar'],
+      integrations: ['Phase One cameras', 'Adobe Photoshop', 'Plugins', 'External editors'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $21/month (subscription) or $299 (perpetual license)',
+        url: 'https://www.captureone.com/en/buy',
+        description: 'Subscription or perpetual license options'
+      }
+    },
+    {
+      name: 'Darktable',
+      slug: 'darktable',
+      tagline: 'Open-source photography workflow software',
+      logoUrl: '/logos/darktable.png',
+      website: 'https://www.darktable.org',
+      pricing: 'free',
+      badges: ['open-source', 'community-favorite', 'professional'],
+      category: 'Photography & Imaging',
+      categorySlug: 'photography-imaging',
+      subcategory: 'RAW Processing',
+      subcategorySlug: 'raw-processing',
+      description: 'Darktable is an open-source photography workflow application and RAW developer that manages your digital negatives.',
+      features: ['RAW development', 'Non-destructive editing', 'Color management', 'Darkroom mode', 'Lighttable view', 'Tethering', 'Export modules', 'Plugin support'],
+      useCases: ['RAW processing', 'Photography workflow', 'Color correction', 'Film simulation', 'Batch processing'],
+      tags: ['raw-processing', 'open-source', 'photography', 'darktable', 'free'],
+      rating: 4.4,
+      reviewCount: 6800,
+      alternatives: ['Adobe Lightroom', 'Capture One', 'RAW Therapee', 'LightZone'],
+      integrations: ['GIMP', 'ImageMagick', 'Various RAW formats'],
+      pricingDetails: {
+        type: 'free',
+        price: 'Completely free and open source',
+        url: 'https://www.darktable.org/install/',
+        description: 'Free software with community support'
+      }
+    }
+  ],
+  
   // Productivity & Business > Project Management
   'project-management': [
     {
@@ -14255,6 +14487,180 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
     }
   ],
 
+  // Live Chat
+  'live-chat': [
+    {
+      name: 'Intercom',
+      slug: 'intercom',
+      tagline: 'Customer communication and live chat platform',
+      logoUrl: '/logos/intercom.png',
+      website: 'https://www.intercom.com',
+      pricing: 'freemium',
+      badges: ['popular', 'trending', 'featured'],
+      category: 'Customer Support',
+      categorySlug: 'customer-support',
+      subcategory: 'Live Chat',
+      subcategorySlug: 'live-chat',
+      description: 'Intercom is a customer communication platform with live chat, messaging, and automation tools for modern businesses.',
+      features: ['Live chat', 'Chatbots', 'Message automation', 'Customer segmentation', 'Team inbox', 'Mobile app', 'Analytics dashboard', 'Customization'],
+      useCases: ['Customer support', 'Sales conversations', 'Onboarding', 'Product feedback', 'Lead generation', 'Customer engagement'],
+      tags: ['live-chat', 'messaging', 'customer-communication', 'automation', 'support'],
+      rating: 4.5,
+      reviewCount: 12000,
+      alternatives: ['Zendesk Chat', 'Freshchat', 'Drift'],
+      integrations: ['Slack', 'Salesforce', 'HubSpot', 'Google Analytics', 'Zapier', 'WordPress'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free plan available, Pro from $74/month, Premium from $149/month',
+        url: 'https://www.intercom.com/pricing',
+        description: 'Different tiers based on features and team size'
+      }
+    },
+    {
+      name: 'LiveChat',
+      slug: 'livechat',
+      tagline: 'Online customer service software with live chat',
+      logoUrl: '/logos/livechat.png',
+      website: 'https://www.livechat.com',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Customer Support',
+      categorySlug: 'customer-support',
+      subcategory: 'Live Chat',
+      subcategorySlug: 'live-chat',
+      description: 'LiveChat is a complete customer service platform that helps businesses provide excellent customer support through live chat.',
+      features: ['Live chat', 'Chat routing', 'File sharing', 'Chat transcripts', 'Canned responses', 'Visitor tracking', 'Analytics', 'Mobile apps'],
+      useCases: ['Customer support', 'Sales assistance', 'Lead generation', 'Customer engagement', 'Real-time communication'],
+      tags: ['live-chat', 'customer-service', 'support', 'communication', 'sales'],
+      rating: 4.4,
+      reviewCount: 8500,
+      alternatives: ['Intercom', 'Zendesk Chat', 'Freshchat'],
+      integrations: ['WordPress', 'Shopify', 'Magento', 'Salesforce', 'HubSpot', 'Mailchimp'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free plan available, Starter from $16/month, Team from $33/month, Business from $50/month',
+        url: 'https://www.livechat.com/pricing',
+        description: 'Different tiers based on agents and features'
+      }
+    }
+  ],
+
+  // Knowledge Base
+  'knowledge-base': [
+    {
+      name: 'Confluence',
+      slug: 'confluence',
+      tagline: 'Team collaboration and knowledge management',
+      logoUrl: '/logos/confluence.png',
+      website: 'https://www.atlassian.com/software/confluence',
+      pricing: 'freemium',
+      badges: ['popular', 'enterprise', 'featured'],
+      category: 'Customer Support',
+      categorySlug: 'customer-support',
+      subcategory: 'Knowledge Base',
+      subcategorySlug: 'knowledge-base',
+      description: 'Confluence is a team workspace where knowledge and collaboration meet, perfect for creating knowledge bases and documentation.',
+      features: ['Knowledge base creation', 'Document collaboration', 'Template library', 'Space organization', 'Content indexing', 'Version control', 'Integration ecosystem', 'Analytics'],
+      useCases: ['Knowledge management', 'Documentation', 'Team collaboration', 'Project documentation', 'Internal wikis', 'Customer support'],
+      tags: ['knowledge-base', 'documentation', 'collaboration', 'wiki', 'atlassian'],
+      rating: 4.3,
+      reviewCount: 15000,
+      alternatives: ['Notion', 'GitBook', 'Slite', 'Bloomfire'],
+      integrations: ['Jira', 'Trello', 'Slack', 'Microsoft Teams', 'Google Drive', 'Zapier'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free for up to 10 users, Standard from $5.75/user/month, Premium from $11/user/month',
+        url: 'https://www.atlassian.com/software/confluence/pricing',
+        description: 'Per-user monthly pricing with annual billing'
+      }
+    },
+    {
+      name: 'Zendesk Guide',
+      slug: 'zendesk-guide',
+      tagline: 'Knowledge base and help center software',
+      logoUrl: '/logos/zendesk-guide.png',
+      website: 'https://www.zendesk.com/guide',
+      pricing: 'paid',
+      badges: ['featured', 'popular'],
+      category: 'Customer Support',
+      categorySlug: 'customer-support',
+      subcategory: 'Knowledge Base',
+      subcategorySlug: 'knowledge-base',
+      description: 'Zendesk Guide is a smart knowledge base that helps customers help themselves with self-service support.',
+      features: ['Knowledge base creation', 'Multi-language support', 'Content management', 'Analytics', 'Community forums', 'Article management', 'Search optimization', 'Branding'],
+      useCases: ['Customer self-service', 'Help center', 'Documentation', 'FAQ management', 'Support articles', 'Community support'],
+      tags: ['knowledge-base', 'help-center', 'self-service', 'documentation', 'zendesk'],
+      rating: 4.4,
+      reviewCount: 6800,
+      alternatives: ['Confluence', 'Notion', 'GitBook', 'Document360'],
+      integrations: ['Zendesk Support', 'Zendesk Chat', 'Slack', 'Microsoft Teams', 'Analytics platforms'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $19/agent/month when billed annually',
+        url: 'https://www.zendesk.com/pricing',
+        description: 'Requires Zendesk Suite or Guide standalone'
+      }
+    }
+  ],
+
+  // Chatbots
+  'chatbots': [
+    {
+      name: 'Chatfuel',
+      slug: 'chatfuel',
+      tagline: 'No-code chatbot platform for messaging apps',
+      logoUrl: '/logos/chatfuel.png',
+      website: 'https://chatfuel.com',
+      pricing: 'freemium',
+      badges: ['popular', 'trending'],
+      category: 'Customer Support',
+      categorySlug: 'customer-support',
+      subcategory: 'Chatbots',
+      subcategorySlug: 'chatbots',
+      description: 'Chatfuel is a no-code chatbot platform that helps businesses create AI-powered chatbots for Facebook Messenger, WhatsApp, and websites.',
+      features: ['Visual bot builder', 'AI responses', 'Multi-platform support', 'Analytics dashboard', 'Lead generation', 'E-commerce integration', 'Template library', 'Custom branding'],
+      useCases: ['Customer support', 'Lead generation', 'E-commerce', 'Appointment booking', 'FAQ automation', 'Marketing campaigns'],
+      tags: ['chatbot', 'messaging', 'ai-chatbot', 'facebook-messenger', 'automation'],
+      rating: 4.2,
+      reviewCount: 4500,
+      alternatives: ['ManyChat', 'Tidio', 'Dialogflow', 'Rasa'],
+      integrations: ['Facebook', 'Instagram', 'WhatsApp', 'Shopify', 'Google Analytics', 'Zapier'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free plan available, Business from $15/month, Enterprise from $199/month',
+        url: 'https://chatfuel.com/pricing',
+        description: 'Different tiers based on features and conversations'
+      }
+    },
+    {
+      name: 'Tidio',
+      slug: 'tidio',
+      tagline: 'AI-powered chatbot and live chat platform',
+      logoUrl: '/logos/tidio.png',
+      website: 'https://www.tidio.com',
+      pricing: 'freemium',
+      badges: ['trending', 'featured'],
+      category: 'Customer Support',
+      categorySlug: 'customer-support',
+      subcategory: 'Chatbots',
+      subcategorySlug: 'chatbots',
+      description: 'Tidio combines live chat, chatbots, and chatbot builder in one platform to help businesses communicate with customers.',
+      features: ['AI chatbots', 'Live chat', 'Chatbot builder', 'Multi-channel support', 'Visitor tracking', 'Automation', 'Mobile apps', 'Customization'],
+      useCases: ['Customer support', 'Lead generation', 'Sales automation', 'Customer engagement', 'Website communication'],
+      tags: ['chatbot', 'live-chat', 'ai-assistant', 'customer-support', 'automation'],
+      rating: 4.5,
+      reviewCount: 7800,
+      alternatives: ['Intercom', 'Chatfuel', 'LiveChat', 'Drift'],
+      integrations: ['WordPress', 'Shopify', 'Wix', 'Magento', 'Facebook Messenger', 'WhatsApp'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free plan available, Starter from $25/month, Communicator from $50/month, Chatbots from $74/month',
+        url: 'https://www.tidio.com/pricing',
+        description: 'Different tiers based on features and operators'
+      }
+    }
+  ],
+
   // Sales & CRM > CRM Platforms
   'crm-platforms': [
     {
@@ -16500,6 +16906,180 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         price: 'Free to publish, $5/month to read',
         url: 'https://medium.com/membership',
         description: 'Free publishing, optional membership'
+      }
+    }
+  ],
+
+  // News Management
+  'news-management': [
+    {
+      name: 'WordPress News Theme',
+      slug: 'wordpress-news-theme',
+      tagline: 'Professional news and magazine WordPress themes',
+      logoUrl: '/logos/wordpress-news-theme.png',
+      website: 'https://wordpress.org/themes/tags/news',
+      pricing: 'free',
+      badges: ['popular', 'community-favorite'],
+      category: 'Media & Publishing',
+      categorySlug: 'media-publishing',
+      subcategory: 'News Management',
+      subcategorySlug: 'news-management',
+      description: 'WordPress news themes provide professional layouts for news websites, magazines, and online publications with advanced editorial features.',
+      features: ['Breaking news ticker', 'Article categorization', 'Author profiles', 'Comment systems', 'Social sharing', 'SEO optimization', 'Mobile responsive', 'Ad management'],
+      useCases: ['News websites', 'Online magazines', 'Editorial sites', 'Journalism blogs', 'Publication platforms', 'Media outlets'],
+      tags: ['news', 'magazine', 'editorial', 'wordpress', 'publishing'],
+      rating: 4.6,
+      reviewCount: 8500,
+      alternatives: ['Joomla', 'Drupal', 'Ghost'],
+      integrations: ['Google Analytics', 'Social media', 'Email marketing', 'Ad networks', 'RSS feeds'],
+      pricingDetails: {
+        type: 'free',
+        price: 'Free themes with premium options from $39-$89',
+        url: 'https://wordpress.org/themes/',
+        description: 'Free open-source themes with premium support options'
+      }
+    },
+    {
+      name: 'Newsroom AI',
+      slug: 'newsroom-ai',
+      tagline: 'AI-powered newsroom management and editorial system',
+      logoUrl: '/logos/newsroom-ai.png',
+      website: 'https://newsroom-ai.com',
+      pricing: 'freemium',
+      badges: ['trending', 'featured'],
+      category: 'Media & Publishing',
+      categorySlug: 'media-publishing',
+      subcategory: 'News Management',
+      subcategorySlug: 'news-management',
+      description: 'Newsroom AI is an intelligent editorial management system that uses AI to streamline news production, content curation, and publishing workflows.',
+      features: ['AI content suggestions', 'Automated fact-checking', 'Editorial workflow', 'Content scheduling', 'Performance analytics', 'Multi-platform publishing', 'Team collaboration', 'Breaking news alerts'],
+      useCases: ['News production', 'Content curation', 'Editorial management', 'Breaking news coverage', 'Multi-platform publishing', 'Team coordination'],
+      tags: ['newsroom', 'editorial', 'ai-content', 'publishing', 'journalism'],
+      rating: 4.7,
+      reviewCount: 3200,
+      alternatives: ['WordPress', 'Contentful', 'StoryChief'],
+      integrations: ['Twitter', 'Facebook', 'LinkedIn', 'Google News', 'RSS feeds', 'Analytics platforms'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free for small teams, Professional from $99/month, Enterprise from $499/month',
+        url: 'https://newsroom-ai.com/pricing',
+        description: 'Different tiers based on team size and features'
+      }
+    }
+  ],
+
+  // Digital Asset Management
+  'digital-asset-management': [
+    {
+      name: 'Adobe Experience Manager Assets',
+      slug: 'adobe-experience-manager-assets',
+      tagline: 'Enterprise digital asset management and content hub',
+      logoUrl: '/logos/adobe-experience-manager-assets.png',
+      website: 'https://business.adobe.com/products/experience-manager/assets.html',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Media & Publishing',
+      categorySlug: 'media-publishing',
+      subcategory: 'Digital Asset Management',
+      subcategorySlug: 'digital-asset-management',
+      description: 'Adobe Experience Manager Assets is a comprehensive digital asset management solution that helps organizations manage, store, and distribute digital content at scale.',
+      features: ['Asset repository', 'Metadata management', 'Version control', 'Rights management', 'Creative workflows', 'Multi-channel delivery', 'AI-powered tagging', 'Analytics dashboard'],
+      useCases: ['Brand asset management', 'Media library organization', 'Creative workflows', 'Content distribution', 'Brand consistency', 'Digital transformation'],
+      tags: ['dam', 'digital-assets', 'brand-management', 'content-hub', 'enterprise'],
+      rating: 4.5,
+      reviewCount: 8500,
+      alternatives: ['Widen Collective', 'Bynder', 'Cloudinary'],
+      integrations: ['Adobe Creative Cloud', 'Marketing automation', 'CMS platforms', 'Analytics tools', 'E-commerce platforms'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Custom enterprise pricing',
+        url: 'https://business.adobe.com/contact/pricing.html',
+        description: 'Custom pricing based on organization needs and scale'
+      }
+    },
+    {
+      name: 'Cloudinary',
+      slug: 'cloudinary',
+      tagline: 'Cloud-based image and video management platform',
+      logoUrl: '/logos/cloudinary.png',
+      website: 'https://cloudinary.com',
+      pricing: 'freemium',
+      badges: ['popular', 'trending'],
+      category: 'Media & Publishing',
+      categorySlug: 'media-publishing',
+      subcategory: 'Digital Asset Management',
+      subcategorySlug: 'digital-asset-management',
+      description: 'Cloudinary is a cloud-based service that provides an end-to-end image and video management solution for websites and mobile applications.',
+      features: ['Cloud storage', 'Image optimization', 'Video streaming', 'AI-powered transformations', 'CDN delivery', 'Media analytics', 'API access', 'Real-time manipulation'],
+      useCases: ['Image optimization', 'Video hosting', 'Media delivery', 'Performance optimization', 'Developer tools', 'E-commerce media'],
+      tags: ['cloud-storage', 'image-optimization', 'video-streaming', 'cdn', 'media-delivery'],
+      rating: 4.6,
+      reviewCount: 12000,
+      alternatives: ['Imgix', 'ImageKit', 'Akamai Image Manager'],
+      integrations: ['React', 'Angular', 'Vue.js', 'WordPress', 'Shopify', 'React Native', 'Flutter'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free tier with 25 credits/month, Pro from $89/month, Advanced from $249/month',
+        url: 'https://cloudinary.com/pricing',
+        description: 'Different tiers based on usage and features'
+      }
+    }
+  ],
+
+  // Subscription Management
+  'subscription-management': [
+    {
+      name: 'Substack',
+      slug: 'substack',
+      tagline: 'Newsletter publishing and subscription platform',
+      logoUrl: '/logos/substack.png',
+      website: 'https://substack.com',
+      pricing: 'freemium',
+      badges: ['popular', 'trending'],
+      category: 'Media & Publishing',
+      categorySlug: 'media-publishing',
+      subcategory: 'Subscription Management',
+      subcategorySlug: 'subscription-management',
+      description: 'Substack is a platform that makes it simple for writers to start a paid newsletter, build their audience, and get paid directly by their subscribers.',
+      features: ['Newsletter creation', 'Subscription management', 'Payment processing', 'Analytics dashboard', 'Podcast hosting', 'Community features', 'Mobile app', 'Discovery platform'],
+      useCases: ['Newsletter publishing', 'Paid content', 'Creator economy', 'Audience building', 'Direct monetization', 'Content distribution'],
+      tags: ['newsletter', 'subscription', 'creator-economy', 'paid-content', 'publishing'],
+      rating: 4.4,
+      reviewCount: 15000,
+      alternatives: ['Ghost', 'Patreon', 'ConvertKit'],
+      integrations: ['Twitter', 'Stripe', 'Apple Pay', 'Google Pay', 'RSS feeds', 'Social media'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free to start, 10% commission on paid subscriptions',
+        url: 'https://substack.com/pricing',
+        description: 'Free platform with revenue sharing on paid subscriptions'
+      }
+    },
+    {
+      name: 'Memberful',
+      slug: 'memberful',
+      tagline: 'Membership and subscription management for creators',
+      logoUrl: '/logos/memberful.png',
+      website: 'https://memberful.com',
+      pricing: 'freemium',
+      badges: ['featured', 'popular'],
+      category: 'Media & Publishing',
+      categorySlug: 'media-publishing',
+      subcategory: 'Subscription Management',
+      subcategorySlug: 'subscription-management',
+      description: 'Memberful is a membership platform that helps creators sell paid subscriptions to their audience, with flexible pricing and powerful features.',
+      features: ['Subscription management', 'Payment processing', 'Member directory', 'Drip content', 'Coupon codes', 'Analytics dashboard', 'API access', 'WordPress integration'],
+      useCases: ['Membership sites', 'Paid newsletters', 'Course subscriptions', 'Community access', 'Premium content', 'Creator monetization'],
+      tags: ['membership', 'subscription', 'creator-tools', 'monetization', 'paid-content'],
+      rating: 4.6,
+      reviewCount: 4500,
+      alternatives: ['Patreon', 'Substack', 'Ghost'],
+      integrations: ['WordPress', 'Stripe', 'PayPal', 'Mailchimp', 'Discord', 'Slack', 'Zapier'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free plan available, Pro from $10/month + 4.9% transaction fee',
+        url: 'https://memberful.com/pricing',
+        description: 'Monthly subscription plus transaction fees'
       }
     }
   ],
