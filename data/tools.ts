@@ -15018,7 +15018,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       logoUrl: '/logos/rsmeans.png',
       website: 'https://www.rsmeans.com',
       pricing: 'paid',
-      badges: ['enterprise', 'featured', 'industry-standard'],
+      badges: ['enterprise', 'featured'],
       category: 'Construction & Architecture',
       categorySlug: 'construction-architecture',
       subcategory: 'Estimation',
