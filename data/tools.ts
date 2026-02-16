@@ -7921,7 +7921,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
   ],
 
   // Manufacturing & Supply Chain > Warehouse Management
-  'warehouse-management': [
+  'manufacturing-warehouse-management': [
     {
       name: 'Manhattan WMS',
       slug: 'manhattan-wms',
@@ -15618,30 +15618,30 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       }
     },
     {
-      name: 'Geotab',
-      slug: 'geotab',
-      tagline: 'Fleet management and vehicle tracking',
-      logoUrl: '/logos/geotab.png',
-      website: 'https://www.geotab.com',
-      pricing: 'paid',
-      badges: ['popular', 'enterprise'],
-      category: 'Transportation & Logistics',
-      categorySlug: 'transportation-logistics',
-      subcategory: 'Fleet Management',
-      subcategorySlug: 'fleet-management',
-      description: 'Geotab is a global leader in IoT and connected transportation, providing fleet management solutions.',
-      features: ['Vehicle tracking', 'Driver behavior', 'Fuel monitoring', 'Maintenance scheduling', 'Route planning', 'Compliance', 'Electric vehicle support', 'Open platform'],
-      useCases: ['Fleet optimization', 'Safety management', 'Compliance tracking', 'Cost reduction', 'EV fleet management'],
-      tags: ['fleet', 'telematics', 'gps', 'iot', 'tracking'],
-      rating: 4.4,
-      reviewCount: 1800,
-      alternatives: ['Samsara', 'Verizon Connect', 'GPS Insight'],
-      integrations: ['Marketplace with 500+ integrations'],
+      name: 'Perfect Corp',
+      slug: 'perfect-corp',
+      tagline: 'AR beauty and fashion virtual try-on platform',
+      logoUrl: '/logos/perfect-corp.png',
+      website: 'https://www.perfectcorp.com',
+      pricing: 'enterprise',
+      badges: ['popular', 'featured', 'trending'],
+      category: 'Beauty & Cosmetics',
+      categorySlug: 'beauty-cosmetics',
+      subcategory: 'Virtual Try-On',
+      subcategorySlug: 'virtual-try-on',
+      description: 'Perfect Corp provides AR-powered virtual try-on solutions for beauty and fashion brands.',
+      features: ['Virtual try-on', 'AR technology', 'Beauty and fashion', 'Product visualization', 'Customer engagement', 'Sales tools', 'Analytics', 'Mobile SDK'],
+      useCases: ['Virtual try-on', 'Product visualization', 'Customer engagement', 'Sales and marketing', 'Beauty and fashion'],
+      tags: ['virtual-try-on', 'ar', 'beauty', 'fashion', 'cosmetics'],
+      rating: 4.5,
+      reviewCount: 12000,
+      alternatives: ['ModiFace', 'YouCam Makeup', 'L\'Oreal Makeup Genius', 'Sephora Virtual Artist'],
+      integrations: ['E-commerce platforms', 'Social media', 'Mobile apps'],
       pricingDetails: {
-        type: 'paid',
-        price: 'Custom pricing per vehicle',
-        url: 'https://www.geotab.com/contact/',
-        description: 'Volume-based pricing'
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.perfectcorp.com/contact',
+        description: 'Enterprise pricing based on features and usage'
       }
     }
   ],
