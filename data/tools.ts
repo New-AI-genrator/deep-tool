@@ -15125,6 +15125,180 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
     }
   ],
 
+  // Event Management > Virtual Events
+  'virtual-events': [
+    {
+      name: 'Zoom Events',
+      slug: 'zoom-events',
+      tagline: 'All-in-one virtual event platform',
+      logoUrl: '/logos/zoom.png',
+      website: 'https://zoom.us/events',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Event Management',
+      categorySlug: 'event-management',
+      subcategory: 'Virtual Events',
+      subcategorySlug: 'virtual-events',
+      description: 'Zoom Events is an all-in-one digital event platform that enables you to create engaging virtual and hybrid experiences.',
+      features: ['Virtual event hosting', 'Webinars', 'Breakout sessions', 'Networking', 'Registration', 'Ticketing', 'Analytics', 'Branding options'],
+      useCases: ['Virtual conferences', 'Webinars', 'Hybrid events', 'Online workshops', 'Virtual trade shows'],
+      tags: ['virtual-events', 'webinars', 'online-conferences', 'zoom', 'hybrid-events'],
+      rating: 4.4,
+      reviewCount: 8900,
+      alternatives: ['Hopin', 'Cvent', 'Bizzabo', 'Whova'],
+      integrations: ['Zoom Meetings', 'CRM systems', 'Marketing automation'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $14.99/month per license',
+        url: 'https://zoom.us/pricing/events',
+        description: 'Monthly subscription per license'
+      }
+    },
+    {
+      name: 'Hopin',
+      slug: 'hopin',
+      tagline: 'Virtual and hybrid event platform',
+      logoUrl: '/logos/hopin.png',
+      website: 'https://www.hopin.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'trending'],
+      category: 'Event Management',
+      categorySlug: 'event-management',
+      subcategory: 'Virtual Events',
+      subcategorySlug: 'virtual-events',
+      description: 'Hopin is a virtual and hybrid event platform that enables organizers to create immersive online event experiences.',
+      features: ['Virtual venue', 'Networking', 'Exhibition booths', 'Live streaming', 'Breakout sessions', 'Analytics', 'Mobile app', 'Custom branding'],
+      useCases: ['Virtual conferences', 'Trade shows', 'Career fairs', 'Product launches', 'Community events'],
+      tags: ['virtual-events', 'hybrid-events', 'conferences', 'networking', 'exhibitions'],
+      rating: 4.2,
+      reviewCount: 3400,
+      alternatives: ['Zoom Events', 'Cvent', 'Bizzabo', 'Whova'],
+      integrations: ['Salesforce', 'HubSpot', 'Slack', 'Various streaming platforms'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.hopin.com/pricing',
+        description: 'Enterprise pricing based on event size and features'
+      }
+    }
+  ],
+
+  // Event Management > Event Planning
+  'event-planning': [
+    {
+      name: 'Asana',
+      slug: 'asana',
+      tagline: 'Work management for event planning',
+      logoUrl: '/logos/asana.png',
+      website: 'https://www.asana.com',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Event Management',
+      categorySlug: 'event-management',
+      subcategory: 'Event Planning',
+      subcategorySlug: 'event-planning',
+      description: 'Asana is a work management platform that helps event planners organize tasks, timelines, and team collaboration.',
+      features: ['Task management', 'Timeline planning', 'Team collaboration', 'Project templates', 'Automations', 'Reporting', 'Mobile app', 'Integrations'],
+      useCases: ['Event planning', 'Task tracking', 'Team coordination', 'Timeline management', 'Vendor management'],
+      tags: ['project-management', 'event-planning', 'collaboration', 'task-management', 'asana'],
+      rating: 4.5,
+      reviewCount: 23400,
+      alternatives: ['Trello', 'Monday.com', 'ClickUp', 'Smartsheet'],
+      integrations: ['Slack', 'Google Workspace', 'Microsoft Teams', 'Various apps'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free plan available, Premium from $10.99/user/month',
+        url: 'https://asana.com/pricing',
+        description: 'Free and paid tiers with per-user pricing'
+      }
+    },
+    {
+      name: 'Trello',
+      slug: 'trello',
+      tagline: 'Visual collaboration for event teams',
+      logoUrl: '/logos/trello.png',
+      website: 'https://www.trello.com',
+      pricing: 'freemium',
+      badges: ['popular', 'trending'],
+      category: 'Event Management',
+      categorySlug: 'event-management',
+      subcategory: 'Event Planning',
+      subcategorySlug: 'event-planning',
+      description: 'Trello is a visual collaboration tool that helps event teams organize projects, tasks, and deadlines using boards and cards.',
+      features: ['Kanban boards', 'Task cards', 'Checklists', 'Due dates', 'Team collaboration', 'Power-ups', 'Mobile app', 'Automation'],
+      useCases: ['Event planning', 'Task management', 'Team coordination', 'Deadline tracking', 'Workflow management'],
+      tags: ['project-management', 'event-planning', 'kanban', 'collaboration', 'trello'],
+      rating: 4.3,
+      reviewCount: 18900,
+      alternatives: ['Asana', 'Monday.com', 'ClickUp', 'Notion'],
+      integrations: ['Slack', 'Google Drive', 'Dropbox', 'Various apps'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free plan available, Business Class from $5/user/month',
+        url: 'https://trello.com/pricing',
+        description: 'Free and paid tiers with per-user pricing'
+      }
+    }
+  ],
+
+  // Event Management > Venue Management
+  'venue-management': [
+    {
+      name: 'Tripleseat',
+      slug: 'tripleseat',
+      tagline: 'Event management software for venues',
+      logoUrl: '/logos/tripleseat.png',
+      website: 'https://www.tripleseat.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Event Management',
+      categorySlug: 'event-management',
+      subcategory: 'Venue Management',
+      subcategorySlug: 'venue-management',
+      description: 'Tripleseat is event management software designed for hotels, restaurants, and venues to streamline event booking and management.',
+      features: ['Event booking', 'Lead management', 'BEO creation', 'Contract management', 'Catering management', 'Reporting', 'CRM integration', 'Mobile access'],
+      useCases: ['Venue booking', 'Event management', 'Catering coordination', 'Contract management', 'Lead tracking'],
+      tags: ['venue-management', 'event-booking', 'catering', 'hospitality', 'crm'],
+      rating: 4.4,
+      reviewCount: 2800,
+      alternatives: ['Social Tables', 'Event Temple', 'Function Tracker', 'Caterease'],
+      integrations: ['Salesforce', 'Marketing automation', 'Accounting software'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $299/month',
+        url: 'https://www.tripleseat.com/pricing',
+        description: 'Monthly subscription based on venue size and features'
+      }
+    },
+    {
+      name: 'Social Tables',
+      slug: 'social-tables',
+      tagline: 'Event diagramming and seating software',
+      logoUrl: '/logos/socialtables.png',
+      website: 'https://www.socialtables.com',
+      pricing: 'paid',
+      badges: ['featured', 'trending'],
+      category: 'Event Management',
+      categorySlug: 'event-management',
+      subcategory: 'Venue Management',
+      subcategorySlug: 'venue-management',
+      description: 'Social Tables provides event diagramming, seating chart creation, and event management tools for venues and planners.',
+      features: ['Event diagramming', 'Seating charts', 'Guest management', 'Floor planning', '3D venue views', 'Collaboration tools', 'Mobile app', 'Check-in'],
+      useCases: ['Event planning', 'Seating arrangements', 'Venue layout', 'Guest management', 'Event coordination'],
+      tags: ['venue-management', 'seating-charts', 'event-diagramming', 'floor-planning', 'collaboration'],
+      rating: 4.3,
+      reviewCount: 3400,
+      alternatives: ['Tripleseat', 'Event Temple', 'AllSeated', 'Caterease'],
+      integrations: ['CRM systems', 'Event management platforms', 'Catering software'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $99/month',
+        url: 'https://www.socialtables.com/pricing',
+        description: 'Monthly subscription based on features and usage'
+      }
+    }
+  ],
+
   // Food & Beverage > POS Systems
   'pos-systems': [
     {
@@ -15179,6 +15353,180 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         price: 'From $69/month + processing fees',
         url: 'https://pos.toasttab.com/pricing',
         description: 'Subscription + payment processing'
+      }
+    }
+  ],
+
+  // Food & Beverage > Restaurant Management
+  'restaurant-management': [
+    {
+      name: 'Toast',
+      slug: 'toast-restaurant',
+      tagline: 'All-in-one restaurant management platform',
+      logoUrl: '/logos/toast.png',
+      website: 'https://pos.toasttab.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Food & Beverage',
+      categorySlug: 'food-beverage',
+      subcategory: 'Restaurant Management',
+      subcategorySlug: 'restaurant-management',
+      description: 'Toast is an all-in-one restaurant management platform that combines POS, online ordering, delivery, and marketing.',
+      features: ['Restaurant POS', 'Online ordering', 'Delivery management', 'Payroll', 'Marketing', 'Inventory', 'Reporting', 'Kitchen display'],
+      useCases: ['Restaurant operations', 'Order management', 'Delivery coordination', 'Employee scheduling', 'Inventory tracking'],
+      tags: ['restaurant', 'pos', 'online-ordering', 'delivery', 'management'],
+      rating: 4.3,
+      reviewCount: 8900,
+      alternatives: ['Square for Restaurants', 'TouchBistro', 'Revel Systems', 'Lightspeed Restaurant'],
+      integrations: ['DoorDash', 'Uber Eats', 'Grubhub', 'QuickBooks'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $69/month + processing fees',
+        url: 'https://pos.toasttab.com/pricing',
+        description: 'Subscription plus payment processing fees'
+      }
+    },
+    {
+      name: 'TouchBistro',
+      slug: 'touchbistro',
+      tagline: 'iPad restaurant POS and management',
+      logoUrl: '/logos/touchbistro.png',
+      website: 'https://www.touchbistro.com',
+      pricing: 'paid',
+      badges: ['featured', 'trending'],
+      category: 'Food & Beverage',
+      categorySlug: 'food-beverage',
+      subcategory: 'Restaurant Management',
+      subcategorySlug: 'restaurant-management',
+      description: 'TouchBistro is an iPad-based restaurant POS and management system designed specifically for food service businesses.',
+      features: ['iPad POS', 'Menu management', 'Table management', 'Staff scheduling', 'Inventory', 'Reporting', 'Online ordering', 'Customer management'],
+      useCases: ['Restaurant management', 'Table service', 'Menu management', 'Staff coordination', 'Inventory control'],
+      tags: ['restaurant', 'pos', 'ipad', 'table-service', 'management'],
+      rating: 4.4,
+      reviewCount: 4500,
+      alternatives: ['Toast', 'Square for Restaurants', 'Revel Systems', 'Lightspeed Restaurant'],
+      integrations: ['QuickBooks', 'Various payment processors', 'Online ordering platforms'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $69/month per terminal',
+        url: 'https://www.touchbistro.com/pricing',
+        description: 'Monthly subscription per terminal'
+      }
+    }
+  ],
+
+  // Food & Beverage > Recipe Management
+  'recipe-management': [
+    {
+      name: 'ChefTec',
+      slug: 'cheftec',
+      tagline: 'Restaurant recipe and food costing software',
+      logoUrl: '/logos/cheftec.png',
+      website: 'https://www.cheftec.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Food & Beverage',
+      categorySlug: 'food-beverage',
+      subcategory: 'Recipe Management',
+      subcategorySlug: 'recipe-management',
+      description: 'ChefTec is comprehensive restaurant management software with recipe costing, inventory, and menu engineering.',
+      features: ['Recipe costing', 'Menu engineering', 'Inventory management', 'Nutritional analysis', 'Allergen tracking', 'Food costing', 'Waste tracking', 'Mobile app'],
+      useCases: ['Recipe management', 'Food costing', 'Menu planning', 'Inventory control', 'Nutritional analysis'],
+      tags: ['recipe', 'food-costing', 'menu-engineering', 'inventory', 'restaurant'],
+      rating: 4.3,
+      reviewCount: 1200,
+      alternatives: ['Galley', 'MarketMan', 'FoodRazor', 'Plate IQ'],
+      integrations: ['POS systems', 'Accounting software', 'Various inventory systems'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $99/month',
+        url: 'https://www.cheftec.com/pricing',
+        description: 'Monthly subscription based on features and users'
+      }
+    },
+    {
+      name: 'Galley',
+      slug: 'galley',
+      tagline: 'Digital recipe management and food costing',
+      logoUrl: '/logos/galley.png',
+      website: 'https://www.galley.solutions',
+      pricing: 'paid',
+      badges: ['trending', 'featured'],
+      category: 'Food & Beverage',
+      categorySlug: 'food-beverage',
+      subcategory: 'Recipe Management',
+      subcategorySlug: 'recipe-management',
+      description: 'Galley is a digital recipe management platform that helps foodservice teams standardize recipes and control costs.',
+      features: ['Digital recipes', 'Food costing', 'Menu engineering', 'Allergen management', 'Nutritional analysis', 'Collaboration tools', 'Mobile app', 'API access'],
+      useCases: ['Recipe standardization', 'Food costing', 'Menu development', 'Allergen compliance', 'Team collaboration'],
+      tags: ['recipe', 'food-costing', 'menu-development', 'collaboration', 'standardization'],
+      rating: 4.4,
+      reviewCount: 680,
+      alternatives: ['ChefTec', 'MarketMan', 'FoodRazor', 'Plate IQ'],
+      integrations: ['POS systems', 'Inventory management', 'Various food service platforms'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $199/month',
+        url: 'https://www.galley.solutions/pricing',
+        description: 'Monthly subscription based on team size and features'
+      }
+    }
+  ],
+
+  // Food & Beverage > Food Delivery
+  'food-delivery': [
+    {
+      name: 'DoorDash',
+      slug: 'doordash',
+      tagline: 'Food delivery and logistics platform',
+      logoUrl: '/logos/doordash.png',
+      website: 'https://www.doordash.com',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Food & Beverage',
+      categorySlug: 'food-beverage',
+      subcategory: 'Food Delivery',
+      subcategorySlug: 'food-delivery',
+      description: 'DoorDash is a food delivery platform that connects customers with local restaurants and provides delivery logistics.',
+      features: ['Food delivery', 'Restaurant partnerships', 'Driver network', 'Delivery tracking', 'Customer app', 'Restaurant app', 'Analytics', 'Marketing tools'],
+      useCases: ['Restaurant delivery', 'Food delivery logistics', 'Customer ordering', 'Restaurant partnerships', 'Delivery management'],
+      tags: ['delivery', 'food-delivery', 'logistics', 'restaurant', 'on-demand'],
+      rating: 4.2,
+      reviewCount: 23400,
+      alternatives: ['Uber Eats', 'Grubhub', 'Postmates', 'Seamless'],
+      integrations: ['POS systems', 'Restaurant management platforms', 'Various payment processors'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Commission-based pricing for restaurants',
+        url: 'https://www.doordash.com/business',
+        description: 'Commission fees on orders, free to join'
+      }
+    },
+    {
+      name: 'Uber Eats',
+      slug: 'uber-eats',
+      tagline: 'Food delivery and ordering platform',
+      logoUrl: '/logos/uber-eats.png',
+      website: 'https://www.ubereats.com',
+      pricing: 'freemium',
+      badges: ['popular', 'trending'],
+      category: 'Food & Beverage',
+      categorySlug: 'food-beverage',
+      subcategory: 'Food Delivery',
+      subcategorySlug: 'food-delivery',
+      description: 'Uber Eats is a food delivery platform that allows customers to order from local restaurants and have food delivered.',
+      features: ['Food delivery', 'Restaurant partnerships', 'Driver network', 'Real-time tracking', 'Customer app', 'Restaurant dashboard', 'Analytics', 'Promotions'],
+      useCases: ['Restaurant delivery', 'Food ordering', 'Delivery logistics', 'Restaurant partnerships', 'Customer engagement'],
+      tags: ['delivery', 'food-delivery', 'uber', 'restaurant', 'on-demand'],
+      rating: 4.1,
+      reviewCount: 18900,
+      alternatives: ['DoorDash', 'Grubhub', 'Postmates', 'Seamless'],
+      integrations: ['Uber platform', 'POS systems', 'Restaurant management tools'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Commission-based pricing for restaurants',
+        url: 'https://www.ubereats.com/restaurant',
+        description: 'Commission fees on orders, free to join'
       }
     }
   ],
@@ -15240,12 +15588,14 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       }
     }
   ],
-
-  // Transportation & Logistics > Fleet Management
-  'fleet-management': [
+  // Beauty & Cosmetics > Virtual Try-On
+  'virtual-try-on': [
     {
-      name: 'Samsara',
-      slug: 'samsara',
+      name: 'ModiFace',
+      slug: 'modiface',
+      tagline: 'AR-powered virtual makeup and beauty try-on platform',
+      logoUrl: '/logos/modiface.png',
+      website: 'https://www.modiface.com',
       tagline: 'Complete fleet operations platform',
       logoUrl: '/logos/samsara.png',
       website: 'https://www.samsara.com',
@@ -15295,6 +15645,180 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         price: 'Custom pricing per vehicle',
         url: 'https://www.geotab.com/contact/',
         description: 'Volume-based pricing'
+      }
+    }
+  ],
+
+  // Transportation & Logistics > Route Optimization
+  'route-optimization': [
+    {
+      name: 'Route4Me',
+      slug: 'route4me',
+      tagline: 'Route planning and optimization software',
+      logoUrl: '/logos/route4me.png',
+      website: 'https://www.route4me.com',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Transportation & Logistics',
+      categorySlug: 'transportation-logistics',
+      subcategory: 'Route Optimization',
+      subcategorySlug: 'route-optimization',
+      description: 'Route4Me is a route planning and optimization platform that helps businesses reduce fuel costs and improve delivery efficiency.',
+      features: ['Route optimization', 'Multi-stop routing', 'GPS tracking', 'ETAs', 'Driver app', 'Analytics', 'API access', 'Territory planning'],
+      useCases: ['Delivery routing', 'Field service scheduling', 'Sales route planning', 'Multi-stop trips', 'Last mile delivery'],
+      tags: ['route-optimization', 'delivery', 'logistics', 'gps', 'routing'],
+      rating: 4.4,
+      reviewCount: 5600,
+      alternatives: ['OptimoRoute', 'Workwave Route Manager', 'Badger Maps', 'Circuit'],
+      integrations: ['QuickBooks', 'Salesforce', 'Various CRM systems', 'GPS devices'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free plan available, Pro from $29.99/month',
+        url: 'https://www.route4me.com/pricing',
+        description: 'Free and paid tiers based on features and users'
+      }
+    },
+    {
+      name: 'OptimoRoute',
+      slug: 'optimoroute',
+      tagline: 'Advanced route optimization software',
+      logoUrl: '/logos/optimoroute.png',
+      website: 'https://www.optimoroute.com',
+      pricing: 'paid',
+      badges: ['featured', 'trending'],
+      category: 'Transportation & Logistics',
+      categorySlug: 'transportation-logistics',
+      subcategory: 'Route Optimization',
+      subcategorySlug: 'route-optimization',
+      description: 'OptimoRoute provides advanced route planning and optimization for delivery and field service operations.',
+      features: ['Route optimization', 'Real-time tracking', 'Driver app', 'Time windows', 'Capacity constraints', 'Proof of delivery', 'Analytics', 'API integration'],
+      useCases: ['Delivery optimization', 'Field service routing', 'Multi-vehicle planning', 'Time-sensitive deliveries', 'Route planning'],
+      tags: ['route-optimization', 'delivery', 'field-service', 'logistics', 'planning'],
+      rating: 4.5,
+      reviewCount: 3400,
+      alternatives: ['Route4Me', 'Workwave Route Manager', 'Badger Maps', 'Circuit'],
+      integrations: ['QuickBooks', 'Various CRM systems', 'GPS tracking', 'Mobile apps'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $35.29/driver/month',
+        url: 'https://www.optimoroute.com/pricing',
+        description: 'Per-driver monthly pricing with volume discounts'
+      }
+    }
+  ],
+
+  // Transportation & Logistics > Warehouse Management
+  'warehouse-management': [
+    {
+      name: 'Fishbowl Inventory',
+      slug: 'fishbowl-inventory',
+      tagline: 'Warehouse and inventory management software',
+      logoUrl: '/logos/fishbowl.png',
+      website: 'https://www.fishbowlinventory.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Transportation & Logistics',
+      categorySlug: 'transportation-logistics',
+      subcategory: 'Warehouse Management',
+      subcategorySlug: 'warehouse-management',
+      description: 'Fishbowl Inventory is a comprehensive warehouse management and inventory control solution for growing businesses.',
+      features: ['Inventory management', 'Warehouse operations', 'Order fulfillment', 'Barcode scanning', 'Multi-location tracking', 'Reporting', 'Manufacturing', 'Shipping integration'],
+      useCases: ['Warehouse management', 'Inventory control', 'Order fulfillment', 'Manufacturing', 'Multi-location inventory'],
+      tags: ['warehouse', 'inventory', 'wms', 'barcode', 'fulfillment'],
+      rating: 4.3,
+      reviewCount: 6800,
+      alternatives: ['Zoho Inventory', 'inFlow Inventory', 'Unleashed Software', 'Cin7'],
+      integrations: ['QuickBooks', 'Xero', 'Salesforce', 'Various shipping carriers'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $4,995 one-time license',
+        url: 'https://www.fishbowlinventory.com/pricing',
+        description: 'One-time license with optional support plans'
+      }
+    },
+    {
+      name: 'Zoho Inventory',
+      slug: 'zoho-inventory',
+      tagline: 'Cloud-based inventory and warehouse management',
+      logoUrl: '/logos/zoho.png',
+      website: 'https://www.zoho.com/inventory',
+      pricing: 'freemium',
+      badges: ['popular', 'trending'],
+      category: 'Transportation & Logistics',
+      categorySlug: 'transportation-logistics',
+      subcategory: 'Warehouse Management',
+      subcategorySlug: 'warehouse-management',
+      description: 'Zoho Inventory is a cloud-based inventory and warehouse management system for order and stock management.',
+      features: ['Inventory tracking', 'Order management', 'Warehouse operations', 'Multi-channel selling', 'Barcode scanning', 'Reporting', 'Mobile app', 'Integrations'],
+      useCases: ['Inventory management', 'Order fulfillment', 'Multi-channel sales', 'Warehouse operations', 'Stock control'],
+      tags: ['inventory', 'warehouse', 'multi-channel', 'zoho', 'cloud'],
+      rating: 4.2,
+      reviewCount: 4500,
+      alternatives: ['Fishbowl Inventory', 'inFlow Inventory', 'Unleashed Software', 'Cin7'],
+      integrations: ['Zoho suite', 'QuickBooks', 'Salesforce', 'E-commerce platforms'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free plan available, Standard from $29/month',
+        url: 'https://www.zoho.com/inventory/pricing',
+        description: 'Free and paid tiers with per-user pricing'
+      }
+    }
+  ],
+
+  // Transportation & Logistics > Freight Management
+  'freight-management': [
+    {
+      name: 'Flexport',
+      slug: 'flexport',
+      tagline: 'Digital freight forwarding platform',
+      logoUrl: '/logos/flexport.png',
+      website: 'https://www.flexport.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured', 'trending'],
+      category: 'Transportation & Logistics',
+      categorySlug: 'transportation-logistics',
+      subcategory: 'Freight Management',
+      subcategorySlug: 'freight-management',
+      description: 'Flexport is a digital freight forwarder and customs brokerage that makes global trade easier for businesses.',
+      features: ['Freight forwarding', 'Customs brokerage', 'Ocean shipping', 'Air freight', 'Trucking', 'Supply chain visibility', 'Analytics', 'API access'],
+      useCases: ['International shipping', 'Freight forwarding', 'Customs clearance', 'Supply chain management', 'Global trade'],
+      tags: ['freight', 'shipping', 'logistics', 'customs', 'global-trade'],
+      rating: 4.4,
+      reviewCount: 8900,
+      alternatives: ['Freightos', 'C.H. Robinson', 'Expeditors', 'Kuehne + Nagel'],
+      integrations: ['ERP systems', 'E-commerce platforms', 'Various shipping carriers'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.flexport.com/contact',
+        description: 'Enterprise pricing based on shipping volume and services'
+      }
+    },
+    {
+      name: 'Freightos',
+      slug: 'freightos',
+      tagline: 'Digital freight marketplace and platform',
+      logoUrl: '/logos/freightos.png',
+      website: 'https://www.freightos.com',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Transportation & Logistics',
+      categorySlug: 'transportation-logistics',
+      subcategory: 'Freight Management',
+      subcategorySlug: 'freight-management',
+      description: 'Freightos is a digital freight marketplace that provides instant freight quotes and booking for ocean, air, and trucking.',
+      features: ['Freight marketplace', 'Instant quotes', 'Rate management', 'Shipment tracking', 'Freight management', 'Analytics', 'API access', 'Multi-modal shipping'],
+      useCases: ['Freight booking', 'Rate comparison', 'Shipment management', 'Freight forwarding', 'Supply chain optimization'],
+      tags: ['freight', 'marketplace', 'shipping', 'logistics', 'rates'],
+      rating: 4.3,
+      reviewCount: 3400,
+      alternatives: ['Flexport', 'C.H. Robinson', 'Expeditors', 'Kuehne + Nagel'],
+      integrations: ['ERP systems', 'E-commerce platforms', 'Various carriers'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free platform, transaction fees on bookings',
+        url: 'https://www.freightos.com/pricing',
+        description: 'Free platform with transaction-based pricing'
       }
     }
   ],
@@ -15353,6 +15877,180 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         price: 'Custom enterprise pricing',
         url: 'https://www.energycap.com/contact',
         description: 'Based on number of facilities'
+      }
+    }
+  ],
+
+  // Energy & Utilities > Smart Grid
+  'smart-grid': [
+    {
+      name: 'Itron',
+      slug: 'itron',
+      tagline: 'Smart grid and IoT solutions for utilities',
+      logoUrl: '/logos/itron.png',
+      website: 'https://www.itron.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Energy & Utilities',
+      categorySlug: 'energy-utilities',
+      subcategory: 'Smart Grid',
+      subcategorySlug: 'smart-grid',
+      description: 'Itron provides smart grid and IoT solutions that help utilities and cities manage energy and water resources more efficiently.',
+      features: ['Smart meters', 'Grid management', 'Distribution automation', 'Demand response', 'Analytics', 'Mobile workforce', 'Cybersecurity', 'IoT platform'],
+      useCases: ['Smart grid deployment', 'Utility operations', 'Energy management', 'Water management', 'Infrastructure monitoring', 'Demand response programs'],
+      tags: ['smart-grid', 'iot', 'utilities', 'meters', 'energy-management'],
+      rating: 4.3,
+      reviewCount: 1200,
+      alternatives: ['Landis+Gyr', 'Sensus', 'Schneider Electric', 'Siemens'],
+      integrations: ['Utility management systems', 'SCADA systems', 'Various IoT platforms'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.itron.com/contact',
+        description: 'Enterprise pricing based on deployment size'
+      }
+    },
+    {
+      name: 'Landis+Gyr',
+      slug: 'landis-gyr',
+      tagline: 'Smart metering and grid solutions',
+      logoUrl: '/logos/landisgyr.png',
+      website: 'https://www.landisgyr.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'trending'],
+      category: 'Energy & Utilities',
+      categorySlug: 'energy-utilities',
+      subcategory: 'Smart Grid',
+      subcategorySlug: 'smart-grid',
+      description: 'Landis+Gyr is a global leader in energy management solutions, providing smart meters and grid management systems.',
+      features: ['Smart meters', 'Grid edge devices', 'Head-end systems', 'Distribution automation', 'Load management', 'Analytics', 'Communication networks', 'Cybersecurity'],
+      useCases: ['Smart metering', 'Grid modernization', 'Load management', 'Distribution automation', 'Energy efficiency'],
+      tags: ['smart-grid', 'meters', 'grid-modernization', 'energy-efficiency', 'utilities'],
+      rating: 4.2,
+      reviewCount: 890,
+      alternatives: ['Itron', 'Sensus', 'Schneider Electric', 'Siemens'],
+      integrations: ['Utility management systems', 'SCADA', 'Various communication protocols'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.landisgyr.com/contact',
+        description: 'Enterprise pricing based on project scope'
+      }
+    }
+  ],
+
+  // Energy & Utilities > Renewable Energy
+  'renewable-energy': [
+    {
+      name: 'SolarEdge',
+      slug: 'solaredge',
+      tagline: 'Solar inverter and monitoring platform',
+      logoUrl: '/logos/solaredge.png',
+      website: 'https://www.solaredge.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Energy & Utilities',
+      categorySlug: 'energy-utilities',
+      subcategory: 'Renewable Energy',
+      subcategorySlug: 'renewable-energy',
+      description: 'SolarEdge provides power optimizer, inverter, and monitoring solutions for solar energy systems.',
+      features: ['Power optimizers', 'Solar inverters', 'Monitoring platform', 'Energy storage', 'EV charging', 'Mobile app', 'Analytics', 'Grid services'],
+      useCases: ['Solar installations', 'Energy monitoring', 'Power optimization', 'Energy storage', 'EV charging integration'],
+      tags: ['solar', 'renewable-energy', 'inverters', 'energy-storage', 'monitoring'],
+      rating: 4.4,
+      reviewCount: 12300,
+      alternatives: ['Enphase Energy', 'Tesla Energy', 'SMA Solar Technology', 'Fronius'],
+      integrations: ['Solar monitoring systems', 'Energy storage systems', 'EV chargers'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'Contact for pricing',
+        url: 'https://www.solaredge.com/contact',
+        description: 'Pricing based on system size and components'
+      }
+    },
+    {
+      name: 'Enphase Energy',
+      slug: 'enphase',
+      tagline: 'Microinverter and energy management systems',
+      logoUrl: '/logos/enphase.png',
+      website: 'https://www.enphase.com',
+      pricing: 'paid',
+      badges: ['featured', 'trending'],
+      category: 'Energy & Utilities',
+      categorySlug: 'energy-utilities',
+      subcategory: 'Renewable Energy',
+      subcategorySlug: 'renewable-energy',
+      description: 'Enphase Energy provides microinverter-based solar and energy storage systems for homes and businesses.',
+      features: ['Microinverters', 'Energy storage', 'Monitoring platform', 'Ensemble technology', 'Mobile app', 'Grid services', 'Battery systems', 'Solar installation'],
+      useCases: ['Residential solar', 'Commercial solar', 'Energy storage', 'Grid services', 'Solar monitoring'],
+      tags: ['solar', 'microinverters', 'energy-storage', 'renewable-energy', 'monitoring'],
+      rating: 4.5,
+      reviewCount: 8900,
+      alternatives: ['SolarEdge', 'Tesla Energy', 'SMA Solar Technology', 'Fronius'],
+      integrations: ['Solar installers', 'Energy storage systems', 'Grid operators'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'Contact for pricing',
+        url: 'https://www.enphase.com/contact',
+        description: 'Pricing based on system configuration'
+      }
+    }
+  ],
+
+  // Energy & Utilities > Utility Billing
+  'utility-billing': [
+    {
+      name: 'Oracle Utilities',
+      slug: 'oracle-utilities',
+      tagline: 'Utility billing and customer management',
+      logoUrl: '/logos/oracle.png',
+      website: 'https://www.oracle.com/industries/utilities',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Energy & Utilities',
+      categorySlug: 'energy-utilities',
+      subcategory: 'Utility Billing',
+      subcategorySlug: 'utility-billing',
+      description: 'Oracle Utilities provides comprehensive billing, customer care, and meter data management solutions for utilities.',
+      features: ['Billing systems', 'Customer care', 'Meter data management', 'Mobile workforce', 'Analytics', 'Cloud deployment', 'Prepaid solutions', 'Revenue protection'],
+      useCases: ['Utility billing', 'Customer management', 'Meter data processing', 'Revenue management', 'Mobile workforce management'],
+      tags: ['utilities', 'billing', 'customer-care', 'meter-data', 'enterprise'],
+      rating: 4.2,
+      reviewCount: 3400,
+      alternatives: ['SAP Utilities', 'Hansen CIS', 'Itro', 'Aclara'],
+      integrations: ['ERP systems', 'CRM systems', 'Meter reading systems'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.oracle.com/industries/utilities/contact',
+        description: 'Enterprise pricing based on utility size and modules'
+      }
+    },
+    {
+      name: 'Hansen CIS',
+      slug: 'hansen-cis',
+      tagline: 'Customer information and billing system',
+      logoUrl: '/logos/hansen.png',
+      website: 'https://www.hansen.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'trending'],
+      category: 'Energy & Utilities',
+      categorySlug: 'energy-utilities',
+      subcategory: 'Utility Billing',
+      subcategorySlug: 'utility-billing',
+      description: 'Hansen CIS provides customer information and billing systems for water, gas, and electric utilities.',
+      features: ['Customer information', 'Billing and invoicing', 'Payment processing', 'Meter management', 'Mobile workforce', 'Analytics', 'Self-service portal', 'Revenue management'],
+      useCases: ['Utility billing', 'Customer management', 'Payment processing', 'Meter data management', 'Revenue protection'],
+      tags: ['utilities', 'billing', 'customer-information', 'cis', 'revenue-management'],
+      rating: 4.1,
+      reviewCount: 1200,
+      alternatives: ['Oracle Utilities', 'SAP Utilities', 'Itro', 'Aclara'],
+      integrations: ['ERP systems', 'Payment processors', 'Meter reading systems'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.hansen.com/contact',
+        description: 'Enterprise pricing based on customer count and modules'
       }
     }
   ],
@@ -17312,6 +18010,180 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         price: 'Contact for pricing',
         url: 'https://www.sportsengine.com/contact',
         description: 'Custom pricing for organizations'
+      }
+    }
+  ],
+
+  // Sports & Fitness > Performance Analytics
+  'performance-analytics': [
+    {
+      name: 'Catapult',
+      slug: 'catapult',
+      tagline: 'Athletic performance tracking and analytics platform',
+      logoUrl: '/logos/catapult.png',
+      website: 'https://www.catapultsports.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured', 'trending'],
+      category: 'Sports & Fitness',
+      categorySlug: 'sports-fitness',
+      subcategory: 'Performance Analytics',
+      subcategorySlug: 'performance-analytics',
+      description: 'Catapult provides athletic performance tracking and analytics solutions for professional sports teams and athletes.',
+      features: ['Wearable sensors', 'GPS tracking', 'Acceleration monitoring', 'Jump analysis', 'Heart rate monitoring', 'Workload management', 'Injury risk assessment', 'Mobile app'],
+      useCases: ['Athlete monitoring', 'Performance optimization', 'Injury prevention', 'Training load management', 'Talent identification'],
+      tags: ['sports-analytics', 'performance-tracking', 'wearable-tech', 'athlete-monitoring', 'sports-science'],
+      rating: 4.4,
+      reviewCount: 3200,
+      alternatives: ['STATSports', 'PlayerTek', 'Zephyr', 'Polar Team Pro'],
+      integrations: ['Video analysis', 'Training platforms', 'Medical records', 'Coaching tools'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.catapultsports.com/contact',
+        description: 'Enterprise pricing based on team size and requirements'
+      }
+    },
+    {
+      name: 'STATSports',
+      slug: 'statsports',
+      tagline: 'GPS-based athlete performance analysis system',
+      logoUrl: '/logos/statsports.png',
+      website: 'https://www.statsports.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Sports & Fitness',
+      categorySlug: 'sports-fitness',
+      subcategory: 'Performance Analytics',
+      subcategorySlug: 'performance-analytics',
+      description: 'STATSports provides GPS-based athlete performance analysis and monitoring solutions for sports teams.',
+      features: ['GPS tracking', 'Speed analysis', 'Distance monitoring', 'Heart rate tracking', 'Workload metrics', 'Player comparison', 'Team dashboard', 'Mobile access'],
+      useCases: ['Performance monitoring', 'Training optimization', 'Player development', 'Match analysis', 'Fitness assessment'],
+      tags: ['gps-tracking', 'performance-analysis', 'athlete-monitoring', 'sports-technology', 'team-analytics'],
+      rating: 4.2,
+      reviewCount: 2100,
+      alternatives: ['Catapult', 'PlayerTek', 'Zephyr', 'Polar Team Pro'],
+      integrations: ['Video platforms', 'Training software', 'Medical systems'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'Contact for pricing',
+        url: 'https://www.statsports.com/contact',
+        description: 'Custom pricing based on team requirements'
+      }
+    }
+  ],
+
+  // Sports & Fitness > Facility Management
+  'facility-management': [
+    {
+      name: 'SportsEngine Play',
+      slug: 'sportsengine-play',
+      tagline: 'Sports facility booking and management platform',
+      logoUrl: '/logos/sportsengine-play.png',
+      website: 'https://www.sportsengine.com/play',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Sports & Fitness',
+      categorySlug: 'sports-fitness',
+      subcategory: 'Facility Management',
+      subcategorySlug: 'facility-management',
+      description: 'SportsEngine Play provides comprehensive facility booking and management solutions for sports venues and recreation centers.',
+      features: ['Online booking', 'Facility scheduling', 'Payment processing', 'Member management', 'Resource allocation', 'Calendar integration', 'Mobile app', 'Reporting'],
+      useCases: ['Facility booking', 'Court reservations', 'Field scheduling', 'Equipment management', 'Member services'],
+      tags: ['facility-booking', 'sports-management', 'venue-scheduling', 'recreation-software', 'booking-system'],
+      rating: 4.3,
+      reviewCount: 1800,
+      alternatives: ['Skedda', 'Upper Hand', 'CourtReserve', 'Facilitron'],
+      integrations: ['Payment processors', 'Calendar systems', 'Membership platforms'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free tier available, paid plans from $49/month',
+        url: 'https://www.sportsengine.com/play/pricing',
+        description: 'Different tiers based on facilities and features'
+      }
+    },
+    {
+      name: 'Skedda',
+      slug: 'skedda',
+      tagline: 'Venue and facility booking management software',
+      logoUrl: '/logos/skedda.png',
+      website: 'https://www.skedda.com',
+      pricing: 'freemium',
+      badges: ['popular', 'trending'],
+      category: 'Sports & Fitness',
+      categorySlug: 'sports-fitness',
+      subcategory: 'Facility Management',
+      subcategorySlug: 'facility-management',
+      description: 'Skedda provides venue and facility booking management software for sports facilities, courts, and recreation centers.',
+      features: ['Online booking', 'Automated scheduling', 'Payment processing', 'Resource management', 'Calendar sync', 'Mobile app', 'Analytics', 'Custom branding'],
+      useCases: ['Court booking', 'Facility scheduling', 'Equipment rental', 'Class registration', 'Event management'],
+      tags: ['venue-booking', 'facility-management', 'scheduling-software', 'sports-facilities', 'booking-platform'],
+      rating: 4.1,
+      reviewCount: 2400,
+      alternatives: ['SportsEngine Play', 'Upper Hand', 'CourtReserve', 'Facilitron'],
+      integrations: ['Payment processors', 'Calendar systems', 'Accounting software'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free for small venues, paid plans from $39/month',
+        url: 'https://www.skedda.com/pricing',
+        description: 'Pricing based on venue size and booking volume'
+      }
+    }
+  ],
+
+  // Sports & Fitness > Coaching Tools
+  'coaching-tools': [
+    {
+      name: 'Hudl',
+      slug: 'hudl',
+      tagline: 'Sports video analysis and coaching platform',
+      logoUrl: '/logos/hudl.png',
+      website: 'https://www.hudl.com',
+      pricing: 'freemium',
+      badges: ['popular', 'featured', 'trending'],
+      category: 'Sports & Fitness',
+      categorySlug: 'sports-fitness',
+      subcategory: 'Coaching Tools',
+      subcategorySlug: 'coaching-tools',
+      description: 'Hudl provides sports video analysis and coaching tools for athletes and coaches at all levels.',
+      features: ['Video analysis', 'Telestrator tools', 'Performance breakdown', 'Highlight creation', 'Team sharing', 'Mobile recording', 'Statistical analysis', 'Library management'],
+      useCases: ['Game analysis', 'Skill development', 'Recruiting', 'Performance review', 'Coach communication'],
+      tags: ['video-analysis', 'sports-coaching', 'performance-review', 'athlete-development', 'coaching-tools'],
+      rating: 4.5,
+      reviewCount: 15000,
+      alternatives: ['Krossover', 'CoachBase', 'Dartfish', 'Veo'],
+      integrations: ['Video platforms', 'Statistical tools', 'Recruiting services'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free basic plan, Pro from $19/month, Team from $99/month',
+        url: 'https://www.hudl.com/pricing',
+        description: 'Different tiers based on features and storage'
+      }
+    },
+    {
+      name: 'CoachBase',
+      slug: 'coachbase',
+      tagline: 'Sports coaching and team management platform',
+      logoUrl: '/logos/coachbase.png',
+      website: 'https://www.coachbase.com',
+      pricing: 'freemium',
+      badges: ['popular', 'community-favorite'],
+      category: 'Sports & Fitness',
+      categorySlug: 'sports-fitness',
+      subcategory: 'Coaching Tools',
+      subcategorySlug: 'coaching-tools',
+      description: 'CoachBase provides comprehensive coaching and team management tools for sports coaches and teams.',
+      features: ['Practice planning', 'Drill library', 'Player development', 'Team communication', 'Progress tracking', 'Video integration', 'Mobile app', 'Parent portal'],
+      useCases: ['Practice planning', 'Skill development', 'Team coordination', 'Player assessment', 'Parent communication'],
+      tags: ['coaching-software', 'practice-planning', 'team-management', 'player-development', 'sports-coaching'],
+      rating: 4.2,
+      reviewCount: 3200,
+      alternatives: ['Hudl', 'Krossover', 'Dartfish', 'Veo'],
+      integrations: ['Video platforms', 'Communication tools', 'Scheduling systems'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free for individual coaches, Team plans from $29/month',
+        url: 'https://www.coachbase.com/pricing',
+        description: 'Pricing based on team size and features'
       }
     }
   ],
@@ -19746,6 +20618,238 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         price: 'Free Starter, Professional from $45/month, Enterprise from $1,200/month',
         url: 'https://www.hubspot.com/products/cms/pricing',
         description: 'Different tiers based on features and contacts'
+      }
+    }
+  ],
+
+  // Insurance > Policy Management
+  'policy-management': [
+    {
+      name: 'Duck Creek Policy',
+      slug: 'duck-creek-policy',
+      tagline: 'Cloud-based insurance policy administration platform',
+      logoUrl: '/logos/duck-creek.png',
+      website: 'https://www.duckcreek.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Insurance',
+      categorySlug: 'insurance',
+      subcategory: 'Policy Management',
+      subcategorySlug: 'policy-management',
+      description: 'Duck Creek Policy is a comprehensive cloud-based insurance policy administration platform that supports the entire policy lifecycle.',
+      features: ['Policy administration', 'Rating engine', 'Billing management', 'Claims integration', 'Product configuration', 'Digital workflows', 'Analytics', 'Multi-channel distribution'],
+      useCases: ['Policy lifecycle management', 'Insurance operations', 'Product development', 'Digital transformation', 'Customer service'],
+      tags: ['policy-administration', 'insurance-platform', 'cloud-based', 'policy-lifecycle', 'digital-insurance'],
+      rating: 4.2,
+      reviewCount: 1800,
+      alternatives: ['Guidewire', 'Sapiens', 'Insurity', 'Majesco'],
+      integrations: ['Billing systems', 'Claims systems', 'CRM platforms', 'Payment processors', 'Rating engines'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.duckcreek.com/contact',
+        description: 'Enterprise pricing based on business volume and requirements'
+      }
+    },
+    {
+      name: 'Guidewire PolicyCenter',
+      slug: 'guidewire-policycenter',
+      tagline: 'Comprehensive insurance policy management system',
+      logoUrl: '/logos/guidewire.png',
+      website: 'https://www.guidewire.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'trending', 'featured'],
+      category: 'Insurance',
+      categorySlug: 'insurance',
+      subcategory: 'Policy Management',
+      subcategorySlug: 'policy-management',
+      description: 'Guidewire PolicyCenter is a comprehensive insurance policy management system that supports the entire policy lifecycle from quote to renewal.',
+      features: ['Policy administration', 'Product modeling', 'Rating engine', 'Underwriting integration', 'Digital channels', 'Analytics', 'Workflow automation', 'Multi-line support'],
+      useCases: ['Policy management', 'Underwriting support', 'Product development', 'Digital distribution', 'Customer service'],
+      tags: ['policy-management', 'insurance-platform', 'underwriting', 'digital-insurance', 'enterprise'],
+      rating: 4.3,
+      reviewCount: 2500,
+      alternatives: ['Duck Creek', 'Sapiens', 'Insurity', 'Majesco'],
+      integrations: ['Billing systems', 'Claims systems', 'CRM platforms', 'Rating engines', 'Document management'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.guidewire.com/contact',
+        description: 'Enterprise pricing based on business requirements'
+      }
+    }
+  ],
+
+  // Insurance > Claims Processing
+  'claims-processing': [
+    {
+      name: 'Duck Creek Claims',
+      slug: 'duck-creek-claims',
+      tagline: 'Modern insurance claims management platform',
+      logoUrl: '/logos/duck-creek.png',
+      website: 'https://www.duckcreek.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Insurance',
+      categorySlug: 'insurance',
+      subcategory: 'Claims Processing',
+      subcategorySlug: 'claims-processing',
+      description: 'Duck Creek Claims is a modern insurance claims management platform that streamlines the entire claims process from first notice to settlement.',
+      features: ['Claims management', 'First notice of loss', 'Adjuster workflow', 'Fraud detection', 'Payment processing', 'Document management', 'Analytics', 'Mobile app'],
+      useCases: ['Claims processing', 'Fraud detection', 'Adjuster management', 'Customer service', 'Settlement processing'],
+      tags: ['claims-management', 'insurance-platform', 'fraud-detection', 'adjuster-tools', 'claims-automation'],
+      rating: 4.1,
+      reviewCount: 1600,
+      alternatives: ['Guidewire', 'Sapiens', 'Insurity', 'Majesco'],
+      integrations: ['Policy systems', 'Payment processors', 'Document management', 'Fraud detection', 'Mobile apps'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.duckcreek.com/contact',
+        description: 'Enterprise pricing based on claims volume and features'
+      }
+    },
+    {
+      name: 'Guidewire ClaimCenter',
+      slug: 'guidewire-claimcenter',
+      tagline: 'Comprehensive claims management system',
+      logoUrl: '/logos/guidewire.png',
+      website: 'https://www.guidewire.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'trending', 'featured'],
+      category: 'Insurance',
+      categorySlug: 'insurance',
+      subcategory: 'Claims Processing',
+      subcategorySlug: 'claims-processing',
+      description: 'Guidewire ClaimCenter is a comprehensive claims management system that handles the entire claims lifecycle from first notice to final settlement.',
+      features: ['Claims management', 'First notice of loss', 'Adjuster tools', 'Fraud detection', 'Reserve management', 'Payment processing', 'Analytics', 'Mobile access'],
+      useCases: ['Claims processing', 'Adjuster management', 'Fraud prevention', 'Customer service', 'Settlement'],
+      tags: ['claims-management', 'insurance-platform', 'fraud-detection', 'adjuster-tools', 'settlement'],
+      rating: 4.4,
+      reviewCount: 2800,
+      alternatives: ['Duck Creek', 'Sapiens', 'Insurity', 'Majesco'],
+      integrations: ['Policy systems', 'Payment processors', 'Document management', 'Fraud detection', 'Legal systems'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.guidewire.com/contact',
+        description: 'Enterprise pricing based on claims volume and requirements'
+      }
+    }
+  ],
+
+  // Insurance > Underwriting
+  'underwriting': [
+    {
+      name: 'Duck Creek Underwriting',
+      slug: 'duck-creek-underwriting',
+      tagline: 'Advanced insurance underwriting platform',
+      logoUrl: '/logos/duck-creek.png',
+      website: 'https://www.duckcreek.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Insurance',
+      categorySlug: 'insurance',
+      subcategory: 'Underwriting',
+      subcategorySlug: 'underwriting',
+      description: 'Duck Creek Underwriting provides advanced underwriting capabilities with automated risk assessment and decision support tools.',
+      features: ['Risk assessment', 'Automated underwriting', 'Decision rules', 'Data analytics', 'Portfolio management', 'Compliance tools', 'Workflow automation', 'Integration APIs'],
+      useCases: ['Risk assessment', 'Automated underwriting', 'Portfolio analysis', 'Compliance management', 'Decision support'],
+      tags: ['underwriting', 'risk-assessment', 'insurance-platform', 'automated-underwriting', 'risk-management'],
+      rating: 4.2,
+      reviewCount: 1400,
+      alternatives: ['Guidewire', 'Sapiens', 'Insurity', 'Majesco'],
+      integrations: ['Policy systems', 'Data providers', 'Analytics platforms', 'Compliance tools', 'Risk models'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.duckcreek.com/contact',
+        description: 'Enterprise pricing based on underwriting volume and complexity'
+      }
+    },
+    {
+      name: 'Guidewire Underwriting',
+      slug: 'guidewire-underwriting',
+      tagline: 'Intelligent underwriting and risk assessment platform',
+      logoUrl: '/logos/guidewire.png',
+      website: 'https://www.guidewire.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'trending', 'featured'],
+      category: 'Insurance',
+      categorySlug: 'insurance',
+      subcategory: 'Underwriting',
+      subcategorySlug: 'underwriting',
+      description: 'Guidewire Underwriting provides intelligent underwriting capabilities with advanced risk assessment and automated decision support.',
+      features: ['Risk assessment', 'Automated underwriting', 'Decision rules engine', 'Data analytics', 'Portfolio management', 'Compliance monitoring', 'Workflow automation', 'AI-powered insights'],
+      useCases: ['Risk assessment', 'Automated underwriting', 'Portfolio optimization', 'Compliance', 'Decision support'],
+      tags: ['underwriting', 'risk-assessment', 'insurance-platform', 'automated-underwriting', 'ai-underwriting'],
+      rating: 4.3,
+      reviewCount: 2200,
+      alternatives: ['Duck Creek', 'Sapiens', 'Insurity', 'Majesco'],
+      integrations: ['Policy systems', 'Data providers', 'Analytics platforms', 'Risk models', 'Compliance tools'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.guidewire.com/contact',
+        description: 'Enterprise pricing based on underwriting requirements and volume'
+      }
+    }
+  ],
+
+  // Insurance > Insurance CRM
+  'insurance-crm': [
+    {
+      name: 'HawkSoft',
+      slug: 'hawksoft',
+      tagline: 'Insurance agency management system',
+      logoUrl: '/logos/hawksoft.png',
+      website: 'https://www.hawksoft.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Insurance',
+      categorySlug: 'insurance',
+      subcategory: 'Insurance CRM',
+      subcategorySlug: 'insurance-crm',
+      description: 'HawkSoft is a comprehensive insurance agency management system that combines CRM, policy management, and claims tracking.',
+      features: ['Agency management', 'CRM functionality', 'Policy tracking', 'Claims management', 'Commission tracking', 'Document management', 'Reporting', 'Mobile app'],
+      useCases: ['Agency operations', 'Customer relationship management', 'Policy management', 'Claims tracking', 'Commission management'],
+      tags: ['agency-management', 'insurance-crm', 'policy-management', 'claims-tracking', 'commission-management'],
+      rating: 4.3,
+      reviewCount: 1900,
+      alternatives: ['Applied Epic', 'AMS360', 'AgencyBloc', 'NowCerts'],
+      integrations: ['Carrier systems', 'Rating engines', 'Marketing platforms', 'Accounting software', 'Document management'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'Contact for pricing',
+        url: 'https://www.hawksoft.com/pricing',
+        description: 'Per-user pricing with setup fees'
+      }
+    },
+    {
+      name: 'Applied Epic',
+      slug: 'applied-epic',
+      tagline: 'Comprehensive insurance agency management platform',
+      logoUrl: '/logos/applied-epic.png',
+      website: 'https://www.appliedsystems.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'trending', 'featured'],
+      category: 'Insurance',
+      categorySlug: 'insurance',
+      subcategory: 'Insurance CRM',
+      subcategorySlug: 'insurance-crm',
+      description: 'Applied Epic is a comprehensive insurance agency management platform that provides CRM, policy management, and workflow automation.',
+      features: ['Agency management', 'CRM', 'Policy administration', 'Claims management', 'Accounting integration', 'Workflow automation', 'Analytics', 'Mobile access'],
+      useCases: ['Agency operations', 'Customer management', 'Policy administration', 'Claims processing', 'Financial management'],
+      tags: ['agency-management', 'insurance-crm', 'policy-administration', 'workflow-automation', 'enterprise'],
+      rating: 4.1,
+      reviewCount: 3200,
+      alternatives: ['HawkSoft', 'AMS360', 'AgencyBloc', 'NowCerts'],
+      integrations: ['Carrier systems', 'Accounting software', 'Marketing platforms', 'Document management', 'Payment processors'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.appliedsystems.com/contact',
+        description: 'Enterprise pricing based on agency size and requirements'
       }
     }
   ]
