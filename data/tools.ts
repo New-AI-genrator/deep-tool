@@ -14893,6 +14893,180 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
     }
   ],
 
+  // Construction & Architecture > Project Management
+  'construction-pm': [
+    {
+      name: 'Procore',
+      slug: 'procore',
+      tagline: 'Construction project management software',
+      logoUrl: '/logos/procore.png',
+      website: 'https://www.procore.com',
+      pricing: 'enterprise',
+      badges: ['popular', 'featured', 'enterprise'],
+      category: 'Construction & Architecture',
+      categorySlug: 'construction-architecture',
+      subcategory: 'Project Management',
+      subcategorySlug: 'construction-pm',
+      description: 'Procore is a leading construction management platform that connects project teams, processes, and data in one centralized hub.',
+      features: ['Project management', 'Document control', 'RFI management', 'Submittals', 'Change orders', 'Daily logs', 'Safety management', 'Financial tools'],
+      useCases: ['Construction projects', 'Project coordination', 'Document management', 'Safety compliance', 'Financial tracking'],
+      tags: ['construction', 'project-management', 'collaboration', 'safety', 'documentation'],
+      rating: 4.4,
+      reviewCount: 8500,
+      alternatives: ['Autodesk Construction Cloud', 'PlanGrid', 'CoConstruct', 'BuilderTrend'],
+      integrations: ['QuickBooks', 'Oracle', 'Sage', 'Various accounting software'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.procore.com/pricing',
+        description: 'Enterprise pricing based on company size and needs'
+      }
+    },
+    {
+      name: 'PlanGrid',
+      slug: 'plangrid',
+      tagline: 'Construction field management software',
+      logoUrl: '/logos/plangrid.png',
+      website: 'https://www.plangrid.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Construction & Architecture',
+      categorySlug: 'construction-architecture',
+      subcategory: 'Project Management',
+      subcategorySlug: 'construction-pm',
+      description: 'PlanGrid is construction productivity software that provides access to blueprints, punch lists, and project documents on any device.',
+      features: ['Blueprint viewing', 'Punch lists', 'Document sharing', 'Markups', 'Photo documentation', 'RFIs', 'Submittals', 'Progress tracking'],
+      useCases: ['Field management', 'Blueprint access', 'Quality control', 'Document sharing', 'Progress reporting'],
+      tags: ['construction', 'blueprints', 'field-management', 'documentation', 'collaboration'],
+      rating: 4.3,
+      reviewCount: 4200,
+      alternatives: ['Procore', 'BuilderTrend', 'CoConstruct', 'Fieldwire'],
+      integrations: ['Autodesk', 'Procore', 'Various accounting systems'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $39/user/month',
+        url: 'https://www.plangrid.com/pricing',
+        description: 'Monthly subscription per user'
+      }
+    }
+  ],
+
+  // Construction & Architecture > BIM Tools
+  'bim-tools': [
+    {
+      name: 'Revit',
+      slug: 'revit',
+      tagline: 'Building information modeling software',
+      logoUrl: '/logos/revit.png',
+      website: 'https://www.autodesk.com/products/revit',
+      pricing: 'paid',
+      badges: ['popular', 'featured', 'enterprise'],
+      category: 'Construction & Architecture',
+      categorySlug: 'construction-architecture',
+      subcategory: 'BIM Tools',
+      subcategorySlug: 'bim-tools',
+      description: 'Revit is BIM software for architects, engineers, and construction professionals to design, build, and manage higher-quality buildings.',
+      features: ['3D modeling', 'Parametric components', 'Collaboration', 'Analysis tools', 'Documentation', 'Rendering', 'Structural design', 'MEP design'],
+      useCases: ['Architectural design', 'Structural engineering', 'MEP design', 'Construction documentation', 'Facility management'],
+      tags: ['bim', '3d-modeling', 'architecture', 'engineering', 'construction'],
+      rating: 4.5,
+      reviewCount: 12000,
+      alternatives: ['ArchiCAD', 'Vectorworks Architect', 'Allplan', 'Tekla Structures'],
+      integrations: ['AutoCAD', 'Navisworks', 'Various Autodesk products'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $3,195/year',
+        url: 'https://www.autodesk.com/products/revit/buy',
+        description: 'Annual subscription with maintenance'
+      }
+    },
+    {
+      name: 'ArchiCAD',
+      slug: 'archicad',
+      tagline: 'BIM software for architects and designers',
+      logoUrl: '/logos/archicad.png',
+      website: 'https://www.graphisoft.com/archicad',
+      pricing: 'paid',
+      badges: ['featured', 'popular'],
+      category: 'Construction & Architecture',
+      categorySlug: 'construction-architecture',
+      subcategory: 'BIM Tools',
+      subcategorySlug: 'bim-tools',
+      description: 'ArchiCAD is a professional BIM software solution for architects, offering powerful design and documentation tools.',
+      features: ['3D modeling', 'BIM documentation', 'Teamwork', 'Rendering', 'Energy evaluation', 'Open BIM', 'Parametric objects', 'Library management'],
+      useCases: ['Architectural design', 'Building documentation', 'Team collaboration', 'Energy analysis', 'Rendering'],
+      tags: ['bim', 'architecture', '3d-design', 'documentation', 'collaboration'],
+      rating: 4.4,
+      reviewCount: 5600,
+      alternatives: ['Revit', 'Vectorworks Architect', 'Allplan', 'SketchUp Pro'],
+      integrations: ['Various rendering engines', 'Structural analysis tools', 'Open BIM formats'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $2,995/year',
+        url: 'https://www.graphisoft.com/archicad/buy',
+        description: 'Annual subscription or perpetual license options'
+      }
+    }
+  ],
+
+  // Construction & Architecture > Estimation
+  'estimation': [
+    {
+      name: 'RSMeans Data',
+      slug: 'rsmeans-data',
+      tagline: 'Construction cost estimation database',
+      logoUrl: '/logos/rsmeans.png',
+      website: 'https://www.rsmeans.com',
+      pricing: 'paid',
+      badges: ['enterprise', 'featured', 'industry-standard'],
+      category: 'Construction & Architecture',
+      categorySlug: 'construction-architecture',
+      subcategory: 'Estimation',
+      subcategorySlug: 'estimation',
+      description: 'RSMeans Data provides comprehensive construction cost data and estimating solutions for accurate project budgeting.',
+      features: ['Cost database', 'Unit costs', 'Labor rates', 'Material costs', 'Equipment costs', 'Location factors', 'Estimating software', 'Market analytics'],
+      useCases: ['Cost estimation', 'Budget planning', 'Bid preparation', 'Value engineering', 'Cost analysis'],
+      tags: ['estimation', 'costing', 'construction', 'budgeting', 'bidding'],
+      rating: 4.2,
+      reviewCount: 1800,
+      alternatives: ['Costimator', 'Clear Estimates', 'Construction Cost Estimator', 'Bid4Build'],
+      integrations: ['Various estimating software', 'Accounting systems'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $1,295/year',
+        url: 'https://www.rsmeans.com/pricing',
+        description: 'Annual subscription with regular data updates'
+      }
+    },
+    {
+      name: 'PlanSwift',
+      slug: 'planswift',
+      tagline: 'Construction takeoff and estimating software',
+      logoUrl: '/logos/planswift.png',
+      website: 'https://www.planswift.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Construction & Architecture',
+      categorySlug: 'construction-architecture',
+      subcategory: 'Estimation',
+      subcategorySlug: 'estimation',
+      description: 'PlanSwift is a powerful takeoff and estimating software that helps contractors calculate material costs and labor quickly.',
+      features: ['Digital takeoffs', 'Drag-and-drop estimating', 'Custom assemblies', 'Material calculations', 'Labor costs', 'Reporting', 'Integration', 'Mobile access'],
+      useCases: ['Takeoff estimation', 'Material costing', 'Bid preparation', 'Project budgeting', 'Cost analysis'],
+      tags: ['estimation', 'takeoff', 'construction', 'costing', 'bidding'],
+      rating: 4.3,
+      reviewCount: 3200,
+      alternatives: ['Bluebeam Revu', 'On-Screen Takeoff', 'Quick Bid', 'Costimator'],
+      integrations: ['QuickBooks', 'Various accounting software', 'Construction management tools'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $1,595 one-time',
+        url: 'https://www.planswift.com/pricing',
+        description: 'One-time purchase with optional annual maintenance'
+      }
+    }
+  ],
+
   // Event Management > Ticketing
   'ticketing': [
     {
@@ -17231,6 +17405,180 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         price: 'From $50/month',
         url: 'https://www.clo3d.com/pricing',
         description: 'Monthly or annual subscription'
+      }
+    }
+  ],
+
+  // Fashion & Apparel > Retail Management
+  'fashion-retail': [
+    {
+      name: 'Lightspeed Retail',
+      slug: 'lightspeed-retail',
+      tagline: 'POS and inventory management for fashion retailers',
+      logoUrl: '/logos/lightspeed.png',
+      website: 'https://www.lightspeedhq.com/retail',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Fashion & Apparel',
+      categorySlug: 'fashion-apparel',
+      subcategory: 'Retail Management',
+      subcategorySlug: 'fashion-retail',
+      description: 'Lightspeed Retail is a comprehensive POS system designed for fashion retailers with inventory management, customer tracking, and e-commerce integration.',
+      features: ['Point of sale', 'Inventory management', 'Customer management', 'E-commerce integration', 'Multi-store support', 'Reporting and analytics', 'Mobile POS', 'Supplier management'],
+      useCases: ['Fashion retail', 'Boutique management', 'Multi-store operations', 'Online and offline sales', 'Inventory tracking'],
+      tags: ['retail', 'pos', 'inventory', 'fashion', 'ecommerce'],
+      rating: 4.4,
+      reviewCount: 2800,
+      alternatives: ['Shopify POS', 'Vend', 'Square for Retail', 'Toast Retail'],
+      integrations: ['Shopify', 'QuickBooks', 'Xero', 'Mailchimp'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $69/month per register',
+        url: 'https://www.lightspeedhq.com/retail/pricing',
+        description: 'Monthly subscription based on features and locations'
+      }
+    },
+    {
+      name: 'Shopify POS',
+      slug: 'shopify-pos',
+      tagline: 'Unified commerce for fashion retailers',
+      logoUrl: '/logos/shopify.png',
+      website: 'https://www.shopify.com/pos',
+      pricing: 'paid',
+      badges: ['popular', 'trending'],
+      category: 'Fashion & Apparel',
+      categorySlug: 'fashion-apparel',
+      subcategory: 'Retail Management',
+      subcategorySlug: 'fashion-retail',
+      description: 'Shopify POS integrates your online and offline retail operations with a powerful point-of-sale system designed for fashion businesses.',
+      features: ['Unified commerce', 'Inventory sync', 'Customer profiles', 'Mobile POS', 'Tap to pay', 'Buy online pick up in store', 'Staff management', 'Custom receipts'],
+      useCases: ['Fashion retail', 'Omnichannel selling', 'Pop-up shops', 'Fashion shows', 'Market events'],
+      tags: ['retail', 'pos', 'ecommerce', 'fashion', 'omnichannel'],
+      rating: 4.6,
+      reviewCount: 8500,
+      alternatives: ['Lightspeed Retail', 'Square for Retail', 'Vend', 'Clover'],
+      integrations: ['Shopify store', 'QuickBooks', 'Mailchimp', 'Klaviyo'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $29/month (Shopify POS Lite) to $89/month (Shopify POS Pro)',
+        url: 'https://www.shopify.com/pos/pricing',
+        description: 'Monthly subscription with Shopify integration'
+      }
+    }
+  ],
+
+  // Fashion & Apparel > Trend Forecasting
+  'trend-forecasting': [
+    {
+      name: 'WGSN',
+      slug: 'wgsn',
+      tagline: 'Global trend forecasting and analysis',
+      logoUrl: '/logos/wgsn.png',
+      website: 'https://www.wgsn.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured', 'industry-standard'],
+      category: 'Fashion & Apparel',
+      categorySlug: 'fashion-apparel',
+      subcategory: 'Trend Forecasting',
+      subcategorySlug: 'trend-forecasting',
+      description: 'WGSN is the world leading trend authority providing strategic insights and forecasts for the fashion and design industries.',
+      features: ['Trend forecasting', 'Color predictions', 'Material trends', 'Consumer insights', 'Market analysis', 'Design inspiration', 'Runway reports', 'Trade show coverage'],
+      useCases: ['Fashion design', 'Product development', 'Buying decisions', 'Marketing strategy', 'Brand positioning'],
+      tags: ['trends', 'forecasting', 'fashion', 'research', 'analytics'],
+      rating: 4.3,
+      reviewCount: 1200,
+      alternatives: ['Fashion Snoops', 'Peclers', 'Heuritech', 'Edited'],
+      integrations: ['Adobe Creative Suite', 'Various design tools'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.wgsn.com/contact',
+        description: 'Enterprise-level subscription pricing'
+      }
+    },
+    {
+      name: 'Fashion Snoops',
+      slug: 'fashion-snoops',
+      tagline: 'Fashion trend forecasting and analysis platform',
+      logoUrl: '/logos/fashion-snoops.png',
+      website: 'https://www.fashionsnoops.com',
+      pricing: 'paid',
+      badges: ['popular', 'community-favorite'],
+      category: 'Fashion & Apparel',
+      categorySlug: 'fashion-apparel',
+      subcategory: 'Trend Forecasting',
+      subcategorySlug: 'trend-forecasting',
+      description: 'Fashion Snoops provides comprehensive trend forecasting, analysis, and design inspiration for fashion professionals.',
+      features: ['Trend reports', 'Color forecasts', 'Print and pattern trends', 'Market analysis', 'Design tools', 'Mood boards', 'Webinars', 'Expert consultations'],
+      useCases: ['Fashion design', 'Trend research', 'Product development', 'Buying decisions', 'Brand strategy'],
+      tags: ['trends', 'forecasting', 'fashion', 'design', 'research'],
+      rating: 4.2,
+      reviewCount: 850,
+      alternatives: ['WGSN', 'Peclers', 'Heuritech', 'Edited'],
+      integrations: ['Design platforms', 'Collaboration tools'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $99/month',
+        url: 'https://www.fashionsnoops.com/membership',
+        description: 'Monthly subscription with different tiers'
+      }
+    }
+  ],
+
+  // Fashion & Apparel > Size & Fit
+  'size-fit': [
+    {
+      name: 'True Fit',
+      slug: 'true-fit',
+      tagline: 'AI-powered size and fit recommendations',
+      logoUrl: '/logos/true-fit.png',
+      website: 'https://www.truefit.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured', 'trending'],
+      category: 'Fashion & Apparel',
+      categorySlug: 'fashion-apparel',
+      subcategory: 'Size & Fit',
+      subcategorySlug: 'size-fit',
+      description: 'True Fit is an AI-powered platform that provides personalized size and fit recommendations to increase conversion and reduce returns.',
+      features: ['Size recommendations', 'Fit predictions', 'Style matching', 'Return reduction', 'Mobile app', 'Analytics dashboard', 'Brand insights', 'Customer data'],
+      useCases: ['E-commerce', 'Fashion retail', 'Size recommendations', 'Return reduction', 'Customer experience'],
+      tags: ['sizing', 'fit', 'ai', 'ecommerce', 'fashion'],
+      rating: 4.5,
+      reviewCount: 3200,
+      alternatives: ['Fit Analytics', 'Sizolution', 'MySizeID', 'Zappos Adaptive'],
+      integrations: ['Shopify', 'Magento', 'BigCommerce', 'Salesforce'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.truefit.com/contact',
+        description: 'Enterprise pricing based on volume and features'
+      }
+    },
+    {
+      name: 'Fit Analytics',
+      slug: 'fit-analytics',
+      tagline: 'Size recommendation and fit analytics platform',
+      logoUrl: '/logos/fit-analytics.png',
+      website: 'https://www.fitanalytics.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Fashion & Apparel',
+      categorySlug: 'fashion-apparel',
+      subcategory: 'Size & Fit',
+      subcategorySlug: 'size-fit',
+      description: 'Fit Analytics helps fashion retailers and brands provide accurate size recommendations and reduce returns through data-driven insights.',
+      features: ['Size recommendations', 'Fit analytics', 'Return reduction tools', 'Customer insights', 'A/B testing', 'Mobile optimization', 'Multi-language support', 'Custom branding'],
+      useCases: ['Fashion e-commerce', 'Size recommendations', 'Return reduction', 'Customer satisfaction', 'Conversion optimization'],
+      tags: ['sizing', 'analytics', 'fit', 'ecommerce', 'fashion'],
+      rating: 4.3,
+      reviewCount: 1800,
+      alternatives: ['True Fit', 'Sizolution', 'MySizeID', 'Zappos Adaptive'],
+      integrations: ['Shopify', 'Magento', 'WooCommerce', 'Custom integrations'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $299/month',
+        url: 'https://www.fitanalytics.com/pricing',
+        description: 'Monthly subscription based on traffic and features'
       }
     }
   ],
