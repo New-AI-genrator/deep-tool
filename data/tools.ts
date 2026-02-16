@@ -17476,7 +17476,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       logoUrl: '/logos/wgsn.png',
       website: 'https://www.wgsn.com',
       pricing: 'enterprise',
-      badges: ['enterprise', 'featured', 'industry-standard'],
+      badges: ['enterprise', 'featured'],
       category: 'Fashion & Apparel',
       categorySlug: 'fashion-apparel',
       subcategory: 'Trend Forecasting',
