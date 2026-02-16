@@ -15596,28 +15596,25 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tagline: 'AR-powered virtual makeup and beauty try-on platform',
       logoUrl: '/logos/modiface.png',
       website: 'https://www.modiface.com',
-      tagline: 'Complete fleet operations platform',
-      logoUrl: '/logos/samsara.png',
-      website: 'https://www.samsara.com',
       pricing: 'enterprise',
-      badges: ['popular', 'featured', 'enterprise'],
-      category: 'Transportation & Logistics',
-      categorySlug: 'transportation-logistics',
-      subcategory: 'Fleet Management',
-      subcategorySlug: 'fleet-management',
-      description: 'Samsara is a complete fleet operations platform with GPS tracking, ELD compliance, dashcams, and routing.',
-      features: ['GPS tracking', 'ELD compliance', 'AI dashcams', 'Route optimization', 'Fuel management', 'Maintenance tracking', 'Driver safety', 'Real-time alerts'],
-      useCases: ['Fleet tracking', 'Compliance management', 'Driver safety', 'Route optimization', 'Asset tracking', 'Fuel monitoring'],
-      tags: ['fleet', 'gps', 'telematics', 'eld', 'tracking'],
-      rating: 4.5,
-      reviewCount: 2300,
-      alternatives: ['Verizon Connect', 'Geotab', 'Fleet Complete'],
-      integrations: ['Quickbooks', 'Motive', 'Various ERP systems'],
+      badges: ['enterprise', 'featured', 'trending'],
+      category: 'Beauty & Cosmetics',
+      categorySlug: 'beauty-cosmetics',
+      subcategory: 'Virtual Try-On',
+      subcategorySlug: 'virtual-try-on',
+      description: 'ModiFace is an AR-powered virtual makeup and beauty try-on platform for businesses.',
+      features: ['Virtual try-on', 'AR technology', 'Makeup and beauty', 'Product visualization', 'Customer engagement', 'Sales tools', 'Analytics', 'API access'],
+      useCases: ['Virtual try-on', 'Product visualization', 'Customer engagement', 'Sales and marketing', 'Beauty and cosmetics'],
+      tags: ['virtual-try-on', 'ar', 'beauty', 'makeup', 'cosmetics'],
+      rating: 4.4,
+      reviewCount: 8900,
+      alternatives: ['YouCam Makeup', 'Perfect Corp', 'L\'Oreal Makeup Genius', 'Sephora Virtual Artist'],
+      integrations: ['E-commerce platforms', 'Social media', 'Various beauty and cosmetics platforms'],
       pricingDetails: {
         type: 'enterprise',
-        price: 'Custom pricing',
-        url: 'https://www.samsara.com/pricing',
-        description: 'Contact for enterprise pricing'
+        price: 'Contact for pricing',
+        url: 'https://www.modiface.com/contact',
+        description: 'Enterprise pricing based on features and usage'
       }
     },
     {
@@ -16113,6 +16110,180 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
     }
   ],
 
+  // Pet Care & Veterinary > Pet Tracking
+  'pet-tracking': [
+    {
+      name: 'Whistle',
+      slug: 'whistle',
+      tagline: 'Pet GPS tracker and health monitoring device',
+      logoUrl: '/logos/whistle.png',
+      website: 'https://www.whistle.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Pet Care & Veterinary',
+      categorySlug: 'pet-care-veterinary',
+      subcategory: 'Pet Tracking',
+      subcategorySlug: 'pet-tracking',
+      description: 'Whistle provides GPS tracking and health monitoring devices for pets, helping owners keep their pets safe and healthy.',
+      features: ['GPS tracking', 'Activity monitoring', 'Health insights', 'Location alerts', 'Mobile app', 'Battery monitoring', 'Safe zones', 'Historical data'],
+      useCases: ['Pet location tracking', 'Activity monitoring', 'Health management', 'Lost pet recovery', 'Exercise tracking'],
+      tags: ['pet-gps', 'pet-tracker', 'pet-health', 'gps-monitoring', 'pet-safety'],
+      rating: 4.3,
+      reviewCount: 12000,
+      alternatives: ['Tractive', 'Fi', 'Jiobit', 'Link AKC'],
+      integrations: ['Mobile apps', 'Veterinary platforms', 'Smart home devices'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $99 device + $6.95/month subscription',
+        url: 'https://www.whistle.com/pricing',
+        description: 'One-time device cost plus monthly subscription'
+      }
+    },
+    {
+      name: 'Tractive',
+      slug: 'tractive',
+      tagline: 'GPS pet tracker and activity monitor',
+      logoUrl: '/logos/tractive.png',
+      website: 'https://www.tractive.com',
+      pricing: 'paid',
+      badges: ['popular', 'trending'],
+      category: 'Pet Care & Veterinary',
+      categorySlug: 'pet-care-veterinary',
+      subcategory: 'Pet Tracking',
+      subcategorySlug: 'pet-tracking',
+      description: 'Tractive provides real-time GPS tracking and activity monitoring for pets worldwide.',
+      features: ['Live GPS tracking', 'Activity monitoring', 'Virtual fence', 'Location history', 'Mobile app', 'Lightweight design', 'Waterproof', 'Long battery life'],
+      useCases: ['Pet tracking', 'Activity monitoring', 'Virtual fencing', 'Lost pet prevention', 'Exercise tracking'],
+      tags: ['pet-gps', 'activity-tracker', 'virtual-fence', 'pet-monitoring', 'location-tracking'],
+      rating: 4.2,
+      reviewCount: 8900,
+      alternatives: ['Whistle', 'Fi', 'Jiobit', 'Link AKC'],
+      integrations: ['Mobile apps', 'Smart home systems', 'Veterinary software'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $49 device + €4.99/month subscription',
+        url: 'https://www.tractive.com/pricing',
+        description: 'Device cost plus monthly subscription fee'
+      }
+    }
+  ],
+
+  // Pet Care & Veterinary > Grooming Management
+  'grooming-management': [
+    {
+      name: 'Groomsoft',
+      slug: 'groomsoft',
+      tagline: 'Pet grooming business management software',
+      logoUrl: '/logos/groomsoft.png',
+      website: 'https://www.groomsoft.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Pet Care & Veterinary',
+      categorySlug: 'pet-care-veterinary',
+      subcategory: 'Grooming Management',
+      subcategorySlug: 'grooming-management',
+      description: 'Groomsoft provides comprehensive business management software for pet grooming salons and mobile groomers.',
+      features: ['Appointment scheduling', 'Client management', 'Payment processing', 'Inventory tracking', 'Employee scheduling', 'Mobile app', 'Automated reminders', 'Reporting'],
+      useCases: ['Grooming appointments', 'Client management', 'Inventory control', 'Payment processing', 'Employee management'],
+      tags: ['pet-grooming', 'salon-management', 'appointment-scheduling', 'pet-business', 'grooming-software'],
+      rating: 4.4,
+      reviewCount: 2100,
+      alternatives: ['PetExec', 'GroomerGo', 'Pawfinity', 'Time To Pet'],
+      integrations: ['Payment processors', 'Calendar systems', 'Email marketing', 'Accounting software'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $39/month',
+        url: 'https://www.groomsoft.com/pricing',
+        description: 'Monthly subscription based on features and users'
+      }
+    },
+    {
+      name: 'PetExec',
+      slug: 'petexec',
+      tagline: 'Pet grooming and daycare management software',
+      logoUrl: '/logos/petexec.png',
+      website: 'https://www.petexec.net',
+      pricing: 'paid',
+      badges: ['trending', 'community-favorite'],
+      category: 'Pet Care & Veterinary',
+      categorySlug: 'pet-care-veterinary',
+      subcategory: 'Grooming Management',
+      subcategorySlug: 'grooming-management',
+      description: 'PetExec provides management software for pet grooming salons, daycare facilities, and boarding kennels.',
+      features: ['Appointment booking', 'Client records', 'Employee management', 'Inventory control', 'Payment processing', 'Mobile app', 'Photo sharing', 'Reporting'],
+      useCases: ['Grooming management', 'Daycare operations', 'Boarding management', 'Client communication', 'Employee scheduling'],
+      tags: ['pet-grooming', 'daycare-software', 'boarding-management', 'pet-business', 'appointment-scheduling'],
+      rating: 4.3,
+      reviewCount: 1800,
+      alternatives: ['Groomsoft', 'GroomerGo', 'Pawfinity', 'Time To Pet'],
+      integrations: ['Payment processors', 'Calendar systems', 'Email marketing', 'Accounting software'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $45/month',
+        url: 'https://www.petexec.net/pricing',
+        description: 'Monthly subscription based on business size and features'
+      }
+    }
+  ],
+
+  // Pet Care & Veterinary > Pet Adoption
+  'pet-adoption': [
+    {
+      name: 'Petfinder',
+      slug: 'petfinder',
+      tagline: 'Online pet adoption platform and shelter management',
+      logoUrl: '/logos/petfinder.png',
+      website: 'https://www.petfinder.com',
+      pricing: 'freemium',
+      badges: ['popular', 'featured', 'community-favorite'],
+      category: 'Pet Care & Veterinary',
+      categorySlug: 'pet-care-veterinary',
+      subcategory: 'Pet Adoption',
+      subcategorySlug: 'pet-adoption',
+      description: 'Petfinder is the largest online pet adoption platform connecting adoptable pets with loving homes.',
+      features: ['Pet search', 'Shelter directory', 'Adoption applications', 'Pet profiles', 'Mobile app', 'Breed information', 'Adoption resources', 'Volunteer opportunities'],
+      useCases: ['Pet adoption', 'Shelter management', 'Pet search', 'Adoption processing', 'Volunteer coordination'],
+      tags: ['pet-adoption', 'animal-shelter', 'pet-search', 'adoption-platform', 'animal-welfare'],
+      rating: 4.6,
+      reviewCount: 15000,
+      alternatives: ['Adopt-a-Pet', 'RescueGroups', 'Petango', 'Shelterluv'],
+      integrations: ['Shelter management systems', 'Social media', 'Email platforms', 'Payment processors'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free for adopters, paid plans for shelters',
+        url: 'https://www.petfinder.com/pro',
+        description: 'Free for public use, subscription for shelter features'
+      }
+    },
+    {
+      name: 'Adopt-a-Pet',
+      slug: 'adopt-a-pet',
+      tagline: 'Pet adoption website and shelter network',
+      logoUrl: '/logos/adopt-a-pet.png',
+      website: 'https://www.adoptapet.com',
+      pricing: 'freemium',
+      badges: ['popular', 'community-favorite'],
+      category: 'Pet Care & Veterinary',
+      categorySlug: 'pet-care-veterinary',
+      subcategory: 'Pet Adoption',
+      subcategorySlug: 'pet-adoption',
+      description: 'Adopt-a-Pet connects potential adopters with shelters and rescue groups across North America.',
+      features: ['Pet search', 'Breed matching', 'Adoption alerts', 'Shelter network', 'Mobile app', 'Pet care guides', 'Adoption resources', 'Success stories'],
+      useCases: ['Pet adoption', 'Shelter networking', 'Pet matching', 'Adoption coordination', 'Pet education'],
+      tags: ['pet-adoption', 'animal-rescue', 'shelter-network', 'pet-matching', 'adoption-website'],
+      rating: 4.4,
+      reviewCount: 12000,
+      alternatives: ['Petfinder', 'RescueGroups', 'Petango', 'Shelterluv'],
+      integrations: ['Shelter management systems', 'Social media', 'Email platforms', 'Veterinary networks'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free for adopters, paid listing for shelters',
+        url: 'https://www.adoptapet.com/shelters',
+        description: 'Free public access, paid services for organizations'
+      }
+    }
+  ],
+
   // Environmental & Sustainability > Carbon Tracking
   'carbon-tracking': [
     {
@@ -16167,6 +16338,99 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         price: 'From €500/month',
         url: 'https://www.greenly.earth/en-us/pricing',
         description: 'Tiered pricing for businesses'
+      }
+    }
+  ],
+
+  // Environmental & Sustainability > Waste Management
+  'waste-management': [
+    {
+      name: 'Rubicon',
+      slug: 'rubicon',
+      tagline: 'Waste and recycling management platform',
+      logoUrl: '/logos/rubicon.png',
+      website: 'https://www.rubicon.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Environmental & Sustainability',
+      categorySlug: 'environmental-sustainability',
+      subcategory: 'Waste Management',
+      subcategorySlug: 'waste-management',
+      description: 'Rubicon provides waste and recycling management solutions for businesses to reduce waste and improve sustainability.',
+      features: ['Waste tracking', 'Recycling optimization', 'Analytics', 'Reporting', 'Route optimization', 'Vendor management', 'Compliance', 'Mobile app'],
+      useCases: ['Waste reduction', 'Recycling programs', 'Sustainability reporting', 'Cost optimization', 'Compliance management'],
+      tags: ['waste-management', 'recycling', 'sustainability', 'environmental', 'waste-tracking'],
+      rating: 4.3,
+      reviewCount: 1200,
+      alternatives: ['Waste Connections', 'Republic Services', 'Clean Harbors'],
+      integrations: ['ERP systems', 'Fleet management', 'Analytics platforms'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.rubicon.com/contact',
+        description: 'Enterprise pricing based on business size and needs'
+      }
+    }
+  ],
+
+  // Environmental & Sustainability > Environmental Monitoring
+  'environmental-monitoring': [
+    {
+      name: 'Aclima',
+      slug: 'aclima',
+      tagline: 'Air quality and environmental monitoring platform',
+      logoUrl: '/logos/aclima.png',
+      website: 'https://www.aclima.io',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'trending'],
+      category: 'Environmental & Sustainability',
+      categorySlug: 'environmental-sustainability',
+      subcategory: 'Environmental Monitoring',
+      subcategorySlug: 'environmental-monitoring',
+      description: 'Aclima provides air quality and environmental monitoring solutions for cities and businesses.',
+      features: ['Air quality monitoring', 'Sensor networks', 'Data analytics', 'Real-time alerts', 'Mapping', 'API access', 'Dashboard', 'Reporting'],
+      useCases: ['Air quality monitoring', 'Environmental compliance', 'Health impact assessment', 'Urban planning', 'Industrial monitoring'],
+      tags: ['air-quality', 'environmental-monitoring', 'sensors', 'pollution', 'health'],
+      rating: 4.4,
+      reviewCount: 800,
+      alternatives: ['BreezoMeter', 'IQAir', 'PurpleAir'],
+      integrations: ['IoT platforms', 'Smart cities', 'Health systems'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.aclima.io/contact',
+        description: 'Enterprise pricing based on deployment scale'
+      }
+    }
+  ],
+
+  // Environmental & Sustainability > Sustainability Reporting
+  'sustainability-reporting': [
+    {
+      name: 'SASB',
+      slug: 'sasb',
+      tagline: 'Sustainability accounting standards and reporting',
+      logoUrl: '/logos/sasb.png',
+      website: 'https://www.sasb.org',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Environmental & Sustainability',
+      categorySlug: 'environmental-sustainability',
+      subcategory: 'Sustainability Reporting',
+      subcategorySlug: 'sustainability-reporting',
+      description: 'SASB provides sustainability accounting standards for businesses to report on ESG performance.',
+      features: ['ESG standards', 'Reporting framework', 'Industry guidance', 'Disclosure tools', 'Benchmarking', 'Analytics', 'Compliance', 'Training'],
+      useCases: ['ESG reporting', 'Sustainability disclosure', 'Investor relations', 'Compliance reporting', 'Risk management'],
+      tags: ['esg', 'sustainability-reporting', 'disclosure', 'investor-relations', 'compliance'],
+      rating: 4.5,
+      reviewCount: 1500,
+      alternatives: ['GRI', 'TCFD', 'CDP'],
+      integrations: ['Reporting platforms', 'Investor systems', 'Compliance tools'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.sasb.org/contact',
+        description: 'Enterprise pricing based on organization size'
       }
     }
   ],
@@ -16287,6 +16551,180 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
     }
   ],
 
+  // Childcare & Education > Parent Communication
+  'parent-communication': [
+    {
+      name: 'ClassDojo',
+      slug: 'classdojo',
+      tagline: 'Classroom communication and parent engagement platform',
+      logoUrl: '/logos/classdojo.png',
+      website: 'https://www.classdojo.com',
+      pricing: 'freemium',
+      badges: ['popular', 'community-favorite'],
+      category: 'Childcare & Education',
+      categorySlug: 'childcare-education',
+      subcategory: 'Parent Communication',
+      subcategorySlug: 'parent-communication',
+      description: 'ClassDojo is a communication platform that connects teachers, students, and families through photos, videos, and messages.',
+      features: ['Parent messaging', 'Student portfolios', 'Classroom stories', 'Behavior tracking', 'Photo sharing', 'Video updates', 'Progress reports', 'Mobile app'],
+      useCases: ['Parent communication', 'Student engagement', 'Classroom updates', 'Progress sharing', 'Behavior management'],
+      tags: ['parent-communication', 'classroom', 'education', 'student-engagement', 'messaging'],
+      rating: 4.4,
+      reviewCount: 12000,
+      alternatives: ['Remind', 'Seesaw', 'ParentSquare', 'Bloomz'],
+      integrations: ['School systems', 'Learning platforms', 'Mobile apps'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free for teachers, paid school plans available',
+        url: 'https://www.classdojo.com/school-plans',
+        description: 'Free for individual teachers, school-wide subscriptions available'
+      }
+    },
+    {
+      name: 'Remind',
+      slug: 'remind',
+      tagline: 'School communication platform for teachers and parents',
+      logoUrl: '/logos/remind.png',
+      website: 'https://www.remind.com',
+      pricing: 'freemium',
+      badges: ['popular', 'trending'],
+      category: 'Childcare & Education',
+      categorySlug: 'childcare-education',
+      subcategory: 'Parent Communication',
+      subcategorySlug: 'parent-communication',
+      description: 'Remind is a communication platform that helps schools and districts reach students and families where they are.',
+      features: ['Two-way messaging', 'Class announcements', 'File sharing', 'Translation', 'Scheduling', 'Mobile app', 'Voice messages', 'Read receipts'],
+      useCases: ['School communication', 'Parent outreach', 'Class announcements', 'Emergency notifications', 'Language access'],
+      tags: ['school-communication', 'parent-engagement', 'messaging', 'education', 'multilingual'],
+      rating: 4.3,
+      reviewCount: 8900,
+      alternatives: ['ClassDojo', 'Seesaw', 'ParentSquare', 'Bloomz'],
+      integrations: ['School information systems', 'Learning platforms', 'Mobile apps'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free for teachers, paid plans for schools and districts',
+        url: 'https://www.remind.com/pricing',
+        description: 'Free basic features, premium features for schools'
+      }
+    }
+  ],
+
+  // Childcare & Education > Child Development
+  'child-development': [
+    {
+      name: 'Teaching Strategies',
+      slug: 'teaching-strategies',
+      tagline: 'Early childhood assessment and curriculum platform',
+      logoUrl: '/logos/teaching-strategies.png',
+      website: 'https://www.teachingstrategies.com',
+      pricing: 'paid',
+      badges: ['featured', 'enterprise'],
+      category: 'Childcare & Education',
+      categorySlug: 'childcare-education',
+      subcategory: 'Child Development',
+      subcategorySlug: 'child-development',
+      description: 'Teaching Strategies provides comprehensive assessment, curriculum, and professional development solutions for early childhood education.',
+      features: ['Developmental assessment', 'Curriculum planning', 'Progress monitoring', 'Family engagement', 'Professional development', 'Data analytics', 'Mobile app', 'Reporting'],
+      useCases: ['Child assessment', 'Curriculum planning', 'Progress tracking', 'Teacher training', 'Family communication'],
+      tags: ['early-childhood', 'assessment', 'curriculum', 'development-tracking', 'education'],
+      rating: 4.5,
+      reviewCount: 3400,
+      alternatives: ['HiMama', 'Kangarootime', 'Tadpoles', 'Brightwheel'],
+      integrations: ['State systems', 'Learning platforms', 'Assessment tools'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'Contact for pricing',
+        url: 'https://www.teachingstrategies.com/contact',
+        description: 'Enterprise pricing based on program size'
+      }
+    },
+    {
+      name: 'HiMama',
+      slug: 'himama',
+      tagline: 'Childcare app for daily parent communication and development tracking',
+      logoUrl: '/logos/himama.png',
+      website: 'https://www.himama.com',
+      pricing: 'paid',
+      badges: ['popular', 'trending'],
+      category: 'Childcare & Education',
+      categorySlug: 'childcare-education',
+      subcategory: 'Child Development',
+      subcategorySlug: 'child-development',
+      description: 'HiMama is a childcare app that enables daily parent communication, development tracking, and program administration.',
+      features: ['Daily reports', 'Photo sharing', 'Development tracking', 'Parent messaging', 'Attendance tracking', 'Learning activities', 'Mobile app', 'Reporting'],
+      useCases: ['Daily communication', 'Development assessment', 'Parent engagement', 'Activity documentation', 'Progress tracking'],
+      tags: ['childcare-app', 'parent-communication', 'development-tracking', 'daily-reports', 'early-learning'],
+      rating: 4.6,
+      reviewCount: 2100,
+      alternatives: ['Brightwheel', 'Teaching Strategies', 'Kangarootime', 'Tadpoles'],
+      integrations: ['Learning platforms', 'Assessment tools', 'Parent communication'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $25/month per center',
+        url: 'https://www.himama.com/pricing',
+        description: 'Monthly subscription based on center size'
+      }
+    }
+  ],
+
+  // Childcare & Education > Billing & Payments
+  'childcare-billing': [
+    {
+      name: 'Tuition Express',
+      slug: 'tuition-express',
+      tagline: 'Childcare tuition management and payment processing',
+      logoUrl: '/logos/tuition-express.png',
+      website: 'https://www.tuitionexpress.com',
+      pricing: 'paid',
+      badges: ['featured', 'enterprise'],
+      category: 'Childcare & Education',
+      categorySlug: 'childcare-education',
+      subcategory: 'Billing & Payments',
+      subcategorySlug: 'childcare-billing',
+      description: 'Tuition Express provides comprehensive tuition management and payment processing solutions for childcare centers.',
+      features: ['Tuition billing', 'Payment processing', 'Auto-pay', 'Late fees', 'Financial reporting', 'Parent portal', 'Mobile app', 'Integration'],
+      useCases: ['Tuition collection', 'Payment processing', 'Financial management', 'Parent billing', 'Fee tracking'],
+      tags: ['tuition-management', 'payment-processing', 'childcare-billing', 'auto-pay', 'financial'],
+      rating: 4.3,
+      reviewCount: 1800,
+      alternatives: ['Brightwheel', 'Procare', 'Jackrabbit', 'Tuiio'],
+      integrations: ['Childcare software', 'Payment processors', 'Accounting systems'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'Contact for pricing',
+        url: 'https://www.tuitionexpress.com/contact',
+        description: 'Pricing based on transaction volume and features'
+      }
+    },
+    {
+      name: 'Jackrabbit Care',
+      slug: 'jackrabbit-care',
+      tagline: 'Childcare management software with billing and payments',
+      logoUrl: '/logos/jackrabbit.png',
+      website: 'https://www.jackrabbitcare.com',
+      pricing: 'paid',
+      badges: ['popular', 'trending'],
+      category: 'Childcare & Education',
+      categorySlug: 'childcare-education',
+      subcategory: 'Billing & Payments',
+      subcategorySlug: 'childcare-billing',
+      description: 'Jackrabbit Care provides comprehensive childcare management software with integrated billing and payment processing.',
+      features: ['Class management', 'Enrollment', 'Billing & payments', 'Parent portal', 'Staff management', 'Reporting', 'Mobile app', 'Calendar'],
+      useCases: ['Center management', 'Billing automation', 'Parent communication', 'Staff scheduling', 'Enrollment tracking'],
+      tags: ['childcare-management', 'billing-software', 'enrollment', 'parent-portal', 'staff-management'],
+      rating: 4.4,
+      reviewCount: 2300,
+      alternatives: ['Procare', 'Brightwheel', 'HiMama', 'Tuiio'],
+      integrations: ['Payment processors', 'Accounting software', 'Email platforms'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $49/month',
+        url: 'https://www.jackrabbitcare.com/pricing',
+        description: 'Monthly subscription based on features and enrollment'
+      }
+    }
+  ],
+
   // Libraries & Archives > Library Management
   'library-management': [
     {
@@ -16318,6 +16756,180 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
     }
   ],
 
+  // Libraries & Archives > Digital Archives
+  'digital-archives': [
+    {
+      name: 'Preservica',
+      slug: 'preservica',
+      tagline: 'Digital preservation and archiving platform',
+      logoUrl: '/logos/preservica.png',
+      website: 'https://www.preservica.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Libraries & Archives',
+      categorySlug: 'libraries-archives',
+      subcategory: 'Digital Archives',
+      subcategorySlug: 'digital-archives',
+      description: 'Preservica provides active digital preservation solutions to protect and provide access to valuable digital content.',
+      features: ['Digital preservation', 'Content migration', 'Access management', 'Metadata management', 'Compliance', 'Cloud storage', 'User interface', 'API access'],
+      useCases: ['Digital archiving', 'Content preservation', 'Access management', 'Compliance reporting', 'Migration planning'],
+      tags: ['digital-preservation', 'archiving', 'content-management', 'compliance', 'enterprise'],
+      rating: 4.4,
+      reviewCount: 890,
+      alternatives: ['Rosetta', 'LOCKSS', 'DuraCloud', 'Internet Archive'],
+      integrations: ['Library systems', 'Content management', 'Cloud storage'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.preservica.com/contact',
+        description: 'Enterprise pricing based on storage and usage'
+      }
+    },
+    {
+      name: 'Internet Archive',
+      slug: 'internet-archive',
+      tagline: 'Universal access to all knowledge',
+      logoUrl: '/logos/internet-archive.png',
+      website: 'https://archive.org',
+      pricing: 'free',
+      badges: ['community-favorite', 'featured'],
+      category: 'Libraries & Archives',
+      categorySlug: 'libraries-archives',
+      subcategory: 'Digital Archives',
+      subcategorySlug: 'digital-archives',
+      description: 'Internet Archive is a non-profit library of millions of free books, movies, software, music, and more.',
+      features: ['Digital library', 'Wayback Machine', 'Book lending', 'Audio archive', 'Video archive', 'Software archive', 'Open access', 'API access'],
+      useCases: ['Digital archiving', 'Web preservation', 'Book digitization', 'Media preservation', 'Research access'],
+      tags: ['digital-library', 'web-archiving', 'open-access', 'preservation', 'nonprofit'],
+      rating: 4.7,
+      reviewCount: 15000,
+      alternatives: ['Preservica', 'LOCKSS', 'DuraCloud', 'Rosetta'],
+      integrations: ['Various APIs', 'Library systems', 'Research platforms'],
+      pricingDetails: {
+        type: 'free',
+        price: 'Free for users',
+        url: 'https://archive.org',
+        description: 'Free access to all content, donation-based funding'
+      }
+    }
+  ],
+
+  // Libraries & Archives > Resource Discovery
+  'resource-discovery': [
+    {
+      name: 'Ex Libris Alma',
+      slug: 'ex-libris-alma',
+      tagline: 'Unified library services platform',
+      logoUrl: '/logos/exlibris.png',
+      website: 'https://www.exlibrisgroup.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Libraries & Archives',
+      categorySlug: 'libraries-archives',
+      subcategory: 'Resource Discovery',
+      subcategorySlug: 'resource-discovery',
+      description: 'Ex Libris Alma is a unified library services platform that manages all library operations and resource discovery.',
+      features: ['Resource discovery', 'Federated search', 'E-resource management', 'Analytics', 'User interface', 'Mobile access', 'API integration', 'Reporting'],
+      useCases: ['Resource discovery', 'Library management', 'E-resource access', 'User engagement', 'Analytics'],
+      tags: ['library-platform', 'resource-discovery', 'federated-search', 'e-resources', 'enterprise'],
+      rating: 4.3,
+      reviewCount: 1200,
+      alternatives: ['OCLC WorldShare', 'Sierra', 'Innovative ILS'],
+      integrations: ['Library systems', 'Discovery services', 'Analytics platforms'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.exlibrisgroup.com/contact',
+        description: 'Enterprise pricing based on institution size'
+      }
+    },
+    {
+      name: 'OCLC WorldShare',
+      slug: 'oclc-worldshare',
+      tagline: 'Cooperative library management platform',
+      logoUrl: '/logos/oclc.png',
+      website: 'https://www.oclc.org',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'trending'],
+      category: 'Libraries & Archives',
+      categorySlug: 'libraries-archives',
+      subcategory: 'Resource Discovery',
+      subcategorySlug: 'resource-discovery',
+      description: 'OCLC WorldShare provides cooperative library management and resource discovery services for libraries worldwide.',
+      features: ['WorldCat discovery', 'Cooperative cataloging', 'Resource sharing', 'Analytics', 'Mobile access', 'API integration', 'ILL management', 'Acquisition tools'],
+      useCases: ['Resource discovery', 'Interlibrary loan', 'Cataloging', 'Collection analysis', 'Resource sharing'],
+      tags: ['worldcat', 'resource-discovery', 'cooperative-cataloging', 'ill', 'library-services'],
+      rating: 4.4,
+      reviewCount: 1500,
+      alternatives: ['Ex Libris Alma', 'Sierra', 'Innovative ILS'],
+      integrations: ['Library systems', 'Discovery services', 'ILL networks'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.oclc.org/contact',
+        description: 'Pricing based on library size and services'
+      }
+    }
+  ],
+
+  // Libraries & Archives > Membership Management
+  'library-membership': [
+    {
+      name: 'LibAnswers',
+      slug: 'libanswers',
+      tagline: 'Library reference and patron management platform',
+      logoUrl: '/logos/libanswers.png',
+      website: 'https://springshare.com/libanswers',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Libraries & Archives',
+      categorySlug: 'libraries-archives',
+      subcategory: 'Membership Management',
+      subcategorySlug: 'library-membership',
+      description: 'LibAnswers provides comprehensive reference management and patron engagement solutions for libraries.',
+      features: ['Reference management', 'FAQ system', 'Knowledge base', 'Chat reference', 'Analytics', 'Mobile app', 'Integration', 'Reporting'],
+      useCases: ['Reference services', 'Patron support', 'Knowledge management', 'Chat services', 'FAQ management'],
+      tags: ['reference-services', 'patron-support', 'knowledge-base', 'chat-reference', 'library-services'],
+      rating: 4.5,
+      reviewCount: 2100,
+      alternatives: ['QuestionPoint', 'LibraryH3lp', 'RefChatter'],
+      integrations: ['Library websites', 'Learning management', 'Chat systems'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $2,299/year',
+        url: 'https://springshare.com/libanswers/pricing',
+        description: 'Annual subscription based on library size'
+      }
+    },
+    {
+      name: 'BiblioCommons',
+      slug: 'bibliocommons',
+      tagline: 'Patron engagement and catalog discovery platform',
+      logoUrl: '/logos/bibliocommons.png',
+      website: 'https://www.bibliocommons.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'trending'],
+      category: 'Libraries & Archives',
+      categorySlug: 'libraries-archives',
+      subcategory: 'Membership Management',
+      subcategorySlug: 'library-membership',
+      description: 'BiblioCommons provides patron engagement and catalog discovery solutions for public libraries.',
+      features: ['Catalog discovery', 'Social cataloging', 'Patron accounts', 'Reading recommendations', 'Mobile app', 'Analytics', 'Integration', 'Community features'],
+      useCases: ['Catalog discovery', 'Patron engagement', 'Reading recommendations', 'Account management', 'Community building'],
+      tags: ['catalog-discovery', 'patron-engagement', 'social-cataloging', 'reading-recommendations', 'public-libraries'],
+      rating: 4.3,
+      reviewCount: 1200,
+      alternatives: ['LibAnswers', 'LibraryH3lp', 'QuestionPoint'],
+      integrations: ['ILS systems', 'Library websites', 'Mobile platforms'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.bibliocommons.com/contact',
+        description: 'Enterprise pricing based on library size and usage'
+      }
+    }
+  ],
+
   // Museums & Galleries > Collection Management
   'collection-management': [
     {
@@ -16345,6 +16957,180 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         price: 'From $595 one-time',
         url: 'https://www.pastperfect-online.com/pricing',
         description: 'One-time license fee'
+      }
+    }
+  ],
+
+  // Museums & Galleries > Visitor Management
+  'visitor-management': [
+    {
+      name: 'Altru',
+      slug: 'altru',
+      tagline: 'Museum visitor management and ticketing platform',
+      logoUrl: '/logos/altru.png',
+      website: 'https://www.blackbaud.com/altru',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Museums & Galleries',
+      categorySlug: 'museums-galleries',
+      subcategory: 'Visitor Management',
+      subcategorySlug: 'visitor-management',
+      description: 'Altru provides comprehensive visitor management and ticketing solutions for museums and cultural institutions.',
+      features: ['Ticketing', 'Membership management', 'Visitor tracking', 'Donations', 'Event management', 'CRM', 'Reporting', 'Mobile app'],
+      useCases: ['Visitor management', 'Ticket sales', 'Membership programs', 'Fundraising', 'Event coordination'],
+      tags: ['visitor-management', 'ticketing', 'museum-software', 'membership', 'fundraising'],
+      rating: 4.3,
+      reviewCount: 1200,
+      alternatives: ['Tessitura', 'PatronManager', 'Givergy', 'Doubleknot'],
+      integrations: ['Payment processors', 'Email marketing', 'Accounting software'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.blackbaud.com/contact',
+        description: 'Enterprise pricing based on organization size'
+      }
+    },
+    {
+      name: 'Tessitura',
+      slug: 'tessitura',
+      tagline: 'Integrated ticketing and CRM for cultural organizations',
+      logoUrl: '/logos/tessitura.png',
+      website: 'https://www.tessituranetwork.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'trending'],
+      category: 'Museums & Galleries',
+      categorySlug: 'museums-galleries',
+      subcategory: 'Visitor Management',
+      subcategorySlug: 'visitor-management',
+      description: 'Tessitura provides integrated ticketing, CRM, and fundraising solutions for museums and cultural organizations.',
+      features: ['Ticketing', 'CRM', 'Fundraising', 'Marketing', 'Analytics', 'Mobile app', 'API access', 'Reporting'],
+      useCases: ['Ticket sales', 'Patron management', 'Fundraising campaigns', 'Marketing automation', 'Data analysis'],
+      tags: ['ticketing', 'crm', 'fundraising', 'cultural-organizations', 'patron-management'],
+      rating: 4.4,
+      reviewCount: 890,
+      alternatives: ['Altru', 'PatronManager', 'Givergy', 'Doubleknot'],
+      integrations: ['Payment systems', 'Marketing platforms', 'Analytics tools'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.tessituranetwork.com/contact',
+        description: 'Enterprise pricing based on organization needs'
+      }
+    }
+  ],
+
+  // Museums & Galleries > Exhibition Planning
+  'exhibition-planning': [
+    {
+      name: 'Artlogic',
+      slug: 'artlogic',
+      tagline: 'Art gallery and exhibition management platform',
+      logoUrl: '/logos/artlogic.png',
+      website: 'https://www.artlogic.net',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Museums & Galleries',
+      categorySlug: 'museums-galleries',
+      subcategory: 'Exhibition Planning',
+      subcategorySlug: 'exhibition-planning',
+      description: 'Artlogic provides comprehensive gallery and exhibition management solutions for art galleries and museums.',
+      features: ['Exhibition planning', 'Inventory management', 'Sales tracking', 'Client management', 'Website integration', 'Mobile app', 'Reporting', 'Marketing tools'],
+      useCases: ['Exhibition management', 'Art inventory', 'Sales tracking', 'Client relations', 'Website management'],
+      tags: ['gallery-management', 'exhibition-planning', 'art-inventory', 'sales-tracking', 'art-business'],
+      rating: 4.5,
+      reviewCount: 680,
+      alternatives: ['Artwork Archive', 'GalleryManager', 'ArtBase', 'Artlogic'],
+      integrations: ['Website platforms', 'Accounting software', 'Marketing tools'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $299/month',
+        url: 'https://www.artlogic.net/pricing',
+        description: 'Monthly subscription based on features and usage'
+      }
+    },
+    {
+      name: 'Artwork Archive',
+      slug: 'artwork-archive',
+      tagline: 'Art inventory and exhibition management software',
+      logoUrl: '/logos/artwork-archive.png',
+      website: 'https://www.artworkarchive.com',
+      pricing: 'freemium',
+      badges: ['popular', 'trending'],
+      category: 'Museums & Galleries',
+      categorySlug: 'museums-galleries',
+      subcategory: 'Exhibition Planning',
+      subcategorySlug: 'exhibition-planning',
+      description: 'Artwork Archive provides art inventory management and exhibition planning tools for artists and galleries.',
+      features: ['Art inventory', 'Exhibition planning', 'Sales tracking', 'Portfolio management', 'Reporting', 'Mobile app', 'Public pages', 'Label printing'],
+      useCases: ['Art inventory', 'Exhibition planning', 'Portfolio management', 'Sales tracking', 'Label generation'],
+      tags: ['art-inventory', 'exhibition-planning', 'portfolio-management', 'art-tracking', 'artist-tools'],
+      rating: 4.3,
+      reviewCount: 1200,
+      alternatives: ['Artlogic', 'GalleryManager', 'ArtBase', 'ArtStorage'],
+      integrations: ['Website platforms', 'Social media', 'Accounting software'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free tier available, Pro from $19/month',
+        url: 'https://www.artworkarchive.com/pricing',
+        description: 'Free and paid tiers based on features'
+      }
+    }
+  ],
+
+  // Museums & Galleries > Virtual Tours
+  'museum-virtual-tours': [
+    {
+      name: 'Matterport',
+      slug: 'matterport',
+      tagline: '3D virtual tour and digital twin platform',
+      logoUrl: '/logos/matterport.png',
+      website: 'https://matterport.com',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Museums & Galleries',
+      categorySlug: 'museums-galleries',
+      subcategory: 'Virtual Tours',
+      subcategorySlug: 'museum-virtual-tours',
+      description: 'Matterport provides 3D virtual tour and digital twin technology for museums and galleries to create immersive online experiences.',
+      features: ['3D scanning', 'Virtual tours', 'Digital twins', 'Mobile app', 'Embedding', 'Analytics', 'VR support', 'Hosting'],
+      useCases: ['Virtual museum tours', 'Exhibition documentation', 'Digital preservation', 'Online exhibitions', 'Accessibility'],
+      tags: ['virtual-tours', '3d-scanning', 'digital-twins', 'immersive-experiences', 'museum-technology'],
+      rating: 4.6,
+      reviewCount: 8500,
+      alternatives: ['Kuula', '3D Vista', 'Panoskin', 'Roundme'],
+      integrations: ['Website platforms', 'VR headsets', 'Mobile apps', 'Social media'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free tier available, Pro from $9.99/month',
+        url: 'https://matterport.com/pricing',
+        description: 'Free and paid tiers based on space count and features'
+      }
+    },
+    {
+      name: 'Google Arts & Culture',
+      slug: 'google-arts-culture',
+      tagline: 'Online museum platform and virtual experiences',
+      logoUrl: '/logos/google-arts-culture.png',
+      website: 'https://artsandculture.google.com',
+      pricing: 'free',
+      badges: ['community-favorite', 'featured'],
+      category: 'Museums & Galleries',
+      categorySlug: 'museums-galleries',
+      subcategory: 'Virtual Tours',
+      subcategorySlug: 'museum-virtual-tours',
+      description: 'Google Arts & Culture provides virtual museum tours and cultural experiences from institutions worldwide.',
+      features: ['Virtual museum tours', 'Art collections', 'Cultural stories', 'VR experiences', 'Mobile app', 'Educational resources', 'High-resolution images', 'Street view integration'],
+      useCases: ['Virtual museum visits', 'Art education', 'Cultural exploration', 'Research', 'Educational programs'],
+      tags: ['virtual-museums', 'art-education', 'cultural-heritage', 'vr-experiences', 'online-learning'],
+      rating: 4.7,
+      reviewCount: 15000,
+      alternatives: ['Matterport', 'Kuula', '3D Vista', 'Panoskin'],
+      integrations: ['Google platforms', 'Educational tools', 'VR systems'],
+      pricingDetails: {
+        type: 'free',
+        price: 'Free for all users',
+        url: 'https://artsandculture.google.com',
+        description: 'Completely free platform by Google'
       }
     }
   ],
