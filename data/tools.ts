@@ -18026,34 +18026,34 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       }
     }
   ],
-
-  // Marine & Maritime > Marine Fleet
-  'marine-fleet': [
+  
+  // Lottery & Gaming > Casino Management
+  'casino-management': [
     {
-      name: 'Helm CONNECT',
-      slug: 'helm-connect',
-      tagline: 'Maritime management software',
-      logoUrl: '/logos/helm.png',
-      website: 'https://www.helmoperations.com',
+      name: 'IGT Casino',
+      slug: 'igt-casino',
+      tagline: 'Casino management and gaming systems',
+      logoUrl: '/logos/igt-casino.png',
+      website: 'https://www.igt.com/solutions/casino',
       pricing: 'enterprise',
-      badges: ['enterprise'],
-      category: 'Marine & Maritime',
-      categorySlug: 'marine-maritime',
-      subcategory: 'Fleet Management',
-      subcategorySlug: 'marine-fleet',
-      description: 'Helm CONNECT provides vessel and fleet management software for maritime operations with maintenance, compliance, and crew management.',
-      features: ['Vessel maintenance', 'Compliance tracking', 'Crew management', 'Inventory', 'Work orders', 'Safety management', 'Document control', 'Mobile offline'],
-      useCases: ['Vessel operations', 'Maintenance management', 'Compliance tracking', 'Crew scheduling', 'Safety management'],
-      tags: ['marine', 'fleet', 'vessels', 'compliance', 'maritime'],
-      rating: 4.5,
-      reviewCount: 240,
-      alternatives: ['Danaos', 'ShipNet', 'Marine Software'],
-      integrations: ['Various maritime systems'],
+      badges: ['enterprise', 'featured'],
+      category: 'Lottery & Gaming',
+      categorySlug: 'lottery-gaming',
+      subcategory: 'Casino Management',
+      subcategorySlug: 'casino-management',
+      description: 'IGT Casino provides comprehensive casino management systems for gaming operations.',
+      features: ['Gaming floor management', 'Player tracking', 'Cashless gaming', 'Analytics', 'Reporting', 'Security', 'Mobile integration', 'Compliance'],
+      useCases: ['Casino operations', 'Gaming floor management', 'Player tracking', 'Cash handling', 'Compliance reporting'],
+      tags: ['casino', 'gaming', 'floor-management', 'player-tracking', 'compliance'],
+      rating: 4.3,
+      reviewCount: 1200,
+      alternatives: ['Aristocrat', 'Konami', 'Scientific Games', 'Novomatic'],
+      integrations: ['Payment systems', 'Security systems', 'Regulatory platforms'],
       pricingDetails: {
         type: 'enterprise',
         price: 'Contact for pricing',
-        url: 'https://www.helmoperations.com/contact',
-        description: 'Per-vessel enterprise pricing'
+        url: 'https://www.igt.com/contact',
+        description: 'Enterprise pricing based on casino size and needs'
       }
     }
   ],
@@ -18329,6 +18329,1166 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
       tags: ['mining', 'resource', 'tracking', 'positioning', 'surveying'],
       rating: 4.4,
       reviewCount: 280
+    }
+  ],
+
+  // Textiles & Manufacturing > Production Planning
+  'textile-production': [
+    {
+      name: 'FastReact',
+      slug: 'fastreact',
+      tagline: 'Production planning and workflow management for textiles',
+      logoUrl: '/logos/fastreact.png',
+      website: 'https://www.fastreact.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Textiles & Manufacturing',
+      categorySlug: 'textiles-manufacturing',
+      subcategory: 'Production Planning',
+      subcategorySlug: 'textile-production',
+      description: 'FastReact provides production planning and workflow management solutions for textile and garment manufacturers.',
+      features: ['Production planning', 'Workflow management', 'Order tracking', 'Capacity planning', 'Quality control', 'Reporting', 'Mobile apps', 'Integration'],
+      useCases: ['Production planning', 'Workflow optimization', 'Order management', 'Capacity planning', 'Quality control'],
+      tags: ['production-planning', 'textiles', 'manufacturing', 'workflow', 'garment'],
+      rating: 4.3,
+      reviewCount: 780,
+      alternatives: ['Gerber Technology', 'Lectra', 'Optitex', 'Tukatech'],
+      integrations: ['ERP systems', 'CAD systems', 'Quality systems', 'Supply chain'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.fastreact.com/contact',
+        description: 'Enterprise pricing based on company size and modules'
+      }
+    },
+    {
+      name: 'Optitex',
+      slug: 'optitex',
+      tagline: 'Production optimization software for textiles',
+      logoUrl: '/logos/optitex.png',
+      website: 'https://www.optitex.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'trending'],
+      category: 'Textiles & Manufacturing',
+      categorySlug: 'textiles-manufacturing',
+      subcategory: 'Production Planning',
+      subcategorySlug: 'textile-production',
+      description: 'Optitex provides production optimization software for textile and garment manufacturing.',
+      features: ['Production optimization', 'Cut planning', 'Marker making', 'Cost calculation', 'Material optimization', '3D visualization', 'Reporting', 'Integration'],
+      useCases: ['Production optimization', 'Cut planning', 'Cost reduction', 'Material optimization', '3D visualization'],
+      tags: ['production-optimization', 'textiles', 'cut-planning', 'material-optimization', '3d'],
+      rating: 4.4,
+      reviewCount: 520,
+      alternatives: ['FastReact', 'Gerber Technology', 'Lectra', 'Tukatech'],
+      integrations: ['CAD systems', 'ERP systems', 'Design software', 'Cutting machines'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.optitex.com/contact',
+        description: 'Enterprise pricing based on modules and usage'
+      }
+    }
+  ],
+
+  // Textiles & Manufacturing > Quality Control
+  'textile-quality': [
+    {
+      name: 'Datacolor',
+      slug: 'datacolor',
+      tagline: 'Color quality control and measurement systems',
+      logoUrl: '/logos/datacolor.png',
+      website: 'https://www.datacolor.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Textiles & Manufacturing',
+      categorySlug: 'textiles-manufacturing',
+      subcategory: 'Quality Control',
+      subcategorySlug: 'textile-quality',
+      description: 'Datacolor provides color quality control and measurement systems for textile and manufacturing industries.',
+      features: ['Color measurement', 'Quality control', 'Spectrophotometry', 'Color matching', 'Process control', 'Reporting', 'Mobile apps', 'Integration'],
+      useCases: ['Color quality control', 'Fabric inspection', 'Color matching', 'Process monitoring', 'Quality assurance'],
+      tags: ['color-control', 'quality-control', 'textiles', 'spectrophotometry', 'color-matching'],
+      rating: 4.5,
+      reviewCount: 890,
+      alternatives: ['X-Rite', 'Konica Minolta', 'HunterLab', 'BYK-Gardner'],
+      integrations: ['ERP systems', 'Quality systems', 'Process control', 'Laboratory systems'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.datacolor.com/contact',
+        description: 'Enterprise pricing based on equipment and modules'
+      }
+    },
+    {
+      name: 'X-Rite',
+      slug: 'x-rite',
+      tagline: 'Color management and quality control solutions',
+      logoUrl: '/logos/xrite.png',
+      website: 'https://www.xrite.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'trending'],
+      category: 'Textiles & Manufacturing',
+      categorySlug: 'textiles-manufacturing',
+      subcategory: 'Quality Control',
+      subcategorySlug: 'textile-quality',
+      description: 'X-Rite provides color management and quality control solutions for textile and manufacturing industries.',
+      features: ['Color measurement', 'Quality control', 'Color matching', 'Formulation software', 'Process control', 'Reporting', 'Mobile apps', 'Integration'],
+      useCases: ['Color management', 'Quality control', 'Color formulation', 'Process monitoring', 'Quality assurance'],
+      tags: ['color-management', 'quality-control', 'textiles', 'formulation', 'process-control'],
+      rating: 4.4,
+      reviewCount: 1200,
+      alternatives: ['Datacolor', 'Konica Minolta', 'HunterLab', 'BYK-Gardner'],
+      integrations: ['ERP systems', 'Quality systems', 'Process control', 'Laboratory equipment'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.xrite.com/contact',
+        description: 'Enterprise pricing based on equipment and software requirements'
+      }
+    }
+  ],
+
+  // Textiles & Manufacturing > Inventory Management
+  'textile-inventory': [
+    {
+      name: 'Gerber Technology',
+      slug: 'gerber-technology',
+      tagline: 'Textile and garment inventory management',
+      logoUrl: '/logos/gerber.png',
+      website: 'https://www.gerbertechnology.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Textiles & Manufacturing',
+      categorySlug: 'textiles-manufacturing',
+      subcategory: 'Inventory Management',
+      subcategorySlug: 'textile-inventory',
+      description: 'Gerber Technology provides comprehensive inventory management solutions for textile and garment manufacturers.',
+      features: ['Inventory management', 'Material tracking', 'Finished goods tracking', 'Warehouse management', 'Barcoding', 'RFID', 'Reporting', 'Integration'],
+      useCases: ['Inventory management', 'Material tracking', 'Finished goods control', 'Warehouse operations', 'Supply chain visibility'],
+      tags: ['inventory-management', 'textiles', 'garment', 'warehouse', 'tracking'],
+      rating: 4.2,
+      reviewCount: 950,
+      alternatives: ['FastReact', 'Lectra', 'Optitex', 'Tukatech'],
+      integrations: ['ERP systems', 'Production systems', 'Warehouse equipment', 'Supply chain'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.gerbertechnology.com/contact',
+        description: 'Enterprise pricing based on modules and company size'
+      }
+    },
+    {
+      name: 'Lectra',
+      slug: 'lectra',
+      tagline: 'Fashion and textile inventory optimization',
+      logoUrl: '/logos/lectra.png',
+      website: 'https://www.lectra.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'trending'],
+      category: 'Textiles & Manufacturing',
+      categorySlug: 'textiles-manufacturing',
+      subcategory: 'Inventory Management',
+      subcategorySlug: 'textile-inventory',
+      description: 'Lectra provides inventory optimization and management solutions for fashion and textile industries.',
+      features: ['Inventory optimization', 'Material management', 'Size grading', 'Order management', 'Warehouse control', 'Analytics', 'Mobile apps', 'Integration'],
+      useCases: ['Inventory optimization', 'Material management', 'Size grading', 'Order processing', 'Warehouse operations'],
+      tags: ['inventory-optimization', 'textiles', 'fashion', 'material-management', 'size-grading'],
+      rating: 4.3,
+      reviewCount: 1100,
+      alternatives: ['Gerber Technology', 'FastReact', 'Optitex', 'Tukatech'],
+      integrations: ['ERP systems', 'Production systems', 'Design software', 'Warehouse equipment'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.lectra.com/contact',
+        description: 'Enterprise pricing based on modules and requirements'
+      }
+    }
+  ],
+
+  // Textiles & Manufacturing > Design Software
+  'textile-design': [
+    {
+      name: 'Adobe Illustrator',
+      slug: 'adobe-illustrator',
+      tagline: 'Vector graphics and textile design software',
+      logoUrl: '/logos/adobe-illustrator.png',
+      website: 'https://www.adobe.com/products/illustrator',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Textiles & Manufacturing',
+      categorySlug: 'textiles-manufacturing',
+      subcategory: 'Design Software',
+      subcategorySlug: 'textile-design',
+      description: 'Adobe Illustrator is industry-standard vector graphics software widely used for textile and fashion design.',
+      features: ['Vector graphics', 'Pattern design', 'Textile design', 'Color management', 'Drawing tools', 'Typography', 'Integration', 'Cloud storage'],
+      useCases: ['Textile design', 'Pattern making', 'Fashion illustration', 'Technical drawings', 'Print design'],
+      tags: ['vector-graphics', 'design', 'textiles', 'fashion', 'patterns'],
+      rating: 4.6,
+      reviewCount: 45000,
+      alternatives: ['CorelDRAW', 'Affinity Designer', 'Sketch', 'Inkscape'],
+      integrations: ['Adobe Creative Cloud', 'Various file formats', 'Design systems', 'Print workflows'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $22.99/month',
+        url: 'https://www.adobe.com/products/illustrator/pricing',
+        description: 'Monthly subscription with annual plan options'
+      }
+    },
+    {
+      name: 'Tukatech',
+      slug: 'tukatech',
+      tagline: 'Pattern making and textile design software',
+      logoUrl: '/logos/tukatech.png',
+      website: 'https://www.tukatech.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'trending'],
+      category: 'Textiles & Manufacturing',
+      categorySlug: 'textiles-manufacturing',
+      subcategory: 'Design Software',
+      subcategorySlug: 'textile-design',
+      description: 'Tukatech provides pattern making and textile design software for fashion and garment industries.',
+      features: ['Pattern making', 'Grading', 'Marker making', '3D visualization', 'Fit simulation', 'Design tools', 'Integration', 'Collaboration'],
+      useCases: ['Pattern making', 'Size grading', 'Marker creation', '3D visualization', 'Fit analysis'],
+      tags: ['pattern-making', 'textiles', 'fashion', 'grading', '3d-design'],
+      rating: 4.3,
+      reviewCount: 680,
+      alternatives: ['Gerber Technology', 'Lectra', 'Optitex', 'Adobe Illustrator'],
+      integrations: ['CAD systems', 'Production systems', 'Design software', 'Cutting equipment'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.tukatech.com/contact',
+        description: 'Enterprise pricing based on modules and users'
+      }
+    }
+  ],
+
+  // Jewelry & Luxury Goods > Inventory Management
+  'jewelry-inventory': [
+    {
+      name: 'Jewelers Mutual',
+      slug: 'jewelers-mutual',
+      tagline: 'Jewelry inventory and catalog management',
+      logoUrl: '/logos/jewelers-mutual.png',
+      website: 'https://www.jewelersmutual.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Jewelry & Luxury Goods',
+      categorySlug: 'jewelry-luxury',
+      subcategory: 'Inventory Management',
+      subcategorySlug: 'jewelry-inventory',
+      description: 'Jewelers Mutual provides comprehensive inventory and catalog management solutions for jewelry retailers and manufacturers.',
+      features: ['Inventory management', 'Product cataloging', 'Barcoding', 'Multi-store', 'Pricing management', 'Reporting', 'Mobile apps', 'Integration'],
+      useCases: ['Jewelry inventory', 'Product cataloging', 'Multi-store management', 'Barcode tracking', 'Price management'],
+      tags: ['jewelry', 'inventory', 'cataloging', 'retail', 'barcoding'],
+      rating: 4.3,
+      reviewCount: 890,
+      alternatives: ['Lightspeed', 'ShopKeep', 'QuickBooks Commerce', 'Vend'],
+      integrations: ['POS systems', 'E-commerce platforms', 'Accounting software'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.jewelersmutual.com/contact',
+        description: 'Enterprise pricing based on features and store count'
+      }
+    },
+    {
+      name: 'Gemvision',
+      slug: 'gemvision',
+      tagline: 'Jewelry and gemstone inventory management',
+      logoUrl: '/logos/gemvision.png',
+      website: 'https://www.gemvision.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'trending'],
+      category: 'Jewelry & Luxury Goods',
+      categorySlug: 'jewelry-luxury',
+      subcategory: 'Inventory Management',
+      subcategorySlug: 'jewelry-inventory',
+      description: 'Gemvision provides specialized inventory management for jewelry stores with gemstone tracking and appraisal features.',
+      features: ['Jewelry inventory', 'Gemstone tracking', 'Appraisal management', 'Barcode scanning', 'Photo management', 'Reporting', 'Mobile apps', 'Integration'],
+      useCases: ['Jewelry inventory', 'Gemstone tracking', 'Appraisal management', 'Photo documentation', 'Barcode scanning'],
+      tags: ['jewelry', 'gemstones', 'inventory', 'appraisal', 'tracking'],
+      rating: 4.4,
+      reviewCount: 680,
+      alternatives: ['Jewelers Mutual', 'Lightspeed', 'ShopKeep', 'Vend'],
+      integrations: ['POS systems', 'Appraisal software', 'Photo management', 'Barcode scanners'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.gemvision.com/contact',
+        description: 'Enterprise pricing based on modules and requirements'
+      }
+    }
+  ],
+
+  // Jewelry & Luxury Goods > Appraisal Tools
+  'appraisal-tools': [
+    {
+      name: 'GIA Gem Instruments',
+      slug: 'gia-gem-instruments',
+      tagline: 'Professional gemstone appraisal and grading tools',
+      logoUrl: '/logos/gia.png',
+      website: 'https://www.gia.edu',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Jewelry & Luxury Goods',
+      categorySlug: 'jewelry-luxury',
+      subcategory: 'Appraisal Tools',
+      subcategorySlug: 'appraisal-tools',
+      description: 'GIA Gem Instruments provides professional gemstone appraisal and grading tools for jewelers and gemologists.',
+      features: ['Gemstone grading', 'Color analysis', 'Clarity assessment', 'Cut evaluation', 'Carat measurement', 'Reporting', 'Certification', 'Mobile tools'],
+      useCases: ['Gemstone appraisal', 'Diamond grading', 'Jewelry valuation', 'Quality assessment', 'Certification'],
+      tags: ['gemstone', 'appraisal', 'grading', 'diamonds', 'certification'],
+      rating: 4.7,
+      reviewCount: 1200,
+      alternatives: ['AGS Gemological', 'Gemological Institute of America', 'International Gemological Institute'],
+      integrations: ['Laboratory equipment', 'Microscopes', 'Lighting systems', 'Digital scales'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.gia.edu/contact',
+        description: 'Professional equipment pricing'
+      }
+    },
+    {
+      name: 'Gemological Institute of America (GIA)',
+      slug: 'gia-lab',
+      tagline: 'Gemstone identification and research laboratory',
+      logoUrl: '/logos/gia-lab.png',
+      website: 'https://www.gia.edu',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'trending'],
+      category: 'Jewelry & Luxury Goods',
+      categorySlug: 'jewelry-luxury',
+      subcategory: 'Appraisal Tools',
+      subcategorySlug: 'appraisal-tools',
+      description: 'GIA Laboratory provides gemstone identification and research services with advanced analytical equipment.',
+      features: ['Gemstone identification', 'Spectroscopy', 'Microscopy', 'Chemical analysis', 'Research services', 'Education', 'Certification', 'Mobile reporting'],
+      useCases: ['Gemstone identification', 'Research analysis', 'Educational services', 'Quality certification', 'Laboratory testing'],
+      tags: ['gemstone', 'identification', 'spectroscopy', 'microscopy', 'research', 'certification'],
+      rating: 4.8,
+      reviewCount: 980,
+      alternatives: ['AGS Gemological', 'International Gemological Institute', 'Swiss Gemmological Institute'],
+      integrations: ['Laboratory equipment', 'Research databases', 'Educational platforms', 'Microscope systems'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.gia.edu/contact',
+        description: 'Service-based pricing'
+      }
+    }
+  ],
+
+  // Jewelry & Luxury Goods > Retail Management
+  'jewelry-retail': [
+    {
+      name: 'Lightspeed',
+      slug: 'lightspeed',
+      tagline: 'Retail POS and inventory management for jewelry',
+      logoUrl: '/logos/lightspeed.png',
+      website: 'https://www.lightspeed.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Jewelry & Luxury Goods',
+      categorySlug: 'jewelry-luxury',
+      subcategory: 'Retail Management',
+      subcategorySlug: 'jewelry-retail',
+      description: 'Lightspeed provides retail POS and inventory management solutions specifically designed for jewelry stores.',
+      features: ['POS system', 'Inventory management', 'Customer management', 'Multi-store', 'E-commerce', 'Reporting', 'Mobile apps', 'Integration'],
+      useCases: ['Jewelry retail', 'POS operations', 'Inventory control', 'Customer management', 'Multi-store operations'],
+      tags: ['retail', 'pos', 'jewelry', 'inventory', 'multi-store'],
+      rating: 4.4,
+      reviewCount: 3400,
+      alternatives: ['ShopKeep', 'QuickBooks Commerce', 'Vend', 'Jewelers Mutual'],
+      integrations: ['Payment processors', 'E-commerce platforms', 'Accounting software', 'Hardware'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $69/month',
+        url: 'https://www.lightspeed.com/pricing',
+        description: 'Monthly subscription per register'
+      }
+    },
+    {
+      name: 'ShopKeep',
+      slug: 'shopkeep',
+      tagline: 'Modern POS and inventory for jewelry retail',
+      logoUrl: '/logos/shopkeep.png',
+      website: 'https://www.shopkeep.com',
+      pricing: 'paid',
+      badges: ['popular', 'trending'],
+      category: 'Jewelry & Luxury Goods',
+      categorySlug: 'jewelry-luxury',
+      subcategory: 'Retail Management',
+      subcategorySlug: 'jewelry-retail',
+      description: 'ShopKeep offers modern POS and inventory management solutions for jewelry retailers with mobile-first design.',
+      features: ['POS system', 'Inventory management', 'Customer management', 'E-commerce', 'Reporting', 'Mobile apps', 'Integration', 'Analytics'],
+      useCases: ['Jewelry retail', 'Mobile POS', 'Inventory tracking', 'Customer management', 'E-commerce integration'],
+      tags: ['retail', 'pos', 'mobile', 'jewelry', 'inventory'],
+      rating: 4.5,
+      reviewCount: 5600,
+      alternatives: ['Lightspeed', 'QuickBooks Commerce', 'Vend', 'Square for Retail'],
+      integrations: ['Payment processors', 'E-commerce platforms', 'Accounting software', 'Hardware'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $49/month',
+        url: 'https://www.shopkeep.com/pricing',
+        description: 'Monthly subscription per location'
+      }
+    }
+  ],
+
+  // Jewelry & Luxury Goods > Custom Design
+  'custom-design': [
+    {
+      name: 'MatrixGold',
+      slug: 'matrixgold',
+      tagline: 'CAD software for jewelry design and manufacturing',
+      logoUrl: '/logos/matrixgold.png',
+      website: 'https://www.matrixgold.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Jewelry & Luxury Goods',
+      categorySlug: 'jewelry-luxury',
+      subcategory: 'Custom Design',
+      subcategorySlug: 'custom-design',
+      description: 'MatrixGold provides CAD software for jewelry design, manufacturing, and 3D printing.',
+      features: ['CAD design', '3D modeling', 'Rendering', 'CAM integration', 'Parametric design', 'Library management', 'Collaboration', 'Mobile apps'],
+      useCases: ['Jewelry design', '3D modeling', 'Manufacturing preparation', 'Custom jewelry creation', 'Prototyping'],
+      tags: ['cad', 'jewelry-design', '3d-modeling', 'manufacturing', 'prototyping'],
+      rating: 4.3,
+      reviewCount: 780,
+      alternatives: ['RhinoGold', 'ZBrush', 'JewelCAD', 'Autodesk Fusion 360'],
+      integrations: ['3D printers', 'CAM systems', 'Manufacturing equipment', 'Rendering engines'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.matrixgold.com/contact',
+        description: 'Enterprise pricing based on modules and users'
+      }
+    },
+    {
+      name: 'RhinoGold',
+      slug: 'rhino-gold',
+      tagline: 'Professional jewelry CAD and design software',
+      logoUrl: '/logos/rhino-gold.png',
+      website: 'https://www.rhino3d.com',
+      pricing: 'paid',
+      badges: ['enterprise', 'trending'],
+      category: 'Jewelry & Luxury Goods',
+      categorySlug: 'jewelry-luxury',
+      subcategory: 'Custom Design',
+      subcategorySlug: 'custom-design',
+      description: 'RhinoGold provides professional CAD software for jewelry design with advanced 3D modeling and rendering.',
+      features: ['CAD design', '3D modeling', 'Rendering', 'Animation', 'Parametric design', 'Library management', 'Integration', 'Advanced modeling'],
+      useCases: ['Jewelry design', '3D modeling', 'Rendering', 'Animation', 'Parametric jewelry creation'],
+      tags: ['cad', 'jewelry-design', '3d-modeling', 'rendering', 'parametric'],
+      rating: 4.4,
+      reviewCount: 1200,
+      alternatives: ['MatrixGold', 'ZBrush', 'JewelCAD', 'Autodesk Fusion 360'],
+      integrations: ['3D printers', 'Rendering engines', 'CAM systems', 'Manufacturing equipment'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $995/license',
+        url: 'https://www.rhino3d.com/purchase',
+        description: 'One-time license with optional maintenance'
+      }
+    }
+  ],
+
+  // Pharmaceuticals & Biotech > Drug Discovery
+  'drug-discovery': [
+    {
+      name: 'Schrödinger',
+      slug: 'schrodinger',
+      tagline: 'Molecular modeling and drug discovery software',
+      logoUrl: '/logos/schrodinger.png',
+      website: 'https://www.schrodinger.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Pharmaceuticals & Biotech',
+      categorySlug: 'pharmaceuticals-biotech',
+      subcategory: 'Drug Discovery',
+      subcategorySlug: 'drug-discovery',
+      description: 'Schrödinger provides molecular modeling and drug discovery software for pharmaceutical research and development.',
+      features: ['Molecular modeling', 'Drug design', 'Virtual screening', 'Molecular dynamics', 'Quantum mechanics', 'Docking', 'Pharmacophore modeling', 'Integration'],
+      useCases: ['Drug discovery', 'Molecular modeling', 'Virtual screening', 'Lead optimization', 'Structure-based drug design'],
+      tags: ['drug-discovery', 'molecular-modeling', 'pharmaceuticals', 'virtual-screening', 'computational-chemistry'],
+      rating: 4.6,
+      reviewCount: 1200,
+      alternatives: ['MOE', 'OpenEye', 'ChemAxon', 'Dassault Systèmes'],
+      integrations: ['Laboratory systems', 'Databases', 'High-performance computing', 'Visualization tools'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.schrodinger.com/contact',
+        description: 'Enterprise pricing based on modules and usage'
+      }
+    },
+    {
+      name: 'MOE (Molecular Operating Environment)',
+      slug: 'moe',
+      tagline: 'Integrated drug discovery and molecular modeling platform',
+      logoUrl: '/logos/moe.png',
+      website: 'https://www.chemcomp.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'trending'],
+      category: 'Pharmaceuticals & Biotech',
+      categorySlug: 'pharmaceuticals-biotech',
+      subcategory: 'Drug Discovery',
+      subcategorySlug: 'drug-discovery',
+      description: 'MOE is an integrated drug discovery and molecular modeling platform for pharmaceutical and biotechnology research.',
+      features: ['Molecular modeling', 'Drug design', 'Protein modeling', 'Chemoinformatics', 'Pharmacophore', 'Molecular dynamics', 'Visualization', 'Integration'],
+      useCases: ['Drug discovery', 'Protein modeling', 'Chemoinformatics', 'Structure-based design', 'Lead optimization'],
+      tags: ['drug-discovery', 'molecular-modeling', 'protein-modeling', 'chemoinformatics', 'pharmaceuticals'],
+      rating: 4.4,
+      reviewCount: 890,
+      alternatives: ['Schrödinger', 'OpenEye', 'ChemAxon', 'Dassault Systèmes'],
+      integrations: ['Laboratory equipment', 'Databases', 'Visualization tools', 'High-performance computing'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.chemcomp.com/contact',
+        description: 'Enterprise licensing with annual maintenance'
+      }
+    }
+  ],
+
+  // Pharmaceuticals & Biotech > Clinical Trials
+  'clinical-trials': [
+    {
+      name: 'Medidata Solutions',
+      slug: 'medidata',
+      tagline: 'Clinical trial management and data analytics platform',
+      logoUrl: '/logos/medidata.png',
+      website: 'https://www.mdsol.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Pharmaceuticals & Biotech',
+      categorySlug: 'pharmaceuticals-biotech',
+      subcategory: 'Clinical Trials',
+      subcategorySlug: 'clinical-trials',
+      description: 'Medidata Solutions provides comprehensive clinical trial management and data analytics for pharmaceutical research.',
+      features: ['Clinical trial management', 'Data capture', 'Analytics', 'Patient monitoring', 'Regulatory compliance', 'Mobile apps', 'Integration', 'Reporting'],
+      useCases: ['Clinical trial management', 'Data capture', 'Patient monitoring', 'Regulatory compliance', 'Trial analytics'],
+      tags: ['clinical-trials', 'clinical-research', 'pharmaceuticals', 'data-management', 'regulatory'],
+      rating: 4.5,
+      reviewCount: 2100,
+      alternatives: ['Oracle Clinical', 'Veeva Vault', 'IBM Clinical Development', 'Parexel'],
+      integrations: ['EHR systems', 'Laboratory systems', 'Regulatory databases', 'Analytics platforms'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.mdsol.com/contact',
+        description: 'Enterprise pricing based on trial size and complexity'
+      }
+    },
+    {
+      name: 'Veeva Vault Clinical Suite',
+      slug: 'veeva-clinical',
+      tagline: 'Cloud-based clinical trial management suite',
+      logoUrl: '/logos/veeva.png',
+      website: 'https://www.veeva.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'trending'],
+      category: 'Pharmaceuticals & Biotech',
+      categorySlug: 'pharmaceuticals-biotech',
+      subcategory: 'Clinical Trials',
+      subcategorySlug: 'clinical-trials',
+      description: 'Veeva Vault Clinical Suite provides cloud-based clinical trial management and document management for pharmaceutical companies.',
+      features: ['Clinical trial management', 'Document management', 'Quality management', 'Regulatory compliance', 'Analytics', 'Mobile access', 'Integration', 'Collaboration'],
+      useCases: ['Clinical trial management', 'Document control', 'Quality compliance', 'Regulatory submissions', 'Trial coordination'],
+      tags: ['clinical-trials', 'cloud-based', 'document-management', 'pharmaceuticals', 'regulatory'],
+      rating: 4.6,
+      reviewCount: 1800,
+      alternatives: ['Medidata', 'Oracle Clinical', 'IBM Clinical Development', 'Parexel'],
+      integrations: ['EHR systems', 'Quality systems', 'Regulatory databases', 'Analytics platforms'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.veeva.com/contact',
+        description: 'Subscription-based pricing per user'
+      }
+    }
+  ],
+
+  // Pharmaceuticals & Biotech > Regulatory Compliance
+  'pharma-compliance': [
+    {
+      name: 'MasterControl',
+      slug: 'mastercontrol',
+      tagline: 'Quality and compliance management for pharmaceuticals',
+      logoUrl: '/logos/mastercontrol.png',
+      website: 'https://www.mastercontrol.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Pharmaceuticals & Biotech',
+      categorySlug: 'pharmaceuticals-biotech',
+      subcategory: 'Regulatory Compliance',
+      subcategorySlug: 'pharma-compliance',
+      description: 'MasterControl provides quality and compliance management solutions for pharmaceutical and medical device companies.',
+      features: ['Quality management', 'Document control', 'Regulatory compliance', 'Audit management', 'Training management', 'Change control', 'Integration', 'Reporting'],
+      useCases: ['Regulatory compliance', 'Quality management', 'Document control', 'Audit preparation', 'Training management'],
+      tags: ['regulatory-compliance', 'quality-management', 'pharmaceuticals', 'fda', 'gmp'],
+      rating: 4.4,
+      reviewCount: 1500,
+      alternatives: ['Veeva Quality', 'Sparta Systems', 'Pilgrim Quality Solutions', 'EtQ'],
+      integrations: ['ERP systems', 'Laboratory systems', 'Regulatory databases', 'Quality systems'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.mastercontrol.com/contact',
+        description: 'Enterprise pricing based on modules and users'
+      }
+    },
+    {
+      name: 'Veeva Quality Suite',
+      slug: 'veeva-quality',
+      tagline: 'Cloud-based quality and compliance management',
+      logoUrl: '/logos/veeva-quality.png',
+      website: 'https://www.veeva.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'trending'],
+      category: 'Pharmaceuticals & Biotech',
+      categorySlug: 'pharmaceuticals-biotech',
+      subcategory: 'Regulatory Compliance',
+      subcategorySlug: 'pharma-compliance',
+      description: 'Veeva Quality Suite provides cloud-based quality and compliance management for pharmaceutical and life sciences companies.',
+      features: ['Quality management', 'Document control', 'Regulatory compliance', 'Audit management', 'Training management', 'Change control', 'Mobile access', 'Integration'],
+      useCases: ['Quality management', 'Regulatory compliance', 'Document control', 'Audit management', 'Training coordination'],
+      tags: ['quality-management', 'regulatory-compliance', 'cloud-based', 'pharmaceuticals', 'gmp'],
+      rating: 4.5,
+      reviewCount: 1200,
+      alternatives: ['MasterControl', 'Sparta Systems', 'Pilgrim Quality Solutions', 'EtQ'],
+      integrations: ['ERP systems', 'Quality systems', 'Regulatory databases', 'Laboratory systems'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.veeva.com/contact',
+        description: 'Subscription-based pricing per user'
+      }
+    }
+  ],
+
+  // Pharmaceuticals & Biotech > Manufacturing
+  'pharma-manufacturing': [
+    {
+      name: 'Siemens Opcenter',
+      slug: 'siemens-opcenter',
+      tagline: 'Pharmaceutical manufacturing execution system',
+      logoUrl: '/logos/siemens.png',
+      website: 'https://www.siemens.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Pharmaceuticals & Biotech',
+      categorySlug: 'pharmaceuticals-biotech',
+      subcategory: 'Manufacturing',
+      subcategorySlug: 'pharma-manufacturing',
+      description: 'Siemens Opcenter provides manufacturing execution systems for pharmaceutical and biotechnology production.',
+      features: ['Manufacturing execution', 'Batch management', 'Quality control', 'Regulatory compliance', 'Production scheduling', 'Inventory management', 'Analytics', 'Integration'],
+      useCases: ['Pharmaceutical manufacturing', 'Batch production', 'Quality control', 'Regulatory compliance', 'Production optimization'],
+      tags: ['manufacturing', 'pharmaceuticals', 'mes', 'batch-management', 'gmp'],
+      rating: 4.3,
+      reviewCount: 980,
+      alternatives: ['Rockwell Automation', 'GE Digital', 'Dassault Systèmes', 'SAP'],
+      integrations: ['ERP systems', 'Quality systems', 'Laboratory systems', 'Process equipment'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.siemens.com/contact',
+        description: 'Enterprise pricing based on modules and facility size'
+      }
+    },
+    {
+      name: 'Rockwell Automation PharmaSuite',
+      slug: 'rockwell-pharma',
+      tagline: 'Pharmaceutical manufacturing and automation solutions',
+      logoUrl: '/logos/rockwell.png',
+      website: 'https://www.rockwellautomation.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'trending'],
+      category: 'Pharmaceuticals & Biotech',
+      categorySlug: 'pharmaceuticals-biotech',
+      subcategory: 'Manufacturing',
+      subcategorySlug: 'pharma-manufacturing',
+      description: 'Rockwell Automation PharmaSuite provides manufacturing and automation solutions for pharmaceutical production.',
+      features: ['Manufacturing automation', 'Batch management', 'Process control', 'Quality management', 'Regulatory compliance', 'Production scheduling', 'Analytics', 'Integration'],
+      useCases: ['Pharmaceutical manufacturing', 'Process automation', 'Batch production', 'Quality control', 'Regulatory compliance'],
+      tags: ['manufacturing', 'automation', 'pharmaceuticals', 'process-control', 'gmp'],
+      rating: 4.4,
+      reviewCount: 850,
+      alternatives: ['Siemens Opcenter', 'GE Digital', 'Dassault Systèmes', 'SAP'],
+      integrations: ['ERP systems', 'Process equipment', 'Quality systems', 'Laboratory systems'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.rockwellautomation.com/contact',
+        description: 'Enterprise pricing based on modules and requirements'
+      }
+    }
+  ],
+
+  // Chemical & Materials > Process Control
+  'process-control': [
+    {
+      name: 'AspenTech',
+      slug: 'aspentech',
+      tagline: 'Advanced process control and optimization software',
+      logoUrl: '/logos/aspentech.png',
+      website: 'https://www.aspentech.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Chemical & Materials',
+      categorySlug: 'chemical-materials',
+      subcategory: 'Process Control',
+      subcategorySlug: 'process-control',
+      description: 'AspenTech provides advanced process control and optimization software for chemical and manufacturing industries.',
+      features: ['Process control', 'Advanced control', 'Optimization', 'Simulation', 'Analytics', 'Real-time monitoring', 'Integration', 'Digital twin'],
+      useCases: ['Process automation', 'Advanced control', 'Process optimization', 'Real-time monitoring', 'Digital transformation'],
+      tags: ['process-control', 'automation', 'optimization', 'chemical', 'manufacturing'],
+      rating: 4.5,
+      reviewCount: 1800,
+      alternatives: ['Siemens Process Systems', 'Honeywell Process Solutions', 'Emerson Process Management', 'Yokogawa'],
+      integrations: ['DCS systems', 'SCADA systems', 'ERP systems', 'Laboratory systems'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.aspentech.com/contact',
+        description: 'Enterprise pricing based on modules and facility size'
+      }
+    },
+    {
+      name: 'Honeywell Process Solutions',
+      slug: 'honeywell-process',
+      tagline: 'Industrial process control and automation solutions',
+      logoUrl: '/logos/honeywell.png',
+      website: 'https://www.honeywellprocess.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'trending'],
+      category: 'Chemical & Materials',
+      categorySlug: 'chemical-materials',
+      subcategory: 'Process Control',
+      subcategorySlug: 'process-control',
+      description: 'Honeywell Process Solutions provides industrial process control and automation solutions for chemical and manufacturing industries.',
+      features: ['Process control', 'Automation', 'Safety systems', 'Advanced control', 'Analytics', 'Real-time monitoring', 'Integration', 'Digital transformation'],
+      useCases: ['Process automation', 'Safety management', 'Advanced control', 'Real-time monitoring', 'Industrial IoT'],
+      tags: ['process-control', 'automation', 'safety', 'industrial', 'manufacturing'],
+      rating: 4.4,
+      reviewCount: 1500,
+      alternatives: ['AspenTech', 'Siemens Process Systems', 'Emerson Process Management', 'Yokogawa'],
+      integrations: ['DCS systems', 'SCADA systems', 'Safety systems', 'ERP systems'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.honeywellprocess.com/contact',
+        description: 'Enterprise pricing based on requirements and scale'
+      }
+    }
+  ],
+
+  // Chemical & Materials > Lab Management
+  'chemical-lab': [
+    {
+      name: 'LabWare',
+      slug: 'labware',
+      tagline: 'Laboratory information management system (LIMS)',
+      logoUrl: '/logos/labware.png',
+      website: 'https://www.labware.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Chemical & Materials',
+      categorySlug: 'chemical-materials',
+      subcategory: 'Lab Management',
+      subcategorySlug: 'chemical-lab',
+      description: 'LabWare provides comprehensive laboratory information management systems for chemical and research laboratories.',
+      features: ['LIMS', 'Sample management', 'Data management', 'Quality control', 'Reporting', 'Integration', 'Mobile access', 'Compliance'],
+      useCases: ['Laboratory management', 'Sample tracking', 'Quality control', 'Data management', 'Regulatory compliance'],
+      tags: ['lims', 'laboratory', 'sample-management', 'quality-control', 'research'],
+      rating: 4.3,
+      reviewCount: 1200,
+      alternatives: ['Thermo Fisher SampleManager', 'STARLIMS', 'LabVantage', 'Agilent Lab Informatics'],
+      integrations: ['Laboratory equipment', 'ERP systems', 'Quality systems', 'Analytics platforms'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.labware.com/contact',
+        description: 'Enterprise pricing based on users and modules'
+      }
+    },
+    {
+      name: 'Thermo Fisher SampleManager LIMS',
+      slug: 'thermo-lims',
+      tagline: 'Enterprise laboratory information management system',
+      logoUrl: '/logos/thermo-fisher.png',
+      website: 'https://www.thermofisher.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'trending'],
+      category: 'Chemical & Materials',
+      categorySlug: 'chemical-materials',
+      subcategory: 'Lab Management',
+      subcategorySlug: 'chemical-lab',
+      description: 'Thermo Fisher SampleManager LIMS provides enterprise laboratory information management for chemical and research laboratories.',
+      features: ['LIMS', 'Sample management', 'Data management', 'Quality control', 'Reporting', 'Integration', 'Compliance', 'Analytics'],
+      useCases: ['Laboratory management', 'Sample tracking', 'Quality control', 'Data management', 'Regulatory compliance'],
+      tags: ['lims', 'laboratory', 'sample-management', 'quality-control', 'enterprise'],
+      rating: 4.4,
+      reviewCount: 980,
+      alternatives: ['LabWare', 'STARLIMS', 'LabVantage', 'Agilent Lab Informatics'],
+      integrations: ['Laboratory equipment', 'ERP systems', 'Quality systems', 'Analytics platforms'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.thermofisher.com/contact',
+        description: 'Enterprise pricing based on requirements and users'
+      }
+    }
+  ],
+
+  // Chemical & Materials > Safety Management
+  'chemical-safety': [
+    {
+      name: 'ChemSW',
+      slug: 'chemsw',
+      tagline: 'Chemical safety and compliance management software',
+      logoUrl: '/logos/chemsw.png',
+      website: 'https://www.chemsw.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Chemical & Materials',
+      categorySlug: 'chemical-materials',
+      subcategory: 'Safety Management',
+      subcategorySlug: 'chemical-safety',
+      description: 'ChemSW provides comprehensive chemical safety and compliance management software for industrial and research facilities.',
+      features: ['Chemical safety', 'Compliance management', 'MSDS management', 'Risk assessment', 'Training management', 'Reporting', 'Integration', 'Mobile access'],
+      useCases: ['Chemical safety', 'Regulatory compliance', 'MSDS management', 'Risk assessment', 'Safety training'],
+      tags: ['chemical-safety', 'compliance', 'msds', 'risk-assessment', 'regulatory'],
+      rating: 4.2,
+      reviewCount: 850,
+      alternatives: ['Chemical Safety Software', 'ERA Environmental', 'SiteHawk', 'MSDSonline'],
+      integrations: ['ERP systems', 'HR systems', 'Training platforms', 'Regulatory databases'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.chemsw.com/contact',
+        description: 'Enterprise pricing based on users and modules'
+      }
+    },
+    {
+      name: 'Chemical Safety Software',
+      slug: 'chemical-safety-software',
+      tagline: 'Cloud-based chemical safety and compliance platform',
+      logoUrl: '/logos/chemical-safety.png',
+      website: 'https://www.chemicalsafety.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'trending'],
+      category: 'Chemical & Materials',
+      categorySlug: 'chemical-materials',
+      subcategory: 'Safety Management',
+      subcategorySlug: 'chemical-safety',
+      description: 'Chemical Safety Software provides cloud-based chemical safety and compliance management for industrial facilities.',
+      features: ['Chemical safety', 'Compliance management', 'MSDS management', 'Risk assessment', 'Training management', 'Mobile access', 'Integration', 'Reporting'],
+      useCases: ['Chemical safety', 'Regulatory compliance', 'MSDS management', 'Risk assessment', 'Safety training'],
+      tags: ['chemical-safety', 'cloud-based', 'compliance', 'msds', 'risk-assessment'],
+      rating: 4.3,
+      reviewCount: 720,
+      alternatives: ['ChemSW', 'ERA Environmental', 'SiteHawk', 'MSDSonline'],
+      integrations: ['ERP systems', 'HR systems', 'Training platforms', 'Regulatory databases'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.chemicalsafety.com/contact',
+        description: 'Subscription-based pricing per user'
+      }
+    }
+  ],
+
+  // Chemical & Materials > Inventory Control
+  'chemical-inventory': [
+    {
+      name: 'ChemTracker',
+      slug: 'chemtracker',
+      tagline: 'Chemical inventory tracking and management system',
+      logoUrl: '/logos/chemtracker.png',
+      website: 'https://www.chemtracker.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Chemical & Materials',
+      categorySlug: 'chemical-materials',
+      subcategory: 'Inventory Control',
+      subcategorySlug: 'chemical-inventory',
+      description: 'ChemTracker provides comprehensive chemical inventory tracking and management for industrial and research facilities.',
+      features: ['Chemical inventory', 'Tracking', 'MSDS integration', 'Reporting', 'Compliance', 'Mobile access', 'Integration', 'Analytics'],
+      useCases: ['Chemical inventory', 'Inventory tracking', 'MSDS management', 'Regulatory compliance', 'Safety reporting'],
+      tags: ['chemical-inventory', 'tracking', 'msds', 'compliance', 'safety'],
+      rating: 4.1,
+      reviewCount: 680,
+      alternatives: ['Chemical Safety Software', 'ERA Environmental', 'SiteHawk', 'MSDSonline'],
+      integrations: ['ERP systems', 'Safety systems', 'Procurement systems', 'Regulatory databases'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.chemtracker.com/contact',
+        description: 'Enterprise pricing based on users and facilities'
+      }
+    },
+    {
+      name: 'ERA Environmental',
+      slug: 'era-environmental',
+      tagline: 'Environmental and chemical inventory management software',
+      logoUrl: '/logos/era.png',
+      website: 'https://www.eraenvironmental.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'trending'],
+      category: 'Chemical & Materials',
+      categorySlug: 'chemical-materials',
+      subcategory: 'Inventory Control',
+      subcategorySlug: 'chemical-inventory',
+      description: 'ERA Environmental provides environmental and chemical inventory management software for industrial facilities.',
+      features: ['Chemical inventory', 'Environmental compliance', 'Reporting', 'Tracking', 'MSDS management', 'Integration', 'Analytics', 'Mobile access'],
+      useCases: ['Chemical inventory', 'Environmental compliance', 'Reporting', 'MSDS management', 'Regulatory tracking'],
+      tags: ['chemical-inventory', 'environmental', 'compliance', 'msds', 'reporting'],
+      rating: 4.2,
+      reviewCount: 560,
+      alternatives: ['ChemTracker', 'Chemical Safety Software', 'SiteHawk', 'MSDSonline'],
+      integrations: ['ERP systems', 'Environmental systems', 'Safety systems', 'Regulatory databases'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.eraenvironmental.com/contact',
+        description: 'Enterprise pricing based on requirements and users'
+      }
+    }
+  ],
+
+  // Photography & Video > Photo Editing
+  'photography-photo-editing': [
+    {
+      name: 'Adobe Photoshop',
+      slug: 'adobe-photoshop',
+      tagline: 'Professional photo editing and retouching software',
+      logoUrl: '/logos/adobe-photoshop.png',
+      website: 'https://www.adobe.com/products/photoshop',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Photography & Video',
+      categorySlug: 'photography-video',
+      subcategory: 'Photo Editing',
+      subcategorySlug: 'photo-editing',
+      description: 'Adobe Photoshop is the industry-standard photo editing software for professional photographers and designers.',
+      features: ['Photo editing', 'Retouching', 'Layers', 'Masks', 'Filters', 'Color correction', 'RAW processing', 'Integration'],
+      useCases: ['Photo editing', 'Retouching', 'Color correction', 'RAW processing', 'Creative design'],
+      tags: ['photo-editing', 'retouching', 'creative', 'professional', 'adobe'],
+      rating: 4.7,
+      reviewCount: 45000,
+      alternatives: ['Affinity Photo', 'Capture One', 'Luminar', 'GIMP'],
+      integrations: ['Adobe Creative Cloud', 'Lightroom', 'Bridge', 'Various plugins'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $22.99/month',
+        url: 'https://www.adobe.com/products/photoshop/pricing',
+        description: 'Monthly subscription with annual plan options'
+      }
+    },
+    {
+      name: 'Capture One',
+      slug: 'capture-one',
+      tagline: 'Professional RAW photo editing software',
+      logoUrl: '/logos/capture-one.png',
+      website: 'https://www.captureone.com',
+      pricing: 'paid',
+      badges: ['enterprise', 'trending'],
+      category: 'Photography & Video',
+      categorySlug: 'photography-video',
+      subcategory: 'Photo Editing',
+      subcategorySlug: 'photo-editing',
+      description: 'Capture One is professional RAW photo editing software designed for photographers who demand the highest quality.',
+      features: ['RAW processing', 'Color editing', 'Tethering', 'Layers', 'Masks', 'Catalog management', 'Integration', 'Mobile app'],
+      useCases: ['RAW processing', 'Color editing', 'Tethered shooting', 'Catalog management', 'Professional photography'],
+      tags: ['raw-processing', 'color-editing', 'tethering', 'professional', 'photography'],
+      rating: 4.6,
+      reviewCount: 8900,
+      alternatives: ['Adobe Photoshop', 'Lightroom', 'Affinity Photo', 'Luminar'],
+      integrations: ['Camera systems', 'File management', 'Various plugins'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $29/month',
+        url: 'https://www.captureone.com/pricing',
+        description: 'Monthly subscription or perpetual license options'
+      }
+    }
+  ],
+
+  // Photography & Video > Video Editing
+  'video-editing': [
+    {
+      name: 'Adobe Premiere Pro',
+      slug: 'adobe-premiere-pro',
+      tagline: 'Professional video editing and production software',
+      logoUrl: '/logos/adobe-premiere-pro.png',
+      website: 'https://www.adobe.com/products/premiere',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Photography & Video',
+      categorySlug: 'photography-video',
+      subcategory: 'Video Editing',
+      subcategorySlug: 'video-editing',
+      description: 'Adobe Premiere Pro is professional video editing software for film, TV, and web content creators.',
+      features: ['Video editing', 'Timeline editing', 'Color grading', 'Audio editing', 'Effects', 'Transitions', 'Integration', 'Multi-format support'],
+      useCases: ['Video editing', 'Film production', 'Color grading', 'Audio editing', 'Content creation'],
+      tags: ['video-editing', 'film-production', 'color-grading', 'professional', 'adobe'],
+      rating: 4.6,
+      reviewCount: 32000,
+      alternatives: ['Final Cut Pro', 'DaVinci Resolve', 'Avid Media Composer', 'Filmora'],
+      integrations: ['Adobe Creative Cloud', 'After Effects', 'Audition', 'Various plugins'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $22.99/month',
+        url: 'https://www.adobe.com/products/premiere/pricing',
+        description: 'Monthly subscription with annual plan options'
+      }
+    },
+    {
+      name: 'DaVinci Resolve',
+      slug: 'davinci-resolve',
+      tagline: 'Professional video editing and color grading software',
+      logoUrl: '/logos/davinci-resolve.png',
+      website: 'https://www.blackmagicdesign.com/products/davinciresolve',
+      pricing: 'freemium',
+      badges: ['enterprise', 'trending'],
+      category: 'Photography & Video',
+      categorySlug: 'photography-video',
+      subcategory: 'Video Editing',
+      subcategorySlug: 'video-editing',
+      description: 'DaVinci Resolve combines professional video editing, color grading, audio post-production, and visual effects in one tool.',
+      features: ['Video editing', 'Color grading', 'Audio editing', 'Visual effects', 'Multi-camera editing', 'Collaboration', 'Integration', 'Free version'],
+      useCases: ['Video editing', 'Color grading', 'Audio post-production', 'Visual effects', 'Film production'],
+      tags: ['video-editing', 'color-grading', 'audio-editing', 'visual-effects', 'professional'],
+      rating: 4.8,
+      reviewCount: 18000,
+      alternatives: ['Adobe Premiere Pro', 'Final Cut Pro', 'Avid Media Composer', 'Filmora'],
+      integrations: ['Camera systems', 'Audio equipment', 'Control surfaces', 'Various plugins'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free, Studio from $295',
+        url: 'https://www.blackmagicdesign.com/products/davinciresolve',
+        description: 'Free version available, one-time purchase for Studio'
+      }
+    }
+  ],
+
+  // Photography & Video > Studio Management
+  'studio-management': [
+    {
+      name: 'ShootProof',
+      slug: 'shootproof',
+      tagline: 'Photography studio management and client delivery platform',
+      logoUrl: '/logos/shootproof.png',
+      website: 'https://www.shootproof.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Photography & Video',
+      categorySlug: 'photography-video',
+      subcategory: 'Studio Management',
+      subcategorySlug: 'studio-management',
+      description: 'ShootProof provides comprehensive studio management and client delivery solutions for professional photographers.',
+      features: ['Studio management', 'Client galleries', 'Online proofing', 'Payment processing', 'Calendar management', 'Contracts', 'Integration', 'Mobile app'],
+      useCases: ['Studio management', 'Client delivery', 'Online proofing', 'Payment processing', 'Contract management'],
+      tags: ['studio-management', 'client-galleries', 'proofing', 'photography', 'business'],
+      rating: 4.4,
+      reviewCount: 6800,
+      alternatives: ['Pixieset', 'SmugMug', 'Pic-Time', 'Pass'],
+      integrations: ['Payment processors', 'Calendar systems', 'Accounting software', 'Various plugins'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $39/month',
+        url: 'https://www.shootproof.com/pricing',
+        description: 'Monthly subscription based on features and storage'
+      }
+    },
+    {
+      name: 'Pixieset',
+      slug: 'pixieset',
+      tagline: 'Photography client galleries and studio management',
+      logoUrl: '/logos/pixieset.png',
+      website: 'https://www.pixieset.com',
+      pricing: 'freemium',
+      badges: ['popular', 'trending'],
+      category: 'Photography & Video',
+      categorySlug: 'photography-video',
+      subcategory: 'Studio Management',
+      subcategorySlug: 'studio-management',
+      description: 'Pixieset provides beautiful client galleries and studio management tools for professional photographers.',
+      features: ['Client galleries', 'Studio management', 'Online proofing', 'Payment processing', 'Website builder', 'Integration', 'Mobile app', 'Free plan'],
+      useCases: ['Client galleries', 'Studio management', 'Online proofing', 'Website creation', 'Payment processing'],
+      tags: ['client-galleries', 'studio-management', 'proofing', 'photography', 'website'],
+      rating: 4.5,
+      reviewCount: 5200,
+      alternatives: ['ShootProof', 'SmugMug', 'Pic-Time', 'Pass'],
+      integrations: ['Payment processors', 'Website builders', 'Accounting software', 'Various plugins'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free, Pro from $20/month',
+        url: 'https://www.pixieset.com/pricing',
+        description: 'Free plan available, paid plans with more features'
+      }
+    }
+  ],
+
+  // Photography & Video > Client Galleries
+  'client-galleries': [
+    {
+      name: 'SmugMug',
+      slug: 'smugmug',
+      tagline: 'Professional photography portfolio and client galleries',
+      logoUrl: '/logos/smugmug.png',
+      website: 'https://www.smugmug.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Photography & Video',
+      categorySlug: 'photography-video',
+      subcategory: 'Client Galleries',
+      subcategorySlug: 'client-galleries',
+      description: 'SmugMug provides professional photography portfolios and client galleries with e-commerce capabilities.',
+      features: ['Client galleries', 'Portfolio website', 'E-commerce', 'Print fulfillment', 'Mobile app', 'Customization', 'Integration', 'Unlimited storage'],
+      useCases: ['Client galleries', 'Portfolio website', 'Photo sales', 'Print fulfillment', 'Online presence'],
+      tags: ['client-galleries', 'portfolio', 'e-commerce', 'photography', 'website'],
+      rating: 4.3,
+      reviewCount: 8900,
+      alternatives: ['Pixieset', 'ShootProof', 'Zenfolio', 'PhotoShelter'],
+      integrations: ['Print labs', 'Payment processors', 'Social media', 'Various plugins'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $12/month',
+        url: 'https://www.smugmug.com/pricing',
+        description: 'Monthly subscription with annual plan discounts'
+      }
+    },
+    {
+      name: 'Zenfolio',
+      slug: 'zenfolio',
+      tagline: 'Photography website and client gallery platform',
+      logoUrl: '/logos/zenfolio.png',
+      website: 'https://www.zenfolio.com',
+      pricing: 'freemium',
+      badges: ['popular', 'trending'],
+      category: 'Photography & Video',
+      categorySlug: 'photography-video',
+      subcategory: 'Client Galleries',
+      subcategorySlug: 'client-galleries',
+      description: 'Zenfolio provides photography websites and client galleries with built-in e-commerce and marketing tools.',
+      features: ['Client galleries', 'Portfolio website', 'E-commerce', 'Marketing tools', 'Blog platform', 'Integration', 'Mobile app', 'Free trial'],
+      useCases: ['Client galleries', 'Portfolio website', 'Photo sales', 'Marketing', 'Blogging'],
+      tags: ['client-galleries', 'portfolio', 'e-commerce', 'marketing', 'photography'],
+      rating: 4.2,
+      reviewCount: 4500,
+      alternatives: ['SmugMug', 'Pixieset', 'ShootProof', 'PhotoShelter'],
+      integrations: ['Print labs', 'Payment processors', 'Marketing tools', 'Social media'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free trial, from $7/month',
+        url: 'https://www.zenfolio.com/pricing',
+        description: 'Free trial available, paid plans with various features'
+      }
     }
   ],
 
@@ -21636,6 +22796,238 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
         price: 'Contact for pricing',
         url: 'https://www.appliedsystems.com/contact',
         description: 'Enterprise pricing based on agency size and requirements'
+      }
+    }
+  ],
+
+  // Marine & Maritime > Fleet Management
+  'marine-fleet': [
+    {
+      name: 'Helm CONNECT',
+      slug: 'helm-connect',
+      tagline: 'Maritime management software',
+      logoUrl: '/logos/helm.png',
+      website: 'https://www.helmoperations.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Marine & Maritime',
+      categorySlug: 'marine-maritime',
+      subcategory: 'Fleet Management',
+      subcategorySlug: 'marine-fleet',
+      description: 'Helm CONNECT provides vessel and fleet management software for maritime operations with maintenance, compliance, and crew management.',
+      features: ['Vessel maintenance', 'Compliance tracking', 'Crew management', 'Inventory', 'Work orders', 'Safety management', 'Document control', 'Mobile offline'],
+      useCases: ['Vessel operations', 'Maintenance management', 'Compliance tracking', 'Crew scheduling', 'Safety management'],
+      tags: ['marine', 'fleet', 'vessels', 'compliance', 'maritime'],
+      rating: 4.5,
+      reviewCount: 240,
+      alternatives: ['Danaos', 'ShipNet', 'Marine Software'],
+      integrations: ['Various maritime systems'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.helmoperations.com/contact',
+        description: 'Per-vessel enterprise pricing'
+      }
+    },
+    {
+      name: 'Danaos',
+      slug: 'danaos',
+      tagline: 'Fleet management system for maritime operations',
+      logoUrl: '/logos/danaos.png',
+      website: 'https://www.danaos.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'trending'],
+      category: 'Marine & Maritime',
+      categorySlug: 'marine-maritime',
+      subcategory: 'Fleet Management',
+      subcategorySlug: 'marine-fleet',
+      description: 'Danaos provides comprehensive fleet management solutions for shipping companies with real-time monitoring and optimization.',
+      features: ['Fleet monitoring', 'Performance analytics', 'Fuel management', 'Maintenance planning', 'Crew management', 'Compliance', 'Reporting', 'Mobile apps'],
+      useCases: ['Fleet operations', 'Performance monitoring', 'Fuel optimization', 'Maintenance scheduling', 'Crew coordination'],
+      tags: ['fleet', 'shipping', 'maritime', 'monitoring', 'optimization'],
+      rating: 4.3,
+      reviewCount: 180,
+      alternatives: ['Helm CONNECT', 'ShipNet', 'Marine Software'],
+      integrations: ['Vessel systems', 'Satellite communications', 'Port systems'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.danaos.com/contact',
+        description: 'Enterprise pricing based on fleet size'
+      }
+    }
+  ],
+
+  // Marine & Maritime > Port Operations
+  'port-operations': [
+    {
+      name: 'Navis',
+      slug: 'navis',
+      tagline: 'Terminal operating system for port management',
+      logoUrl: '/logos/navis.png',
+      website: 'https://www.navis.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Marine & Maritime',
+      categorySlug: 'marine-maritime',
+      subcategory: 'Port Operations',
+      subcategorySlug: 'port-operations',
+      description: 'Navis provides terminal operating systems and port management solutions for container terminals and ports.',
+      features: ['Terminal operations', 'Gate management', 'Yard planning', 'Vessel planning', 'Equipment control', 'Billing', 'EDI integration', 'Analytics'],
+      useCases: ['Container terminals', 'Port operations', 'Yard management', 'Gate operations', 'Vessel scheduling'],
+      tags: ['port', 'terminal', 'container', 'operations', 'tos'],
+      rating: 4.4,
+      reviewCount: 320,
+      alternatives: ['TBA', 'Kalmar', 'Liebherr'],
+      integrations: ['Shipping lines', 'Customs', 'Rail systems', 'Trucking systems'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.navis.com/contact',
+        description: 'Enterprise pricing based on terminal size and volume'
+      }
+    },
+    {
+      name: 'TBA',
+      slug: 'tba',
+      tagline: 'Port and terminal management software',
+      logoUrl: '/logos/tba.png',
+      website: 'https://www.tba.group',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'trending'],
+      category: 'Marine & Maritime',
+      categorySlug: 'marine-maritime',
+      subcategory: 'Port Operations',
+      subcategorySlug: 'port-operations',
+      description: 'TBA provides comprehensive port and terminal management solutions for maritime logistics operations.',
+      features: ['Terminal management', 'Gate operations', 'Yard management', 'Equipment tracking', 'Billing systems', 'Reporting', 'Mobile apps', 'EDI'],
+      useCases: ['Port operations', 'Terminal management', 'Gate control', 'Equipment tracking', 'Logistics coordination'],
+      tags: ['port', 'terminal', 'logistics', 'operations', 'maritime'],
+      rating: 4.2,
+      reviewCount: 280,
+      alternatives: ['Navis', 'Kalmar', 'Liebherr'],
+      integrations: ['Shipping systems', 'Customs', 'Transportation networks'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.tba.group/contact',
+        description: 'Enterprise pricing based on port size and requirements'
+      }
+    }
+  ],
+
+  // Marine & Maritime > Navigation Systems
+  'navigation-systems': [
+    {
+      name: 'Navionics',
+      slug: 'navionics',
+      tagline: 'Marine navigation charts and GPS',
+      logoUrl: '/logos/navionics.png',
+      website: 'https://www.navionics.com',
+      pricing: 'paid',
+      badges: ['popular', 'featured'],
+      category: 'Marine & Maritime',
+      categorySlug: 'marine-maritime',
+      subcategory: 'Navigation Systems',
+      subcategorySlug: 'navigation-systems',
+      description: 'Navionics provides detailed marine navigation charts and GPS solutions for boaters and maritime professionals.',
+      features: ['Marine charts', 'GPS navigation', 'Sonar charts', 'Weather overlays', 'Route planning', 'Tide information', 'Mobile apps', 'Plotter integration'],
+      useCases: ['Marine navigation', 'Fishing', 'Boating', 'Sailing', 'Commercial maritime'],
+      tags: ['navigation', 'charts', 'gps', 'marine', 'boating'],
+      rating: 4.6,
+      reviewCount: 8900,
+      alternatives: ['C-MAP', 'Garmin Marine', 'Raymarine'],
+      integrations: ['Chart plotters', 'Mobile devices', 'Marine electronics'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $49.99/year',
+        url: 'https://www.navionics.com/pricing',
+        description: 'Annual subscription for charts and updates'
+      }
+    },
+    {
+      name: 'C-MAP',
+      slug: 'cmap',
+      tagline: 'Marine charts and navigation software',
+      logoUrl: '/logos/cmap.png',
+      website: 'https://www.c-map.com',
+      pricing: 'paid',
+      badges: ['featured', 'trending'],
+      category: 'Marine & Maritime',
+      categorySlug: 'marine-maritime',
+      subcategory: 'Navigation Systems',
+      subcategorySlug: 'navigation-systems',
+      description: 'C-MAP provides professional marine charts and navigation software for commercial and recreational maritime use.',
+      features: ['Vector charts', 'Raster charts', '3D views', 'Route planning', 'Weather integration', 'Tide data', 'Mobile apps', 'Multi-device sync'],
+      useCases: ['Commercial navigation', 'Recreational boating', 'Fishing', 'Sailing', 'Maritime operations'],
+      tags: ['charts', 'navigation', 'marine', 'vector', 'professional'],
+      rating: 4.4,
+      reviewCount: 3400,
+      alternatives: ['Navionics', 'Garmin Marine', 'Raymarine'],
+      integrations: ['Chart plotters', 'Mobile devices', 'Marine electronics'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $99/year',
+        url: 'https://www.c-map.com/pricing',
+        description: 'Annual subscription with regional options'
+      }
+    }
+  ],
+
+  // Marine & Maritime > Maintenance Tracking
+  'marine-maintenance': [
+    {
+      name: 'Star IPS',
+      slug: 'star-ips',
+      tagline: 'Planned maintenance system for vessels',
+      logoUrl: '/logos/star-ips.png',
+      website: 'https://www.star-ips.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'featured'],
+      category: 'Marine & Maritime',
+      categorySlug: 'marine-maritime',
+      subcategory: 'Maintenance Tracking',
+      subcategorySlug: 'marine-maintenance',
+      description: 'Star IPS provides planned maintenance systems and spare parts management for maritime vessels.',
+      features: ['Planned maintenance', 'Spare parts management', 'Work order management', 'Inventory control', 'Purchasing', 'Reporting', 'Mobile apps', 'Compliance'],
+      useCases: ['Vessel maintenance', 'Spare parts management', 'Work orders', 'Inventory control', 'Purchasing'],
+      tags: ['maintenance', 'spare-parts', 'vessels', 'planning', 'maritime'],
+      rating: 4.3,
+      reviewCount: 420,
+      alternatives: ['Helm CONNECT', 'Danaos', 'ShipNet'],
+      integrations: ['Purchasing systems', 'Inventory systems', 'Classification societies'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.star-ips.com/contact',
+        description: 'Enterprise pricing based on fleet size'
+      }
+    },
+    {
+      name: 'ShipNet',
+      slug: 'shipnet',
+      tagline: 'Maritime maintenance and operations software',
+      logoUrl: '/logos/shipnet.png',
+      website: 'https://www.shipnet.com',
+      pricing: 'enterprise',
+      badges: ['enterprise', 'trending'],
+      category: 'Marine & Maritime',
+      categorySlug: 'marine-maritime',
+      subcategory: 'Maintenance Tracking',
+      subcategorySlug: 'marine-maintenance',
+      description: 'ShipNet provides comprehensive maritime software solutions for maintenance, operations, and technical management.',
+      features: ['Maintenance management', 'Technical management', 'Procurement', 'Quality management', 'Safety management', 'Reporting', 'Mobile apps', 'Integration'],
+      useCases: ['Fleet maintenance', 'Technical operations', 'Procurement', 'Quality control', 'Safety compliance'],
+      tags: ['maritime', 'maintenance', 'technical', 'procurement', 'safety'],
+      rating: 4.2,
+      reviewCount: 380,
+      alternatives: ['Star IPS', 'Helm CONNECT', 'Danaos'],
+      integrations: ['ERP systems', 'Classification societies', 'Suppliers'],
+      pricingDetails: {
+        type: 'enterprise',
+        price: 'Contact for pricing',
+        url: 'https://www.shipnet.com/contact',
+        description: 'Enterprise pricing based on modules and fleet size'
       }
     }
   ]
