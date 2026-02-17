@@ -17048,6 +17048,38 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
 
       website: 'https://www.waves.com',
 
+      pricing: 'paid',
+
+      badges: ['popular'],
+
+      category: 'Music Production',
+
+      categorySlug: 'music-production',
+
+      subcategory: 'Audio Plugins',
+
+      subcategorySlug: 'audio-plugins',
+
+      description: 'Waves is a leading developer of audio plugins and effects for music production.',
+
+      features: ['Professional audio plugins', 'Effects', 'Processing', 'Mixing', 'Mastering'],
+
+      useCases: ['Music production', 'Post-production', 'Live sound', 'Mixing', 'Mastering'],
+
+      tags: ['audio-plugins', 'music-production', 'effects', 'processing'],
+
+      rating: 4.6,
+
+      reviewCount: 8700
+
+    },
+
+    {
+
+      name: 'ChatGPT',
+
+      slug: 'chatgpt',
+
       tagline: 'AI-powered conversational assistant',
 
       logoUrl: '/logos/chatgpt.png',
@@ -17154,11 +17186,237 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
 
       reviewCount: 18900
 
-    }
+    },
 
+    {
+      name: 'Tinder',
+      slug: 'tinder',
+      tagline: 'Dating and social discovery app',
+      logoUrl: '/logos/tinder.png',
+      website: 'https://tinder.com',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Dating & Relationships',
+      categorySlug: 'dating-relationships',
+      subcategory: 'Dating Platforms',
+      subcategorySlug: 'dating-platforms',
+      description: 'Tinder is a popular dating app that lets you swipe right to connect with people in your area.',
+      features: ['Swipe matching', 'Profile creation', 'Chat messaging', 'Photo sharing', 'Location-based matching', 'Video chat', 'Passport mode', 'Super likes'],
+      useCases: ['Online dating', 'Social discovery', 'Meeting new people', 'Casual dating', 'Relationship building'],
+      tags: ['dating', 'social-discovery', 'mobile-app', 'swipe-matching', 'location-based'],
+      rating: 4.2,
+      reviewCount: 234000,
+      alternatives: ['Bumble', 'Hinge', 'OkCupid', 'Match.com'],
+      integrations: ['Social media', 'Spotify', 'Instagram', 'Apple Health'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free, Plus from $29.99/month',
+        url: 'https://tinder.com/plus',
+        description: 'Free basic features, paid upgrades for enhanced experience'
+      }
+    },
+    {
+      name: 'Bumble',
+      slug: 'bumble',
+      tagline: 'Women-first dating and networking app',
+      logoUrl: '/logos/bumble.png',
+      website: 'https://bumble.com',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Dating & Relationships',
+      categorySlug: 'dating-relationships',
+      subcategory: 'Dating Platforms',
+      subcategorySlug: 'dating-platforms',
+      description: 'Bumble is a women-first dating and networking app that puts women in control of the conversation.',
+      features: ['Women-first messaging', 'Profile creation', 'Photo verification', 'Video calls', 'BFF mode', 'Bizz networking', 'Advanced filters', 'Travel mode'],
+      useCases: ['Online dating', 'Professional networking', 'Friend finding', 'Safe dating', 'Relationship building'],
+      tags: ['dating', 'women-first', 'networking', 'safety-focused', 'video-calls'],
+      rating: 4.3,
+      reviewCount: 89000,
+      alternatives: ['Tinder', 'Hinge', 'OkCupid', 'Match.com'],
+      integrations: ['Social media', 'Spotify', 'Instagram', 'Apple Health'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free, Premium from $32.99/month',
+        url: 'https://bumble.com/premium',
+        description: 'Free basic features, paid upgrades for enhanced experience'
+      }
+    }
   ],
 
+  // Dating & Relationships > Relationship Coaching
+  'relationship-coaching': [
+    {
+      name: 'Lasting',
+      slug: 'lasting',
+      tagline: 'Couples therapy and relationship counseling app',
+      logoUrl: '/logos/lasting.png',
+      website: 'https://www.lasting.com',
+      pricing: 'paid',
+      badges: ['featured', 'trending'],
+      category: 'Dating & Relationships',
+      categorySlug: 'dating-relationships',
+      subcategory: 'Relationship Coaching',
+      subcategorySlug: 'relationship-coaching',
+      description: 'Lasting provides science-based couples therapy and relationship counseling through your mobile device.',
+      features: ['Couples therapy', 'Relationship assessment', 'Personalized programs', 'Progress tracking', 'Video sessions', 'Communication tools', 'Expert guidance', 'Privacy focused'],
+      useCases: ['Couples counseling', 'Relationship building', 'Communication improvement', 'Conflict resolution', 'Marriage therapy'],
+      tags: ['relationship-coaching', 'couples-therapy', 'mental-health', 'counseling', 'evidence-based'],
+      rating: 4.6,
+      reviewCount: 12300,
+      alternatives: ['ReGain', 'Talkspace', 'BetterHelp', 'OurRelationship'],
+      integrations: ['Health apps', 'Calendar apps', 'Payment systems', 'Video platforms'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $19/month',
+        url: 'https://www.lasting.com/pricing',
+        description: 'Monthly subscription with various program options'
+      }
+    },
+    {
+      name: 'Paired',
+      slug: 'paired',
+      tagline: 'AI relationship coach and communication guide',
+      logoUrl: '/logos/paired.png',
+      website: 'https://www.paired.ai',
+      pricing: 'freemium',
+      badges: ['trending', 'new'],
+      category: 'Dating & Relationships',
+      categorySlug: 'dating-relationships',
+      subcategory: 'Relationship Coaching',
+      subcategorySlug: 'relationship-coaching',
+      description: 'Paired is an AI-powered relationship coach that provides personalized advice and communication guidance.',
+      features: ['AI coaching', 'Communication tips', 'Relationship analysis', 'Personalized advice', 'Progress tracking', 'Privacy protection', '24/7 support', 'Free trial'],
+      useCases: ['Relationship building', 'Communication improvement', 'Dating advice', 'Couples support', 'Self-improvement'],
+      tags: ['relationship-coaching', 'ai-powered', 'communication', 'personalized-advice', 'dating-support'],
+      rating: 4.4,
+      reviewCount: 3400,
+      alternatives: ['Lasting', 'ReGain', 'Talkspace', 'OurRelationship'],
+      integrations: ['Messaging apps', 'Calendar apps', 'Health tracking', 'Social media'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free, Premium from $24.99/month',
+        url: 'https://www.paired.ai/pricing',
+        description: 'Free basic features, paid plans for advanced coaching'
+      }
+    }
+  ],
 
+  // Dating & Relationships > Event Planning
+  'event-planning': [
+    {
+      name: 'Meetup',
+      slug: 'meetup',
+      tagline: 'Local events and community gatherings',
+      logoUrl: '/logos/meetup.png',
+      website: 'https://www.meetup.com',
+      pricing: 'freemium',
+      badges: ['popular', 'community-favorite'],
+      category: 'Dating & Relationships',
+      categorySlug: 'dating-relationships',
+      subcategory: 'Event Planning',
+      subcategorySlug: 'event-planning',
+      description: 'Meetup helps people find local events, groups, and communities with shared interests.',
+      features: ['Event discovery', 'Group creation', 'RSVP management', 'Location-based search', 'Community building', 'Discussion forums', 'Event hosting', 'Mobile app'],
+      useCases: ['Singles events', 'Social gatherings', 'Interest groups', 'Community building', 'Local networking'],
+      tags: ['events', 'social-networking', 'community', 'local-gatherings', 'interest-groups'],
+      rating: 4.5,
+      reviewCount: 67000,
+      alternatives: ['Eventbrite', 'Facebook Events', 'Meetup Pro', 'GroupMe'],
+      integrations: ['Social media', 'Calendar apps', 'Payment systems', 'Mapping services'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free, Pro from $23.99/month',
+        url: 'https://www.meetup.com/pro',
+        description: 'Free basic features, paid plans for organizers'
+      }
+    },
+    {
+      name: 'Eventbrite',
+      slug: 'eventbrite',
+      tagline: 'Event management and ticketing platform',
+      logoUrl: '/logos/eventbrite.png',
+      website: 'https://www.eventbrite.com',
+      pricing: 'freemium',
+      badges: ['popular', 'featured'],
+      category: 'Dating & Relationships',
+      categorySlug: 'dating-relationships',
+      subcategory: 'Event Planning',
+      subcategorySlug: 'event-planning',
+      description: 'Eventbrite is a comprehensive event management and ticketing platform for all types of events.',
+      features: ['Event creation', 'Ticket sales', 'Registration management', 'Promotion tools', 'Analytics', 'Mobile check-in', 'Payment processing', 'Event marketing'],
+      useCases: ['Singles events', 'Social gatherings', 'Professional events', 'Community events', 'Workshop hosting'],
+      tags: ['events', 'ticketing', 'event-management', 'registration', 'marketing'],
+      rating: 4.6,
+      reviewCount: 89000,
+      alternatives: ['Meetup', 'Facebook Events', 'Ticketmaster', 'Eventbrite Pro'],
+      integrations: ['Social media', 'Calendar apps', 'Payment systems', 'Marketing tools'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free service fee + paid plans',
+        url: 'https://www.eventbrite.com/pricing',
+        description: 'Free to publish, service fees apply, paid plans for advanced features'
+      }
+    }
+  ],
+
+  // Dating & Relationships > Safety Tools
+  'safety-tools': [
+    {
+      name: 'Garbo',
+      slug: 'garbo',
+      tagline: 'Background checks for online dating safety',
+      logoUrl: '/logos/garbo.png',
+      website: 'https://www.garbo.io',
+      pricing: 'paid',
+      badges: ['featured', 'trending'],
+      category: 'Dating & Relationships',
+      categorySlug: 'dating-relationships',
+      subcategory: 'Safety Tools',
+      subcategorySlug: 'safety-tools',
+      description: 'Garbo provides background checks and safety information for online dating and meeting people.',
+      features: ['Background checks', 'Safety reports', 'Risk assessment', 'Privacy protection', 'Quick verification', 'Comprehensive screening', 'Mobile app', 'API access'],
+      useCases: ['Dating safety', 'Background verification', 'Risk assessment', 'Personal safety', 'Meeting verification'],
+      tags: ['safety', 'background-checks', 'dating-safety', 'verification', 'risk-assessment'],
+      rating: 4.3,
+      reviewCount: 5600,
+      alternatives: ['TruthFinder', 'Instant Checkmate', 'BeenVerified', 'PeopleFinders'],
+      integrations: ['Dating apps', 'Social platforms', 'Messaging apps', 'Security services'],
+      pricingDetails: {
+        type: 'paid',
+        price: 'From $19.99/month',
+        url: 'https://www.garbo.io/pricing',
+        description: 'Monthly subscription with various check options'
+      }
+    },
+    {
+      name: 'DateID',
+      slug: 'dateid',
+      tagline: 'Identity verification for online dating',
+      logoUrl: '/logos/dateid.png',
+      website: 'https://www.dateid.com',
+      pricing: 'freemium',
+      badges: ['new', 'trending'],
+      category: 'Dating & Relationships',
+      categorySlug: 'dating-relationships',
+      subcategory: 'Safety Tools',
+      subcategorySlug: 'safety-tools',
+      description: 'DateID provides secure identity verification services for online dating platforms and users.',
+      features: ['Identity verification', 'Photo verification', 'Age verification', 'Document scanning', 'Fraud prevention', 'Privacy protection', 'Instant results', 'Mobile app'],
+      useCases: ['Dating verification', 'Age confirmation', 'Identity validation', 'Fraud prevention', 'Safety assurance'],
+      tags: ['verification', 'identity', 'dating-safety', 'fraud-prevention', 'age-verification'],
+      rating: 4.1,
+      reviewCount: 2300,
+      alternatives: ['Garbo', 'Veriff', 'Jumio', 'ID.me'],
+      integrations: ['Dating platforms', 'Social media', 'Messaging apps', 'Security services'],
+      pricingDetails: {
+        type: 'freemium',
+        price: 'Free, Premium from $9.99/month',
+        url: 'https://www.dateid.com/pricing',
+        description: 'Free basic verification, paid plans for advanced features'
+      }
+    }
+  ],
 
   // Marketing & Growth > SEO Tools
 
@@ -30376,7 +30634,7 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
 
   // Event Management > Event Planning
 
-  'event-planning': [
+  'event-management-planning': [
 
     {
 
