@@ -300,6 +300,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [ ] AI recommendations
 - [ ] Community features
 - [ ] Monetization
+- [Nick Launches](https://nicklaunches.com/) - Launch platform for builders, AI startups, and SaaS founders to get discovered and earn a permanent dofollow backlink.
 
 ---
 
