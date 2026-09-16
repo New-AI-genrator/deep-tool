@@ -7260,6 +7260,44 @@ export const toolsBySubcategory: Record<string, ToolEntry[]> = {
 
     {
 
+      name: 'AI Tools Radar',
+
+      slug: 'ai-tools-radar',
+
+      tagline: 'AI tools directory and daily AI industry news platform',
+
+      logoUrl: 'https://www.google.com/s2/favicons?domain=aitoolsradar.com&sz=128',
+
+      website: 'https://aitoolsradar.com/',
+
+      pricing: 'free',
+
+      badges: ['featured', 'trending'],
+
+      category: 'Productivity & Business',
+
+      categorySlug: 'productivity-business',
+
+      subcategory: 'Project Management',
+
+      subcategorySlug: 'project-management',
+
+      description: 'AI Tools Radar is an AI tools directory and editorial platform for discovering, comparing, and tracking AI products, with daily AI industry news and newsletter issues.',
+
+      features: ['AI tools directory', 'Product discovery', 'AI product comparison', 'Daily AI news', 'Newsletter issues'],
+
+      useCases: ['Discovering AI tools', 'Comparing AI products', 'Tracking AI industry updates', 'Finding productivity tools'],
+
+      tags: ['ai-tools', 'directory', 'product-discovery', 'ai-news', 'newsletter'],
+
+      rating: 4.7,
+
+      reviewCount: 1200
+
+    },
+
+    {
+
       name: 'Notion',
 
       slug: 'notion',
