@@ -5902,6 +5902,55 @@ export const categoriesWithSubcategories: CategoryWithSubcategories[] = [
 
 export const toolsBySubcategory: Record<string, ToolEntry[]> = {
 
+  'automated-testing': [
+
+    {
+
+      name: 'agent-qa',
+
+      slug: 'agent-qa',
+
+      tagline: 'AI testing for web and mobile with persistent memory',
+
+      logoUrl: '/logos/agent-qa.png',
+
+      website: 'https://vostride.com',
+
+      pricing: 'free',
+
+      category: 'Quality Assurance & Testing',
+
+      categorySlug: 'quality-assurance-testing',
+
+      subcategory: 'Automated Testing',
+
+      subcategorySlug: 'automated-testing',
+
+      description: 'agent-qa tests web, Android, and iOS apps from natural-language instructions. Its persistent memory engine reuses validated lessons across runs, with self-improvement that keeps new knowledge only after validation. CLI, dashboard, MCP, and agent skills support developer and coding-agent workflows.',
+
+      features: ['Natural-language test authoring', 'Web, Android, and iOS testing', 'Persistent memory engine', 'Validated self-improvement', 'CLI and dashboard', 'MCP server and agent skills'],
+
+      useCases: ['End-to-end UI testing', 'Regression testing', 'Mobile app validation', 'Coding-agent QA workflows'],
+
+      tags: ['testing', 'qa', 'mobile-testing', 'mcp', 'agents', 'memory'],
+
+      pricingDetails: {
+
+        type: 'free',
+
+        price: 'Free local package; model-provider access and charges are separate',
+
+        url: 'https://vostride.com/docs/agent-qa',
+
+        description: 'Requires Node.js 24+ and a supported model provider. Mobile testing needs the relevant device tooling. Licensed under FSL-1.1-ALv2.'
+
+      }
+
+    }
+
+  ],
+
+
   // Creative & Design > AI Art Generation
 
   'ai-art-generation': [

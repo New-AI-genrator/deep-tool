@@ -5,6 +5,7 @@ export const masterCategories: MasterCategory[] = [
 	{ name: 'Creative & Design', slug: 'creative-design' },
 	{ name: 'Productivity & Business', slug: 'productivity-business' },
 	{ name: 'Development & Engineering', slug: 'development-engineering' },
+	{ name: 'Quality Assurance & Testing', slug: 'quality-assurance-testing' },
 	{ name: 'Research & Science', slug: 'research-science' },
 	{ name: 'Marketing & Growth', slug: 'marketing-growth' },
 	{ name: 'Legal & Compliance', slug: 'legal-compliance' },
